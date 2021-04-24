@@ -12,7 +12,7 @@
   <title value="EMR LIS Communication"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-03-15T23:15:11+00:00"/>
+  <date value="2021-04-24T07:13:38+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
     <telecom>
@@ -209,26 +209,6 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/emr-lab-order-code-vs"/>
-      </reference>
-      <name value="EMR Lab Order Code"/>
-      <description value="The code for the lab order requested in the EMR."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/emr-lab-task"/>
-      </reference>
-      <name value="EMR-LIS Workflow Task Resource"/>
-      <description value="A Task resource for tracking order state and synchronizing communication between an EMR and a LIS"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -236,26 +216,6 @@
       </reference>
       <name value="EMR-LIS Observation"/>
       <description value="Observation resource created by a LIS that representing a result for an order submitted by an EMR System"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/emr-lis-patient-identifier-location"/>
-      </reference>
-      <name value="EMR-LIS Patient Identifier Location Extension"/>
-      <description value="OpenMRS-specific location for OpenMRS ID Identifier"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/emr-lab-diagnostic-report"/>
-      </reference>
-      <name value="EMR-LIS Diagnostic Report"/>
-      <description value="DiagnosticReport resource created by a LIS that representing results of an order submitted from an EMR System"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -279,33 +239,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/emr-lab-diagnostic-report-status-vs"/>
-      </reference>
-      <name value="EMR-LIS Diagnostic Report Status Flag"/>
-      <description value="The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/emr-lab-patient"/>
+        <reference value="StructureDefinition/emr-lab-task"/>
       </reference>
-      <name value="EMR-LIS Workflow Patient"/>
-      <description value="A patient used for EMR - LIS lab order and result communication."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/emr-lab-service-request"/>
-      </reference>
-      <name value="EMR-LIS Service Request"/>
-      <description value="A service request created by an EMR representing an order for an LIS system"/>
+      <name value="EMR-LIS Workflow Task Resource"/>
+      <description value="A Task resource for tracking order state and synchronizing communication between an EMR and a LIS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -319,6 +259,56 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/emr-lab-diagnostic-report"/>
+      </reference>
+      <name value="EMR-LIS Diagnostic Report"/>
+      <description value="DiagnosticReport resource created by a LIS that representing results of an order submitted from an EMR System"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/emr-lab-service-request"/>
+      </reference>
+      <name value="EMR-LIS Service Request"/>
+      <description value="A service request created by an EMR representing an order for an LIS system"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/emr-lab-diagnostic-report-status-vs"/>
+      </reference>
+      <name value="EMR-LIS Diagnostic Report Status Flag"/>
+      <description value="The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/emr-lab-order-code-vs"/>
+      </reference>
+      <name value="EMR Lab Order Code"/>
+      <description value="The code for the lab order requested in the EMR."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/emr-lis-patient-identifier-location"/>
+      </reference>
+      <name value="EMR-LIS Patient Identifier Location Extension"/>
+      <description value="OpenMRS-specific location for OpenMRS ID Identifier"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -326,6 +316,16 @@
       </reference>
       <name value="EMR-LIS Status for Task"/>
       <description value="The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/emr-lab-patient"/>
+      </reference>
+      <name value="EMR-LIS Workflow Patient"/>
+      <description value="A patient used for EMR - LIS lab order and result communication."/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
@@ -345,6 +345,11 @@
         <nameUrl value="changes.html"/>
         <title value="IG Change History"/>
         <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="use_cases.html"/>
+        <title value="Use Case Overview"/>
+        <generation value="markdown"/>
       </page>
     </page>
     <parameter>

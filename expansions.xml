@@ -1,11 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="e110a97c-5407-44fd-9e36-bccd3f6fb3a4"/>
+  <id value="738b69b1-aa1e-4817-99a7-d6681af329dd"/>
   <meta>
-    <lastUpdated value="2021-03-15T23:15:11.707+00:00"/>
+    <lastUpdated value="2021-04-24T07:13:38.102+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/ValueSet/emr-lab-diagnostic-report-status-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="emr-lab-diagnostic-report-status-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html">DiagnosticReportStatus v4.0.1 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html">
+                <code>http://hl7.org/fhir/diagnostic-report-status</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-partial"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-partial">diagnostic-report-status-partial</a>
+                </td>
+                <td>Partial</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-final"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-final">diagnostic-report-status-final</a>
+                </td>
+                <td>Final</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-unknown"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-unknown">diagnostic-report-status-unknown</a>
+                </td>
+                <td>Unknown</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-canceled"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-canceled">diagnostic-report-status-canceled</a>
+                </td>
+                <td>Canceled</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-amended"> </a>
+                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-amended">diagnostic-report-status-amended</a>
+                </td>
+                <td>Amended</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/ValueSet/emr-lab-diagnostic-report-status-vs"/>
+        <version value="0.1.0-test"/>
+        <name value="EmrLabDiagnosticReportStatusVS"/>
+        <title value="EMR-LIS Diagnostic Report Status Flag"/>
+        <status value="active"/>
+        <date value="2021-04-24T07:13:38+00:00"/>
+        <publisher value="I-TECH-UW"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"/>
+          </telecom>
+        </contact>
+        <description value="The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:6f27fb7a-9651-4660-9e2a-b41252af5498"/>
+          <timestamp value="2021-04-24T07:13:49+00:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/diagnostic-report-status|4.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="diagnostic-report-status-partial"/>
+            <display value="Partial"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="diagnostic-report-status-final"/>
+            <display value="Final"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="diagnostic-report-status-unknown"/>
+            <display value="Unknown"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="diagnostic-report-status-canceled"/>
+            <display value="Canceled"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
+            <code value="diagnostic-report-status-amended"/>
+            <display value="Amended"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <resource>
       <ValueSet>
@@ -13,7 +146,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.68</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.69</p>
             <p>All codes from system 
               <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-loinc.html">
                 <code>http://loinc.org</code>
@@ -3284,7 +3417,7 @@
                   <a name="http---loinc.org-10363-0"> </a>
                   <a href="http://details.loinc.org/LOINC/10363-0.html">10363-0</a>
                 </td>
-                <td>Barbiturates [Presence] in Unspecified specimen</td>
+                <td>Barbiturates [Presence] in Specimen</td>
                 <td/>
               </tr>
               <tr>
@@ -4724,7 +4857,7 @@
                   <a name="http---loinc.org-10525-4"> </a>
                   <a href="http://details.loinc.org/LOINC/10525-4.html">10525-4</a>
                 </td>
-                <td>Microscopic observation [Identifier] in Unspecified specimen by Cyto stain</td>
+                <td>Microscopic observation [Identifier] in Specimen by Cyto stain</td>
                 <td/>
               </tr>
               <tr>
@@ -4844,7 +4977,7 @@
                   <a name="http---loinc.org-10539-5"> </a>
                   <a href="http://details.loinc.org/LOINC/10539-5.html">10539-5</a>
                 </td>
-                <td>Glipizide [Mass/volume] in Serum or Plasma</td>
+                <td>glipiZIDE [Mass/volume] in Serum or Plasma</td>
                 <td/>
               </tr>
               <tr>
@@ -4860,7 +4993,7 @@
                   <a name="http---loinc.org-10540-3"> </a>
                   <a href="http://details.loinc.org/LOINC/10540-3.html">10540-3</a>
                 </td>
-                <td>Glyburide [Mass/volume] in Serum or Plasma</td>
+                <td>glyBURIDE [Mass/volume] in Serum or Plasma</td>
                 <td/>
               </tr>
               <tr>
@@ -5724,7 +5857,7 @@
                   <a name="http---loinc.org-10638-5"> </a>
                   <a href="http://details.loinc.org/LOINC/10638-5.html">10638-5</a>
                 </td>
-                <td>Thermophilic Actinomycetes colony count [#/volume] in Unspecified specimen by Organism specific culture</td>
+                <td>Thermophilic Actinomycetes colony count [#/volume] in Specimen by Organism specific culture</td>
                 <td/>
               </tr>
               <tr>
@@ -5732,7 +5865,7 @@
                   <a name="http---loinc.org-10639-3"> </a>
                   <a href="http://details.loinc.org/LOINC/10639-3.html">10639-3</a>
                 </td>
-                <td>Thermophilic Actinomycetes identified in Unspecified specimen by Organism specific culture</td>
+                <td>Thermophilic Actinomycetes identified in Specimen by Organism specific culture</td>
                 <td/>
               </tr>
               <tr>
@@ -5780,7 +5913,7 @@
                   <a name="http---loinc.org-10644-3"> </a>
                   <a href="http://details.loinc.org/LOINC/10644-3.html">10644-3</a>
                 </td>
-                <td>Arthropod identified in Unspecified specimen</td>
+                <td>Arthropod identified in Specimen</td>
                 <td/>
               </tr>
               <tr>
@@ -5964,7 +6097,7 @@
                   <a name="http---loinc.org-10665-8"> </a>
                   <a href="http://details.loinc.org/LOINC/10665-8.html">10665-8</a>
                 </td>
-                <td>Fungus colony count [#/volume] in Unspecified specimen by Environmental culture</td>
+                <td>Fungus colony count [#/volume] in Specimen by Environmental culture</td>
                 <td/>
               </tr>
               <tr>
@@ -5980,7 +6113,7 @@
                   <a name="http---loinc.org-10667-4"> </a>
                   <a href="http://details.loinc.org/LOINC/10667-4.html">10667-4</a>
                 </td>
-                <td>Fungus identified in Unspecified specimen by Animal inoculation</td>
+                <td>Fungus identified in Specimen by Animal inoculation</td>
                 <td/>
               </tr>
               <tr>
@@ -5988,7 +6121,7 @@
                   <a name="http---loinc.org-10668-2"> </a>
                   <a href="http://details.loinc.org/LOINC/10668-2.html">10668-2</a>
                 </td>
-                <td>Fungus identified in Unspecified specimen by Environmental culture</td>
+                <td>Fungus identified in Specimen by Environmental culture</td>
                 <td/>
               </tr>
               <tr>
@@ -5996,7 +6129,7 @@
                   <a name="http---loinc.org-10669-0"> </a>
                   <a href="http://details.loinc.org/LOINC/10669-0.html">10669-0</a>
                 </td>
-                <td>Fungus identified in Unspecified specimen by Sticky tape for environmental fungus</td>
+                <td>Fungus identified in Specimen by Sticky tape for environmental fungus</td>
                 <td/>
               </tr>
               <tr>
@@ -6020,7 +6153,7 @@
                   <a name="http---loinc.org-10671-6"> </a>
                   <a href="http://details.loinc.org/LOINC/10671-6.html">10671-6</a>
                 </td>
-                <td>Helminth identified in Unspecified specimen</td>
+                <td>Helminth identified in Specimen</td>
                 <td/>
               </tr>
               <tr>
@@ -6028,7 +6161,7 @@
                   <a name="http---loinc.org-10672-4"> </a>
                   <a href="http://details.loinc.org/LOINC/10672-4.html">10672-4</a>
                 </td>
-                <td>Helminth+Arthropod identified in Unspecified specimen</td>
+                <td>Helminth+Arthropod identified in Specimen</td>
                 <td/>
               </tr>
               <tr>
@@ -6396,7 +6529,7 @@
                   <a name="http---loinc.org-10713-6"> </a>
                   <a href="http://details.loinc.org/LOINC/10713-6.html">10713-6</a>
                 </td>
-                <td>Prototheca identified in Unspecified specimen by Culture</td>
+                <td>Prototheca identified in Specimen by Culture</td>
                 <td/>
               </tr>
               <tr>
@@ -6420,7 +6553,7 @@
                   <a name="http---loinc.org-10716-9"> </a>
                   <a href="http://details.loinc.org/LOINC/10716-9.html">10716-9</a>
                 </td>
-                <td>Schistosoma sp identified in Unspecified specimen by Organism specific culture</td>
+                <td>Schistosoma sp identified in Specimen by Organism specific culture</td>
                 <td/>
               </tr>
               <tr>
@@ -6620,7 +6753,7 @@
                   <a name="http---loinc.org-10739-1"> </a>
                   <a href="http://details.loinc.org/LOINC/10739-1.html">10739-1</a>
                 </td>
-                <td>Virus identified in Unspecified specimen by Electron microscopy</td>
+                <td>Virus identified in Specimen by Electron microscopy</td>
                 <td/>
               </tr>
               <tr>
@@ -7612,7 +7745,7 @@
                   <a name="http---loinc.org-10850-6"> </a>
                   <a href="http://details.loinc.org/LOINC/10850-6.html">10850-6</a>
                 </td>
-                <td>Cyclospora cayetanensis [Presence] in Unspecified specimen</td>
+                <td>Cyclospora cayetanensis [Presence] in Specimen</td>
                 <td/>
               </tr>
               <tr>
@@ -7636,7 +7769,7 @@
                   <a name="http---loinc.org-10853-0"> </a>
                   <a href="http://details.loinc.org/LOINC/10853-0.html">10853-0</a>
                 </td>
-                <td>Isospora belli [Presence] in Unspecified specimen by Acid fast stain.Kinyoun modified</td>
+                <td>Isospora belli [Presence] in Specimen by Acid fast stain.Kinyoun modified</td>
                 <td/>
               </tr>
               <tr>
@@ -7668,7 +7801,7 @@
                   <a name="http---loinc.org-10857-1"> </a>
                   <a href="http://details.loinc.org/LOINC/10857-1.html">10857-1</a>
                 </td>
-                <td>Microsporidia identified in Unspecified specimen by Light microscopy</td>
+                <td>Microsporidia identified in Specimen by Light microscopy</td>
                 <td/>
               </tr>
               <tr>
@@ -7700,7 +7833,7 @@
                   <a name="http---loinc.org-10860-5"> </a>
                   <a href="http://details.loinc.org/LOINC/10860-5.html">10860-5</a>
                 </td>
-                <td>Varicella zoster virus [Presence] in Unspecified specimen by Organism specific culture</td>
+                <td>Varicella zoster virus [Presence] in Specimen by Organism specific culture</td>
                 <td/>
               </tr>
               <tr>
@@ -8039,15 +8172,15 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-toocostly">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:5e2f925f-20c8-448b-9ee9-f6f2373764f7"/>
-          <timestamp value="2021-02-11T22:39:50.190Z"/>
+          <identifier value="urn:uuid:954645c7-1224-445b-980f-6d7133d07651"/>
+          <timestamp value="2021-04-24T04:56:12.372Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://loinc.org|2.68"/>
+            <valueString value="http://loinc.org|2.69"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -10082,7 +10215,7 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="10363-0"/>
-            <display value="Barbiturates [Presence] in Unspecified specimen"/>
+            <display value="Barbiturates [Presence] in Specimen"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
@@ -10982,7 +11115,7 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="10525-4"/>
-            <display value="Microscopic observation [Identifier] in Unspecified specimen by Cyto stain"/>
+            <display value="Microscopic observation [Identifier] in Specimen by Cyto stain"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
@@ -11057,7 +11190,7 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="10539-5"/>
-            <display value="Glipizide [Mass/volume] in Serum or Plasma"/>
+            <display value="glipiZIDE [Mass/volume] in Serum or Plasma"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
@@ -11067,7 +11200,7 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="10540-3"/>
-            <display value="Glyburide [Mass/volume] in Serum or Plasma"/>
+            <display value="glyBURIDE [Mass/volume] in Serum or Plasma"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
@@ -11607,12 +11740,12 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="10638-5"/>
-            <display value="Thermophilic Actinomycetes colony count [#/volume] in Unspecified specimen by Organism specific culture"/>
+            <display value="Thermophilic Actinomycetes colony count [#/volume] in Specimen by Organism specific culture"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
             <code value="10639-3"/>
-            <display value="Thermophilic Actinomycetes identified in Unspecified specimen by Organism specific culture"/>
+            <display value="Thermophilic Actinomycetes identified in Specimen by Organism specific culture"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
@@ -11642,7 +11775,7 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="10644-3"/>
-            <display value="Arthropod identified in Unspecified specimen"/>
+            <display value="Arthropod identified in Specimen"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
@@ -11757,7 +11890,7 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="10665-8"/>
-            <display value="Fungus colony count [#/volume] in Unspecified specimen by Environmental culture"/>
+            <display value="Fungus colony count [#/volume] in Specimen by Environmental culture"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
@@ -11767,17 +11900,17 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="10667-4"/>
-            <display value="Fungus identified in Unspecified specimen by Animal inoculation"/>
+            <display value="Fungus identified in Specimen by Animal inoculation"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
             <code value="10668-2"/>
-            <display value="Fungus identified in Unspecified specimen by Environmental culture"/>
+            <display value="Fungus identified in Specimen by Environmental culture"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
             <code value="10669-0"/>
-            <display value="Fungus identified in Unspecified specimen by Sticky tape for environmental fungus"/>
+            <display value="Fungus identified in Specimen by Sticky tape for environmental fungus"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
@@ -11792,12 +11925,12 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="10671-6"/>
-            <display value="Helminth identified in Unspecified specimen"/>
+            <display value="Helminth identified in Specimen"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
             <code value="10672-4"/>
-            <display value="Helminth+Arthropod identified in Unspecified specimen"/>
+            <display value="Helminth+Arthropod identified in Specimen"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
@@ -12027,7 +12160,7 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="10713-6"/>
-            <display value="Prototheca identified in Unspecified specimen by Culture"/>
+            <display value="Prototheca identified in Specimen by Culture"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
@@ -12042,7 +12175,7 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="10716-9"/>
-            <display value="Schistosoma sp identified in Unspecified specimen by Organism specific culture"/>
+            <display value="Schistosoma sp identified in Specimen by Organism specific culture"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
@@ -12167,7 +12300,7 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="10739-1"/>
-            <display value="Virus identified in Unspecified specimen by Electron microscopy"/>
+            <display value="Virus identified in Specimen by Electron microscopy"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
@@ -12787,7 +12920,7 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="10850-6"/>
-            <display value="Cyclospora cayetanensis [Presence] in Unspecified specimen"/>
+            <display value="Cyclospora cayetanensis [Presence] in Specimen"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
@@ -12802,7 +12935,7 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="10853-0"/>
-            <display value="Isospora belli [Presence] in Unspecified specimen by Acid fast stain.Kinyoun modified"/>
+            <display value="Isospora belli [Presence] in Specimen by Acid fast stain.Kinyoun modified"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
@@ -12822,7 +12955,7 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="10857-1"/>
-            <display value="Microsporidia identified in Unspecified specimen by Light microscopy"/>
+            <display value="Microsporidia identified in Specimen by Light microscopy"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
@@ -12842,7 +12975,7 @@
           <contains>
             <system value="http://loinc.org"/>
             <code value="10860-5"/>
-            <display value="Varicella zoster virus [Presence] in Unspecified specimen by Organism specific culture"/>
+            <display value="Varicella zoster virus [Presence] in Specimen by Organism specific culture"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
@@ -13048,139 +13181,6 @@
             <system value="http://loinc.org"/>
             <code value="10898-5"/>
             <display value="Eastern equine encephalitis virus IgM Ab [Titer] in Serum by Immunofluorescence"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://openhie.org/fhir/ValueSet/emr-lab-diagnostic-report-status-vs"/>
-    <resource>
-      <ValueSet>
-        <id value="emr-lab-diagnostic-report-status-vs"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 5 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html">DiagnosticReportStatus v4.0.1 (CodeSystem)</a>
-            </p>
-            <p>All codes from system 
-              <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html">
-                <code>http://hl7.org/fhir/diagnostic-report-status</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-partial"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-partial">diagnostic-report-status-partial</a>
-                </td>
-                <td>Partial</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-final"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-final">diagnostic-report-status-final</a>
-                </td>
-                <td>Final</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-unknown"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-unknown">diagnostic-report-status-unknown</a>
-                </td>
-                <td>Unknown</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-canceled"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-canceled">diagnostic-report-status-canceled</a>
-                </td>
-                <td>Canceled</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-amended"> </a>
-                  <a href="http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-amended">diagnostic-report-status-amended</a>
-                </td>
-                <td>Amended</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://openhie.org/fhir/ValueSet/emr-lab-diagnostic-report-status-vs"/>
-        <version value="0.1.0-test"/>
-        <name value="EmrLabDiagnosticReportStatusVS"/>
-        <title value="EMR-LIS Diagnostic Report Status Flag"/>
-        <status value="active"/>
-        <date value="2021-03-15T23:15:11+00:00"/>
-        <publisher value="I-TECH-UW"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"/>
-          </telecom>
-        </contact>
-        <description value="The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:9694bc32-f9fd-45a1-b0b5-4f1747263121"/>
-          <timestamp value="2021-03-15T23:15:22+00:00"/>
-          <total value="5"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/diagnostic-report-status|4.0.1"/>
-          </parameter>
-          <contains>
-            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
-            <code value="diagnostic-report-status-partial"/>
-            <display value="Partial"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
-            <code value="diagnostic-report-status-final"/>
-            <display value="Final"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
-            <code value="diagnostic-report-status-unknown"/>
-            <display value="Unknown"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
-            <code value="diagnostic-report-status-canceled"/>
-            <display value="Canceled"/>
-          </contains>
-          <contains>
-            <system value="http://hl7.org/fhir/diagnostic-report-status"/>
-            <code value="diagnostic-report-status-amended"/>
-            <display value="Amended"/>
           </contains>
         </expansion>
       </ValueSet>

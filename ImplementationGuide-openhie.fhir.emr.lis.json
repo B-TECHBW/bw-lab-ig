@@ -11,7 +11,7 @@
   "title": "EMR LIS Communication",
   "status": "draft",
   "experimental": false,
-  "date": "2021-03-15T23:15:11+00:00",
+  "date": "2021-04-24T07:13:38+00:00",
   "publisher": "I-TECH-UW",
   "contact": [
     {
@@ -333,32 +333,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/emr-lab-order-code-vs"
-        },
-        "name": "EMR Lab Order Code",
-        "description": "The code for the lab order requested in the EMR."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/emr-lab-task"
-        },
-        "name": "EMR-LIS Workflow Task Resource",
-        "description": "A Task resource for tracking order state and synchronizing communication between an EMR and a LIS"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -367,32 +341,6 @@
         },
         "name": "EMR-LIS Observation",
         "description": "Observation resource created by a LIS that representing a result for an order submitted by an EMR System"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/emr-lis-patient-identifier-location"
-        },
-        "name": "EMR-LIS Patient Identifier Location Extension",
-        "description": "OpenMRS-specific location for OpenMRS ID Identifier"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/emr-lab-diagnostic-report"
-        },
-        "name": "EMR-LIS Diagnostic Report",
-        "description": "DiagnosticReport resource created by a LIS that representing results of an order submitted from an EMR System"
       },
       {
         "extension": [
@@ -424,40 +372,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/emr-lab-diagnostic-report-status-vs"
-        },
-        "name": "EMR-LIS Diagnostic Report Status Flag",
-        "description": "The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/emr-lab-patient"
+          "reference": "StructureDefinition/emr-lab-task"
         },
-        "name": "EMR-LIS Workflow Patient",
-        "description": "A patient used for EMR - LIS lab order and result communication."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/emr-lab-service-request"
-        },
-        "name": "EMR-LIS Service Request",
-        "description": "A service request created by an EMR representing an order for an LIS system"
+        "name": "EMR-LIS Workflow Task Resource",
+        "description": "A Task resource for tracking order state and synchronizing communication between an EMR and a LIS"
       },
       {
         "extension": [
@@ -476,6 +398,71 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/emr-lab-diagnostic-report"
+        },
+        "name": "EMR-LIS Diagnostic Report",
+        "description": "DiagnosticReport resource created by a LIS that representing results of an order submitted from an EMR System"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/emr-lab-service-request"
+        },
+        "name": "EMR-LIS Service Request",
+        "description": "A service request created by an EMR representing an order for an LIS system"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/emr-lab-diagnostic-report-status-vs"
+        },
+        "name": "EMR-LIS Diagnostic Report Status Flag",
+        "description": "The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/emr-lab-order-code-vs"
+        },
+        "name": "EMR Lab Order Code",
+        "description": "The code for the lab order requested in the EMR."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/emr-lis-patient-identifier-location"
+        },
+        "name": "EMR-LIS Patient Identifier Location Extension",
+        "description": "OpenMRS-specific location for OpenMRS ID Identifier"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -484,6 +471,19 @@
         },
         "name": "EMR-LIS Status for Task",
         "description": "The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/emr-lab-patient"
+        },
+        "name": "EMR-LIS Workflow Patient",
+        "description": "A patient used for EMR - LIS lab order and result communication."
       }
     ],
     "page": {
@@ -505,6 +505,11 @@
           "nameUrl": "changes.html",
           "title": "IG Change History",
           "generation": "html"
+        },
+        {
+          "nameUrl": "use_cases.html",
+          "title": "Use Case Overview",
+          "generation": "markdown"
         }
       ]
     },

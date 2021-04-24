@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4.5"}
-    h3,h4,h5,h6{--heading-prefix:"4.5"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.5"}
+    h3,h4,h5,h6{--heading-prefix:"5.5"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -94,7 +94,8 @@
 	<li>
 		<a href="toc.html">Table of Contents</a>
 	</li>
-  <!-- <li class="dropdown">
+
+	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
 		</a>
 
@@ -102,8 +103,13 @@
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
 		</a>
+		<ul>
+			<li>
+				<a href="use_cases.html">Use Case Overview</a>
+			</li>
+		</ul>
+	</li>
 
-	</li> -->
 	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
 		</a>
@@ -422,7 +428,7 @@ Identifies the level of importance to be assigned to actioning the request.
   <tr><td>Definition</td><td><p>A code that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that have been requested.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="4063e8cd-066f-432d-97ac-ff8e80476642">​</a>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-procedure-code.html">ProcedureCodes(SNOMEDCT)</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="544c9f60-7a21-4c92-97d3-e01daf14ef1c">​</a>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-procedure-code.html">ProcedureCodes(SNOMEDCT)</a>
 Codes for tests or services that can be carried out by a designated individual, organization or healthcare service.  For laboratory, LOINC is  (preferred)[http://build.fhir.org/terminologies.html#preferred] and a valueset using LOINC Order codes is available <a href="valueset-diagnostic-requests.html">here</a>.
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
@@ -725,7 +731,7 @@ All Provenances should have some historical version of this Request as their sub
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/">I-TECH-UW</a>.  Package openhie.fhir.emr.lims#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 15, 2021 23:15+0000">2021-03-15</span>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/">I-TECH-UW</a>.  Package openhie.fhir.emr.lims#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Apr 24, 2021 07:13+0000">2021-04-24</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
