@@ -3,7 +3,7 @@
 
 err = 4, warn = 25, info = 0
 IG Publisher Version: 1.1.68
-Generated Wed Apr 28 18:39:11 UTC 2021. FHIR version 4.0.1 for openhie.fhir.emr.lims#0.1.0-test (canonical = http://openhie.org/fhir)
+Generated Tue May 04 08:55:03 UTC 2021. FHIR version 4.0.1 for openhie.fhir.emr.lims#0.1.0-test (canonical = http://openhie.org/fhir)
 
  Build Errors : 3 / 1 / 0
  /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-diagnostic-report : 2 / 1 / 1
@@ -22,9 +22,9 @@ Generated Wed Apr 28 18:39:11 UTC 2021. FHIR version 4.0.1 for openhie.fhir.emr.
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be openhie.fhir.emr.lims
-ERROR: /github/workspace/output/StructureDefinition-emr-lab-service-request-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 418, column 262: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-emr-lab-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 327, column 2449: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-emr-lab-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 527, column 2449: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-emr-lab-service-request-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 417, column 262: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-emr-lab-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 326, column 2449: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-emr-lab-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 526, column 2449: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-diagnostic-report.json ==
 ERROR: EMR-LIS Diagnostic Report.DiagnosticReport.status: Binding http://openhie.org/fhir/ValueSet/emr-lab-diagnostic-report-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1
 INFORMATION: StructureDefinition/emr-lab-diagnostic-report: StructureDefinition/emr-lab-diagnostic-report: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition

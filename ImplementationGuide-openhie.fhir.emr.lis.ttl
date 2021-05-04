@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "EMR LIS Communication"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-04-28T18:38:49+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-05-04T08:54:41+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "I-TECH-UW"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
