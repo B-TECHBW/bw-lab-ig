@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "b59f55ba-bec7-46b8-94c8-6d56c4a330ee",
+  "id" : "a90dfa3e-5c41-4368-931f-2997213630cc",
   "meta" : {
-    "lastUpdated" : "2021-05-04T09:40:08.882+00:00"
+    "lastUpdated" : "2021-05-20T05:39:11.558+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "EmrLabDiagnosticReportStatusVS",
       "title" : "EMR-LIS Diagnostic Report Status Flag",
       "status" : "active",
-      "date" : "2021-05-04T09:40:08+00:00",
+      "date" : "2021-05-20T05:39:11+00:00",
       "publisher" : "I-TECH-UW",
       "contact" : [{
         "telecom" : [{
@@ -35,8 +35,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:731d5f9c-a95f-4d2b-8738-7356b7e3ed28",
-        "timestamp" : "2021-05-04T09:40:20+00:00",
+        "identifier" : "urn:uuid:e8164fa0-a3f1-4d4a-aa20-c2694a13bb61",
+        "timestamp" : "2021-05-20T05:39:21+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
