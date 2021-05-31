@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "EmrLabObservation"];
   fhir:StructureDefinition.title [ fhir:value "EMR-LIS Observation"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-05-31T09:46:58+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-05-31T10:07:31+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "I-TECH-UW"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

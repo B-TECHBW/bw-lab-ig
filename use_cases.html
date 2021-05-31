@@ -169,11 +169,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="use-case-name-capturing-lab-orders">USE CASE NAME: CAPTURING LAB ORDERS</h4>
 
-<p>ACTORS:</p>
-
-<ul>
-  <li>Clinician</li>
-</ul>
+<p>ACTORS: Clinician</p>
 
 <p>DEPENDENCIES:</p>
 
@@ -188,34 +184,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>PRE CONDITION:</p>
 
-<ul>
-  <li>User successfully logs in to the system</li>
-</ul>
+<p>1: User successfully logs in to the system</p>
 
 <p>ORDINARY SEQUENCE:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Steps:
-</code></pre></div></div>
 
-<blockquote>
-  <ol>
-    <li>
-      <p>Log into the system</p>
-    </li>
-    <li>
-      <p>Access the Laboratory module</p>
-    </li>
-    <li>
-      <p>Enter specimen details in lab order form available in the lab module.</p>
-    </li>
-    <li>
-      <p>Save the order details</p>
-    </li>
-    <li>
-      <p>Send the lab order details to SHR</p>
-    </li>
-  </ol>
-</blockquote>
+    2: Log into the system.
+    3: Access the Laboratory module.
+    4: Enter specimen details in lab order form available in the lab module.
+    5: Save the order details.
+    6: Send the lab order details to SHR
+</code></pre></div></div>
 
 <p>POST CONDITION:</p>
 
@@ -225,7 +205,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>EXCEPTIONS:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Steps: &gt;6. System caches the lab order details when there is network failure and resend late
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Steps:
+
+    3: Where the patient does not exist, the clinician creates the patient before paturing the order.
+    6: System caches the lab order details when there is network failure and resend late
 </code></pre></div></div>
 
 <p>ASSUMPTIONS:</p>
@@ -235,17 +218,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>The specimen ID is attached to the container with the specimen</li>
 </ul>
 
-<p>COMMENTS:</p>
-<blockquote>
-
-</blockquote>
+<p>COMMENTS:
+<br />
+<br />
+<br /></p>
 
 <h4 id="use-case-name-lab-order-resulting">USE CASE NAME: LAB ORDER RESULTING</h4>
+<p><br /></p>
 
-<p>Actor:</p>
-<ul>
-  <li>Laboratory technicians</li>
-</ul>
+<p>ACTOR/s: Laboratory technicians 
+<br /></p>
 
 <p>Dependencies:</p>
 <ul>
@@ -258,24 +240,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </blockquote>
 
 <p>Pre-condition:</p>
-<ul>
-  <li>User successfully logs in to the system</li>
-</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1: User successfully logs in to the system 
+</code></pre></div></div>
 
 <p>Ordinary sequence</p>
 
-<p>Step:</p>
-<blockquote>
-  <p>Action</p>
+<p>Step:
+     Action</p>
 
-  <p>2: Access the Lab Order component/module</p>
-
-  <p>3: Access lab order details in to IPMS</p>
-
-  <p>4:Update order details with lab test results</p>
-
-  <p>5:   Save the updated lab test results.</p>
-</blockquote>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2: Access the Lab Order component/module
+3: Access lab order details in to IPMS
+4: Update order details with lab test results
+5: Save the updated lab test results.
+</code></pre></div></div>
 
 <p>Post-condition</p>
 
@@ -285,242 +263,98 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Assumptions</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Some orders will be entered directly in to IPMS at the facility Exceptions
-</code></pre></div></div>
+<blockquote>
+  <p>Some orders will be entered directly in to IPMS at the facility
+Exceptions</p>
+</blockquote>
 
 <p>Step:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Action
-- 2: Enter/Capture the lab order
+  2: Enter/Capture the lab order
 </code></pre></div></div>
 
 <p>Comments</p>
 
-<h4 id="use-case-name-capturing-lab-orders-1">USE CASE NAME: CAPTURING LAB ORDERS</h4>
+<h4 id="use-case-name-retieving-lab-test-results">USE CASE NAME: RETIEVING LAB TEST RESULTS</h4>
 
-<p>ACTORS:</p>
-
-<ul>
-  <li>Clinician</li>
-</ul>
+<p>ACTOR/s:  Clinicians</p>
 
 <p>DEPENDENCIES:</p>
 
 <ul>
-  <li>Availability of PIMS</li>
+  <li>Up to date synchronization of the SHR.</li>
 </ul>
 
 <p>DESCRIPTION:</p>
+
 <blockquote>
-  <p>Clinician login the system and access the lab module. Clinician then enters Lab specimen details using a lab form available in the lab module.</p>
+  <p>This use case enables clinicians to retrieve lab order results at the facility and have the option to print out the results.</p>
 </blockquote>
 
-<p>PRE CONDITION:</p>
+<p>PRE-CONDITION:</p>
+<blockquote>
+  <ol>
+    <li>Log into the system</li>
+  </ol>
+</blockquote>
 
-<ul>
-  <li>User successfully logs in to the system</li>
-</ul>
+<p>Ordinary sequence</p>
 
-<p>ORDINARY SEQUENCE:</p>
+<p>STEPS:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Steps:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; ACTIONS:
 </code></pre></div></div>
 
 <blockquote>
   <ol>
-    <li>
-      <p>Log into the system</p>
-    </li>
-    <li>
-      <p>Access the Laboratory module</p>
-    </li>
-    <li>
-      <p>Enter specimen details in lab order form available in the lab module.</p>
-    </li>
-    <li>
-      <p>Save the order details</p>
-    </li>
-    <li>
-      <p>Send the lab order details to SHR</p>
-    </li>
+    <li>Access the Lab Order module</li>
+    <li>Search lab test results using lab order ID or Patient ID.</li>
+    <li>Open the selected results and consult with the patient</li>
+    <li>Print results out (optional)</li>
   </ol>
 </blockquote>
 
-<p>POST CONDITION:</p>
+<p>POST-CONDITION:</p>
 
 <ul>
-  <li>Data successfully pushed to the interoperability layer</li>
+  <li>Lab results received by the clinician.</li>
+</ul>
+
+<p>ASSUMPTIONS:</p>
+
+<ul>
+  <li>Lab test results can also be queried from the pool using a combination of patient identifiers.</li>
 </ul>
 
 <p>EXCEPTIONS:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Steps: &gt;6. System caches the lab order details when there is network failure and resend late
-</code></pre></div></div>
+<p>STEP/s:</p>
 
-<p>ASSUMPTIONS:</p>
-<ul>
-  <li>PIMS is hosted in the facility with access to the operability layer.</li>
-  <li>The lab order form is sent to the laboratory with the specimen.</li>
-  <li>The specimen ID is attached to the container with the specimen</li>
-</ul>
-
-<p>COMMENTS:</p>
-<blockquote>
-
-</blockquote>
-
-<h4 id="use-case-name-capturing-lab-orders-2">USE CASE NAME: CAPTURING LAB ORDERS</h4>
-
-<p>ACTORS:</p>
-
-<ul>
-  <li>Clinician</li>
-</ul>
-
-<p>DEPENDENCIES:</p>
-
-<ul>
-  <li>Availability of PIMS</li>
-</ul>
-
-<p>DESCRIPTION:</p>
-<blockquote>
-  <p>Clinician login the system and access the lab module. Clinician then enters Lab specimen details using a lab form available in the lab module.</p>
-</blockquote>
-
-<p>PRE CONDITION:</p>
-
-<ul>
-  <li>User successfully logs in to the system</li>
-</ul>
-
-<p>ORDINARY SEQUENCE:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Steps:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; ACTIONS
 </code></pre></div></div>
 
 <blockquote>
   <ol>
-    <li>
-      <p>Log into the system</p>
-    </li>
-    <li>
-      <p>Access the Laboratory module</p>
-    </li>
-    <li>
-      <p>Enter specimen details in lab order form available in the lab module.</p>
-    </li>
-    <li>
-      <p>Save the order details</p>
-    </li>
-    <li>
-      <p>Send the lab order details to SHR</p>
-    </li>
+    <li>Access the results using the client module</li>
   </ol>
 </blockquote>
 
-<p>POST CONDITION:</p>
-
-<ul>
-  <li>Data successfully pushed to the interoperability layer</li>
-</ul>
-
-<p>EXCEPTIONS:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Steps: &gt;6. System caches the lab order details when there is network failure and resend late
-</code></pre></div></div>
-
-<p>ASSUMPTIONS:</p>
-<ul>
-  <li>PIMS is hosted in the facility with access to the operability layer.</li>
-  <li>The lab order form is sent to the laboratory with the specimen.</li>
-  <li>The specimen ID is attached to the container with the specimen</li>
-</ul>
-
-<p>COMMENTS:</p>
-<blockquote>
-
-</blockquote>
-
-<h4 id="use-case-name-capturing-lab-orders-3">USE CASE NAME: CAPTURING LAB ORDERS</h4>
-
-<p>ACTORS:</p>
-
-<ul>
-  <li>Clinician</li>
-</ul>
-
-<p>DEPENDENCIES:</p>
-
-<ul>
-  <li>Availability of PIMS</li>
-</ul>
-
-<p>DESCRIPTION:</p>
-<blockquote>
-  <p>Clinician login the system and access the lab module. Clinician then enters Lab specimen details using a lab form available in the lab module.</p>
-</blockquote>
-
-<p>PRE CONDITION:</p>
-
-<ul>
-  <li>User successfully logs in to the system</li>
-</ul>
-
-<p>ORDINARY SEQUENCE:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Steps:
-</code></pre></div></div>
-
-<blockquote>
-  <ol>
-    <li>
-      <p>Log into the system</p>
-    </li>
-    <li>
-      <p>Access the Laboratory module</p>
-    </li>
-    <li>
-      <p>Enter specimen details in lab order form available in the lab module.</p>
-    </li>
-    <li>
-      <p>Save the order details</p>
-    </li>
-    <li>
-      <p>Send the lab order details to SHR</p>
-    </li>
-  </ol>
-</blockquote>
-
-<p>POST CONDITION:</p>
-
-<ul>
-  <li>Data successfully pushed to the interoperability layer</li>
-</ul>
-
-<p>EXCEPTIONS:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Steps: &gt;6. System caches the lab order details when there is network failure and resend late
-</code></pre></div></div>
-
-<p>ASSUMPTIONS:</p>
-<ul>
-  <li>PIMS is hosted in the facility with access to the operability layer.</li>
-  <li>The lab order form is sent to the laboratory with the specimen.</li>
-  <li>The specimen ID is attached to the container with the specimen</li>
-</ul>
-
-<p>COMMENTS:</p>
-
-<p><br /></p>
+<p><br />
+Comments
+<br />
+<br />
+<br /></p>
 
 <h4 id="use-case-name-transmission-of-laboratory-results">USE CASE NAME: TRANSMISSION OF LABORATORY RESULTS</h4>
-<p>ACTOR:
-PIMS, IPMS, OpenHIM, SHR, OpenCR</p>
+<p><br />
+ACTOR:
+PIMS, IPMS, OpenHIM, SHR, OpenCR
+<br />
+<br />
+DEPENDENCIES:</p>
 
-<p>DEPENDENCIES:</p>
-
-<p>active connection to interoperability layer</p>
+<p>Active connection to interoperability layer</p>
 
 <p>DESCRIPTION:</p>
 
@@ -572,22 +406,31 @@ PIMS, IPMS, OpenHIM, SHR, OpenCR</p>
 
 <p>COMMENTS</p>
 
-<blockquote>
-
-</blockquote>
-
-<h3 id="use-case-diagram">USE CASE DIAGRAM</h3>
-
-<p><img src="captureLabOrders.png" alt="drawing" style="width: 80%; margin: 0 10%;" />
+<p><br />
+<br />
 <br /></p>
 
-<p><img src="retrieveLabOrders.png" alt="drawing" style="width: 80%; margin: 0 10%;" />
+<h3 id="use-case-diagram">USE CASE DIAGRAM</h3>
+<p><br />
+<br /></p>
+
+<p><img src="captureLabOrders.png" alt="drawing" style="width: 80%; margin: 0 10%;" />
+<br />
+<br />
+<br />
+<img src="retrieveLabOrders.png" alt="drawing" style="width: 80%; margin: 0 10%;" />
+<br />
+<br />
 <br /></p>
 
 <p><img src="dataTransmissionLayer.png" alt="drawing" style="width: 80%; margin: 0 10%;" />
+<br />
+<br />
 <br /></p>
 
 <p><img src="LabOrderResulting.png" alt="drawing" style="width: 80%; margin: 0 10%;" />
+<br />
+<br />
 <br /></p>
 
 <p><img src="retrieveLabResults.png" alt="drawing" style="width: 80%; margin: 0 10%;" /></p>
@@ -617,7 +460,7 @@ PIMS, IPMS, OpenHIM, SHR, OpenCR</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/">I-TECH-UW</a>.  Package openhie.fhir.emr.lims#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 31, 2021 09:46+0000">2021-05-31</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/">I-TECH-UW</a>.  Package openhie.fhir.emr.lims#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 31, 2021 10:07+0000">2021-05-31</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

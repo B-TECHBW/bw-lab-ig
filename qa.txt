@@ -3,7 +3,7 @@
 
 err = 4, warn = 25, info = 0
 IG Publisher Version: 1.1.72
-Generated Mon May 31 09:47:22 UTC 2021. FHIR version 4.0.1 for openhie.fhir.emr.lims#0.1.0-test (canonical = http://openhie.org/fhir)
+Generated Mon May 31 10:07:49 UTC 2021. FHIR version 4.0.1 for openhie.fhir.emr.lims#0.1.0-test (canonical = http://openhie.org/fhir)
 
  Build Errors : 3 / 1 / 0
  /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-diagnostic-report : 2 / 1 / 1
