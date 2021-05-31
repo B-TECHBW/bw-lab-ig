@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "EmrLabTask"];
   fhir:StructureDefinition.title [ fhir:value "EMR-LIS Workflow Task Resource"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-05-31T08:25:17+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-05-31T08:38:44+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "I-TECH-UW"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
