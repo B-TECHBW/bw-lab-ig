@@ -514,75 +514,64 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><br /></p>
 
-<h4 id="use-case-name-capturing-lab-orders-4">USE CASE NAME: CAPTURING LAB ORDERS</h4>
-
-<p>ACTORS:</p>
-
-<ul>
-  <li>Clinician</li>
-</ul>
+<h4 id="use-case-name-transmission-of-laboratory-results">USE CASE NAME: TRANSMISSION OF LABORATORY RESULTS</h4>
+<p>ACTOR:
+PIMS, IPMS, OpenHIM, SHR, OpenCR</p>
 
 <p>DEPENDENCIES:</p>
 
-<ul>
-  <li>Availability of PIMS</li>
-</ul>
+<p>active connection to interoperability layer</p>
 
 <p>DESCRIPTION:</p>
+
 <blockquote>
-  <p>Clinician login the system and access the lab module. Clinician then enters Lab specimen details using a lab form available in the lab module.</p>
+  <p>An interoperability layer facilitates information exchange of clinical laboratory orders between the electronic medical record and the laboratory information system, via the longitudinal record system (SHR).</p>
 </blockquote>
 
-<p>PRE CONDITION:</p>
+<p>PRE-CONDITION:</p>
 
-<ul>
-  <li>User successfully logs in to the system</li>
-</ul>
+<blockquote>
+  <p>Queries are sent between interfacing systems and the interoperability layer to update and store new data.</p>
+</blockquote>
 
-<p>ORDINARY SEQUENCE:</p>
+<p>Ordinary sequence</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Steps:
+<p>Steps:</p>
+
+<p>Actions:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. PIMS/IPMS send captured orders to the interoperability layer and store them in the SHR
+2. MFL update the facility information in the SHR
+3. Patient demographic data is queried from the omang system as well as the deaths and births register.
+4. Updated lab order details with results are received by the interoperability layer and stored in the SHR
+5. PIMS pings the interoperability layer for lab test results
+6. Available results in the SHR are pulled to PIMS.
 </code></pre></div></div>
 
-<blockquote>
-  <ol>
-    <li>
-      <p>Log into the system</p>
-    </li>
-    <li>
-      <p>Access the Laboratory module</p>
-    </li>
-    <li>
-      <p>Enter specimen details in lab order form available in the lab module.</p>
-    </li>
-    <li>
-      <p>Save the order details</p>
-    </li>
-    <li>
-      <p>Send the lab order details to SHR</p>
-    </li>
-  </ol>
-</blockquote>
-
-<p>POST CONDITION:</p>
+<p>POST-CONDITION:</p>
 
 <ul>
-  <li>Data successfully pushed to the interoperability layer</li>
+  <li>Lab orders, lab test results, facility information and patient information updated and stored in the SHR.</li>
+</ul>
+
+<p>ASSUMPTIONS:</p>
+
+<ul>
+  <li>Each and every order that is created is assigned an identifier by IPMS.</li>
+  <li>Lab orders are assigned identifiers by the system.</li>
+  <li>No data is pushed to IPMS from SHR, only a pull is allowed</li>
 </ul>
 
 <p>EXCEPTIONS:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Steps: &gt;6. System caches the lab order details when there is network failure and resend late
+<p>Steps:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Actions:
+6. Unidentifiable orders and order results sent to the interoperability layer are rejected
 </code></pre></div></div>
 
-<p>ASSUMPTIONS:</p>
-<ul>
-  <li>PIMS is hosted in the facility with access to the operability layer.</li>
-  <li>The lab order form is sent to the laboratory with the specimen.</li>
-  <li>The specimen ID is attached to the container with the specimen</li>
-</ul>
+<p>COMMENTS</p>
 
-<p>COMMENTS:</p>
 <blockquote>
 
 </blockquote>
@@ -628,7 +617,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/">I-TECH-UW</a>.  Package openhie.fhir.emr.lims#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 31, 2021 08:38+0000">2021-05-31</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/">I-TECH-UW</a>.  Package openhie.fhir.emr.lims#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 31, 2021 09:46+0000">2021-05-31</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
