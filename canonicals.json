@@ -1,5 +1,19 @@
 [
   {
+    "id": "PIMSPatient",
+    "type": "StructureDefinition",
+    "url": "http://https://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/PIMSPatient",
+    "version": "0.1.0-test",
+    "name": "PIMSPatient"
+  },
+  {
+    "id": "EmrLisDataDictionary",
+    "type": "StructureDefinition",
+    "url": "http://openhie.github.io/covid-19/StructureDefinition/EmrLisDataDictionary",
+    "version": "0.1.0-test",
+    "name": "EmrLisDataDictionary"
+  },
+  {
     "id": "openhie.fhir.emr.lis",
     "type": "ImplementationGuide",
     "url": "http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis",

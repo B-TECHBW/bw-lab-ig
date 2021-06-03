@@ -12,7 +12,7 @@
   <title value="EMR LIS Communication"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-05-31T10:07:31+00:00"/>
+  <date value="2021-06-03T22:43:54+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
     <telecom>
@@ -209,6 +209,14 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EmrLisDataDictionary"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -296,6 +304,14 @@
       </reference>
       <name value="EMR-LIS Diagnostic Report"/>
       <description value="DiagnosticReport resource created by a LIS that representing results of an order submitted from an EMR System"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PIMSPatient"/>
+      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
