@@ -16,17 +16,22 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report"/>
-  <version value="0.1.0-test"/>
+  <url value="http://openhie.github.io/covid-19/StructureDefinition/emr-lab-diagnostic-report"/>
+  <version value="0.2.0"/>
   <name value="EmrLabDiagnosticReport"/>
   <title value="EMR-LIS Diagnostic Report"/>
   <status value="active"/>
-  <date value="2021-06-03T22:43:54+00:00"/>
+  <date value="2021-06-03T23:35:23+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
+    <name value="I-TECH-UW"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"/>
+      <value value="http://www.go2itech.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pmanko@uw.edu"/>
     </telecom>
   </contact>
   <description value="DiagnosticReport resource created by a LIS that representing results of an order submitted from an EMR System"/>
@@ -519,7 +524,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://openhie.org/fhir/ValueSet/emr-lab-diagnostic-report-status-vs"/>
+        <valueSet value="http://openhie.github.io/covid-19/ValueSet/emr-lab-diagnostic-report-status-vs"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -739,7 +744,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs"/>
+        <valueSet value="http://openhie.github.io/covid-19/ValueSet/emr-lab-order-code-vs"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1146,7 +1151,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://openhie.org/fhir/StructureDefinition/emr-lab-observation"/>
+        <targetProfile value="http://openhie.github.io/covid-19/StructureDefinition/emr-lab-observation"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1524,7 +1529,7 @@
       <path value="DiagnosticReport.status"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://openhie.org/fhir/ValueSet/emr-lab-diagnostic-report-status-vs"/>
+        <valueSet value="http://openhie.github.io/covid-19/ValueSet/emr-lab-diagnostic-report-status-vs"/>
       </binding>
     </element>
     <element id="DiagnosticReport.code.coding">
@@ -1532,14 +1537,14 @@
       <min value="1"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs"/>
+        <valueSet value="http://openhie.github.io/covid-19/ValueSet/emr-lab-order-code-vs"/>
       </binding>
     </element>
     <element id="DiagnosticReport.result">
       <path value="DiagnosticReport.result"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://openhie.org/fhir/StructureDefinition/emr-lab-observation"/>
+        <targetProfile value="http://openhie.github.io/covid-19/StructureDefinition/emr-lab-observation"/>
       </type>
     </element>
   </differential>

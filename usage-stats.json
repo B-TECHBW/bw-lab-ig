@@ -1,11 +1,11 @@
 {
-  "package": "openhie.fhir.emr.lims",
-  "version": "0.1.0-test",
+  "package": "fhir.emr.lis.bt",
+  "version": "0.2.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "001",
   "extensions": [
     {
-      "url": "http://openhie.org/fhir/StructureDefinition/emr-lis-patient-identifier-location",
+      "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lis-patient-identifier-location",
       "title": "EMR-LIS Patient Identifier Location Extension",
       "types": [
         "Reference"
@@ -15,37 +15,37 @@
   "profiles": {
     "DiagnosticReport": [
       {
-        "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report",
+        "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-diagnostic-report",
         "title": "EMR-LIS Diagnostic Report"
       }
     ],
     "Encounter": [
       {
-        "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-encounter",
+        "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-encounter",
         "title": "EMR-LIS Encounter"
       }
     ],
     "Observation": [
       {
-        "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-observation",
+        "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-observation",
         "title": "EMR-LIS Observation"
       }
     ],
     "Patient": [
       {
-        "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-patient",
+        "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-patient",
         "title": "EMR-LIS Workflow Patient"
       }
     ],
     "ServiceRequest": [
       {
-        "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-service-request",
+        "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-service-request",
         "title": "EMR-LIS Service Request"
       }
     ],
     "Task": [
       {
-        "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-task",
+        "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-task",
         "title": "EMR-LIS Workflow Task Resource"
       }
     ]
@@ -96,7 +96,7 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://openhie.org/fhir/StructureDefinition/emr-lis-patient-identifier-location": [
+    "http://openhie.github.io/covid-19/StructureDefinition/emr-lis-patient-identifier-location": [
       "Identifier"
     ]
   }

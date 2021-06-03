@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/StructureDefinition/emr-lab-service-request> a fhir:StructureDefinition;
+<http://openhie.github.io/covid-19/StructureDefinition/emr-lab-service-request> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "emr-lab-service-request"];
   fhir:DomainResource.text [
@@ -21,19 +21,24 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://openhie.org/fhir/StructureDefinition/emr-lab-service-request"];
-  fhir:StructureDefinition.version [ fhir:value "0.1.0-test"];
+  fhir:StructureDefinition.url [ fhir:value "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-service-request"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.0"];
   fhir:StructureDefinition.name [ fhir:value "EmrLabServiceRequest"];
   fhir:StructureDefinition.title [ fhir:value "EMR-LIS Service Request"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-06-03T22:43:54+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-06-03T23:35:23+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "I-TECH-UW"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "I-TECH-UW" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/" ]
+       fhir:ContactPoint.value [ fhir:value "http://www.go2itech.org" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "pmanko@uw.edu" ]
      ]
   ];
   fhir:StructureDefinition.description [ fhir:value "A service request created by an EMR representing an order for an LIS system"];
@@ -1367,8 +1372,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs";
-           fhir:link <http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs>
+           fhir:value "http://openhie.github.io/covid-19/ValueSet/emr-lab-order-code-vs";
+           fhir:link <http://openhie.github.io/covid-19/ValueSet/emr-lab-order-code-vs>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1565,9 +1570,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://openhie.org/fhir/StructureDefinition/emr-lab-patient";
+           fhir:value "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-patient";
            fhir:index 0;
-           fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-patient>
+           fhir:link <http://openhie.github.io/covid-19/StructureDefinition/emr-lab-patient>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1630,9 +1635,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://openhie.org/fhir/StructureDefinition/emr-lab-encounter";
+           fhir:value "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-encounter";
            fhir:index 0;
-           fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-encounter>
+           fhir:link <http://openhie.github.io/covid-19/StructureDefinition/emr-lab-encounter>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2684,8 +2689,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs";
-           fhir:link <http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs>
+           fhir:value "http://openhie.github.io/covid-19/ValueSet/emr-lab-order-code-vs";
+           fhir:link <http://openhie.github.io/covid-19/ValueSet/emr-lab-order-code-vs>
          ]
        ]
      ], [
@@ -2696,9 +2701,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://openhie.org/fhir/StructureDefinition/emr-lab-patient";
+           fhir:value "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-patient";
            fhir:index 0;
-           fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-patient>
+           fhir:link <http://openhie.github.io/covid-19/StructureDefinition/emr-lab-patient>
          ]
        ]
      ], [
@@ -2710,9 +2715,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://openhie.org/fhir/StructureDefinition/emr-lab-encounter";
+           fhir:value "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-encounter";
            fhir:index 0;
-           fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-encounter>
+           fhir:link <http://openhie.github.io/covid-19/StructureDefinition/emr-lab-encounter>
          ]
        ]
      ]
@@ -2720,7 +2725,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/StructureDefinition/emr-lab-service-request.ttl> a owl:Ontology;
+<http://openhie.github.io/covid-19/StructureDefinition/emr-lab-service-request.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

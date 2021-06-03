@@ -1,11 +1,11 @@
 {
-  "url": "http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis",
-  "name": "EmrLisCommunication",
-  "package-id": "openhie.fhir.emr.lims",
-  "ig-ver": "0.1.0-test",
-  "date": "Thu, 03 Jun, 2021 22:43:54 +0000",
-  "errs": 19,
-  "warnings": 83,
+  "url": "http://openhie.github.io/covid-19/ImplementationGuide/fhir.emr.lis.bt",
+  "name": "FhirEmrLisBT",
+  "package-id": "fhir.emr.lis.bt",
+  "ig-ver": "0.2.0",
+  "date": "Thu, 03 Jun, 2021 23:35:23 +0000",
+  "errs": 11,
+  "warnings": 80,
   "hints": 0,
   "version": "4.0.1",
   "tool": "4.6.0 (3)"

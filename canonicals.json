@@ -3,105 +3,105 @@
     "id": "PIMSPatient",
     "type": "StructureDefinition",
     "url": "http://https://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/PIMSPatient",
-    "version": "0.1.0-test",
+    "version": "0.2.0",
     "name": "PIMSPatient"
+  },
+  {
+    "id": "fhir.emr.lis.bt",
+    "type": "ImplementationGuide",
+    "url": "http://openhie.github.io/covid-19/ImplementationGuide/fhir.emr.lis.bt",
+    "version": "0.2.0",
+    "name": "FhirEmrLisBT"
   },
   {
     "id": "EmrLisDataDictionary",
     "type": "StructureDefinition",
     "url": "http://openhie.github.io/covid-19/StructureDefinition/EmrLisDataDictionary",
-    "version": "0.1.0-test",
+    "version": "0.2.0",
     "name": "EmrLisDataDictionary"
-  },
-  {
-    "id": "openhie.fhir.emr.lis",
-    "type": "ImplementationGuide",
-    "url": "http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis",
-    "version": "0.1.0-test",
-    "name": "EmrLisCommunication"
   },
   {
     "id": "emr-lab-diagnostic-report",
     "type": "StructureDefinition",
-    "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report",
-    "version": "0.1.0-test",
+    "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-diagnostic-report",
+    "version": "0.2.0",
     "name": "EmrLabDiagnosticReport"
   },
   {
     "id": "emr-lab-encounter",
     "type": "StructureDefinition",
-    "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-encounter",
-    "version": "0.1.0-test",
+    "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-encounter",
+    "version": "0.2.0",
     "name": "EmrLabEncounter"
   },
   {
     "id": "emr-lab-observation",
     "type": "StructureDefinition",
-    "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-observation",
-    "version": "0.1.0-test",
+    "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-observation",
+    "version": "0.2.0",
     "name": "EmrLabObservation"
   },
   {
     "id": "emr-lab-openmrs-identifier",
     "type": "StructureDefinition",
-    "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-openmrs-identifier",
-    "version": "0.1.0-test",
+    "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-openmrs-identifier",
+    "version": "0.2.0",
     "name": "EmrLabOpenmrsIdentifier"
   },
   {
     "id": "emr-lab-patient",
     "type": "StructureDefinition",
-    "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-patient",
-    "version": "0.1.0-test",
+    "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-patient",
+    "version": "0.2.0",
     "name": "EmrLabPatient"
   },
   {
     "id": "emr-lab-service-request",
     "type": "StructureDefinition",
-    "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-service-request",
-    "version": "0.1.0-test",
+    "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-service-request",
+    "version": "0.2.0",
     "name": "EmrLabServiceRequest"
   },
   {
     "id": "emr-lab-task",
     "type": "StructureDefinition",
-    "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-task",
-    "version": "0.1.0-test",
+    "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-task",
+    "version": "0.2.0",
     "name": "EmrLabTask"
   },
   {
     "id": "emr-lis-patient-identifier-location",
     "type": "StructureDefinition",
-    "url": "http://openhie.org/fhir/StructureDefinition/emr-lis-patient-identifier-location",
-    "version": "0.1.0-test",
+    "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lis-patient-identifier-location",
+    "version": "0.2.0",
     "name": "EmrLisPatientIdentifierLocationExtension"
   },
   {
     "id": "emr-lab-diagnostic-report-status-vs",
     "type": "ValueSet",
-    "url": "http://openhie.org/fhir/ValueSet/emr-lab-diagnostic-report-status-vs",
-    "version": "0.1.0-test",
+    "url": "http://openhie.github.io/covid-19/ValueSet/emr-lab-diagnostic-report-status-vs",
+    "version": "0.2.0",
     "name": "EmrLabDiagnosticReportStatusVS"
   },
   {
     "id": "emr-lab-order-code-vs",
     "type": "ValueSet",
-    "url": "http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs",
-    "version": "0.1.0-test",
+    "url": "http://openhie.github.io/covid-19/ValueSet/emr-lab-order-code-vs",
+    "version": "0.2.0",
     "name": "EmrLabOrderCodeVS"
   },
   {
     "id": "emr-lab-task-intent-vs",
     "type": "ValueSet",
-    "url": "http://openhie.org/fhir/ValueSet/emr-lab-task-intent-vs",
-    "version": "0.1.0-test",
+    "url": "http://openhie.github.io/covid-19/ValueSet/emr-lab-task-intent-vs",
+    "version": "0.2.0",
     "name": "EmrLabTaskIntentVS"
   },
   {
     "id": "emr-lab-task-status-vs",
     "type": "ValueSet",
-    "url": "http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs",
-    "version": "0.1.0-test",
+    "url": "http://openhie.github.io/covid-19/ValueSet/emr-lab-task-status-vs",
+    "version": "0.2.0",
     "name": "EmrLabTaskStatusVS"
   }
 ]

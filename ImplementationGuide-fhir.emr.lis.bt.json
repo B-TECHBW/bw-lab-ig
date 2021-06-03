@@ -1,29 +1,33 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "openhie.fhir.emr.lis",
+  "id": "fhir.emr.lis.bt",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>EmrLisCommunication</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis</pre><div><p>Lab order communication between EMRs and LISs</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FhirEmrLisBT</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.github.io/covid-19/ImplementationGuide/fhir.emr.lis.bt</pre><div><p>TODO</p>\n</div></div>"
   },
-  "url": "http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis",
-  "version": "0.1.0-test",
-  "name": "EmrLisCommunication",
-  "title": "EMR LIS Communication",
+  "url": "http://openhie.github.io/covid-19/ImplementationGuide/fhir.emr.lis.bt",
+  "version": "0.2.0",
+  "name": "FhirEmrLisBT",
+  "title": "EMR-LIS HIE Communication in Botwana",
   "status": "draft",
-  "experimental": false,
-  "date": "2021-06-03T22:43:54+00:00",
+  "date": "2021-06-03T23:35:23+00:00",
   "publisher": "I-TECH-UW",
   "contact": [
     {
+      "name": "I-TECH-UW",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"
+          "value": "http://www.go2itech.org"
+        },
+        {
+          "system": "email",
+          "value": "pmanko@uw.edu"
         }
       ]
     }
   ],
-  "description": "Lab order communication between EMRs and LISs",
+  "description": "TODO",
   "jurisdiction": [
     {
       "coding": [
@@ -34,8 +38,8 @@
       ]
     }
   ],
-  "packageId": "openhie.fhir.emr.lims",
-  "license": "CC0-1.0",
+  "packageId": "fhir.emr.lis.bt",
+  "license": "CC-BY-SA-4.0",
   "fhirVersion": [
     "4.0.1"
   ],
@@ -49,7 +53,7 @@
           },
           {
             "url": "value",
-            "valueString": "2021+"
+            "valueString": "2020+"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -62,46 +66,7 @@
           },
           {
             "url": "value",
-            "valueString": "CI Build"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "path-binary"
-          },
-          {
-            "url": "value",
-            "valueString": "input\\cql"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "path-liquid"
-          },
-          {
-            "url": "value",
-            "valueString": "templates\\liquid"
-          }
-        ],
-        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension": [
-          {
-            "url": "code",
-            "valueString": "autoload-resources"
-          },
-          {
-            "url": "value",
-            "valueString": "true"
+            "valueString": "ci-build"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -192,7 +157,7 @@
           },
           {
             "url": "value",
-            "valueString": "http://openhie.org/fhir/history.html"
+            "valueString": "http://openhie.github.io/covid-19/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -333,25 +298,15 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:logical"
+            "valueString": "StructureDefinition:resource"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/EmrLisDataDictionary"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/emr-lab-task-intent-vs"
+          "reference": "StructureDefinition/emr-lab-diagnostic-report"
         },
-        "name": "EMR-LIS Intent for Task",
-        "description": "The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html"
+        "name": "EMR-LIS Diagnostic Report",
+        "description": "DiagnosticReport resource created by a LIS that representing results of an order submitted from an EMR System",
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -364,33 +319,8 @@
           "reference": "StructureDefinition/emr-lab-encounter"
         },
         "name": "EMR-LIS Encounter",
-        "description": "Encounter resource associated with the Service Request for a lab order generated by the EMR"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/emr-lab-order-code-vs"
-        },
-        "name": "EMR Lab Order Code",
-        "description": "The code for the lab order requested in the EMR."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/emr-lab-service-request"
-        },
-        "name": "EMR-LIS Service Request",
-        "description": "A service request created by an EMR representing an order for an LIS system"
+        "description": "Encounter resource associated with the Service Request for a lab order generated by the EMR",
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -403,96 +333,8 @@
           "reference": "StructureDefinition/emr-lab-observation"
         },
         "name": "EMR-LIS Observation",
-        "description": "Observation resource created by a LIS that representing a result for an order submitted by an EMR System"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/emr-lis-patient-identifier-location"
-        },
-        "name": "EMR-LIS Patient Identifier Location Extension",
-        "description": "OpenMRS-specific location for OpenMRS ID Identifier"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/emr-lab-task-status-vs"
-        },
-        "name": "EMR-LIS Status for Task",
-        "description": "The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/emr-lab-patient"
-        },
-        "name": "EMR-LIS Workflow Patient",
-        "description": "A patient used for EMR - LIS lab order and result communication."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/emr-lab-diagnostic-report"
-        },
-        "name": "EMR-LIS Diagnostic Report",
-        "description": "DiagnosticReport resource created by a LIS that representing results of an order submitted from an EMR System"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:logical"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/PIMSPatient"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/emr-lab-task"
-        },
-        "name": "EMR-LIS Workflow Task Resource",
-        "description": "A Task resource for tracking order state and synchronizing communication between an EMR and a LIS"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/emr-lab-diagnostic-report-status-vs"
-        },
-        "name": "EMR-LIS Diagnostic Report Status Flag",
-        "description": "The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html"
+        "description": "Observation resource created by a LIS that representing a result for an order submitted by an EMR System",
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -505,7 +347,148 @@
           "reference": "StructureDefinition/emr-lab-openmrs-identifier"
         },
         "name": "EMR-LIS Workflow OpenMRS Identifier",
-        "description": "A identifier for OpenMRS"
+        "description": "A identifier for OpenMRS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/emr-lab-patient"
+        },
+        "name": "EMR-LIS Workflow Patient",
+        "description": "A patient used for EMR - LIS lab order and result communication.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/emr-lab-service-request"
+        },
+        "name": "EMR-LIS Service Request",
+        "description": "A service request created by an EMR representing an order for an LIS system",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/emr-lab-task"
+        },
+        "name": "EMR-LIS Workflow Task Resource",
+        "description": "A Task resource for tracking order state and synchronizing communication between an EMR and a LIS",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/emr-lis-patient-identifier-location"
+        },
+        "name": "EMR-LIS Patient Identifier Location Extension",
+        "description": "OpenMRS-specific location for OpenMRS ID Identifier",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/emr-lab-diagnostic-report-status-vs"
+        },
+        "name": "EMR-LIS Diagnostic Report Status Flag",
+        "description": "The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/emr-lab-order-code-vs"
+        },
+        "name": "EMR Lab Order Code",
+        "description": "The code for the lab order requested in the EMR.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/emr-lab-task-intent-vs"
+        },
+        "name": "EMR-LIS Intent for Task",
+        "description": "The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/emr-lab-task-status-vs"
+        },
+        "name": "EMR-LIS Status for Task",
+        "description": "The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/EmrLisDataDictionary"
+        },
+        "name": "EMR-LIS Data Dictionary",
+        "description": "EMR-LIS Data Dictionary Logical Model",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/PIMSPatient"
+        },
+        "name": "PIMS Patient",
+        "description": "Logical Model of PIMS patient",
+        "exampleBoolean": false
       }
     ],
     "page": {
@@ -515,40 +498,42 @@
       "page": [
         {
           "nameUrl": "index.html",
-          "title": "Home Page",
+          "title": "Home",
           "generation": "html"
         },
         {
-          "nameUrl": "downloads.html",
-          "title": "Useful Downloads",
+          "nameUrl": "background.html",
+          "title": "Background",
           "generation": "html"
         },
         {
           "nameUrl": "changes.html",
-          "title": "IG Change History",
+          "title": "Changes",
           "generation": "html"
         },
         {
-          "nameUrl": "use_cases.html",
-          "title": "Use Case Overview",
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "spec.html",
+          "title": "Spec",
           "generation": "markdown"
         },
         {
           "nameUrl": "system_specification.html",
-          "title": "System Requirements",
+          "title": "System Specification",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "use_cases.html",
+          "title": "Use Cases",
           "generation": "markdown"
         }
       ]
     },
     "parameter": [
-      {
-        "code": "path-resource",
-        "value": "input\\history"
-      },
-      {
-        "code": "path-resource",
-        "value": "input\\scenarios"
-      },
       {
         "code": "path-resource",
         "value": "input/capabilities"
@@ -580,6 +565,10 @@
       {
         "code": "path-resource",
         "value": "input/vocabulary"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/maps"
       },
       {
         "code": "path-resource",

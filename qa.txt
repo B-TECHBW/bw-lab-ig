@@ -1,13 +1,14 @@
-﻿EmrLisCommunication : Validation Results
+﻿FhirEmrLisBT : Validation Results
 =========================================
 
-err = 19, warn = 83, info = 0
+err = 11, warn = 80, info = 0
 IG Publisher Version: 1.1.72
-Generated Thu Jun 03 22:44:14 UTC 2021. FHIR version 4.0.1 for openhie.fhir.emr.lims#0.1.0-test (canonical = http://openhie.org/fhir)
+Generated Thu Jun 03 23:35:46 UTC 2021. FHIR version 4.0.1 for fhir.emr.lis.bt#0.2.0 (canonical = http://openhie.github.io/covid-19)
 
- Build Errors : 5 / 3 / 0
- /github/workspace/fsh-generated/resources/StructureDefinition-EmrLisDataDictionary : 10 / 52 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-PIMSPatient : 3 / 4 / 1
+ Build Errors : 3 / 0 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.emr.lis.bt : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-EmrLisDataDictionary : 8 / 52 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PIMSPatient : 1 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-diagnostic-report : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-encounter : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-observation : 0 / 1 / 1
@@ -20,19 +21,14 @@ Generated Thu Jun 03 22:44:14 UTC 2021. FHIR version 4.0.1 for openhie.fhir.emr.
  /github/workspace/fsh-generated/resources/ValueSet-emr-lab-order-code-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-intent-vs : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-emr-lab-task-status-vs : 0 / 5 / 1
- /github/workspace/input/emr-lis : 2 / 0 / 1
 </table>
 == n/a ==
-WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be openhie.fhir.emr.lims
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/EmrLisDataDictionary.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/EmrLisDataDictionary.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/PIMSPatient.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/PIMSPatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/StructureDefinition-emr-lab-service-request-definitions.html#/html/body/div/div/nav/div/div/ul/li/div/div/div/div/div/table/tr/td/a at Line 426, column 262: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-emr-lab-service-request.html#/html/body/div/div/nav/div/div/ul/li/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 335, column 2449: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-emr-lab-service-request.html#/html/body/div/div/nav/div/div/ul/li/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 535, column 2449: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
+== /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.emr.lis.bt.json ==
+INFORMATION: ImplementationGuide/fhir.emr.lis.bt: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 == /github/workspace/fsh-generated/resources/StructureDefinition-EmrLisDataDictionary.json ==
-ERROR: StructureDefinition.where(url = 'http://openhie.github.io/covid-19/StructureDefinition/EmrLisDataDictionary'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-EmrLisDataDictionary.json - the canonical URL (http://openhie.org/fhir/StructureDefinition/EmrLisDataDictionary) does not match the URL (http://openhie.github.io/covid-19/StructureDefinition/EmrLisDataDictionary)
 INFORMATION: StructureDefinition/EmrLisDataDictionary: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/EmrLisDataDictionary: StructureDefinition.snapshot.element[0].mapping[1]: ElementDefinition.mapping.map: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
 ERROR: StructureDefinition/EmrLisDataDictionary: StructureDefinition.snapshot.element[0].mapping[2]: ElementDefinition.mapping.map: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
@@ -94,46 +90,43 @@ WARNING: StructureDefinition/EmrLisDataDictionary: StructureDefinition.different
 WARNING: StructureDefinition/EmrLisDataDictionary: StructureDefinition.differential.element[24]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/EmrLisDataDictionary: StructureDefinition.differential.element[25]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/EmrLisDataDictionary: StructureDefinition.differential.element[26]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-EmrLisDataDictionary: URL Mismatch http://openhie.org/fhir/StructureDefinition/EmrLisDataDictionary vs http://openhie.github.io/covid-19/StructureDefinition/EmrLisDataDictionary
 == /github/workspace/fsh-generated/resources/StructureDefinition-PIMSPatient.json ==
-ERROR: StructureDefinition.where(url = 'http://https://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/PIMSPatient'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-PIMSPatient.json - the canonical URL (http://openhie.org/fhir/StructureDefinition/PIMSPatient) does not match the URL (http://https://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/PIMSPatient)
 INFORMATION: StructureDefinition/PIMSPatient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/PIMSPatient: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
 WARNING: StructureDefinition/PIMSPatient: StructureDefinition.snapshot.element[3]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/PIMSPatient: StructureDefinition.snapshot.element[4]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/PIMSPatient: StructureDefinition.differential.element[1]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/PIMSPatient: StructureDefinition.differential.element[2]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-PIMSPatient: URL Mismatch http://openhie.org/fhir/StructureDefinition/PIMSPatient vs http://https://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/PIMSPatient
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-diagnostic-report.json ==
-ERROR: EMR-LIS Diagnostic Report.DiagnosticReport.status: Binding http://openhie.org/fhir/ValueSet/emr-lab-diagnostic-report-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1
+ERROR: EMR-LIS Diagnostic Report.DiagnosticReport.status: Binding http://openhie.github.io/covid-19/ValueSet/emr-lab-diagnostic-report-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1
 INFORMATION: StructureDefinition/emr-lab-diagnostic-report: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition/emr-lab-diagnostic-report: StructureDefinition: Binding http://openhie.org/fhir/ValueSet/emr-lab-diagnostic-report-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report'): The Implementation Guide contains no examples for this profile
+ERROR: StructureDefinition/emr-lab-diagnostic-report: StructureDefinition: Binding http://openhie.github.io/covid-19/ValueSet/emr-lab-diagnostic-report-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1
+WARNING: StructureDefinition.where(url = 'http://openhie.github.io/covid-19/StructureDefinition/emr-lab-diagnostic-report'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-encounter.json ==
 INFORMATION: StructureDefinition/emr-lab-encounter: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-encounter'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://openhie.github.io/covid-19/StructureDefinition/emr-lab-encounter'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-observation.json ==
 INFORMATION: StructureDefinition/emr-lab-observation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-observation'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://openhie.github.io/covid-19/StructureDefinition/emr-lab-observation'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-openmrs-identifier.json ==
 INFORMATION: StructureDefinition/emr-lab-openmrs-identifier: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-openmrs-identifier'): The Implementation Guide contains no examples for this data type profile
+WARNING: StructureDefinition.where(url = 'http://openhie.github.io/covid-19/StructureDefinition/emr-lab-openmrs-identifier'): The Implementation Guide contains no examples for this data type profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-patient.json ==
 INFORMATION: StructureDefinition/emr-lab-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-patient'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://openhie.github.io/covid-19/StructureDefinition/emr-lab-patient'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-service-request.json ==
 INFORMATION: StructureDefinition/emr-lab-service-request: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-service-request'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://openhie.github.io/covid-19/StructureDefinition/emr-lab-service-request'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lab-task.json ==
-WARNING: EMR-LIS Workflow Task Resource.Task.status: Binding http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs could not be expanded
-WARNING: EMR-LIS Workflow Task Resource.Task.intent: Binding http://openhie.org/fhir/ValueSet/emr-lab-task-intent-vs could not be expanded
+WARNING: EMR-LIS Workflow Task Resource.Task.status: Binding http://openhie.github.io/covid-19/ValueSet/emr-lab-task-status-vs could not be expanded
+WARNING: EMR-LIS Workflow Task Resource.Task.intent: Binding http://openhie.github.io/covid-19/ValueSet/emr-lab-task-intent-vs could not be expanded
 INFORMATION: StructureDefinition/emr-lab-task: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/emr-lab-task: StructureDefinition: Binding http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs could not be expanded
-WARNING: StructureDefinition/emr-lab-task: StructureDefinition: Binding http://openhie.org/fhir/ValueSet/emr-lab-task-intent-vs could not be expanded
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lab-task'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition/emr-lab-task: StructureDefinition: Binding http://openhie.github.io/covid-19/ValueSet/emr-lab-task-status-vs could not be expanded
+WARNING: StructureDefinition/emr-lab-task: StructureDefinition: Binding http://openhie.github.io/covid-19/ValueSet/emr-lab-task-intent-vs could not be expanded
+WARNING: StructureDefinition.where(url = 'http://openhie.github.io/covid-19/StructureDefinition/emr-lab-task'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-emr-lis-patient-identifier-location.json ==
 INFORMATION: StructureDefinition/emr-lis-patient-identifier-location: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/StructureDefinition/emr-lis-patient-identifier-location'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://openhie.github.io/covid-19/StructureDefinition/emr-lis-patient-identifier-location'): The Implementation Guide contains no examples for this extension
 == /github/workspace/fsh-generated/resources/ValueSet-emr-lab-diagnostic-report-status-vs.json ==
 INFORMATION: ValueSet/emr-lab-diagnostic-report-status-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 WARNING: ValueSet/emr-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[0]: The code diagnostic-report-status-partial is not valid in the system http://hl7.org/fhir/diagnostic-report-status
@@ -154,7 +147,3 @@ WARNING: ValueSet/emr-lab-task-status-vs: ValueSet.compose[0].include[0].concept
 WARNING: ValueSet/emr-lab-task-status-vs: ValueSet.compose[0].include[0].concept[2]: The code task-status-accepted is not valid in the system http://hl7.org/fhir/ValueSet/task-status
 WARNING: ValueSet/emr-lab-task-status-vs: ValueSet.compose[0].include[0].concept[3]: The code task-status-completed is not valid in the system http://hl7.org/fhir/ValueSet/task-status
 WARNING: ValueSet.where(id = 'emr-lab-task-status-vs'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-status
-== /github/workspace/input/emr-lis.xml ==
-ERROR: ImplementationGuide.where(url = 'http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis'): Conformance resource /github/workspace/input/emr-lis.xml - the canonical URL (http://openhie.org/fhir/ImplementationGuide/openhie.fhir.emr.lis) does not match the URL (http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis)
-INFORMATION: ImplementationGuide/openhie.fhir.emr.lis: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-ERROR: /github/workspace/input/emr-lis: URL Mismatch http://openhie.org/fhir/ImplementationGuide/openhie.fhir.emr.lis vs http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis

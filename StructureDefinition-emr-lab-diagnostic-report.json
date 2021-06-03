@@ -15,19 +15,24 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report",
-  "version": "0.1.0-test",
+  "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-diagnostic-report",
+  "version": "0.2.0",
   "name": "EmrLabDiagnosticReport",
   "title": "EMR-LIS Diagnostic Report",
   "status": "active",
-  "date": "2021-06-03T22:43:54+00:00",
+  "date": "2021-06-03T23:35:23+00:00",
   "publisher": "I-TECH-UW",
   "contact": [
     {
+      "name": "I-TECH-UW",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"
+          "value": "http://www.go2itech.org"
+        },
+        {
+          "system": "email",
+          "value": "pmanko@uw.edu"
         }
       ]
     }
@@ -625,7 +630,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://openhie.org/fhir/ValueSet/emr-lab-diagnostic-report-status-vs"
+          "valueSet": "http://openhie.github.io/covid-19/ValueSet/emr-lab-diagnostic-report-status-vs"
         },
         "mapping": [
           {
@@ -897,7 +902,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs"
+          "valueSet": "http://openhie.github.io/covid-19/ValueSet/emr-lab-order-code-vs"
         },
         "mapping": [
           {
@@ -1392,7 +1397,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://openhie.org/fhir/StructureDefinition/emr-lab-observation"
+              "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-observation"
             ]
           }
         ],
@@ -1868,7 +1873,7 @@
         "path": "DiagnosticReport.status",
         "binding": {
           "strength": "required",
-          "valueSet": "http://openhie.org/fhir/ValueSet/emr-lab-diagnostic-report-status-vs"
+          "valueSet": "http://openhie.github.io/covid-19/ValueSet/emr-lab-diagnostic-report-status-vs"
         }
       },
       {
@@ -1877,7 +1882,7 @@
         "min": 1,
         "binding": {
           "strength": "required",
-          "valueSet": "http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs"
+          "valueSet": "http://openhie.github.io/covid-19/ValueSet/emr-lab-order-code-vs"
         }
       },
       {
@@ -1887,7 +1892,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://openhie.org/fhir/StructureDefinition/emr-lab-observation"
+              "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-observation"
             ]
           }
         ]

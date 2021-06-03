@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/StructureDefinition/emr-lab-patient> a fhir:StructureDefinition;
+<http://openhie.github.io/covid-19/StructureDefinition/emr-lab-patient> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "emr-lab-patient"];
   fhir:DomainResource.text [
@@ -21,19 +21,24 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://openhie.org/fhir/StructureDefinition/emr-lab-patient"];
-  fhir:StructureDefinition.version [ fhir:value "0.1.0-test"];
+  fhir:StructureDefinition.url [ fhir:value "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-patient"];
+  fhir:StructureDefinition.version [ fhir:value "0.2.0"];
   fhir:StructureDefinition.name [ fhir:value "EmrLabPatient"];
   fhir:StructureDefinition.title [ fhir:value "EMR-LIS Workflow Patient"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-06-03T22:43:54+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-06-03T23:35:23+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "I-TECH-UW"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "I-TECH-UW" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/" ]
+       fhir:ContactPoint.value [ fhir:value "http://www.go2itech.org" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "pmanko@uw.edu" ]
      ]
   ];
   fhir:StructureDefinition.description [ fhir:value "A patient used for EMR - LIS lab order and result communication."];
@@ -546,9 +551,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Identifier" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://openhie.org/fhir/StructureDefinition/emr-lab-openmrs-identifier";
+           fhir:value "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-openmrs-identifier";
            fhir:index 0;
-           fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-openmrs-identifier>
+           fhir:link <http://openhie.github.io/covid-19/StructureDefinition/emr-lab-openmrs-identifier>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2382,9 +2387,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Identifier" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://openhie.org/fhir/StructureDefinition/emr-lab-openmrs-identifier";
+           fhir:value "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-openmrs-identifier";
            fhir:index 0;
-           fhir:link <http://openhie.org/fhir/StructureDefinition/emr-lab-openmrs-identifier>
+           fhir:link <http://openhie.github.io/covid-19/StructureDefinition/emr-lab-openmrs-identifier>
          ]
        ]
      ], [
@@ -2397,7 +2402,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/StructureDefinition/emr-lab-patient.ttl> a owl:Ontology;
+<http://openhie.github.io/covid-19/StructureDefinition/emr-lab-patient.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

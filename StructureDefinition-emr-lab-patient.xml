@@ -14,17 +14,22 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://openhie.org/fhir/StructureDefinition/emr-lab-patient"/>
-  <version value="0.1.0-test"/>
+  <url value="http://openhie.github.io/covid-19/StructureDefinition/emr-lab-patient"/>
+  <version value="0.2.0"/>
   <name value="EmrLabPatient"/>
   <title value="EMR-LIS Workflow Patient"/>
   <status value="active"/>
-  <date value="2021-06-03T22:43:54+00:00"/>
+  <date value="2021-06-03T23:35:23+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
+    <name value="I-TECH-UW"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"/>
+      <value value="http://www.go2itech.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pmanko@uw.edu"/>
     </telecom>
   </contact>
   <description value="A patient used for EMR - LIS lab order and result communication."/>
@@ -414,7 +419,7 @@
       </base>
       <type>
         <code value="Identifier"/>
-        <profile value="http://openhie.org/fhir/StructureDefinition/emr-lab-openmrs-identifier"/>
+        <profile value="http://openhie.github.io/covid-19/StructureDefinition/emr-lab-openmrs-identifier"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1861,7 +1866,7 @@
       <min value="1"/>
       <type>
         <code value="Identifier"/>
-        <profile value="http://openhie.org/fhir/StructureDefinition/emr-lab-openmrs-identifier"/>
+        <profile value="http://openhie.github.io/covid-19/StructureDefinition/emr-lab-openmrs-identifier"/>
       </type>
     </element>
     <element id="Patient.name">

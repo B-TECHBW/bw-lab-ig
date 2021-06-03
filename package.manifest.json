@@ -1,6 +1,6 @@
 {
-  "version": "0.1.0-test",
+  "version": "0.2.0",
   "fhirVersion": "[4.0.1]",
-  "date": "20210603224328",
-  "name": "openhie.fhir.emr.lims"
+  "date": "20210603233440",
+  "name": "fhir.emr.lis.bt"
 }

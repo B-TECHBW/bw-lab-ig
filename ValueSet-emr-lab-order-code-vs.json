@@ -5,19 +5,24 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li></ul></div>"
   },
-  "url": "http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs",
-  "version": "0.1.0-test",
+  "url": "http://openhie.github.io/covid-19/ValueSet/emr-lab-order-code-vs",
+  "version": "0.2.0",
   "name": "EmrLabOrderCodeVS",
   "title": "EMR Lab Order Code",
   "status": "active",
-  "date": "2021-06-03T22:43:54+00:00",
+  "date": "2021-06-03T23:35:23+00:00",
   "publisher": "I-TECH-UW",
   "contact": [
     {
+      "name": "I-TECH-UW",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"
+          "value": "http://www.go2itech.org"
+        },
+        {
+          "system": "email",
+          "value": "pmanko@uw.edu"
         }
       ]
     }

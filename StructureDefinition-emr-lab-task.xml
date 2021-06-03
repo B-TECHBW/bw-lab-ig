@@ -23,17 +23,22 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="not-classified"/>
   </extension>
-  <url value="http://openhie.org/fhir/StructureDefinition/emr-lab-task"/>
-  <version value="0.1.0-test"/>
+  <url value="http://openhie.github.io/covid-19/StructureDefinition/emr-lab-task"/>
+  <version value="0.2.0"/>
   <name value="EmrLabTask"/>
   <title value="EMR-LIS Workflow Task Resource"/>
   <status value="active"/>
-  <date value="2021-06-03T22:43:54+00:00"/>
+  <date value="2021-06-03T23:35:23+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
+    <name value="I-TECH-UW"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"/>
+      <value value="http://www.go2itech.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pmanko@uw.edu"/>
     </telecom>
   </contact>
   <description value="A Task resource for tracking order state and synchronizing communication between an EMR and a LIS"/>
@@ -523,7 +528,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://openhie.org/fhir/StructureDefinition/emr-lab-service-request"/>
+        <targetProfile value="http://openhie.github.io/covid-19/StructureDefinition/emr-lab-service-request"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -642,7 +647,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs"/>
+        <valueSet value="http://openhie.github.io/covid-19/ValueSet/emr-lab-task-status-vs"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -758,7 +763,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://openhie.org/fhir/ValueSet/emr-lab-task-intent-vs"/>
+        <valueSet value="http://openhie.github.io/covid-19/ValueSet/emr-lab-task-intent-vs"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -946,7 +951,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://openhie.org/fhir/StructureDefinition/emr-lab-patient"/>
+        <targetProfile value="http://openhie.github.io/covid-19/StructureDefinition/emr-lab-patient"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2428,7 +2433,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report"/>
+        <targetProfile value="http://openhie.github.io/covid-19/StructureDefinition/emr-lab-diagnostic-report"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2459,28 +2464,28 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://openhie.org/fhir/StructureDefinition/emr-lab-service-request"/>
+        <targetProfile value="http://openhie.github.io/covid-19/StructureDefinition/emr-lab-service-request"/>
       </type>
     </element>
     <element id="Task.status">
       <path value="Task.status"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://openhie.org/fhir/ValueSet/emr-lab-task-status-vs"/>
+        <valueSet value="http://openhie.github.io/covid-19/ValueSet/emr-lab-task-status-vs"/>
       </binding>
     </element>
     <element id="Task.intent">
       <path value="Task.intent"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://openhie.org/fhir/ValueSet/emr-lab-task-intent-vs"/>
+        <valueSet value="http://openhie.github.io/covid-19/ValueSet/emr-lab-task-intent-vs"/>
       </binding>
     </element>
     <element id="Task.for">
       <path value="Task.for"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://openhie.org/fhir/StructureDefinition/emr-lab-patient"/>
+        <targetProfile value="http://openhie.github.io/covid-19/StructureDefinition/emr-lab-patient"/>
       </type>
     </element>
     <element id="Task.authoredOn">
@@ -2504,7 +2509,7 @@
       <path value="Task.output.value[x]"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://openhie.org/fhir/StructureDefinition/emr-lab-diagnostic-report"/>
+        <targetProfile value="http://openhie.github.io/covid-19/StructureDefinition/emr-lab-diagnostic-report"/>
       </type>
     </element>
   </differential>
