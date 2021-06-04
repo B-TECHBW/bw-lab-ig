@@ -12,7 +12,7 @@
   <title value="Botswana Laboratory HIE Workflow Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-06-04T21:27:24+00:00"/>
+  <date value="2021-06-04T21:33:19+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -340,28 +340,6 @@
       </reference>
       <name value="Botswana Lab Data Dictionary"/>
       <description value="Botswana Laboratory Data Dictionary - Logical Model"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/EmrLisDataDictionary"/>
-      </reference>
-      <name value="EMR-LIS Data Dictionary"/>
-      <description value="EMR-LIS Data Dictionary Logical Model"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PIMSPatient"/>
-      </reference>
-      <name value="PIMS Patient"/>
-      <description value="Logical Model of PIMS patient"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

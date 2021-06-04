@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Botswana Laboratory HIE Workflow Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-06-04T21:27:24+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-06-04T21:33:19+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "B-TECHBW"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -479,34 +479,6 @@
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 12;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/EmrLisDataDictionary>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/EmrLisDataDictionary" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMR-LIS Data Dictionary" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EMR-LIS Data Dictionary Logical Model" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 13;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/PIMSPatient>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/PIMSPatient" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PIMS Patient" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Logical Model of PIMS patient" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
