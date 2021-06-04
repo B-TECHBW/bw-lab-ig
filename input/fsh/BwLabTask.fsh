@@ -1,7 +1,7 @@
 Profile: BwLabTask
 Parent: Task
 Id: bw-lab-task
-Title: "BT Lab Workflow Task Resource"
+Title: "Botswana Lab Task Resource"
 Description: "A Task resource for tracking order state and synchronizing Lab Order communication in Botswana"
 * identifier 1..*
 * basedOn 1..*

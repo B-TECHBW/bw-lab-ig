@@ -1,5 +1,5 @@
 Profile: BwLabDiagnosticReport
-Parent: DiagnosticReport
+Parent: DiagnosticReportUvIps
 Id: bw-lab-diagnostic-report
 Title: "Botswana Lab Diagnostic Report"
 Description: "DiagnosticReport resource that holds the results of a lab order"

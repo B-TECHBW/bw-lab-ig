@@ -43,4 +43,13 @@ resources:
     name: BW Patient
     description: Patient in a Botswana Health System
     exampleCanonical: http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient
-   
+  Patient/example-bw-patient-international:
+    name: INT BW Patient
+    description: Patient in a Botswana Health System
+    exampleCanonical: http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient
+  Task/example-bw-task-requested:
+    exampleCanonical: http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task
+  ServiceRequest/example-bw-pims-service-request-profile:
+    exampleCanonical: http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request
+dependencies:
+  hl7.fhir.uv.ips: 1.0.0

@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "code" : "document"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "SCALE_TYP",
+        "op" : "=",
+        "value" : "Doc"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"CHECK_MEMERSHIP_ONLY"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"document\"); The code provided (#document) is not valid in the value set 'FHIRDocumentTypeCodes' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------

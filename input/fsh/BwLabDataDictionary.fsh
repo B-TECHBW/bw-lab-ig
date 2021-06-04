@@ -68,7 +68,7 @@ Usage: #definition
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "PIMS"
-* differential.element[=].mapping[=].map = "TODO"
+* differential.element[=].mapping[=].map = "Patient.tblPatientProgramActivity"
 * differential.element[=].mapping[+].identity = "FHIR-R4"
 * differential.element[=].mapping[=].map = "Patient.active"
 

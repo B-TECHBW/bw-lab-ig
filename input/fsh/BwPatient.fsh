@@ -1,5 +1,5 @@
 Profile:        BwPatient
-Parent:         Patient
+Parent:         PatientUvIps
 Id:             bw-patient
 Title:          "Botswana Patient"
 Description:    "A patient in a Botswana Health System"
