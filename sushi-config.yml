@@ -2,38 +2,47 @@
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
 # │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: fhir.emr.lis.bt
-canonical: http://openhie.github.io/covid-19
-name: FhirEmrLisBT
+id: fhir.bw.lab
+canonical: http://b-techbw.github.io/bw-lab-ig
+name: BwLabIG
 status: draft
 version: 0.2.0
 fhirVersion: 4.0.1
 # copyright:
-copyrightYear: 2020+
+copyrightYear: 2021+
 releaseLabel: ci-build
-title: EMR-LIS HIE Communication in Botwana
+title: Botswana Laboratory HIE Workflow Implementation Guide
 description: TODO
 license: CC-BY-SA-4.0
 publisher:
-  name: I-TECH-UW
-  url: http://www.go2itech.org
+  name: B-TECHBW
+  url: www.github.com/b-techbw
   email: pmanko@uw.edu
   contact: Piotr W Mankowski
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001
-# experimental: true
+jurisdiction: 
+  - http://unstats.un.org/unsd/methods/m49/m49.htm#072
+  - urn:iso:std:iso:3166#BW
+experimental: true
+parameters:
+  excludettl: true
  
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided ig-data/input/includes/menu.xml file, delete the "menu" property below.     │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-# menu:
-#   Home: index.html
-#   Table of Contents: toc.html
-#   Artifacts: artifacts.html
+menu:
+  Home: index.html
+  Table of Contents: toc.html
+  Artifacts: artifacts.html
+  # Background: 
+  Functional Specifications: 
+    System Requirements: sysem_specifications.html
+    Use Cases: use_cases.html
+  Technical Specifications:
+    Artifacts: artifacts.html
 
-# resources:
-#  StructureDefinition/my-us-covid-observation:
-#    name: My US Covid Observation
-#    description: "TODO too"    
-  # StructureDefinition/oncology-AverageCEP17SignalsPerCell-model:
-  #   name: oncology-AverageCEP17SignalsPerCell-model
-  #   description: "TODO too"    
+resources:
+  Patient/example-bw-patient:
+    name: BW Patient
+    description: Patient in a Botswana Health System
+    exampleCanonical: http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient
+   
