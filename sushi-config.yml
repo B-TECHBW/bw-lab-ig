@@ -32,9 +32,8 @@ parameters:
 menu:
   Home: index.html
   Table of Contents: toc.html
-  Artifacts: artifacts.html
-  Functional Specifications: 
-    System Requirements: system_specifications.html
+  Functional Specifications:
+    System Requirements: system_specification.html
     Use Cases: use_cases.html
   Technical Specifications:
     Artifacts: artifacts.html
