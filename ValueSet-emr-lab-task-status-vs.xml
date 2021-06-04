@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="emr-lab-task-status-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/ValueSet/task-status</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>task-status-requested</td><td>Requested</td></tr><tr><td>task-status-rejected</td><td>Rejected</td></tr><tr><td>task-status-accepted</td><td>Accepted</td></tr><tr><td>task-status-completed</td><td>Completed</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://openhie.github.io/covid-19/ValueSet/emr-lab-task-status-vs"/>
+  <version value="0.1.0-test"/>
+  <name value="EmrLabTaskStatusVS"/>
+  <title value="EMR-LIS Status for Task"/>
+  <status value="active"/>
+  <date value="2021-06-04T21:13:05+00:00"/>
+  <publisher value="I-TECH-UW"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"/>
+    </telecom>
+  </contact>
+  <description value="The state of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/ValueSet/task-status"/>
+      <concept>
+        <code value="task-status-requested"/>
+        <display value="Requested"/>
+      </concept>
+      <concept>
+        <code value="task-status-rejected"/>
+        <display value="Rejected"/>
+      </concept>
+      <concept>
+        <code value="task-status-accepted"/>
+        <display value="Accepted"/>
+      </concept>
+      <concept>
+        <code value="task-status-completed"/>
+        <display value="Completed"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,11 +1,11 @@
 {
-  "url": "http://b-techbw.github.io/bw-lab-ig/ImplementationGuide/fhir.bw.lab",
-  "name": "BwLabIG",
-  "package-id": "fhir.bw.lab",
-  "ig-ver": "0.2.0",
-  "date": "Fri, 04 Jun, 2021 21:03:02 +0000",
-  "errs": 10,
-  "warnings": 73,
+  "url": "http://openhie.org/fhir/ImplementationGuide/ImplementationGuide/openhie.fhir.emr.lis",
+  "name": "EmrLisCommunication",
+  "package-id": "openhie.fhir.emr.lims",
+  "ig-ver": "0.1.0-test",
+  "date": "Fri, 04 Jun, 2021 21:13:05 +0000",
+  "errs": 43,
+  "warnings": 83,
   "hints": 0,
   "version": "4.0.1",
   "tool": "4.6.0 (3)"

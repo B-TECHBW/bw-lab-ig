@@ -1,44 +1,52 @@
 {
-  "package": "fhir.bw.lab",
-  "version": "0.2.0",
+  "package": "openhie.fhir.emr.lims",
+  "version": "0.1.0-test",
   "fhirVersion": "4.0.1",
-  "jurisdiction": "072",
-  "extensions": [],
+  "jurisdiction": "001",
+  "extensions": [
+    {
+      "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lis-patient-identifier-location",
+      "title": "EMR-LIS Patient Identifier Location Extension",
+      "types": [
+        "Reference"
+      ]
+    }
+  ],
   "profiles": {
-    "Encounter": [
-      {
-        "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-encounter",
-        "title": "Botsana Encounter"
-      }
-    ],
     "DiagnosticReport": [
       {
-        "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report",
-        "title": "Botswana Lab Diagnostic Report"
+        "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-diagnostic-report",
+        "title": "EMR-LIS Diagnostic Report"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-encounter",
+        "title": "EMR-LIS Encounter"
       }
     ],
     "Observation": [
       {
-        "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation",
-        "title": "Botswana Lab Observation"
-      }
-    ],
-    "ServiceRequest": [
-      {
-        "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request",
-        "title": "Botswana Lab Service Request"
-      }
-    ],
-    "Task": [
-      {
-        "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task",
-        "title": "BT Lab Workflow Task Resource"
+        "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-observation",
+        "title": "EMR-LIS Observation"
       }
     ],
     "Patient": [
       {
-        "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient",
-        "title": "Botswana Patient"
+        "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-patient",
+        "title": "EMR-LIS Workflow Patient"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-service-request",
+        "title": "EMR-LIS Service Request"
+      }
+    ],
+    "Task": [
+      {
+        "url": "http://openhie.github.io/covid-19/StructureDefinition/emr-lab-task",
+        "title": "EMR-LIS Workflow Task Resource"
       }
     ]
   },
@@ -85,8 +93,14 @@
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet": [
+      "ImplementationGuide"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://openhie.github.io/covid-19/StructureDefinition/emr-lis-patient-identifier-location": [
+      "Identifier"
     ]
   }
 }

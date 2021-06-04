@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="emr-lab-task-intent-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/ValueSet/task-intent</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>task-intent-order</td><td>Order</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://openhie.github.io/covid-19/ValueSet/emr-lab-task-intent-vs"/>
+  <version value="0.1.0-test"/>
+  <name value="EmrLabTaskIntentVS"/>
+  <title value="EMR-LIS Intent for Task"/>
+  <status value="active"/>
+  <date value="2021-06-04T21:13:05+00:00"/>
+  <publisher value="I-TECH-UW"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"/>
+    </telecom>
+  </contact>
+  <description value="The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/ValueSet/task-intent"/>
+      <concept>
+        <code value="task-intent-order"/>
+        <display value="Order"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
