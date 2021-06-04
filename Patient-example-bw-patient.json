@@ -1,9 +1,6 @@
 {
   "resourceType": "Patient",
   "id": "example-bw-patient",
-  "_id": {
-    "value": "001"
-  },
   "meta": {
     "profile": [
       "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"

@@ -7,10 +7,7 @@
 
 <http://b-techbw.github.io/bw-lab-ig/Patient/example-bw-patient> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [
-     fhir:value "example-bw-patient";
-     fhir:string.value [ fhir:value "001" ]
-  ];
+  fhir:Resource.id [ fhir:value "example-bw-patient"];
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient";

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ff6f0ca9-7c8c-4d17-96ee-27298998ae6a"/>
+  <id value="52b50d65-abf7-499a-bdee-3ea4975c0ae6"/>
   <meta>
-    <lastUpdated value="2021-06-04T21:01:44.420+00:00"/>
+    <lastUpdated value="2021-06-04T21:03:02.526+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -83,7 +83,7 @@
         <name value="BwLabDiagnosticReportStatusVS"/>
         <title value="Botswana Diagnostic Report Status Flag"/>
         <status value="active"/>
-        <date value="2021-06-04T21:01:44+00:00"/>
+        <date value="2021-06-04T21:03:02+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -110,8 +110,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:73783987-8d95-4741-a656-9a0ebe9ae655"/>
-          <timestamp value="2021-06-04T21:01:56+00:00"/>
+          <identifier value="urn:uuid:a9c8d7dc-2311-4172-af37-090b8d875c91"/>
+          <timestamp value="2021-06-04T21:03:12+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
