@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.github.io/covid-19/ValueSet/emr-lab-order-code-vs> a fhir:ValueSet;
+<http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "emr-lab-order-code-vs"];
   fhir:DomainResource.text [
@@ -13,23 +13,18 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "http://openhie.github.io/covid-19/ValueSet/emr-lab-order-code-vs"];
-  fhir:ValueSet.version [ fhir:value "0.2.0"];
+  fhir:ValueSet.version [ fhir:value "0.1.0-test"];
   fhir:ValueSet.name [ fhir:value "EmrLabOrderCodeVS"];
   fhir:ValueSet.title [ fhir:value "EMR Lab Order Code"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-06-03T23:35:23+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-06-04T18:15:55+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "I-TECH-UW"];
   fhir:ValueSet.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "I-TECH-UW" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://www.go2itech.org" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "pmanko@uw.edu" ]
+       fhir:ContactPoint.value [ fhir:value "https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/" ]
      ]
   ];
   fhir:ValueSet.description [ fhir:value "The code for the lab order requested in the EMR."];
@@ -50,7 +45,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.github.io/covid-19/ValueSet/emr-lab-order-code-vs.ttl> a owl:Ontology;
+<http://openhie.org/fhir/ValueSet/emr-lab-order-code-vs.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -1,6 +1,6 @@
 {
-  "package": "fhir.emr.lis.bt",
-  "version": "0.2.0",
+  "package": "openhie.fhir.emr.lims",
+  "version": "0.1.0-test",
   "fhirVersion": "4.0.1",
   "jurisdiction": "001",
   "extensions": [
@@ -92,6 +92,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet": [
+      "ImplementationGuide"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"

@@ -3,12 +3,12 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>FHIR.EMR.LIS.BT\EMR-LIS Service Request - Definitions - FHIR v4.0.1</title>
+    <title>OPENHIE.FHIR.EMR.LIS\EMR-LIS Service Request - Definitions - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="assets/css/fhir.css"/>
+    <link rel="stylesheet" href="fhir.css"/>
 
       <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
@@ -39,15 +39,15 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"8.7"}
-    h3,h4,h5,h6{--heading-prefix:"8.7"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.4"}
+    h3,h4,h5,h6{--heading-prefix:"6.4"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">EMR-LIS HIE Communication in Botwana</span><br/>0.2.0 - ci-build</p>
+          <p><span style="font-size:12pt;font-weight:bold">EMR LIS Communication</span><br/>0.1.0-test - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -80,44 +80,48 @@
 		</a>
 
 	</li>
-<li class="dropdown">
+	<li class="dropdown">
 		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
 		</a>
 
-	    <ul class="dropdown-menu">
+		<ul class="dropdown-menu">
 			<li>
 				<a href="system_specification.html">System Requirements</a>
-		
+
 			</li>
 			<li>
 				<a href="use_cases.html">Use Cases</a>
 			</li>
 		</ul>
-		
-	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
-		</a>
-		<ul class="dropdown-menu">
-			<li>
-				<a href="artifacts.html">Artifact Index</a>
-			</li>
-		</ul>
+
+		<li class="dropdown">
+			<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
+			</a>
+			<ul class="dropdown-menu">
+				<li>
+					<a href="artifacts.html">Artifact Index</a>
+				</li>
+			</ul>
+		</li>
+		<li class="dropdown">
+			<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b>
+			</a>
+			<ul class="dropdown-menu">
+				<li>
+					<a href="downloads.html">Downloads</a>
+				</li>
+			</ul>
+		</li>
 	</li>
-	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Implementation<b class="caret"></b></a>
-		<ul class="dropdown-menu">
-			<li><a href="downloads.html">Downloads</a></li>
-		</ul>
-	</li>
-      
-	
-	
-                <!-- /.nav-collapse -->
-              <!-- /.container -->
-            <!-- /.navbar -->
+</ul>      
+
+
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
         <!-- /HEADER CONTENT -->
-          <!-- /container -->
-        <!-- /segment-navbar -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
       <!-- status-bar -->
 
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
@@ -136,7 +140,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 4" class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">EMR-LIS HIE Communication in Botwana - Local Development build (v0.2.0). See the <a href="http://openhie.github.io/covid-19/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">EMR LIS Communication - Local Development build (v0.1.0-test). See the <a href="http://openhie.org/fhir/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -417,7 +421,7 @@ Identifies the level of importance to be assigned to actioning the request.
   <tr><td>Definition</td><td><p>A code that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that have been requested.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="4207549c-8c1e-4eba-94db-d63c548bcd06">​</a>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-procedure-code.html">ProcedureCodes(SNOMEDCT)</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><a name="6f62bd0d-7cb4-45fa-8c26-131cab52e767">​</a>For example codes, see <a href="http://hl7.org/fhir/R4/valueset-procedure-code.html">ProcedureCodes(SNOMEDCT)</a>
 Codes for tests or services that can be carried out by a designated individual, organization or healthcare service.  For laboratory, LOINC is  (preferred)[http://build.fhir.org/terminologies.html#preferred] and a valueset using LOINC Order codes is available <a href="valueset-diagnostic-requests.html">here</a>.
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
@@ -722,7 +726,7 @@ All Provenances should have some historical version of this Request as their sub
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.go2itech.org">I-TECH-UW</a>.  Package fhir.emr.lis.bt#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 3, 2021 23:35+0000">2021-06-03</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/">I-TECH-UW</a>.  Package openhie.fhir.emr.lims#0.1.0-test based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 4, 2021 18:15+0000">2021-06-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -759,7 +763,5 @@ anchors.add()</script>
 
     <!-- Analytics Below
   ================================================== -->
-  
-
-
-</li></ul></div></div></nav></div></div></body></html>
+  </body>
+</html>

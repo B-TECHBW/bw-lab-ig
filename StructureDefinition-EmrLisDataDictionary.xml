@@ -33,21 +33,16 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://openhie.github.io/covid-19/StructureDefinition/EmrLisDataDictionary"/>
-  <version value="0.2.0"/>
+  <version value="0.1.0-test"/>
   <name value="EmrLisDataDictionary"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-06-03T23:35:23+00:00"/>
+  <date value="2021-06-04T18:15:55+00:00"/>
   <publisher value="I-TECH-UW"/>
   <contact>
-    <name value="I-TECH-UW"/>
     <telecom>
       <system value="url"/>
-      <value value="http://www.go2itech.org"/>
-    </telecom>
-    <telecom>
-      <system value="email"/>
-      <value value="pmanko@uw.edu"/>
+      <value value="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"/>
     </telecom>
   </contact>
   <jurisdiction>
