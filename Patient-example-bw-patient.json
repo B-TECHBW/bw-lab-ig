@@ -1,0 +1,29 @@
+{
+  "resourceType": "Patient",
+  "id": "example-bw-patient",
+  "_id": {
+    "value": "001"
+  },
+  "meta": {
+    "profile": [
+      "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: urn:uuid:647515ed-0d5e-4c99-b23d-073fbc593f76</p><p><b>name</b>: Bt TestPatient</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:647515ed-0d5e-4c99-b23d-073fbc593f76"
+    }
+  ],
+  "name": [
+    {
+      "text": "Bt TestPatient"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1988-03-02"
+}
