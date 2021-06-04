@@ -3,15 +3,15 @@
   "id": "fhir.bw.lab",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BwLabIG</h2><p>The official URL for this implementation guide is: </p><pre>http://b-techbw.github.io/emr-lis-bw-ig/ImplementationGuide/fhir.bw.lab</pre><div><p>TODO</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BwLabIG</h2><p>The official URL for this implementation guide is: </p><pre>http://b-techbw.github.io/bw-lab-ig/ImplementationGuide/fhir.bw.lab</pre><div><p>TODO</p>\n</div></div>"
   },
-  "url": "http://b-techbw.github.io/emr-lis-bw-ig/ImplementationGuide/fhir.bw.lab",
+  "url": "http://b-techbw.github.io/bw-lab-ig/ImplementationGuide/fhir.bw.lab",
   "version": "0.2.0",
   "name": "BwLabIG",
   "title": "Botswana Laboratory HIE Workflow Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-06-04T20:54:28+00:00",
+  "date": "2021-06-04T21:01:44+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -192,7 +192,7 @@
           },
           {
             "url": "value",
-            "valueString": "http://b-techbw.github.io/emr-lis-bw-ig/history.html"
+            "valueString": "http://b-techbw.github.io/bw-lab-ig/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -509,7 +509,7 @@
         },
         "name": "BW Patient",
         "description": "Patient in a Botswana Health System",
-        "exampleCanonical": "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient"
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"
       }
     ],
     "page": {

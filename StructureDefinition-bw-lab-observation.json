@@ -15,12 +15,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-observation",
+  "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation",
   "version": "0.2.0",
   "name": "BwLabObservation",
   "title": "Botswana Lab Observation",
   "status": "active",
-  "date": "2021-06-04T20:54:28+00:00",
+  "date": "2021-06-04T21:01:44+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {

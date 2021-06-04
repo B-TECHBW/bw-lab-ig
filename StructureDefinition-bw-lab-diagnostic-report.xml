@@ -16,12 +16,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-diagnostic-report"/>
+  <url value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report"/>
   <version value="0.2.0"/>
   <name value="BwLabDiagnosticReport"/>
   <title value="Botswana Lab Diagnostic Report"/>
   <status value="active"/>
-  <date value="2021-06-04T20:54:28+00:00"/>
+  <date value="2021-06-04T21:01:44+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -530,7 +530,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-diagnostic-report-status-vs"/>
+        <valueSet value="http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-diagnostic-report-status-vs"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -750,7 +750,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-order-code-vs"/>
+        <valueSet value="http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-order-code-vs"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1157,7 +1157,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-observation"/>
+        <targetProfile value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1535,7 +1535,7 @@
       <path value="DiagnosticReport.status"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-diagnostic-report-status-vs"/>
+        <valueSet value="http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-diagnostic-report-status-vs"/>
       </binding>
     </element>
     <element id="DiagnosticReport.code.coding">
@@ -1543,14 +1543,14 @@
       <min value="1"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-order-code-vs"/>
+        <valueSet value="http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-order-code-vs"/>
       </binding>
     </element>
     <element id="DiagnosticReport.result">
       <path value="DiagnosticReport.result"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-observation"/>
+        <targetProfile value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation"/>
       </type>
     </element>
   </differential>

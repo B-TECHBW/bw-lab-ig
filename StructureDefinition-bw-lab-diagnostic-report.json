@@ -15,12 +15,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-diagnostic-report",
+  "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report",
   "version": "0.2.0",
   "name": "BwLabDiagnosticReport",
   "title": "Botswana Lab Diagnostic Report",
   "status": "active",
-  "date": "2021-06-04T20:54:28+00:00",
+  "date": "2021-06-04T21:01:44+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -638,7 +638,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-diagnostic-report-status-vs"
+          "valueSet": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-diagnostic-report-status-vs"
         },
         "mapping": [
           {
@@ -910,7 +910,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-order-code-vs"
+          "valueSet": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-order-code-vs"
         },
         "mapping": [
           {
@@ -1405,7 +1405,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-observation"
+              "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation"
             ]
           }
         ],
@@ -1881,7 +1881,7 @@
         "path": "DiagnosticReport.status",
         "binding": {
           "strength": "required",
-          "valueSet": "http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-diagnostic-report-status-vs"
+          "valueSet": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-diagnostic-report-status-vs"
         }
       },
       {
@@ -1890,7 +1890,7 @@
         "min": 1,
         "binding": {
           "strength": "required",
-          "valueSet": "http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-order-code-vs"
+          "valueSet": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-order-code-vs"
         }
       },
       {
@@ -1900,7 +1900,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-observation"
+              "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation"
             ]
           }
         ]

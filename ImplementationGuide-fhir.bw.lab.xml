@@ -3,16 +3,16 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="fhir.bw.lab"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>BwLabIG</h2><p>The official URL for this implementation guide is: </p><pre>http://b-techbw.github.io/emr-lis-bw-ig/ImplementationGuide/fhir.bw.lab</pre><div><p>TODO</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>BwLabIG</h2><p>The official URL for this implementation guide is: </p><pre>http://b-techbw.github.io/bw-lab-ig/ImplementationGuide/fhir.bw.lab</pre><div><p>TODO</p>
 </div></div>
   </text>
-  <url value="http://b-techbw.github.io/emr-lis-bw-ig/ImplementationGuide/fhir.bw.lab"/>
+  <url value="http://b-techbw.github.io/bw-lab-ig/ImplementationGuide/fhir.bw.lab"/>
   <version value="0.2.0"/>
   <name value="BwLabIG"/>
   <title value="Botswana Laboratory HIE Workflow Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-06-04T20:54:28+00:00"/>
+  <date value="2021-06-04T21:01:44+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -127,7 +127,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://b-techbw.github.io/emr-lis-bw-ig/history.html"/>
+        <valueString value="http://b-techbw.github.io/bw-lab-ig/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -351,7 +351,7 @@
       </reference>
       <name value="BW Patient"/>
       <description value="Patient in a Botswana Health System"/>
-      <exampleCanonical value="http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient"/>
+      <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

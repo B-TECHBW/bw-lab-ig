@@ -16,12 +16,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-service-request"/>
+  <url value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request"/>
   <version value="0.2.0"/>
   <name value="BwLabServiceRequest"/>
   <title value="Botswana Lab Service Request"/>
   <status value="active"/>
-  <date value="2021-06-04T20:54:28+00:00"/>
+  <date value="2021-06-04T21:01:44+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -1064,7 +1064,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-order-code-vs"/>
+        <valueSet value="http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-order-code-vs"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1222,7 +1222,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient"/>
+        <targetProfile value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1273,7 +1273,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-encounter"/>
+        <targetProfile value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-encounter"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2065,14 +2065,14 @@
       <min value="1"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-order-code-vs"/>
+        <valueSet value="http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-order-code-vs"/>
       </binding>
     </element>
     <element id="ServiceRequest.subject">
       <path value="ServiceRequest.subject"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient"/>
+        <targetProfile value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"/>
       </type>
     </element>
     <element id="ServiceRequest.encounter">
@@ -2080,7 +2080,7 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-encounter"/>
+        <targetProfile value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-encounter"/>
       </type>
     </element>
   </differential>

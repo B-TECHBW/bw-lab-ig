@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://b-techbw.github.io/emr-lis-bw-ig/Patient/example-bw-patient> a fhir:Patient;
+<http://b-techbw.github.io/bw-lab-ig/Patient/example-bw-patient> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [
      fhir:value "example-bw-patient";
@@ -13,9 +13,9 @@
   ];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient";
+       fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient";
        fhir:index 0;
-       fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient>
+       fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient>
      ]
   ];
   fhir:DomainResource.text [
@@ -36,7 +36,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://b-techbw.github.io/emr-lis-bw-ig/Patient/example-bw-patient.ttl> a owl:Ontology;
+<http://b-techbw.github.io/bw-lab-ig/Patient/example-bw-patient.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

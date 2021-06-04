@@ -7,37 +7,37 @@
   "profiles": {
     "Encounter": [
       {
-        "url": "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-encounter",
+        "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-encounter",
         "title": "Botsana Encounter"
       }
     ],
     "DiagnosticReport": [
       {
-        "url": "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-diagnostic-report",
+        "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report",
         "title": "Botswana Lab Diagnostic Report"
       }
     ],
     "Observation": [
       {
-        "url": "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-observation",
+        "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation",
         "title": "Botswana Lab Observation"
       }
     ],
     "ServiceRequest": [
       {
-        "url": "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-service-request",
+        "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request",
         "title": "Botswana Lab Service Request"
       }
     ],
     "Task": [
       {
-        "url": "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-task",
+        "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task",
         "title": "BT Lab Workflow Task Resource"
       }
     ],
     "Patient": [
       {
-        "url": "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient",
+        "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient",
         "title": "Botswana Patient"
       }
     ]

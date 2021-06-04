@@ -3,7 +3,7 @@
 
 err = 10, warn = 73, info = 0
 IG Publisher Version: 1.1.72
-Generated Fri Jun 04 20:54:52 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/emr-lis-bw-ig)
+Generated Fri Jun 04 21:02:10 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
 
  Build Errors : 199 / 0 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.bw.lab : 0 / 0 / 1
@@ -182,7 +182,7 @@ ERROR: /github/workspace/output/ValueSet-bw-lab-order-code-vs.json.html#/html/bo
 ERROR: /github/workspace/output/ValueSet-bw-lab-order-code-vs.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 90, column 10: The link 'sysem_specifications.html' for "System Requirements" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-order-code-vs.ttl.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-order-code-vs.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 90, column 10: The link 'sysem_specifications.html' for "System Requirements" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-bw-lab-order-code-vs.xml.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-lab-order-code-vs.xml.html#/html/body/div/div/div/p/a at Line 252, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-task-intent-vs.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 92, column 10: The link 'sysem_specifications.html' for "System Requirements" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-task-intent-vs.change.history.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-task-intent-vs.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 88, column 10: The link 'sysem_specifications.html' for "System Requirements" cannot be resolved
@@ -224,7 +224,7 @@ ERROR: /github/workspace/output/use_cases.html#/html/body/div/div/div/p/a at Lin
 == /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.bw.lab.json ==
 INFORMATION: ImplementationGuide/fhir.bw.lab: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 == /github/workspace/fsh-generated/resources/Patient-example-bw-patient.json ==
-INFORMATION: Patient/example-bw-patient: Patient: Validate resource against profile http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient
+INFORMATION: Patient/example-bw-patient: Patient: Validate resource against profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient
 == /github/workspace/fsh-generated/resources/StructureDefinition-BwLabDataDictionary.json ==
 INFORMATION: StructureDefinition/BwLabDataDictionary: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/BwLabDataDictionary: StructureDefinition.snapshot.element[0].mapping[1]: ElementDefinition.mapping.map: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
@@ -289,25 +289,25 @@ WARNING: StructureDefinition/BwLabDataDictionary: StructureDefinition.differenti
 WARNING: StructureDefinition/BwLabDataDictionary: StructureDefinition.differential.element[26]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 == /github/workspace/fsh-generated/resources/StructureDefinition-bw-encounter.json ==
 INFORMATION: StructureDefinition/bw-encounter: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-encounter'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-encounter'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-diagnostic-report.json ==
-ERROR: Botswana Lab Diagnostic Report.DiagnosticReport.status: Binding http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-diagnostic-report-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1
+ERROR: Botswana Lab Diagnostic Report.DiagnosticReport.status: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-diagnostic-report-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1
 INFORMATION: StructureDefinition/bw-lab-diagnostic-report: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition/bw-lab-diagnostic-report: StructureDefinition: Binding http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-diagnostic-report-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1
-WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-diagnostic-report'): The Implementation Guide contains no examples for this profile
+ERROR: StructureDefinition/bw-lab-diagnostic-report: StructureDefinition: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-diagnostic-report-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1
+WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-observation.json ==
 INFORMATION: StructureDefinition/bw-lab-observation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-observation'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-service-request.json ==
 INFORMATION: StructureDefinition/bw-lab-service-request: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-service-request'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-task.json ==
-WARNING: BT Lab Workflow Task Resource.Task.status: Binding http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-task-status-vs could not be expanded
-WARNING: BT Lab Workflow Task Resource.Task.intent: Binding http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-task-intent-vs could not be expanded
+WARNING: BT Lab Workflow Task Resource.Task.status: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-status-vs could not be expanded
+WARNING: BT Lab Workflow Task Resource.Task.intent: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs could not be expanded
 INFORMATION: StructureDefinition/bw-lab-task: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/bw-lab-task: StructureDefinition: Binding http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-task-status-vs could not be expanded
-WARNING: StructureDefinition/bw-lab-task: StructureDefinition: Binding http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-task-intent-vs could not be expanded
-WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-task'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition/bw-lab-task: StructureDefinition: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-status-vs could not be expanded
+WARNING: StructureDefinition/bw-lab-task: StructureDefinition: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs could not be expanded
+WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-bw-national-identifier.json ==
 INFORMATION: StructureDefinition/bw-national-identifier: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /github/workspace/fsh-generated/resources/StructureDefinition-bw-patient.json ==

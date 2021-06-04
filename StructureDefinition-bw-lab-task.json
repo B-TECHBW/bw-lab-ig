@@ -15,12 +15,12 @@
       "valueCode": "not-classified"
     }
   ],
-  "url": "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-task",
+  "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task",
   "version": "0.2.0",
   "name": "BwLabTask",
   "title": "BT Lab Workflow Task Resource",
   "status": "active",
-  "date": "2021-06-04T20:54:28+00:00",
+  "date": "2021-06-04T21:01:44+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -634,7 +634,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-service-request"
+              "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request"
             ]
           }
         ],
@@ -780,7 +780,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-task-status-vs"
+          "valueSet": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-status-vs"
         },
         "mapping": [
           {
@@ -923,7 +923,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-task-intent-vs"
+          "valueSet": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs"
         },
         "mapping": [
           {
@@ -1154,7 +1154,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient"
+              "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"
             ]
           }
         ],
@@ -1206,7 +1206,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-encounter"
+              "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-encounter"
             ]
           }
         ],
@@ -2970,7 +2970,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-diagnostic-report"
+              "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report"
             ]
           }
         ],
@@ -3014,7 +3014,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-service-request"
+              "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request"
             ]
           }
         ]
@@ -3024,7 +3024,7 @@
         "path": "Task.status",
         "binding": {
           "strength": "required",
-          "valueSet": "http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-task-status-vs"
+          "valueSet": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-status-vs"
         }
       },
       {
@@ -3032,7 +3032,7 @@
         "path": "Task.intent",
         "binding": {
           "strength": "required",
-          "valueSet": "http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-task-intent-vs"
+          "valueSet": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs"
         }
       },
       {
@@ -3042,7 +3042,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient"
+              "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"
             ]
           }
         ]
@@ -3054,7 +3054,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-encounter"
+              "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-encounter"
             ]
           }
         ]
@@ -3090,7 +3090,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-diagnostic-report"
+              "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report"
             ]
           }
         ]

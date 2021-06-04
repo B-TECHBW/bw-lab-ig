@@ -15,12 +15,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient",
+  "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient",
   "version": "0.2.0",
   "name": "BwPatient",
   "title": "Botswana Patient",
   "status": "active",
-  "date": "2021-06-04T20:54:28+00:00",
+  "date": "2021-06-04T21:01:44+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -506,7 +506,7 @@
           {
             "code": "Identifier",
             "profile": [
-              "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-national-identifier"
+              "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-national-identifier"
             ]
           }
         ],
@@ -2267,7 +2267,7 @@
           {
             "code": "Identifier",
             "profile": [
-              "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-national-identifier"
+              "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-national-identifier"
             ]
           }
         ]

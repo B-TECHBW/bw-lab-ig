@@ -12,12 +12,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-encounter"/>
+  <url value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-encounter"/>
   <version value="0.2.0"/>
   <name value="BwEncounter"/>
   <title value="Botsana Encounter"/>
   <status value="active"/>
-  <date value="2021-06-04T20:54:28+00:00"/>
+  <date value="2021-06-04T21:01:44+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>

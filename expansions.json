@@ -1,12 +1,12 @@
 {
   "resourceType" : "Bundle",
-  "id" : "de20b8c4-02bb-40e0-a3ba-fccc930b78f9",
+  "id" : "ff6f0ca9-7c8c-4d17-96ee-27298998ae6a",
   "meta" : {
-    "lastUpdated" : "2021-06-04T20:54:28.013+00:00"
+    "lastUpdated" : "2021-06-04T21:01:44.420+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-diagnostic-report-status-vs",
+    "fullUrl" : "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-diagnostic-report-status-vs",
     "resource" : {
       "resourceType" : "ValueSet",
       "id" : "bw-lab-diagnostic-report-status-vs",
@@ -14,12 +14,12 @@
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html\">DiagnosticReportStatus v4.0.1 (CodeSystem)</a></p><p>All codes from system <a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html\"><code>http://hl7.org/fhir/diagnostic-report-status</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-partial\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-partial\">diagnostic-report-status-partial</a></td><td>Partial</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-final\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-final\">diagnostic-report-status-final</a></td><td>Final</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-unknown\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-unknown\">diagnostic-report-status-unknown</a></td><td>Unknown</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-canceled\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-canceled\">diagnostic-report-status-canceled</a></td><td>Canceled</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-diagnostic-report-status-diagnostic-report-status-amended\"> </a><a href=\"http://hl7.org/fhir/R4/codesystem-diagnostic-report-status.html#diagnostic-report-status-diagnostic-report-status-amended\">diagnostic-report-status-amended</a></td><td>Amended</td><td/></tr></table></div>"
       },
-      "url" : "http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-diagnostic-report-status-vs",
+      "url" : "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-diagnostic-report-status-vs",
       "version" : "0.2.0",
       "name" : "BwLabDiagnosticReportStatusVS",
       "title" : "Botswana Diagnostic Report Status Flag",
       "status" : "active",
-      "date" : "2021-06-04T20:54:28+00:00",
+      "date" : "2021-06-04T21:01:44+00:00",
       "publisher" : "B-TECHBW",
       "contact" : [{
         "name" : "B-TECHBW",
@@ -46,8 +46,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8403a998-4bee-42f7-8a56-c7a18ada8403",
-        "timestamp" : "2021-06-04T20:54:39+00:00",
+        "identifier" : "urn:uuid:73783987-8d95-4741-a656-9a0ebe9ae655",
+        "timestamp" : "2021-06-04T21:01:56+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",

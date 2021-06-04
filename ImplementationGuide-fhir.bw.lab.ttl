@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://b-techbw.github.io/emr-lis-bw-ig/ImplementationGuide/fhir.bw.lab> a fhir:ImplementationGuide;
+<http://b-techbw.github.io/bw-lab-ig/ImplementationGuide/fhir.bw.lab> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "fhir.bw.lab"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BwLabIG</h2><p>The official URL for this implementation guide is: </p><pre>http://b-techbw.github.io/emr-lis-bw-ig/ImplementationGuide/fhir.bw.lab</pre><div><p>TODO</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BwLabIG</h2><p>The official URL for this implementation guide is: </p><pre>http://b-techbw.github.io/bw-lab-ig/ImplementationGuide/fhir.bw.lab</pre><div><p>TODO</p>\n</div></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "http://b-techbw.github.io/emr-lis-bw-ig/ImplementationGuide/fhir.bw.lab"];
+  fhir:ImplementationGuide.url [ fhir:value "http://b-techbw.github.io/bw-lab-ig/ImplementationGuide/fhir.bw.lab"];
   fhir:ImplementationGuide.version [ fhir:value "0.2.0"];
   fhir:ImplementationGuide.name [ fhir:value "BwLabIG"];
   fhir:ImplementationGuide.title [ fhir:value "Botswana Laboratory HIE Workflow Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-06-04T20:54:28+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-06-04T21:01:44+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "B-TECHBW"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -185,7 +185,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "http://b-techbw.github.io/emr-lis-bw-ig/history.html" ]
+         fhir:Extension.valueString [ fhir:value "http://b-techbw.github.io/bw-lab-ig/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -317,7 +317,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-encounter>;
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-encounter>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/bw-encounter" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Botsana Encounter" ];
@@ -331,7 +331,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-diagnostic-report>;
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/bw-lab-diagnostic-report" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Botswana Lab Diagnostic Report" ];
@@ -345,7 +345,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-observation>;
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/bw-lab-observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Botswana Lab Observation" ];
@@ -359,7 +359,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-service-request>;
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/bw-lab-service-request" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Botswana Lab Service Request" ];
@@ -373,7 +373,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-task>;
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/bw-lab-task" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "BT Lab Workflow Task Resource" ];
@@ -387,7 +387,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-national-identifier>;
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-national-identifier>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/bw-national-identifier" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Botswana National Identifier" ];
@@ -401,7 +401,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient>;
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/bw-patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Botswana Patient" ];
@@ -415,7 +415,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-diagnostic-report-status-vs>;
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-diagnostic-report-status-vs>;
          fhir:Reference.reference [ fhir:value "ValueSet/bw-lab-diagnostic-report-status-vs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Botswana Diagnostic Report Status Flag" ];
@@ -429,7 +429,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-order-code-vs>;
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-order-code-vs>;
          fhir:Reference.reference [ fhir:value "ValueSet/bw-lab-order-code-vs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Botswana Lab Order Code" ];
@@ -443,7 +443,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-task-intent-vs>;
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs>;
          fhir:Reference.reference [ fhir:value "ValueSet/bw-lab-task-intent-vs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Botswana Intent for Lab Task" ];
@@ -457,7 +457,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-task-status-vs>;
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-status-vs>;
          fhir:Reference.reference [ fhir:value "ValueSet/bw-lab-task-status-vs" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Botswana Status for Lab Task" ];
@@ -471,7 +471,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/BwLabDataDictionary>;
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/BwLabDataDictionary>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/BwLabDataDictionary" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Botswana Lab Data Dictionary" ];
@@ -485,14 +485,14 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/Patient/example-bw-patient>;
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/Patient/example-bw-patient>;
          fhir:Reference.reference [ fhir:value "Patient/example-bw-patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "BW Patient" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient in a Botswana Health System" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient";
-         fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient>
+         fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient";
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient>
        ]
      ];
      fhir:ImplementationGuide.definition.page [
@@ -601,7 +601,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://b-techbw.github.io/emr-lis-bw-ig/ImplementationGuide/fhir.bw.lab.ttl> a owl:Ontology;
+<http://b-techbw.github.io/bw-lab-ig/ImplementationGuide/fhir.bw.lab.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

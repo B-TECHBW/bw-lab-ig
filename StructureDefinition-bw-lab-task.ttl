@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-task> a fhir:StructureDefinition;
+<http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "bw-lab-task"];
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "not-classified" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-task"];
+  fhir:StructureDefinition.url [ fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task"];
   fhir:StructureDefinition.version [ fhir:value "0.2.0"];
   fhir:StructureDefinition.name [ fhir:value "BwLabTask"];
   fhir:StructureDefinition.title [ fhir:value "BT Lab Workflow Task Resource"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-06-04T20:54:28+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-06-04T21:01:44+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "B-TECHBW"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -682,9 +682,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-service-request";
+           fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request";
            fhir:index 0;
-           fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-service-request>
+           fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -834,8 +834,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-task-status-vs";
-           fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-task-status-vs>
+           fhir:value "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-status-vs";
+           fhir:link <http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-status-vs>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -978,8 +978,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-task-intent-vs";
-           fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-task-intent-vs>
+           fhir:value "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs";
+           fhir:link <http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1217,9 +1217,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient";
+           fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient";
            fhir:index 0;
-           fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient>
+           fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1271,9 +1271,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-encounter";
+           fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-encounter";
            fhir:index 0;
-           fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-encounter>
+           fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-encounter>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3137,9 +3137,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-diagnostic-report";
+           fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report";
            fhir:index 0;
-           fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-diagnostic-report>
+           fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3182,9 +3182,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-service-request";
+           fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request";
            fhir:index 0;
-           fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-service-request>
+           fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request>
          ]
        ]
      ], [
@@ -3194,8 +3194,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-task-status-vs";
-           fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-task-status-vs>
+           fhir:value "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-status-vs";
+           fhir:link <http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-status-vs>
          ]
        ]
      ], [
@@ -3205,8 +3205,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-task-intent-vs";
-           fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-task-intent-vs>
+           fhir:value "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs";
+           fhir:link <http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs>
          ]
        ]
      ], [
@@ -3217,9 +3217,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient";
+           fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient";
            fhir:index 0;
-           fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-patient>
+           fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient>
          ]
        ]
      ], [
@@ -3230,9 +3230,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-encounter";
+           fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-encounter";
            fhir:index 0;
-           fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-encounter>
+           fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-encounter>
          ]
        ]
      ], [
@@ -3274,9 +3274,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-diagnostic-report";
+           fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report";
            fhir:index 0;
-           fhir:link <http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-diagnostic-report>
+           fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report>
          ]
        ]
      ]
@@ -3284,7 +3284,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/bw-lab-task.ttl> a owl:Ontology;
+<http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

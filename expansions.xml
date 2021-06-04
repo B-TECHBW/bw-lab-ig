@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="de20b8c4-02bb-40e0-a3ba-fccc930b78f9"/>
+  <id value="ff6f0ca9-7c8c-4d17-96ee-27298998ae6a"/>
   <meta>
-    <lastUpdated value="2021-06-04T20:54:28.013+00:00"/>
+    <lastUpdated value="2021-06-04T21:01:44.420+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-diagnostic-report-status-vs"/>
+    <fullUrl value="http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-diagnostic-report-status-vs"/>
     <resource>
       <ValueSet>
         <id value="bw-lab-diagnostic-report-status-vs"/>
@@ -78,12 +78,12 @@
             </table>
           </div>
         </text>
-        <url value="http://b-techbw.github.io/emr-lis-bw-ig/ValueSet/bw-lab-diagnostic-report-status-vs"/>
+        <url value="http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-diagnostic-report-status-vs"/>
         <version value="0.2.0"/>
         <name value="BwLabDiagnosticReportStatusVS"/>
         <title value="Botswana Diagnostic Report Status Flag"/>
         <status value="active"/>
-        <date value="2021-06-04T20:54:28+00:00"/>
+        <date value="2021-06-04T21:01:44+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -110,8 +110,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8403a998-4bee-42f7-8a56-c7a18ada8403"/>
-          <timestamp value="2021-06-04T20:54:39+00:00"/>
+          <identifier value="urn:uuid:73783987-8d95-4741-a656-9a0ebe9ae655"/>
+          <timestamp value="2021-06-04T21:01:56+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
