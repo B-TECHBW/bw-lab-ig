@@ -9,22 +9,33 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://https://b-techbw.github.io/emr-lis-bw-ig/StructureDefinition/PIMSPatient"/>
-  <version value="0.1.0-test"/>
+  <version value="0.2.0"/>
   <name value="PIMSPatient"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-06-04T21:13:05+00:00"/>
-  <publisher value="I-TECH-UW"/>
+  <date value="2021-06-04T21:27:24+00:00"/>
+  <publisher value="B-TECHBW"/>
   <contact>
+    <name value="B-TECHBW"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.washington.edu/research/research-centers/international-training-and-education-center-for-health-i-tech/"/>
+      <value value="www.github.com/b-techbw"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pmanko@uw.edu"/>
     </telecom>
   </contact>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
+      <code value="072"/>
+    </coding>
+  </jurisdiction>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BW"/>
     </coding>
   </jurisdiction>
   <fhirVersion value="4.0.1"/>
