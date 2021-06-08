@@ -33,7 +33,9 @@ Usage: #definition
 * differential.element[=].mapping[+].identity = "FHIR-R4"
 * differential.element[=].mapping[=].map = ""
 
-// Patient
+/**
+ Patient
+*/
 * differential.element[+].id = "EmrLisDataDictionary.Patient"
 * differential.element[=].path = "EmrLisDataDictionary.Patient"
 * differential.element[=].short = "EMR-LIS Patient Logical Model"
@@ -162,18 +164,252 @@ Usage: #definition
 * differential.element[=].mapping[+].identity = "FHIR-R4"
 * differential.element[=].mapping[=].map = "Patient.gender"
 
-// Lab Order
-* differential.element[+].id = "EmrLisDataDictionary.LabOrder"
-* differential.element[=].path = "EmrLisDataDictionary.LabOrder"
-* differential.element[=].short = "EMR-LIS Lab Order Logical Model"
-* differential.element[=].definition = "Logical model of EMR-LIS LabOrder"
+/**
+ Modelling Lab Orders and Lab Tests
+
+ 1. We need to model the types of tests that can be ordered. 
+   On the PIMS side, we will likely map:
+   tblkLabProfile --> CodeSystem & ValueSet
+   tblkLabTest --> CodeSystem & ValueSet
+
+   We will then need to map these systems to LOINC
+
+   For instances of Lab Orders on the PIMS side, we seem to have 3 levels:
+    A LabOrder can have many LabOrderProfiles, and each LabOrderProfile can have many LabTests. 
+    
+    We will likely map the LabOrder to a Task, 
+    and map each LabOrderProfile to a ServiceRequest with child ServiceRequests representing the 
+    LabOrderProfileTest table
+    
+   So, in terms of logical models, 
+   We have:
+   LabOrderTask
+   LabOrderGroup
+   LabOrder
+
+   tblLabOrder --> LabOrderGroup
+   tblLabOrderProfile --> LabOrderGroup
+
+
+
+ Lab Test Profile
+
+ 
+*/
+
+/**
+ Lab Order Task
+*/
+* differential.element[+].id = "EmrLisDataDictionary.LabOrderTask"
+* differential.element[=].path = "EmrLisDataDictionary.LabOrderTask"
+* differential.element[=].short = "EMR-LIS Lab Order Task Logical Model"
+* differential.element[=].definition = "Logical model of a EMR-LIS Lab Order Task"
+* differential.element[=].type.code = #BackboneElement
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "PIMS"
+* differential.element[=].mapping[=].map = "Laboratory.tblLabOrder"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "BwLabTask"
+
+* differential.element[+].id = "EmrLisDataDictionary.LabOrderTask.Patient"
+* differential.element[=].path = "EmrLisDataDictionary.LabOrderTask.Patient"
+* differential.element[=].short = "Lab Order Patient"
+* differential.element[=].definition = "The Patient for whom the lab order was created"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "PIMS"
+* differential.element[=].mapping[=].map = "Laboratory.tblLabOrder.PatientID"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "Task.for"
+
+* differential.element[+].id = "EmrLisDataDictionary.LabOrderTask.Requester"
+* differential.element[=].path = "EmrLisDataDictionary.LabOrderTask.Requester"
+* differential.element[=].short = "Lab Order Requester"
+* differential.element[=].definition = "The requester of the lab order"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "PIMS"
+* differential.element[=].mapping[=].map = "Laboratory.tblLabOrder.RequesterID"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "Task.owner"
+
+* differential.element[+].id = "EmrLisDataDictionary.LabOrderTask.OrderDate"
+* differential.element[=].path = "EmrLisDataDictionary.LabOrderTask.OrderDate"
+* differential.element[=].short = "Lab Order Date"
+* differential.element[=].definition = "Date Lab Order was authored on"
+* differential.element[=].type.code = #date
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "PIMS"
+* differential.element[=].mapping[=].map = "Laboratory.tblLabOrder.LabOrderDate"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "Task.authoredOn"
+
+* differential.element[+].id = "EmrLisDataDictionary.LabOrderTask.RequestingFacility"
+* differential.element[=].path = "EmrLisDataDictionary.LabOrderTask.RequestingFacility"
+* differential.element[=].short = "Requesting Facility"
+* differential.element[=].definition = "Requesting Facility"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "PIMS"
+* differential.element[=].mapping[=].map = "Laboratory.tblLabOrder.RequestingFacilityID"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "Task.owner"
+
+* differential.element[+].id = "EmrLisDataDictionary.LabOrderTask.OrderNumber"
+* differential.element[=].path = "EmrLisDataDictionary.LabOrderTask.OrderNumber"
+* differential.element[=].short = "National Order Identifier"
+* differential.element[=].definition = "National Order Identifier"
+* differential.element[=].type.code = #Identifier
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "PIMS"
+* differential.element[=].mapping[=].map = "Laboratory.tblLabOrder.LabOrderNo"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "Task.identifier"
+
+* differential.element[+].id = "EmrLisDataDictionary.LabOrderTask.LabOrderGroup"
+* differential.element[=].path = "EmrLisDataDictionary.LabOrderTask.LabOrderGroup"
+* differential.element[=].short = "Ordered Lab Test Profile for Lab Order"
+* differential.element[=].definition = "Reference to Ordered Lab Test Profile for Lab Order"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 1
+* differential.element[=].max = "*"
+* differential.element[=].mapping[+].identity = "PIMS"
+* differential.element[=].mapping[=].map = "Laboratory.tblLabOrderProfile"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "Task.basedOn"
+
+* differential.element[+].id = "EmrLisDataDictionary.LabOrderTask.Result"
+* differential.element[=].path = "EmrLisDataDictionary.LabOrderTask.Result"
+* differential.element[=].short = "Lab Order Result"
+* differential.element[=].definition = "Lab Order Result"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 0
+* differential.element[=].max = "*"
+* differential.element[=].mapping[+].identity = "PIMS"
+* differential.element[=].mapping[=].map = "Laboratory.tblLabOrderProfileTest"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "Task.output"
+
+
+/**
+ Lab Order Group
+*/
+* differential.element[+].id = "EmrLisDataDictionary.LabOrderGroup"
+* differential.element[=].path = "EmrLisDataDictionary.LabOrderGroup"
+* differential.element[=].short = "EMR-LIS Lab Order Group Logical Model"
+* differential.element[=].definition = "Logical model of a EMR-LIS Lab Order Group"
 * differential.element[=].type.code = #BackboneElement
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "PIMS"
 * differential.element[=].mapping[=].map = "Laboratory.tblLabOrder; Laboratory.tblLabOrderProfile"
 * differential.element[=].mapping[+].identity = "FHIR-R4"
-* differential.element[=].mapping[=].map = "Task; ServiceRequest"
+* differential.element[=].mapping[=].map = "BwLabTask"
+
+* differential.element[+].id = "EmrLisDataDictionary.LabOrderGroup.Patient"
+* differential.element[=].path = "EmrLisDataDictionary.LabOrderGroup.Patient"
+* differential.element[=].short = "Lab Order Patient"
+* differential.element[=].definition = "The subject of the lab order"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "PIMS"
+* differential.element[=].mapping[=].map = "Laboratory.tblLabOrder.PatientID"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "ServiceRequest.subject"
+
+* differential.element[+].id = "EmrLisDataDictionary.LabOrderGroup.Requester"
+* differential.element[=].path = "EmrLisDataDictionary.LabOrderGroup.Requester"
+* differential.element[=].short = "Lab Order Requester"
+* differential.element[=].definition = "The requester of the lab order"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "PIMS"
+* differential.element[=].mapping[=].map = "Laboratory.tblLabOrder.RequesterID"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "ServiceRequest.requester"
+
+* differential.element[+].id = "EmrLisDataDictionary.LabOrderGroup.OrderDate"
+* differential.element[=].path = "EmrLisDataDictionary.LabOrderGroup.OrderDate"
+* differential.element[=].short = "Lab Order Date"
+* differential.element[=].definition = "Date Lab Order was authored on"
+* differential.element[=].type.code = #date
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "PIMS"
+* differential.element[=].mapping[=].map = "Laboratory.tblLabOrder.LabOrderDate"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "ServiceRequest.authoredOn"
+
+* differential.element[+].id = "EmrLisDataDictionary.LabOrderGroup.SampleDate"
+* differential.element[=].path = "EmrLisDataDictionary.LabOrderGroup.SampleDate"
+* differential.element[=].short = "Scheduled Sample Date"
+* differential.element[=].definition = "Date sample collection is scheduled for."
+* differential.element[=].type.code = #date
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "PIMS"
+* differential.element[=].mapping[=].map = "Laboratory.tblLabOrder.SampleDate"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "ServiceRequest.occurance"
+
+* differential.element[+].id = "EmrLisDataDictionary.LabOrderGroup.RequestingFacility"
+* differential.element[=].path = "EmrLisDataDictionary.LabOrderGroup.RequestingFacility"
+* differential.element[=].short = "Requesting Facility"
+* differential.element[=].definition = "Requesting Facility"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "PIMS"
+* differential.element[=].mapping[=].map = "Laboratory.tblLabOrder.RequestingFacilityID"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "ServiceRequest.requester"
+
+* differential.element[+].id = "EmrLisDataDictionary.LabOrderGroup.Profile"
+* differential.element[=].path = "EmrLisDataDictionary.LabOrderGroup.Profile"
+* differential.element[=].short = "Ordering Profile for Lab Orders"
+* differential.element[=].definition = "Ordering Profile for Lab Orders"
+* differential.element[=].type.code = #CodeableConcept
+* differential.element[=].min = 1
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "PIMS"
+* differential.element[=].mapping[=].map = "Laboratory.tblLabOrderProfile.labOrderProfileID"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "ServiceRequest"
+
+* differential.element[+].id = "EmrLisDataDictionary.LabOrderGroup.LabOrder"
+* differential.element[=].path = "EmrLisDataDictionary.LabOrderGroup.LabOrder"
+* differential.element[=].short = "Reference to child lab orders"
+* differential.element[=].definition = "Reference to child lab orders"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 1
+* differential.element[=].max = "*"
+* differential.element[=].mapping[+].identity = "PIMS"
+* differential.element[=].mapping[=].map = "Laboratory.tblLabOrderProfileTest"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "ServiceRequest.code"
+
+/**
+ Lab Order
+*/
+* differential.element[+].id = "EmrLisDataDictionary.LabOrder"
+* differential.element[=].path = "EmrLisDataDictionary.LabOrder"
+* differential.element[=].short = "EMR-LIS Lab Order Logical Model"
+* differential.element[=].definition = "Logical model of a EMR-LIS Lab Order"
+* differential.element[=].type.code = #BackboneElement
+* differential.element[=].min = 0
+* differential.element[=].max = "1"
+* differential.element[=].mapping[+].identity = "PIMS"
+* differential.element[=].mapping[=].map = "Laboratory.tblLabOrder; Laboratory.tblLabOrderProfile, Laboratory.tblLabOrderProfileTest"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "BwLabServiceRequest"
 
 * differential.element[+].id = "EmrLisDataDictionary.LabOrder.Patient"
 * differential.element[=].path = "EmrLisDataDictionary.LabOrder.Patient"
@@ -185,7 +421,7 @@ Usage: #definition
 * differential.element[=].mapping[+].identity = "PIMS"
 * differential.element[=].mapping[=].map = "Laboratory.tblLabOrder.PatientID"
 * differential.element[=].mapping[+].identity = "FHIR-R4"
-* differential.element[=].mapping[=].map = "Task.for, ServiceRequest.subject"
+* differential.element[=].mapping[=].map = "ServiceRequest.subject"
 
 * differential.element[+].id = "EmrLisDataDictionary.LabOrder.Requester"
 * differential.element[=].path = "EmrLisDataDictionary.LabOrder.Requester"
@@ -197,7 +433,7 @@ Usage: #definition
 * differential.element[=].mapping[+].identity = "PIMS"
 * differential.element[=].mapping[=].map = "Laboratory.tblLabOrder.RequesterID"
 * differential.element[=].mapping[+].identity = "FHIR-R4"
-* differential.element[=].mapping[=].map = "Task.owner, ServiceRequest.requester"
+* differential.element[=].mapping[=].map = "ServiceRequest.requester"
 
 * differential.element[+].id = "EmrLisDataDictionary.LabOrder.OrderDate"
 * differential.element[=].path = "EmrLisDataDictionary.LabOrder.OrderDate"
@@ -209,7 +445,7 @@ Usage: #definition
 * differential.element[=].mapping[+].identity = "PIMS"
 * differential.element[=].mapping[=].map = "Laboratory.tblLabOrder.LabOrderDate"
 * differential.element[=].mapping[+].identity = "FHIR-R4"
-* differential.element[=].mapping[=].map = "Task.authoredOn, ServiceRequest.authoredOn"
+* differential.element[=].mapping[=].map = "ServiceRequest.authoredOn"
 
 * differential.element[+].id = "EmrLisDataDictionary.LabOrder.SampleDate"
 * differential.element[=].path = "EmrLisDataDictionary.LabOrder.SampleDate"
@@ -233,67 +469,35 @@ Usage: #definition
 * differential.element[=].mapping[+].identity = "PIMS"
 * differential.element[=].mapping[=].map = "Laboratory.tblLabOrder.RequestingFacilityID"
 * differential.element[=].mapping[+].identity = "FHIR-R4"
-* differential.element[=].mapping[=].map = "Task.owner, ServiceRequest.requester"
+* differential.element[=].mapping[=].map = "ServiceRequest.requester"
 
-* differential.element[+].id = "EmrLisDataDictionary.LabOrder.OrderNumber"
-* differential.element[=].path = "EmrLisDataDictionary.LabOrder.OrderNumber"
-* differential.element[=].short = "National Order Identifier"
-* differential.element[=].definition = "National Order Identifier"
-* differential.element[=].type.code = #Identifier
+* differential.element[+].id = "EmrLisDataDictionary.LabOrder.LabTest"
+* differential.element[=].path = "EmrLisDataDictionary.LabOrder.LabTest"
+* differential.element[=].short = "Ordered Lab Test"
+* differential.element[=].definition = "Ordered Lab Test"
+* differential.element[=].type.code = #CodeableConcept
 * differential.element[=].min = 1
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "PIMS"
-* differential.element[=].mapping[=].map = "Laboratory.tblLabOrder.LabOrderNo"
-* differential.element[=].mapping[+].identity = "FHIR-R4"
-* differential.element[=].mapping[=].map = "ServiceRequest.identifier"
-
-* differential.element[+].id = "EmrLisDataDictionary.LabOrder.Profile"
-* differential.element[=].path = "EmrLisDataDictionary.LabOrder.Profile"
-* differential.element[=].short = "Order Profile for Lab Order"
-* differential.element[=].definition = "Reference to Order Profile for Lab Order"
-* differential.element[=].type.code = #Reference
-* differential.element[=].min = 1
-* differential.element[=].max = "*"
-* differential.element[=].mapping[+].identity = "PIMS"
-* differential.element[=].mapping[=].map = "Laboratory.tblLabOrderProfile"
-* differential.element[=].mapping[+].identity = "FHIR-R4"
-* differential.element[=].mapping[=].map = "Task.basedOn"
-
-* differential.element[+].id = "EmrLisDataDictionary.LabOrder.Result"
-* differential.element[=].path = "EmrLisDataDictionary.LabOrder.Result"
-* differential.element[=].short = "Lab Order Result"
-* differential.element[=].definition = "Lab Order Result"
-* differential.element[=].type.code = #Reference
-* differential.element[=].min = 0
-* differential.element[=].max = "*"
-* differential.element[=].mapping[+].identity = "PIMS"
-* differential.element[=].mapping[=].map = "Laboratory.tblLabOrderProfileTest"
-* differential.element[=].mapping[+].identity = "FHIR-R4"
-* differential.element[=].mapping[=].map = "Task.output"
-
-* differential.element[+].id = "EmrLisDataDictionary.Profile"
-* differential.element[=].path = "EmrLisDataDictionary.Profile"
-* differential.element[=].short = "Ordering Profile for Lab Orders"
-* differential.element[=].definition = "Ordering Profile for Lab Orders"
-* differential.element[=].type.code = #BackboneElement
-* differential.element[=].min = 0
-* differential.element[=].max = "*"
-* differential.element[=].mapping[+].identity = "PIMS"
-* differential.element[=].mapping[=].map = "Laboratory.tblLabOrderProfile"
-* differential.element[=].mapping[+].identity = "FHIR-R4"
-* differential.element[=].mapping[=].map = "ServiceRequest"
-
-* differential.element[+].id = "EmrLisDataDictionary.Profile.LabTest"
-* differential.element[=].path = "EmrLisDataDictionary.Profile.LabTest"
-* differential.element[=].short = "Reference to Lab Test"
-* differential.element[=].definition = "Reference to Lab Test"
-* differential.element[=].type.code = #Reference
-* differential.element[=].min = 1
-* differential.element[=].max = "*"
-* differential.element[=].mapping[+].identity = "PIMS"
-* differential.element[=].mapping[=].map = "Laboratory.tblLabOrderProfile.LabTestID"
+* differential.element[=].mapping[=].map = "Laboratory.tblLabOrderProfileTest.LabTestID"
 * differential.element[=].mapping[+].identity = "FHIR-R4"
 * differential.element[=].mapping[=].map = "ServiceRequest.code"
+
+/**
+ Lab Test Type
+*/
+
+// * differential.element[+].id = "EmrLisDataDictionary.LabTest"
+// * differential.element[=].path = "EmrLisDataDictionary.LabTest"
+// * differential.element[=].short = "Lab Test"
+// * differential.element[=].definition = "Reference to Lab Test"
+// * differential.element[=].type.code = #Reference
+// * differential.element[=].min = 1
+// * differential.element[=].max = "*"
+// * differential.element[=].mapping[+].identity = "PIMS"
+// * differential.element[=].mapping[=].map = "Laboratory.tblLabOrderProfile.LabTestID"
+// * differential.element[=].mapping[+].identity = "FHIR-R4"
+// * differential.element[=].mapping[=].map = "ServiceRequest.code"
 
 * differential.element[+].id = "EmrLisDataDictionary.Result"
 * differential.element[=].path = "EmrLisDataDictionary.Result"
