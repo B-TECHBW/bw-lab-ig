@@ -12,7 +12,7 @@
   <title value="Botswana Laboratory HIE Workflow Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-06-04T21:46:32+00:00"/>
+  <date value="2021-06-08T14:15:40+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -41,6 +41,11 @@
   <packageId value="fhir.bw.lab"/>
   <license value="CC-BY-SA-4.0"/>
   <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7_fhir_uv_ips">
+    <uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/>
+    <packageId value="hl7.fhir.uv.ips"/>
+    <version value="1.0.0"/>
+  </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -217,8 +222,19 @@
       <reference>
         <reference value="StructureDefinition/bw-encounter"/>
       </reference>
-      <name value="Botsana Encounter"/>
-      <description value="Encounter resource for encounters in Botswana"/>
+      <name value="Botswana Encounter (TODO)"/>
+      <description value="Encounter resource for clinical encounters in Botswana"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/bw-lab-composition"/>
+      </reference>
+      <name value="Botswana Lab Composition"/>
+      <description value="This composition packages information needed to facilitate lab order communication between clinical systems in Botswana."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -261,7 +277,7 @@
       <reference>
         <reference value="StructureDefinition/bw-lab-task"/>
       </reference>
-      <name value="BT Lab Workflow Task Resource"/>
+      <name value="Botswana Lab Task Resource"/>
       <description value="A Task resource for tracking order state and synchronizing Lab Order communication in Botswana"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -285,6 +301,17 @@
       </reference>
       <name value="Botswana Patient"/>
       <description value="A patient in a Botswana Health System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/bw-practitioner"/>
+      </reference>
+      <name value="Botswana Practitioner"/>
+      <description value="A practitioner in a Botswana Health System"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -344,6 +371,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/example-bw-lab-pims-composition"/>
+      </reference>
+      <name value="Example PIMS Lab Composition (Work in Progress)"/>
+      <description value="Example PIMS Lab Composition"/>
+      <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -352,6 +390,72 @@
       <name value="BW Patient"/>
       <description value="Patient in a Botswana Health System"/>
       <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/example-bw-patient-international"/>
+      </reference>
+      <name value="INT BW Patient"/>
+      <description value="Patient in a Botswana Health System"/>
+      <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/example-bw-pims-practitioner"/>
+      </reference>
+      <name value="BW PIMS Practitioner"/>
+      <description value="Example PIMS Practitioner"/>
+      <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-bw-pims-service-request-1"/>
+      </reference>
+      <name value="BW PIMS ServiceRequest 1"/>
+      <description value="Example ServiceRequest resource representing a PIMS Lab Order"/>
+      <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-bw-pims-service-request-2"/>
+      </reference>
+      <name value="BW PIMS ServiceRequest 2"/>
+      <description value="Example ServiceRequest resource representing a PIMS Lab Order"/>
+      <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/example-bw-pims-service-request-profile"/>
+      </reference>
+      <name value="BW PIMS ServiceRequest Profile"/>
+      <description value="Example ServiceRequest resource representing a PIMS Profile"/>
+      <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/example-bw-task-requested"/>
+      </reference>
+      <name value="BW Requested Lab Task"/>
+      <description value="Example Task for Requested Lab Orders and Results in Botswana"/>
+      <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

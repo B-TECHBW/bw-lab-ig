@@ -15,9 +15,9 @@
   <url value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-encounter"/>
   <version value="0.2.0"/>
   <name value="BwEncounter"/>
-  <title value="Botsana Encounter"/>
+  <title value="Botswana Encounter (TODO)"/>
   <status value="active"/>
-  <date value="2021-06-04T21:46:32+00:00"/>
+  <date value="2021-06-08T14:15:40+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -30,7 +30,7 @@
       <value value="pmanko@uw.edu"/>
     </telecom>
   </contact>
-  <description value="Encounter resource for encounters in Botswana"/>
+  <description value="Encounter resource for clinical encounters in Botswana"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>

@@ -13,7 +13,6 @@
     <sch:title>f:ServiceRequest</sch:title>
     <sch:rule context="f:ServiceRequest">
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
-      <sch:assert test="count(f:encounter) &gt;= 1">encounter: minimum cardinality of 'encounter' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

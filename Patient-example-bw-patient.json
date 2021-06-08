@@ -8,17 +8,24 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: urn:uuid:647515ed-0d5e-4c99-b23d-073fbc593f76</p><p><b>name</b>: Bt TestPatient</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: MR: &lt;OmangNumber&gt;</p><p><b>name</b>: Bw TestPatient</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p></div>"
   },
   "identifier": [
     {
-      "system": "urn:ietf:rfc:3986",
-      "value": "urn:uuid:647515ed-0d5e-4c99-b23d-073fbc593f76"
+      "type": {
+        "coding": [
+          {
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "http://moh.bw.org/ext/identifier/omang",
+      "value": "<OmangNumber>"
     }
   ],
   "name": [
     {
-      "text": "Bt TestPatient"
+      "text": "Bw TestPatient"
     }
   ],
   "gender": "female",

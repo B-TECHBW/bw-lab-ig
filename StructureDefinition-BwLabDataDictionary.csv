@@ -14,7 +14,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "EmrLisDataDictionary.Patient.NationalID","","","",0,1,"","","","Identifier {[]} {[]}
 ","National Patient Identification Number","Main national-level identification number (Omang or Passport)","","","","","","","","","",,,,,"",,,,"EmrLisDataDictionary.Patient.NationalID",0,1,"","","Patient.tblPatient.IDNo; Patient.tblPatient.IDNoType","Patient.identifier"
 "EmrLisDataDictionary.Patient.Active","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Patient Active Flag","Flag for distinguishing between active and not active Patients","","","","","","","","","",,"extensible","","","",,,,"EmrLisDataDictionary.Patient.Active",0,1,"","","TODO","Patient.active"
+","Patient Active Flag","Flag for distinguishing between active and not active Patients","","","","","","","","","",,"extensible","","","",,,,"EmrLisDataDictionary.Patient.Active",0,1,"","","Patient.tblPatientProgramActivity","Patient.active"
 "EmrLisDataDictionary.Patient.MaritalStatus","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Marital Status","Marital Status","","","","","","","","","",,"extensible","","","",,,,"EmrLisDataDictionary.Patient.MaritalStatus",0,*,"","","Patient.tblPatient.MartitalStatusID; Patient.tblkMaritalStatus","Patient.maritalStatus"
 "EmrLisDataDictionary.Patient.Address","","","",0,*,"","","","Address {[]} {[]}

@@ -1,0 +1,24 @@
+{
+  "resourceType": "Practitioner",
+  "id": "example-bw-pims-practitioner",
+  "meta": {
+    "profile": [
+      "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-practitioner"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: RequesterID</p><p><b>name</b>: BW PimsProvider</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://<pims-instance-specific-url>/ext/practitioner/identifier",
+      "value": "RequesterID"
+    }
+  ],
+  "name": [
+    {
+      "text": "BW PimsProvider"
+    }
+  ]
+}

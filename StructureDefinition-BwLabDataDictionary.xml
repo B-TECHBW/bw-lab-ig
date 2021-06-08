@@ -37,7 +37,7 @@
   <name value="BwLabDataDictionary"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-06-04T21:46:32+00:00"/>
+  <date value="2021-06-08T14:15:40+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -252,7 +252,7 @@
       </binding>
       <mapping>
         <identity value="PIMS"/>
-        <map value="TODO"/>
+        <map value="Patient.tblPatientProgramActivity"/>
       </mapping>
       <mapping>
         <identity value="FHIR-R4"/>
@@ -861,7 +861,7 @@
       </binding>
       <mapping>
         <identity value="PIMS"/>
-        <map value="TODO"/>
+        <map value="Patient.tblPatientProgramActivity"/>
       </mapping>
       <mapping>
         <identity value="FHIR-R4"/>

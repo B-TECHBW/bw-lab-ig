@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="example-bw-pims-practitioner"/>
+  <meta>
+    <profile value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: RequesterID</p><p><b>name</b>: BW PimsProvider</p></div>
+  </text>
+  <identifier>
+    <system value="http://&lt;pims-instance-specific-url&gt;/ext/practitioner/identifier"/>
+    <value value="RequesterID"/>
+  </identifier>
+  <name>
+    <text value="BW PimsProvider"/>
+  </name>
+</Practitioner>

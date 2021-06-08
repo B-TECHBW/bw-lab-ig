@@ -1,0 +1,31 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "example-bw-pims-service-request-1",
+  "meta": {
+    "profile": [
+      "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>basedOn</b>: <a href=\"ServiceRequest-example-bw-pims-service-request-profile.html\">Generated Summary: status: active; intent: order; <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-profile-code pims-profile-code}\">pims-profile-code</span></a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}\">pims-labtest-code</span></p><p><b>subject</b>: <a href=\"Patient-example-bw-patient.html\">Generated Summary: MR: &lt;OmangNumber&gt;; Bw TestPatient; gender: female; birthDate: 1988-03-02</a></p></div>"
+  },
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/example-bw-pims-service-request-profile"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "code": {
+    "coding": [
+      {
+        "system": "http://moh.bw.org/ext/laboratory/pims-lab-test-code",
+        "code": "pims-labtest-code"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example-bw-patient"
+  }
+}

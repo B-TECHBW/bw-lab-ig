@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BwLabDataDictionary"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
   fhir:StructureDefinition.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:StructureDefinition.date [ fhir:value "2021-06-04T21:46:32+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-06-08T14:15:40+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "B-TECHBW"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -284,7 +284,7 @@
        fhir:ElementDefinition.mapping [
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "PIMS" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "TODO" ]
+         fhir:ElementDefinition.mapping.map [ fhir:value "Patient.tblPatientProgramActivity" ]
        ], [
          fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "FHIR-R4" ];
@@ -974,7 +974,7 @@
        fhir:ElementDefinition.mapping [
          fhir:index 0;
          fhir:ElementDefinition.mapping.identity [ fhir:value "PIMS" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "TODO" ]
+         fhir:ElementDefinition.mapping.map [ fhir:value "Patient.tblPatientProgramActivity" ]
        ], [
          fhir:index 1;
          fhir:ElementDefinition.mapping.identity [ fhir:value "FHIR-R4" ];

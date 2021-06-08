@@ -11,7 +11,7 @@
   "title": "Botswana Laboratory HIE Workflow Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-06-04T21:46:32+00:00",
+  "date": "2021-06-08T14:15:40+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -51,6 +51,14 @@
   "license": "CC-BY-SA-4.0",
   "fhirVersion": [
     "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "id": "hl7_fhir_uv_ips",
+      "uri": "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
+      "packageId": "hl7.fhir.uv.ips",
+      "version": "1.0.0"
+    }
   ],
   "definition": {
     "extension": [
@@ -339,8 +347,22 @@
         "reference": {
           "reference": "StructureDefinition/bw-encounter"
         },
-        "name": "Botsana Encounter",
-        "description": "Encounter resource for encounters in Botswana",
+        "name": "Botswana Encounter (TODO)",
+        "description": "Encounter resource for clinical encounters in Botswana",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/bw-lab-composition"
+        },
+        "name": "Botswana Lab Composition",
+        "description": "This composition packages information needed to facilitate lab order communication between clinical systems in Botswana.",
         "exampleBoolean": false
       },
       {
@@ -395,7 +417,7 @@
         "reference": {
           "reference": "StructureDefinition/bw-lab-task"
         },
-        "name": "BT Lab Workflow Task Resource",
+        "name": "Botswana Lab Task Resource",
         "description": "A Task resource for tracking order state and synchronizing Lab Order communication in Botswana",
         "exampleBoolean": false
       },
@@ -425,6 +447,20 @@
         },
         "name": "Botswana Patient",
         "description": "A patient in a Botswana Health System",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/bw-practitioner"
+        },
+        "name": "Botswana Practitioner",
+        "description": "A practitioner in a Botswana Health System",
         "exampleBoolean": false
       },
       {
@@ -501,6 +537,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/example-bw-lab-pims-composition"
+        },
+        "name": "Example PIMS Lab Composition (Work in Progress)",
+        "description": "Example PIMS Lab Composition",
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
           }
         ],
@@ -510,6 +560,90 @@
         "name": "BW Patient",
         "description": "Patient in a Botswana Health System",
         "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/example-bw-patient-international"
+        },
+        "name": "INT BW Patient",
+        "description": "Patient in a Botswana Health System",
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/example-bw-pims-practitioner"
+        },
+        "name": "BW PIMS Practitioner",
+        "description": "Example PIMS Practitioner",
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-practitioner"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/example-bw-pims-service-request-1"
+        },
+        "name": "BW PIMS ServiceRequest 1",
+        "description": "Example ServiceRequest resource representing a PIMS Lab Order",
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/example-bw-pims-service-request-2"
+        },
+        "name": "BW PIMS ServiceRequest 2",
+        "description": "Example ServiceRequest resource representing a PIMS Lab Order",
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/example-bw-pims-service-request-profile"
+        },
+        "name": "BW PIMS ServiceRequest Profile",
+        "description": "Example ServiceRequest resource representing a PIMS Profile",
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Task"
+          }
+        ],
+        "reference": {
+          "reference": "Task/example-bw-task-requested"
+        },
+        "name": "BW Requested Lab Task",
+        "description": "Example Task for Requested Lab Orders and Results in Botswana",
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task"
       }
     ],
     "page": {

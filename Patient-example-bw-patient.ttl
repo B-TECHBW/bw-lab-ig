@@ -17,16 +17,22 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: urn:uuid:647515ed-0d5e-4c99-b23d-073fbc593f76</p><p><b>name</b>: Bt TestPatient</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: MR: &lt;OmangNumber&gt;</p><p><b>name</b>: Bw TestPatient</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p></div>"
   ];
   fhir:Patient.identifier [
      fhir:index 0;
-     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
-     fhir:Identifier.value [ fhir:value "urn:uuid:647515ed-0d5e-4c99-b23d-073fbc593f76" ]
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "MR" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://moh.bw.org/ext/identifier/omang" ];
+     fhir:Identifier.value [ fhir:value "<OmangNumber>" ]
   ];
   fhir:Patient.name [
      fhir:index 0;
-     fhir:HumanName.text [ fhir:value "Bt TestPatient" ]
+     fhir:HumanName.text [ fhir:value "Bw TestPatient" ]
   ];
   fhir:Patient.gender [ fhir:value "female"];
   fhir:Patient.birthDate [ fhir:value "1988-03-02"^^xsd:date] .

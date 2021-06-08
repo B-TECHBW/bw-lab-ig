@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://b-techbw.github.io/bw-lab-ig/Practitioner/example-bw-pims-practitioner> a fhir:Practitioner;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-bw-pims-practitioner"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-practitioner";
+       fhir:index 0;
+       fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-practitioner>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: RequesterID</p><p><b>name</b>: BW PimsProvider</p></div>"
+  ];
+  fhir:Practitioner.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://<pims-instance-specific-url>/ext/practitioner/identifier" ];
+     fhir:Identifier.value [ fhir:value "RequesterID" ]
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "BW PimsProvider" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://b-techbw.github.io/bw-lab-ig/Practitioner/example-bw-pims-practitioner.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

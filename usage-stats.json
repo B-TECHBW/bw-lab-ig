@@ -8,7 +8,13 @@
     "Encounter": [
       {
         "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-encounter",
-        "title": "Botsana Encounter"
+        "title": "Botswana Encounter (TODO)"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition",
+        "title": "Botswana Lab Composition"
       }
     ],
     "DiagnosticReport": [
@@ -32,7 +38,7 @@
     "Task": [
       {
         "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task",
-        "title": "BT Lab Workflow Task Resource"
+        "title": "Botswana Lab Task Resource"
       }
     ],
     "Patient": [
@@ -40,9 +46,22 @@
         "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient",
         "title": "Botswana Patient"
       }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-practitioner",
+        "title": "Botswana Practitioner"
+      }
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber": [
+      "Composition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "DiagnosticReport.effective[x]",
+      "Observation.effective[x]"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],

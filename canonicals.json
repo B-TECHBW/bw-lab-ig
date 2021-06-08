@@ -21,6 +21,13 @@
     "name": "BwEncounter"
   },
   {
+    "id": "bw-lab-composition",
+    "type": "StructureDefinition",
+    "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition",
+    "version": "0.2.0",
+    "name": "BwLabComposition"
+  },
+  {
     "id": "bw-lab-diagnostic-report",
     "type": "StructureDefinition",
     "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report",
@@ -61,6 +68,13 @@
     "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient",
     "version": "0.2.0",
     "name": "BwPatient"
+  },
+  {
+    "id": "bw-practitioner",
+    "type": "StructureDefinition",
+    "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-practitioner",
+    "version": "0.2.0",
+    "name": "BwPractitioner"
   },
   {
     "id": "bw-lab-diagnostic-report-status-vs",

@@ -10,7 +10,7 @@
   "name": "BwLabDataDictionary",
   "status": "draft",
   "experimental": true,
-  "date": "2021-06-04T21:46:32+00:00",
+  "date": "2021-06-08T14:15:40+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -280,7 +280,7 @@
         "mapping": [
           {
             "identity": "PIMS",
-            "map": "TODO"
+            "map": "Patient.tblPatientProgramActivity"
           },
           {
             "identity": "FHIR-R4",
@@ -1024,7 +1024,7 @@
         "mapping": [
           {
             "identity": "PIMS",
-            "map": "TODO"
+            "map": "Patient.tblPatientProgramActivity"
           },
           {
             "identity": "FHIR-R4",

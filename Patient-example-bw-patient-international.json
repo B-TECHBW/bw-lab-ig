@@ -1,0 +1,33 @@
+{
+  "resourceType": "Patient",
+  "id": "example-bw-patient-international",
+  "meta": {
+    "profile": [
+      "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: PPN: &lt;PassportNumber&gt;</p><p><b>name</b>: Bw TestPatient</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p></div>"
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "PPN"
+          }
+        ]
+      },
+      "system": "urn:ietf:rfc:3986",
+      "value": "<PassportNumber>"
+    }
+  ],
+  "name": [
+    {
+      "text": "Bw TestPatient"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1988-03-02"
+}

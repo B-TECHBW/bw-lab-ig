@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://b-techbw.github.io/bw-lab-ig/ServiceRequest/example-bw-pims-service-request-profile> a fhir:ServiceRequest;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-bw-pims-service-request-profile"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request";
+       fhir:index 0;
+       fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-profile-code pims-profile-code}\">pims-profile-code</span></p><p><b>subject</b>: <a href=\"Patient-example-bw-patient.html\">Generated Summary: MR: &lt;OmangNumber&gt;; Bw TestPatient; gender: female; birthDate: 1988-03-02</a></p></div>"
+  ];
+  fhir:ServiceRequest.status [ fhir:value "active"];
+  fhir:ServiceRequest.intent [ fhir:value "order"];
+  fhir:ServiceRequest.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://moh.bw.org/ext/laboratory/pims-lab-profile-code" ];
+       fhir:Coding.code [ fhir:value "pims-profile-code" ]
+     ]
+  ];
+  fhir:ServiceRequest.subject [
+     fhir:link <http://b-techbw.github.io/bw-lab-ig/Patient/example-bw-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/example-bw-patient" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://b-techbw.github.io/bw-lab-ig/ServiceRequest/example-bw-pims-service-request-profile.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
