@@ -10,7 +10,7 @@ Description: "A Task resource for tracking order state and synchronizing Lab Ord
 * encounter only Reference(BwEncounter)
 * owner only Reference(Practitioner or Organization or HealthcareService)
 * authoredOn 1..1
-* status from BwLabTaskStatusVS
+* status from BwPimsLabOrderStatusVS
 * intent from BwLabTaskIntentVS
 * output.type.text = "DiagnosticReport"
 * output.value[x] only Reference(BwLabDiagnosticReport)
