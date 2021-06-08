@@ -14,6 +14,27 @@
     "name": "BwPimsLabOrderStatusCS"
   },
   {
+    "id": "BwLabPimsOrderStatusDiagnosticReportCM",
+    "type": "ConceptMap",
+    "url": "http://b-techbw.github.io/bw-lab-ig/ConceptMap/BwLabPimsOrderStatusDiagnosticReportCM",
+    "version": "0.2.0",
+    "name": "BwLabPimsOrderStatusDiagnosticReportCM"
+  },
+  {
+    "id": "BwLabPimsOrderStatusRequestCM",
+    "type": "ConceptMap",
+    "url": "http://b-techbw.github.io/bw-lab-ig/ConceptMap/BwLabPimsOrderStatusRequestCM",
+    "version": "0.2.0",
+    "name": "BwLabPimsOrderStatusRequestCM"
+  },
+  {
+    "id": "BwLabPimsOrderStatusTaskCM",
+    "type": "ConceptMap",
+    "url": "http://b-techbw.github.io/bw-lab-ig/ConceptMap/BwLabPimsOrderStatusTaskCM",
+    "version": "0.2.0",
+    "name": "BwLabPimsOrderStatusTaskCM"
+  },
+  {
     "id": "fhir.bw.lab",
     "type": "ImplementationGuide",
     "url": "http://b-techbw.github.io/bw-lab-ig/ImplementationGuide/fhir.bw.lab",

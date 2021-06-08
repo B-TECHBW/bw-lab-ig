@@ -1,13 +1,16 @@
 ﻿BwLabIG : Validation Results
 =========================================
 
-err = 24, warn = 99, info = 3
+err = 26, warn = 97, info = 3
 IG Publisher Version: 1.1.73
-Generated Tue Jun 08 20:57:15 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
+Generated Tue Jun 08 22:00:51 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
 
- Build Errors : 163 / 1 / 0
+ Build Errors : 181 / 1 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-order-status-cs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Composition-example-bw-lab-pims-composition : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusRequestCM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusTaskCM : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.bw.lab : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-example-bw-patient : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/Patient-example-bw-patient-international : 2 / 1 / 1
@@ -21,7 +24,7 @@ Generated Tue Jun 08 20:57:15 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-diagnostic-report : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-observation : 3 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-service-request : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-task : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-task : 2 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-national-identifier : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-practitioner : 0 / 0 / 1
@@ -45,6 +48,24 @@ ERROR: /github/workspace/output/Composition-example-bw-lab-pims-composition.html
 ERROR: /github/workspace/output/Composition-example-bw-lab-pims-composition.json.html#/html/body/div/div/div/p/a at Line 236, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Composition-example-bw-lab-pims-composition.ttl.html#/html/body/div/div/div/p/a at Line 248, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Composition-example-bw-lab-pims-composition.xml.html#/html/body/div/div/div/p/a at Line 231, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 569: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#/html/body/div/div/div/p/a at Line 204, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.json.html#/html/body/div/div/div/p/a at Line 308, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.ttl.html#/html/body/div/div/div/p/a at Line 299, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.xml.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 531: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.html#/html/body/div/div/div/p/a at Line 204, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.json.html#/html/body/div/div/div/p/a at Line 308, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.ttl.html#/html/body/div/div/div/p/a at Line 299, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.xml.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 519: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.html#/html/body/div/div/div/p/a at Line 204, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.json.html#/html/body/div/div/div/p/a at Line 308, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.ttl.html#/html/body/div/div/div/p/a at Line 299, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.xml.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Patient-example-bw-patient-international.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Patient-example-bw-patient-international.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Patient-example-bw-patient-international.json.html#/html/body/div/div/div/p/a at Line 238, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -179,16 +200,16 @@ ERROR: /github/workspace/output/ValueSet-bw-lab-task-intent-vs.json.html#/html/b
 ERROR: /github/workspace/output/ValueSet-bw-lab-task-intent-vs.ttl.html#/html/body/div/div/div/p/a at Line 268, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-task-intent-vs.xml.html#/html/body/div/div/div/p/a at Line 255, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-task-status-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-bw-lab-task-status-vs.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-lab-task-status-vs.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-task-status-vs.json.html#/html/body/div/div/div/p/a at Line 279, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-task-status-vs.ttl.html#/html/body/div/div/div/p/a at Line 277, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-task-status-vs.xml.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-order-status-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-bw-pims-lab-order-status-vs.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-pims-lab-order-status-vs.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-order-status-vs.json.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-order-status-vs.ttl.html#/html/body/div/div/div/p/a at Line 263, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-order-status-vs.xml.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 479, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 521, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/background.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/p/a at Line 199, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -205,6 +226,12 @@ ERROR: Composition/example-bw-lab-pims-composition: Composition.status: The valu
 WARNING: Composition/example-bw-lab-pims-composition: Composition.type.coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: Composition/example-bw-lab-pims-composition: Composition.subject: Unable to resolve resource 'BwPatient'
 ERROR: Composition/example-bw-lab-pims-composition: Composition.author[0]: Unable to resolve resource 'BwPractitioner'
+== /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.json ==
+INFORMATION: ConceptMap/BwLabPimsOrderStatusDiagnosticReportCM: ConceptMap: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ConceptMap
+== /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusRequestCM.json ==
+INFORMATION: ConceptMap/BwLabPimsOrderStatusRequestCM: ConceptMap: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ConceptMap
+== /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusTaskCM.json ==
+INFORMATION: ConceptMap/BwLabPimsOrderStatusTaskCM: ConceptMap: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ConceptMap
 == /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.bw.lab.json ==
 INFORMATION: ImplementationGuide/fhir.bw.lab: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 == /github/workspace/fsh-generated/resources/Patient-example-bw-patient.json ==
@@ -335,10 +362,10 @@ WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/St
 == /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-service-request.json ==
 INFORMATION: StructureDefinition/bw-lab-service-request: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-task.json ==
-WARNING: Botswana Lab Task Resource.Task.status: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-status-vs could not be expanded
+ERROR: Botswana Lab Task Resource.Task.status: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/task-status|4.0.1
 WARNING: Botswana Lab Task Resource.Task.intent: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs could not be expanded
 INFORMATION: StructureDefinition/bw-lab-task: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/bw-lab-task: StructureDefinition: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-status-vs could not be expanded
+ERROR: StructureDefinition/bw-lab-task: StructureDefinition: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/task-status|4.0.1
 WARNING: StructureDefinition/bw-lab-task: StructureDefinition: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs could not be expanded
 == /github/workspace/fsh-generated/resources/StructureDefinition-bw-national-identifier.json ==
 INFORMATION: StructureDefinition/bw-national-identifier: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
@@ -348,7 +375,7 @@ INFORMATION: StructureDefinition/bw-patient: StructureDefinition: Validate resou
 INFORMATION: StructureDefinition/bw-practitioner: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /github/workspace/fsh-generated/resources/Task-example-bw-task-requested.json ==
 INFORMATION: Task/example-bw-task-requested: Task: Validate resource against profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task
-ERROR: Task/example-bw-task-requested: Task.status: The value provided ('requested') is not in the value set http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-status-vs (http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-status-vs), and a code is required from this value set) (error message = The code system "http://hl7.org/fhir/ValueSet/task-status" is not known (encountered paired with code = "requested"); The code provided (http://hl7.org/fhir/ValueSet/task-status#requested) is not valid in the value set 'BwLabTaskStatusVS' (from http://tx.fhir.org/r4))
+ERROR: Task/example-bw-task-requested: Task.status: The value provided ('requested') is not in the value set http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs (http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs), and a code is required from this value set) (error message = Unknown Code http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs#requested in http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs)
 ERROR: Task/example-bw-task-requested: Task.intent: The value provided ('order') is not in the value set http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs (http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs), and a code is required from this value set) (error message = The code system "http://hl7.org/fhir/ValueSet/task-intent" is not known (encountered paired with code = "order"); The code provided (http://hl7.org/fhir/ValueSet/task-intent#order) is not valid in the value set 'BwLabTaskIntentVS' (from http://tx.fhir.org/r4))
 == /github/workspace/fsh-generated/resources/ValueSet-bw-lab-diagnostic-report-status-vs.json ==
 INFORMATION: ValueSet/bw-lab-diagnostic-report-status-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet

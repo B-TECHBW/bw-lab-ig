@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Botswana Laboratory HIE Workflow Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-06-08T20:56:43+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-06-08T22:00:20+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "B-TECHBW"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -547,6 +547,48 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/ConceptMap/BwLabPimsOrderStatusDiagnosticReportCM>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/BwLabPimsOrderStatusDiagnosticReportCM" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PIMS Lab Order Diagnostic Report Status Mapping" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping PIMS Lab Order Status to standard DiagnosticReport status value set." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/ConceptMap/BwLabPimsOrderStatusRequestCM>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/BwLabPimsOrderStatusRequestCM" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PIMS Lab Order Service Request Status Mapping" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping PIMS Lab Order Status to standard ServiceRequest status value set." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/ConceptMap/BwLabPimsOrderStatusTaskCM>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/BwLabPimsOrderStatusTaskCM" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PIMS Lab Order Status Task Mapping" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping PIMS Lab Order Status to standard Task status value set." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Composition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -560,7 +602,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition>
        ]
      ], [
-       fhir:index 17;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -577,7 +619,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient>
        ]
      ], [
-       fhir:index 18;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -594,7 +636,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient>
        ]
      ], [
-       fhir:index 19;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -611,7 +653,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-practitioner>
        ]
      ], [
-       fhir:index 20;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -628,7 +670,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request>
        ]
      ], [
-       fhir:index 21;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -645,7 +687,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request>
        ]
      ], [
-       fhir:index 22;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -662,7 +704,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request>
        ]
      ], [
-       fhir:index 23;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

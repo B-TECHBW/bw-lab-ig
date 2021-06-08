@@ -12,7 +12,7 @@
   <title value="Botswana Laboratory HIE Workflow Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-06-08T20:56:43+00:00"/>
+  <date value="2021-06-08T22:00:20+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -388,6 +388,39 @@
       </reference>
       <name value="Botswana Lab Data Dictionary"/>
       <description value="Botswana Laboratory Data Dictionary - Logical Model"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/BwLabPimsOrderStatusDiagnosticReportCM"/>
+      </reference>
+      <name value="PIMS Lab Order Diagnostic Report Status Mapping"/>
+      <description value="Mapping PIMS Lab Order Status to standard DiagnosticReport status value set."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/BwLabPimsOrderStatusRequestCM"/>
+      </reference>
+      <name value="PIMS Lab Order Service Request Status Mapping"/>
+      <description value="Mapping PIMS Lab Order Status to standard ServiceRequest status value set."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/BwLabPimsOrderStatusTaskCM"/>
+      </reference>
+      <name value="PIMS Lab Order Status Task Mapping"/>
+      <description value="Mapping PIMS Lab Order Status to standard Task status value set."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

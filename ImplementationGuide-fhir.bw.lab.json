@@ -11,7 +11,7 @@
   "title": "Botswana Laboratory HIE Workflow Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-06-08T20:56:43+00:00",
+  "date": "2021-06-08T22:00:20+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -558,6 +558,48 @@
         },
         "name": "Botswana Lab Data Dictionary",
         "description": "Botswana Laboratory Data Dictionary - Logical Model",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/BwLabPimsOrderStatusDiagnosticReportCM"
+        },
+        "name": "PIMS Lab Order Diagnostic Report Status Mapping",
+        "description": "Mapping PIMS Lab Order Status to standard DiagnosticReport status value set.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/BwLabPimsOrderStatusRequestCM"
+        },
+        "name": "PIMS Lab Order Service Request Status Mapping",
+        "description": "Mapping PIMS Lab Order Status to standard ServiceRequest status value set.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/BwLabPimsOrderStatusTaskCM"
+        },
+        "name": "PIMS Lab Order Status Task Mapping",
+        "description": "Mapping PIMS Lab Order Status to standard Task status value set.",
         "exampleBoolean": false
       },
       {
