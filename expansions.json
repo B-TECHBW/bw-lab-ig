@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "24415786-2d28-4be4-8754-45adb544d2ba",
+  "id" : "5219e513-bd11-46f9-8fb8-a0739b0f1f2f",
   "meta" : {
-    "lastUpdated" : "2021-06-08T14:15:40.553+00:00"
+    "lastUpdated" : "2021-06-08T16:38:20.125+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "BwLabDiagnosticReportStatusVS",
       "title" : "Botswana Diagnostic Report Status Flag",
       "status" : "active",
-      "date" : "2021-06-08T14:15:40+00:00",
+      "date" : "2021-06-08T16:38:20+00:00",
       "publisher" : "B-TECHBW",
       "contact" : [{
         "name" : "B-TECHBW",
@@ -46,8 +46,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d9e79033-fc22-491c-b1cc-3b03af82b245",
-        "timestamp" : "2021-06-08T14:15:53+00:00",
+        "identifier" : "urn:uuid:df2dce44-d534-4f6b-a347-da8bd37db664",
+        "timestamp" : "2021-06-08T16:38:35+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",

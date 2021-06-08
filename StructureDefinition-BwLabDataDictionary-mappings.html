@@ -202,17 +202,29 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact</td><td>Patient.tblContactDetail</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name</td><td>Patient.tblPatient.Surname; Patient.tblPatient.Firstname; Patient.tblPatient.Middlename</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GenderID</td><td>Patient.tblPatient.GenderID; Patient.tblkGender</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;LabOrder</td><td>Laboratory.tblLabOrder; Laboratory.tblLabOrderProfile</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;LabOrderTask</td><td>Laboratory.tblLabOrder</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patient</td><td>Laboratory.tblLabOrder.PatientID</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Requester</td><td>Laboratory.tblLabOrder.RequesterID</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OrderDate</td><td>Laboratory.tblLabOrder.LabOrderDate</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RequestingFacility</td><td>Laboratory.tblLabOrder.RequestingFacilityID</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OrderNumber</td><td>Laboratory.tblLabOrder.LabOrderNo</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LabOrderGroup</td><td>Laboratory.tblLabOrderProfile</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Result</td><td>Laboratory.tblLabOrderProfileTest</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;LabOrderGroup</td><td>Laboratory.tblLabOrder; Laboratory.tblLabOrderProfile</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patient</td><td>Laboratory.tblLabOrder.PatientID</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Requester</td><td>Laboratory.tblLabOrder.RequesterID</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OrderDate</td><td>Laboratory.tblLabOrder.LabOrderDate</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SampleDate</td><td>Laboratory.tblLabOrder.SampleDate</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RequestingFacility</td><td>Laboratory.tblLabOrder.RequestingFacilityID</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OrderNumber</td><td>Laboratory.tblLabOrder.LabOrderNo</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Profile</td><td>Laboratory.tblLabOrderProfile</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Result</td><td>Laboratory.tblLabOrderProfileTest</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;Profile</td><td>Laboratory.tblLabOrderProfile</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LabTest</td><td>Laboratory.tblLabOrderProfile.LabTestID</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Profile</td><td>Laboratory.tblLabOrderProfile.labOrderProfileID</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LabOrder</td><td>Laboratory.tblLabOrderProfileTest</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;LabOrder</td><td>Laboratory.tblLabOrder; Laboratory.tblLabOrderProfile, Laboratory.tblLabOrderProfileTest</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patient</td><td>Laboratory.tblLabOrder.PatientID</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Requester</td><td>Laboratory.tblLabOrder.RequesterID</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OrderDate</td><td>Laboratory.tblLabOrder.LabOrderDate</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SampleDate</td><td>Laboratory.tblLabOrder.SampleDate</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RequestingFacility</td><td>Laboratory.tblLabOrder.RequestingFacilityID</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LabTest</td><td>Laboratory.tblLabOrderProfileTest.LabTestID</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;Result</td><td>Laboratory.tblLabOrderProfile; Laboratory.tblLabOrderProfileTest; Laboratory.tblLabOrderProfileTestParameter</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LabTest</td><td>Laboratory.tblLabOrderProfile</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Value</td><td>Laboratory.tblLabOrderProfileTest.Result; Laboratory.tblLabOrderProfileTestParameter.Result</td> </tr>
@@ -232,16 +244,28 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact</td><td>Patient.telecom</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name</td><td>Patient.name</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GenderID</td><td>Patient.gender</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;LabOrder</td><td>Task; ServiceRequest</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patient</td><td>Task.for, ServiceRequest.subject</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Requester</td><td>Task.owner, ServiceRequest.requester</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OrderDate</td><td>Task.authoredOn, ServiceRequest.authoredOn</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SampleDate</td><td>ServiceRequest.occurance</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RequestingFacility</td><td>Task.owner, ServiceRequest.requester</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OrderNumber</td><td>ServiceRequest.identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Profile</td><td>Task.basedOn</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;LabOrderTask</td><td>BwLabTask</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patient</td><td>Task.for</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Requester</td><td>Task.owner</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OrderDate</td><td>Task.authoredOn</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RequestingFacility</td><td>Task.owner</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OrderNumber</td><td>Task.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LabOrderGroup</td><td>Task.basedOn</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Result</td><td>Task.output</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;Profile</td><td>ServiceRequest</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;LabOrderGroup</td><td>BwLabTask</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patient</td><td>ServiceRequest.subject</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Requester</td><td>ServiceRequest.requester</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OrderDate</td><td>ServiceRequest.authoredOn</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SampleDate</td><td>ServiceRequest.occurance</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RequestingFacility</td><td>ServiceRequest.requester</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Profile</td><td>ServiceRequest</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LabOrder</td><td>ServiceRequest.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;LabOrder</td><td>BwLabServiceRequest</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patient</td><td>ServiceRequest.subject</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Requester</td><td>ServiceRequest.requester</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OrderDate</td><td>ServiceRequest.authoredOn</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SampleDate</td><td>ServiceRequest.occurance</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RequestingFacility</td><td>ServiceRequest.requester</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LabTest</td><td>ServiceRequest.code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;Result</td><td>DiagnosticReport</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LabTest</td><td>DiagnosticReport.code</td> </tr>
@@ -307,8 +331,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="4fdb610d-a292-4b82-a061-062ff6e40f5e">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="www.github.com/b-techbw">B-TECHBW</a>.  Package fhir.bw.lab#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 8, 2021 14:15+0000">2021-06-08</span>
+        <p><a name="6197bc18-3544-4109-bb78-0420a3a6c1c1">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="www.github.com/b-techbw">B-TECHBW</a>.  Package fhir.bw.lab#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 8, 2021 16:38+0000">2021-06-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
