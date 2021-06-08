@@ -3,7 +3,7 @@
 
 err = 24, warn = 98, info = 3
 IG Publisher Version: 1.1.73
-Generated Tue Jun 08 16:38:52 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
+Generated Tue Jun 08 20:45:12 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
 
  Build Errors : 153 / 0 / 0
  /github/workspace/fsh-generated/resources/Composition-example-bw-lab-pims-composition : 3 / 1 / 1
