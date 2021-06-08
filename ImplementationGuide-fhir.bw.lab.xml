@@ -12,7 +12,7 @@
   <title value="Botswana Laboratory HIE Workflow Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-06-08T20:44:36+00:00"/>
+  <date value="2021-06-08T20:56:43+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -356,6 +356,27 @@
       </reference>
       <name value="Botswana Status for Lab Task"/>
       <description value="The status of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/bw-pims-lab-order-status-vs"/>
+      </reference>
+      <name value="Status Values for PIMS Lab Orders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/bw-pims-lab-order-status-cs"/>
+      </reference>
+      <name value="PIMS Lab Order Status Code System"/>
+      <description value="PIMS Lab Order Status Code System"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

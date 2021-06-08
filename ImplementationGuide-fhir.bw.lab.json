@@ -11,7 +11,7 @@
   "title": "Botswana Laboratory HIE Workflow Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-06-08T20:44:36+00:00",
+  "date": "2021-06-08T20:56:43+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -517,6 +517,33 @@
         },
         "name": "Botswana Status for Lab Task",
         "description": "The status of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/bw-pims-lab-order-status-vs"
+        },
+        "name": "Status Values for PIMS Lab Orders",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/bw-pims-lab-order-status-cs"
+        },
+        "name": "PIMS Lab Order Status Code System",
+        "description": "PIMS Lab Order Status Code System",
         "exampleBoolean": false
       },
       {

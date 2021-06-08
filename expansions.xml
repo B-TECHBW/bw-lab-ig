@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1012dc40-e99f-410a-8f0e-eac31a25bdbf"/>
+  <id value="1872f04c-201e-4a9f-9623-21b2afcee08f"/>
   <meta>
-    <lastUpdated value="2021-06-08T20:44:36.921+00:00"/>
+    <lastUpdated value="2021-06-08T20:56:43.820+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -83,7 +83,7 @@
         <name value="BwLabDiagnosticReportStatusVS"/>
         <title value="Botswana Diagnostic Report Status Flag"/>
         <status value="active"/>
-        <date value="2021-06-08T20:44:36+00:00"/>
+        <date value="2021-06-08T20:56:43+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -110,8 +110,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bbe6902a-858f-43c6-85da-8a8b35daa923"/>
-          <timestamp value="2021-06-08T20:44:53+00:00"/>
+          <identifier value="urn:uuid:8ec74afd-9483-42ed-bf60-6b10e6f29a61"/>
+          <timestamp value="2021-06-08T20:56:58+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13192,6 +13192,149 @@
             <system value="http://loinc.org"/>
             <code value="10898-5"/>
             <display value="Eastern equine encephalitis virus IgM Ab [Titer] in Serum by Immunofluorescence"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="bw-pims-lab-order-status-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-bw-pims-lab-order-status-cs.html">PIMS Lab Order Status Code System v0.2.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-bw-pims-lab-order-status-cs.html">
+                <code>http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-order-status-cs-ordered"> </a>
+                  <a href="CodeSystem-bw-pims-lab-order-status-cs.html#bw-pims-lab-order-status-cs-ordered">ordered</a>
+                </td>
+                <td>Ordered</td>
+                <td>Order was requested</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-order-status-cs-fully-drawn"> </a>
+                  <a href="CodeSystem-bw-pims-lab-order-status-cs.html#bw-pims-lab-order-status-cs-fully-drawn">fully-drawn</a>
+                </td>
+                <td>Fully-drawn</td>
+                <td>All Order specimens were drawn</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-order-status-cs-partially-resulted"> </a>
+                  <a href="CodeSystem-bw-pims-lab-order-status-cs.html#bw-pims-lab-order-status-cs-partially-resulted">partially-resulted</a>
+                </td>
+                <td>Partially-resulted</td>
+                <td>Partial results are available</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-order-status-cs-cancelled"> </a>
+                  <a href="CodeSystem-bw-pims-lab-order-status-cs.html#bw-pims-lab-order-status-cs-cancelled">cancelled</a>
+                </td>
+                <td>Cancelled</td>
+                <td>Order was cancelled</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-order-status-cs-partially-drawn"> </a>
+                  <a href="CodeSystem-bw-pims-lab-order-status-cs.html#bw-pims-lab-order-status-cs-partially-drawn">partially-drawn</a>
+                </td>
+                <td>Partially-drawn</td>
+                <td>Some order specimens were drawn</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs"/>
+        <version value="0.2.0"/>
+        <name value="BwPimsLabOrderStatusVS"/>
+        <title value="Status Values for PIMS Lab Orders"/>
+        <status value="active"/>
+        <date value="2021-06-08T20:56:43+00:00"/>
+        <publisher value="B-TECHBW"/>
+        <contact>
+          <name value="B-TECHBW"/>
+          <telecom>
+            <system value="url"/>
+            <value value="www.github.com/b-techbw"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="pmanko@uw.edu"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="072"/>
+          </coding>
+        </jurisdiction>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BW"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:8b1bee86-3cca-4d71-b001-33fc4a5857c1"/>
+          <timestamp value="2021-06-08T20:56:59+00:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs"/>
+            <code value="ordered"/>
+            <display value="Ordered"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs"/>
+            <code value="fully-drawn"/>
+            <display value="Fully-drawn"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs"/>
+            <code value="partially-resulted"/>
+            <display value="Partially-resulted"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs"/>
+            <code value="cancelled"/>
+            <display value="Cancelled"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs"/>
+            <code value="partially-drawn"/>
+            <display value="Partially-drawn"/>
           </contains>
         </expansion>
       </ValueSet>
