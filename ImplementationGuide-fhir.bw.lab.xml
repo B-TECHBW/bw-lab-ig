@@ -12,7 +12,7 @@
   <title value="Botswana Laboratory HIE Workflow Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-06-10T22:10:33+00:00"/>
+  <date value="2021-06-10T22:48:10+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -464,6 +464,17 @@
       </reference>
       <name value="PIMS Lab Order Status Task Mapping"/>
       <description value="Mapping PIMS Lab Order Status to standard Task status value set."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/BwPimsLabTestLoincCM"/>
+      </reference>
+      <name value="PIMS tblkLabTest &lt;-&gt; LOINC"/>
+      <description value="Mapping PIMS Lab Test Codes to LOINC."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

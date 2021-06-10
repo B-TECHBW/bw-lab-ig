@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d5a673e7-88a6-41c4-9128-fe6924006173"/>
+  <id value="f779565b-1a41-4785-86b0-7fca993047b0"/>
   <meta>
-    <lastUpdated value="2021-06-10T22:10:33.564+00:00"/>
+    <lastUpdated value="2021-06-10T22:48:10.409+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -57,7 +57,7 @@
                   <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-VL">VL</a>
                 </td>
                 <td>Viral Load</td>
-                <td>tblkLabTest#3 - Viral Load</td>
+                <td>tblkLabTest#3 - Viral Load (HIV?)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -101,8 +101,8 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-ALP"> </a>
-                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-ALP">ALP</a>
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-ALPL"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-ALPL">ALPL</a>
                 </td>
                 <td>Alkaline Phosphatase</td>
                 <td>tblkLabTest#11 - Alkaline Phosphatase</td>
@@ -251,7 +251,7 @@
         <name value="BwPimsLabTestVS"/>
         <title value="PIMS Lab Test Codes"/>
         <status value="active"/>
-        <date value="2021-06-10T22:10:33+00:00"/>
+        <date value="2021-06-10T22:48:10+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -278,8 +278,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:109bae39-42ad-4b3a-8de6-54b535844197"/>
-          <timestamp value="2021-06-10T22:10:47+00:00"/>
+          <identifier value="urn:uuid:3766fb96-fe1d-49fa-a4a2-58be3c5e02a7"/>
+          <timestamp value="2021-06-10T22:48:24+00:00"/>
           <total value="26"/>
           <parameter>
             <name value="excludeNested"/>
@@ -331,7 +331,7 @@
           </contains>
           <contains>
             <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
-            <code value="ALP"/>
+            <code value="ALPL"/>
             <display value="Alkaline Phosphatase"/>
           </contains>
           <contains>
@@ -500,7 +500,7 @@
         <name value="BwLabDiagnosticReportStatusVS"/>
         <title value="Botswana Diagnostic Report Status Flag"/>
         <status value="active"/>
-        <date value="2021-06-10T22:10:33+00:00"/>
+        <date value="2021-06-10T22:48:10+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -527,8 +527,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0783f155-ffd5-46af-8a91-2b19522596c6"/>
-          <timestamp value="2021-06-10T22:10:47+00:00"/>
+          <identifier value="urn:uuid:2e5d7aa4-cc62-4e80-962f-665e9414cff1"/>
+          <timestamp value="2021-06-10T22:48:25+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -692,7 +692,7 @@
         <name value="BwPimsLabClassVS"/>
         <title value="Status Values for PIMS Lab Orders"/>
         <status value="active"/>
-        <date value="2021-06-10T22:10:33+00:00"/>
+        <date value="2021-06-10T22:48:10+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -718,8 +718,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2f02b0f9-c638-4a47-96fe-50e887dfc4a8"/>
-          <timestamp value="2021-06-10T22:10:47+00:00"/>
+          <identifier value="urn:uuid:e32dd0d3-108b-425c-9275-21398cec4fee"/>
+          <timestamp value="2021-06-10T22:48:25+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13912,7 +13912,7 @@
         <name value="BwPimsLabOrderStatusVS"/>
         <title value="Status Values for PIMS Lab Orders"/>
         <status value="active"/>
-        <date value="2021-06-10T22:10:33+00:00"/>
+        <date value="2021-06-10T22:48:10+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -13938,8 +13938,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:41d0395c-02ce-475f-9820-817c6704fcea"/>
-          <timestamp value="2021-06-10T22:10:48+00:00"/>
+          <identifier value="urn:uuid:078ef5c3-1f5f-4090-bbba-1396bd79d9ff"/>
+          <timestamp value="2021-06-10T22:48:26+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>

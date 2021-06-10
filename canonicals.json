@@ -49,6 +49,13 @@
     "name": "BwLabPimsOrderStatusTaskCM"
   },
   {
+    "id": "BwPimsLabTestLoincCM",
+    "type": "ConceptMap",
+    "url": "http://b-techbw.github.io/bw-lab-ig/ConceptMap/BwPimsLabTestLoincCM",
+    "version": "0.2.0",
+    "name": "BwPimsLabTestLoincCM"
+  },
+  {
     "id": "fhir.bw.lab",
     "type": "ImplementationGuide",
     "url": "http://b-techbw.github.io/bw-lab-ig/ImplementationGuide/fhir.bw.lab",

@@ -3,9 +3,9 @@
 
 err = 26, warn = 98, info = 3
 IG Publisher Version: 1.1.73
-Generated Thu Jun 10 22:11:02 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
+Generated Thu Jun 10 22:48:43 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
 
- Build Errors : 201 / 2 / 0
+ Build Errors : 206 / 2 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-class-cs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-order-status-cs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-test-cs : 0 / 0 / 1
@@ -13,6 +13,7 @@ Generated Thu Jun 10 22:11:02 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0
  /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusRequestCM : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusTaskCM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ConceptMap-BwPimsLabTestLoincCM : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.bw.lab : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-example-bw-patient : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/Patient-example-bw-patient-international : 2 / 1 / 1
@@ -42,6 +43,10 @@ Generated Thu Jun 10 22:11:02 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/bw-pims-lab-class-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/bw-pims-lab-order-status-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/ConceptMap-BwPimsLabTestLoincCM.json.html: Unable to Parse HTML - node 'title' has unexpected content '-' (last text = 'FHIR.BW.LAB\PIMS tblkLabTest ' at line 8 column 42
+ERROR: /github/workspace/output/ConceptMap-BwPimsLabTestLoincCM.xml.html: Unable to Parse HTML - node 'title' has unexpected content '-' (last text = 'FHIR.BW.LAB\PIMS tblkLabTest ' at line 8 column 42
+ERROR: /github/workspace/output/ConceptMap-BwPimsLabTestLoincCM.html: Unable to Parse HTML - node 'title' has unexpected content '-' (last text = 'FHIR.BW.LAB\PIMS tblkLabTest ' at line 6 column 42
+ERROR: /github/workspace/output/ConceptMap-BwPimsLabTestLoincCM.ttl.html: Unable to Parse HTML - node 'title' has unexpected content '-' (last text = 'FHIR.BW.LAB\PIMS tblkLabTest ' at line 8 column 42
 ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-class-cs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-class-cs.html#/html/body/div/div/div/p/a at Line 228, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-class-cs.json.html#/html/body/div/div/div/p/a at Line 313, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -81,6 +86,7 @@ ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.html#/html
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.json.html#/html/body/div/div/div/p/a at Line 308, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.ttl.html#/html/body/div/div/div/p/a at Line 299, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.xml.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwPimsLabTestLoincCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Patient-example-bw-patient-international.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Patient-example-bw-patient-international.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Patient-example-bw-patient-international.json.html#/html/body/div/div/div/p/a at Line 238, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -234,7 +240,7 @@ ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.html#/html/body/div
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.xml.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 557, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 566, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/background.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/p/a at Line 199, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -261,6 +267,8 @@ INFORMATION: ConceptMap/BwLabPimsOrderStatusDiagnosticReportCM: ConceptMap: Vali
 INFORMATION: ConceptMap/BwLabPimsOrderStatusRequestCM: ConceptMap: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ConceptMap
 == /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusTaskCM.json ==
 INFORMATION: ConceptMap/BwLabPimsOrderStatusTaskCM: ConceptMap: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ConceptMap
+== /github/workspace/fsh-generated/resources/ConceptMap-BwPimsLabTestLoincCM.json ==
+INFORMATION: ConceptMap/BwPimsLabTestLoincCM: ConceptMap: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ConceptMap
 == /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.bw.lab.json ==
 INFORMATION: ImplementationGuide/fhir.bw.lab: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 == /github/workspace/fsh-generated/resources/Patient-example-bw-patient.json ==

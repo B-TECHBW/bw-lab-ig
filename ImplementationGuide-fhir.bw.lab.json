@@ -11,7 +11,7 @@
   "title": "Botswana Laboratory HIE Workflow Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-06-10T22:10:33+00:00",
+  "date": "2021-06-10T22:48:10+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -655,6 +655,20 @@
         },
         "name": "PIMS Lab Order Status Task Mapping",
         "description": "Mapping PIMS Lab Order Status to standard Task status value set.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/BwPimsLabTestLoincCM"
+        },
+        "name": "PIMS tblkLabTest <-> LOINC",
+        "description": "Mapping PIMS Lab Test Codes to LOINC.",
         "exampleBoolean": false
       },
       {
