@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "BwPimsLabOrderStatusVS"];
   fhir:ValueSet.title [ fhir:value "Status Values for PIMS Lab Orders"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-06-10T15:44:22+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-06-10T22:10:33+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "B-TECHBW"];
   fhir:ValueSet.contact [
      fhir:index 0;

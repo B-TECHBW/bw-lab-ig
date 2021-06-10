@@ -11,7 +11,7 @@
   "title": "Botswana Laboratory HIE Workflow Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-06-10T15:44:22+00:00",
+  "date": "2021-06-10T22:10:33+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -549,6 +549,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/bw-pims-lab-test-vs"
+        },
+        "name": "PIMS Lab Test Codes",
+        "description": "PIMS Lab Test Codes",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
           }
         ],
@@ -571,6 +585,20 @@
         },
         "name": "PIMS Lab Order Status Code System",
         "description": "PIMS Lab Order Status Code System",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/bw-pims-lab-test-cs"
+        },
+        "name": "PIMS Lab Test Code System",
+        "description": "PIMS Lab Test Code System",
         "exampleBoolean": false
       },
       {

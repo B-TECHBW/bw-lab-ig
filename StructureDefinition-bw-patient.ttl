@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BwPatient"];
   fhir:StructureDefinition.title [ fhir:value "Botswana Patient"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-06-10T15:44:22+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-06-10T22:10:33+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "B-TECHBW"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

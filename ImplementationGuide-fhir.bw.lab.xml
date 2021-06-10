@@ -12,7 +12,7 @@
   <title value="Botswana Laboratory HIE Workflow Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-06-10T15:44:22+00:00"/>
+  <date value="2021-06-10T22:10:33+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -380,6 +380,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/bw-pims-lab-test-vs"/>
+      </reference>
+      <name value="PIMS Lab Test Codes"/>
+      <description value="PIMS Lab Test Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -398,6 +409,17 @@
       </reference>
       <name value="PIMS Lab Order Status Code System"/>
       <description value="PIMS Lab Order Status Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/bw-pims-lab-test-cs"/>
+      </reference>
+      <name value="PIMS Lab Test Code System"/>
+      <description value="PIMS Lab Test Code System"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

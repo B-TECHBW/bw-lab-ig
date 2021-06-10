@@ -3,11 +3,12 @@
 
 err = 26, warn = 98, info = 3
 IG Publisher Version: 1.1.73
-Generated Thu Jun 10 15:44:55 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
+Generated Thu Jun 10 22:11:02 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
 
- Build Errors : 191 / 2 / 0
+ Build Errors : 201 / 2 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-class-cs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-order-status-cs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-test-cs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Composition-example-bw-lab-pims-composition : 3 / 1 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusRequestCM : 0 / 0 / 1
@@ -36,6 +37,7 @@ Generated Thu Jun 10 15:44:55 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0
  /github/workspace/fsh-generated/resources/ValueSet-bw-lab-task-status-vs : 0 / 5 / 1
  /github/workspace/fsh-generated/resources/ValueSet-bw-pims-lab-class-vs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-bw-pims-lab-order-status-vs : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-bw-pims-lab-test-vs : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/bw-pims-lab-class-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -50,6 +52,11 @@ ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-order-status-cs.html#/htm
 ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-order-status-cs.json.html#/html/body/div/div/div/p/a at Line 284, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-order-status-cs.ttl.html#/html/body/div/div/div/p/a at Line 288, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-order-status-cs.xml.html#/html/body/div/div/div/p/a at Line 273, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-test-cs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-test-cs.html#/html/body/div/div/div/p/a at Line 228, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-test-cs.json.html#/html/body/div/div/div/p/a at Line 389, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-test-cs.ttl.html#/html/body/div/div/div/p/a at Line 393, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-test-cs.xml.html#/html/body/div/div/div/p/a at Line 378, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Composition-example-bw-lab-pims-composition.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Composition-example-bw-lab-pims-composition.html#/html/body/div/div/div/div/div/div/p/a at Line 174, column 212: The link 'BwPractitioner' for "BwPractitioner" cannot be resolved
 ERROR: /github/workspace/output/Composition-example-bw-lab-pims-composition.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -57,19 +64,19 @@ ERROR: /github/workspace/output/Composition-example-bw-lab-pims-composition.json
 ERROR: /github/workspace/output/Composition-example-bw-lab-pims-composition.ttl.html#/html/body/div/div/div/p/a at Line 248, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Composition-example-bw-lab-pims-composition.xml.html#/html/body/div/div/div/p/a at Line 231, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 569: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 570: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#/html/body/div/div/div/p/a at Line 204, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.json.html#/html/body/div/div/div/p/a at Line 308, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.ttl.html#/html/body/div/div/div/p/a at Line 299, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.xml.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 531: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 532: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.html#/html/body/div/div/div/p/a at Line 204, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.json.html#/html/body/div/div/div/p/a at Line 308, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.ttl.html#/html/body/div/div/div/p/a at Line 299, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.xml.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 519: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 520: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.html#/html/body/div/div/div/p/a at Line 204, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.json.html#/html/body/div/div/div/p/a at Line 308, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.ttl.html#/html/body/div/div/div/p/a at Line 299, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -222,7 +229,12 @@ ERROR: /github/workspace/output/ValueSet-bw-pims-lab-order-status-vs.html#/html/
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-order-status-vs.json.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-order-status-vs.ttl.html#/html/body/div/div/div/p/a at Line 263, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-order-status-vs.xml.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 539, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.xml.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 557, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/background.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/p/a at Line 199, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -235,6 +247,8 @@ ERROR: /github/workspace/output/use_cases.html#/html/body/div/div/div/p/a at Lin
 INFORMATION: CodeSystem/bw-pims-lab-class-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-order-status-cs.json ==
 INFORMATION: CodeSystem/bw-pims-lab-order-status-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-test-cs.json ==
+INFORMATION: CodeSystem/bw-pims-lab-test-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /github/workspace/fsh-generated/resources/Composition-example-bw-lab-pims-composition.json ==
 INFORMATION: Composition/example-bw-lab-pims-composition: Composition: Validate resource against profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition
 ERROR: Composition/example-bw-lab-pims-composition: Composition.status: The value provided ('active') is not in the value set http://hl7.org/fhir/ValueSet/composition-status|4.0.1 (http://hl7.org/fhir/ValueSet/composition-status), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/composition-status#active in http://hl7.org/fhir/composition-status)
@@ -416,3 +430,5 @@ WARNING: ValueSet.where(id = 'bw-lab-task-status-vs'): Error from server: Unable
 INFORMATION: ValueSet/bw-pims-lab-class-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-bw-pims-lab-order-status-vs.json ==
 INFORMATION: ValueSet/bw-pims-lab-order-status-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-bw-pims-lab-test-vs.json ==
+INFORMATION: ValueSet/bw-pims-lab-test-vs: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
