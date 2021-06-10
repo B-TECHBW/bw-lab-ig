@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="2365d878-3112-4819-bbea-9003ca87480e"/>
+  <id value="303f3a99-a509-48a9-b94d-f160d099679f"/>
   <meta>
-    <lastUpdated value="2021-06-08T22:00:20.220+00:00"/>
+    <lastUpdated value="2021-06-10T15:44:22.911+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -83,7 +83,7 @@
         <name value="BwLabDiagnosticReportStatusVS"/>
         <title value="Botswana Diagnostic Report Status Flag"/>
         <status value="active"/>
-        <date value="2021-06-08T22:00:20+00:00"/>
+        <date value="2021-06-10T15:44:22+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -110,8 +110,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2e5e6b9e-070f-45db-99fa-27f4e12f32a8"/>
-          <timestamp value="2021-06-08T22:00:34+00:00"/>
+          <identifier value="urn:uuid:d6f3b928-42a1-4709-9e9b-dae46cdc34af"/>
+          <timestamp value="2021-06-10T15:44:38+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -145,6 +145,227 @@
             <system value="http://hl7.org/fhir/diagnostic-report-status"/>
             <code value="diagnostic-report-status-amended"/>
             <display value="Amended"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-class-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="bw-pims-lab-class-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 11 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-bw-pims-lab-class-cs.html">PIMS Lab Class Code System v0.2.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-bw-pims-lab-class-cs.html">
+                <code>http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-CHM"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-CHM">CHM</a>
+                </td>
+                <td>Routine-Chemistry</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-MCB"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-MCB">MCB</a>
+                </td>
+                <td>Microbiology</td>
+                <td>All Order specimens were drawn</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-HEM"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-HEM">HEM</a>
+                </td>
+                <td>Haematology</td>
+                <td>Partial results are available</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-PTH"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-PTH">PTH</a>
+                </td>
+                <td>Pathology</td>
+                <td>Order was cancelled</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-IMG"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-IMG">IMG</a>
+                </td>
+                <td>Imaging</td>
+                <td>Some order specimens were drawn</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-END"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-END">END</a>
+                </td>
+                <td>Endocrinology</td>
+                <td>Some order specimens were drawn</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-IMU"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-IMU">IMU</a>
+                </td>
+                <td>Immunology</td>
+                <td>Some order specimens were drawn</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-BBK"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-BBK">BBK</a>
+                </td>
+                <td>Blood-Bank</td>
+                <td>Order was cancelled</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-VL"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-VL">VL</a>
+                </td>
+                <td>Immunology-Viral-Load</td>
+                <td>Some order specimens were drawn</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-RS"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-RS">RS</a>
+                </td>
+                <td>Research-blood-draw</td>
+                <td>Some order specimens were drawn</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-TB"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-TB">TB</a>
+                </td>
+                <td>TB-diagnostic</td>
+                <td>Some order specimens were drawn</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-class-vs"/>
+        <version value="0.2.0"/>
+        <name value="BwPimsLabClassVS"/>
+        <title value="Status Values for PIMS Lab Orders"/>
+        <status value="active"/>
+        <date value="2021-06-10T15:44:22+00:00"/>
+        <publisher value="B-TECHBW"/>
+        <contact>
+          <name value="B-TECHBW"/>
+          <telecom>
+            <system value="url"/>
+            <value value="www.github.com/b-techbw"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="pmanko@uw.edu"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="072"/>
+          </coding>
+        </jurisdiction>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BW"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:5f3d0ca9-f05e-4cf6-ac4f-9061098df263"/>
+          <timestamp value="2021-06-10T15:44:38+00:00"/>
+          <total value="11"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="CHM"/>
+            <display value="Routine-Chemistry"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="MCB"/>
+            <display value="Microbiology"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="HEM"/>
+            <display value="Haematology"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="PTH"/>
+            <display value="Pathology"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="IMG"/>
+            <display value="Imaging"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="END"/>
+            <display value="Endocrinology"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="IMU"/>
+            <display value="Immunology"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="BBK"/>
+            <display value="Blood-Bank"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="VL"/>
+            <display value="Immunology-Viral-Load"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="RS"/>
+            <display value="Research-blood-draw"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="TB"/>
+            <display value="TB-diagnostic"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -13274,7 +13495,7 @@
         <name value="BwPimsLabOrderStatusVS"/>
         <title value="Status Values for PIMS Lab Orders"/>
         <status value="active"/>
-        <date value="2021-06-08T22:00:20+00:00"/>
+        <date value="2021-06-10T15:44:22+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -13300,8 +13521,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:39636e0b-afb1-4147-9d88-0ff49e1c24a0"/>
-          <timestamp value="2021-06-08T22:00:36+00:00"/>
+          <identifier value="urn:uuid:599f6af6-d4e3-4502-9567-6b53c26d3ae7"/>
+          <timestamp value="2021-06-10T15:44:40+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>

@@ -7,6 +7,13 @@
     "name": "BwLabDataDictionary"
   },
   {
+    "id": "bw-pims-lab-class-cs",
+    "type": "CodeSystem",
+    "url": "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs",
+    "version": "0.2.0",
+    "name": "BwPimsLabClassCS"
+  },
+  {
     "id": "bw-pims-lab-order-status-cs",
     "type": "CodeSystem",
     "url": "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs",
@@ -131,6 +138,13 @@
     "url": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-status-vs",
     "version": "0.2.0",
     "name": "BwLabTaskStatusVS"
+  },
+  {
+    "id": "bw-pims-lab-class-vs",
+    "type": "ValueSet",
+    "url": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-class-vs",
+    "version": "0.2.0",
+    "name": "BwPimsLabClassVS"
   },
   {
     "id": "bw-pims-lab-order-status-vs",
