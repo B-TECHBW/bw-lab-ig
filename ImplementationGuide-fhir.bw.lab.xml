@@ -12,7 +12,7 @@
   <title value="Botswana Laboratory HIE Workflow Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-06-16T02:25:13+00:00"/>
+  <date value="2021-06-16T19:16:37+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -330,17 +330,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/bw-lab-order-code-vs"/>
-      </reference>
-      <name value="Botswana Lab Order Code"/>
-      <description value="The code for the lab order."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/bw-lab-task-intent-vs"/>
       </reference>
       <name value="Botswana Intent for Lab Task"/>
@@ -383,6 +372,16 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/bw-pims-lab-profile-vs"/>
+      </reference>
+      <name value="Status Values for PIMS Lab profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/bw-pims-lab-test-vs"/>
       </reference>
       <name value="PIMS Lab Test Codes"/>
@@ -409,6 +408,17 @@
       </reference>
       <name value="PIMS Lab Order Status Code System"/>
       <description value="PIMS Lab Order Status Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/bw-pims-lab-profile-cs"/>
+      </reference>
+      <name value="PIMS Lab profile Code System"/>
+      <description value="PIMS Lab profile Code System"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

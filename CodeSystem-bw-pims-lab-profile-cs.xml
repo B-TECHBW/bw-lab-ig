@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="bw-pims-lab-profile-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-profile-cs defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">CD4<a name="bw-pims-lab-profile-cs-CD4"> </a></td><td>CD4</td></tr><tr><td style="white-space:nowrap">VL<a name="bw-pims-lab-profile-cs-VL"> </a></td><td>Viral load</td></tr><tr><td style="white-space:nowrap">FBC<a name="bw-pims-lab-profile-cs-FBC"> </a></td><td>Full blood count</td></tr><tr><td style="white-space:nowrap">LFT<a name="bw-pims-lab-profile-cs-LFT"> </a></td><td>Liver function test</td></tr><tr><td style="white-space:nowrap">UE<a name="bw-pims-lab-profile-cs-UE"> </a></td><td>Urea and electrolytes</td></tr><tr><td style="white-space:nowrap">CVC<a name="bw-pims-lab-profile-cs-CVC"> </a></td><td>Cervical cancer</td></tr><tr><td style="white-space:nowrap">CREAT<a name="bw-pims-lab-profile-cs-CREAT"> </a></td><td>Serum creatinine</td></tr><tr><td style="white-space:nowrap">HB<a name="bw-pims-lab-profile-cs-HB"> </a></td><td>Haemoglobin</td></tr><tr><td style="white-space:nowrap">MAL<a name="bw-pims-lab-profile-cs-MAL"> </a></td><td>Malaria profile</td></tr><tr><td style="white-space:nowrap">ERYTH<a name="bw-pims-lab-profile-cs-ERYTH"> </a></td><td>Erythrocyte sed rate</td></tr><tr><td style="white-space:nowrap">UREA<a name="bw-pims-lab-profile-cs-UREA"> </a></td><td>Urea</td></tr><tr><td style="white-space:nowrap">URAT<a name="bw-pims-lab-profile-cs-URAT"> </a></td><td>Urate</td></tr><tr><td style="white-space:nowrap">BLCHEM<a name="bw-pims-lab-profile-cs-BLCHEM"> </a></td><td>Baseline chemistry</td></tr><tr><td style="white-space:nowrap">SKME<a name="bw-pims-lab-profile-cs-SKME"> </a></td><td>Skeletal muscle enzymes</td></tr><tr><td style="white-space:nowrap">ALB<a name="bw-pims-lab-profile-cs-ALB"> </a></td><td>Albumin</td></tr><tr><td style="white-space:nowrap">ALP<a name="bw-pims-lab-profile-cs-ALP"> </a></td><td>Alkaline phosphates</td></tr><tr><td style="white-space:nowrap">ALT<a name="bw-pims-lab-profile-cs-ALT"> </a></td><td>Alinine amino tran</td></tr><tr><td style="white-space:nowrap">BFL<a name="bw-pims-lab-profile-cs-BFL"> </a></td><td>Body fluids</td></tr><tr><td style="white-space:nowrap">BCL<a name="bw-pims-lab-profile-cs-BCL"> </a></td><td>Blood cultures</td></tr><tr><td style="white-space:nowrap">CE<a name="bw-pims-lab-profile-cs-CE"> </a></td><td>Cardiac enzymes</td></tr><tr><td style="white-space:nowrap">PE<a name="bw-pims-lab-profile-cs-PE"> </a></td><td>Pancreatic enzymes</td></tr><tr><td style="white-space:nowrap">LIP<a name="bw-pims-lab-profile-cs-LIP"> </a></td><td>Lipid profile</td></tr><tr><td style="white-space:nowrap">NVP<a name="bw-pims-lab-profile-cs-NVP"> </a></td><td>NVP Chemistry</td></tr><tr><td style="white-space:nowrap">REN<a name="bw-pims-lab-profile-cs-REN"> </a></td><td>Kidney/Renal function tests</td></tr><tr><td style="white-space:nowrap">BSCHEM<a name="bw-pims-lab-profile-cs-BSCHEM"> </a></td><td>Basic chemistry</td></tr><tr><td style="white-space:nowrap">DP<a name="bw-pims-lab-profile-cs-DP"> </a></td><td>Diabetic profile</td></tr><tr><td style="white-space:nowrap">COAG<a name="bw-pims-lab-profile-cs-COAG"> </a></td><td>Coagulation</td></tr><tr><td style="white-space:nowrap">ANC<a name="bw-pims-lab-profile-cs-ANC"> </a></td><td>ANC profile</td></tr><tr><td style="white-space:nowrap">ABO<a name="bw-pims-lab-profile-cs-ABO"> </a></td><td>ABO grouping</td></tr></table></div>
+  </text>
+  <url value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-profile-cs"/>
+  <version value="0.2.0"/>
+  <name value="BwPimsLabProfileCS"/>
+  <title value="PIMS Lab profile Code System"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2021-06-16T19:16:37+00:00"/>
+  <publisher value="B-TECHBW"/>
+  <contact>
+    <name value="B-TECHBW"/>
+    <telecom>
+      <system value="url"/>
+      <value value="www.github.com/b-techbw"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="pmanko@uw.edu"/>
+    </telecom>
+  </contact>
+  <description value="PIMS Lab profile Code System"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="072"/>
+    </coding>
+  </jurisdiction>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="BW"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="29"/>
+  <concept>
+    <code value="CD4"/>
+    <display value="CD4"/>
+  </concept>
+  <concept>
+    <code value="VL"/>
+    <display value="Viral load"/>
+  </concept>
+  <concept>
+    <code value="FBC"/>
+    <display value="Full blood count"/>
+  </concept>
+  <concept>
+    <code value="LFT"/>
+    <display value="Liver function test"/>
+  </concept>
+  <concept>
+    <code value="UE"/>
+    <display value="Urea and electrolytes"/>
+  </concept>
+  <concept>
+    <code value="CVC"/>
+    <display value="Cervical cancer"/>
+  </concept>
+  <concept>
+    <code value="CREAT"/>
+    <display value="Serum creatinine"/>
+  </concept>
+  <concept>
+    <code value="HB"/>
+    <display value="Haemoglobin"/>
+  </concept>
+  <concept>
+    <code value="MAL"/>
+    <display value="Malaria profile"/>
+  </concept>
+  <concept>
+    <code value="ERYTH"/>
+    <display value="Erythrocyte sed rate"/>
+  </concept>
+  <concept>
+    <code value="UREA"/>
+    <display value="Urea"/>
+  </concept>
+  <concept>
+    <code value="URAT"/>
+    <display value="Urate"/>
+  </concept>
+  <concept>
+    <code value="BLCHEM"/>
+    <display value="Baseline chemistry"/>
+  </concept>
+  <concept>
+    <code value="SKME"/>
+    <display value="Skeletal muscle enzymes"/>
+  </concept>
+  <concept>
+    <code value="ALB"/>
+    <display value="Albumin"/>
+  </concept>
+  <concept>
+    <code value="ALP"/>
+    <display value="Alkaline phosphates"/>
+  </concept>
+  <concept>
+    <code value="ALT"/>
+    <display value="Alinine amino tran"/>
+  </concept>
+  <concept>
+    <code value="BFL"/>
+    <display value="Body fluids"/>
+  </concept>
+  <concept>
+    <code value="BCL"/>
+    <display value="Blood cultures"/>
+  </concept>
+  <concept>
+    <code value="CE"/>
+    <display value="Cardiac enzymes"/>
+  </concept>
+  <concept>
+    <code value="PE"/>
+    <display value="Pancreatic enzymes"/>
+  </concept>
+  <concept>
+    <code value="LIP"/>
+    <display value="Lipid profile"/>
+  </concept>
+  <concept>
+    <code value="NVP"/>
+    <display value="NVP Chemistry"/>
+  </concept>
+  <concept>
+    <code value="REN"/>
+    <display value="Kidney/Renal function tests"/>
+  </concept>
+  <concept>
+    <code value="BSCHEM"/>
+    <display value="Basic chemistry"/>
+  </concept>
+  <concept>
+    <code value="DP"/>
+    <display value="Diabetic profile"/>
+  </concept>
+  <concept>
+    <code value="COAG"/>
+    <display value="Coagulation"/>
+  </concept>
+  <concept>
+    <code value="ANC"/>
+    <display value="ANC profile"/>
+  </concept>
+  <concept>
+    <code value="ABO"/>
+    <display value="ABO grouping"/>
+  </concept>
+</CodeSystem>

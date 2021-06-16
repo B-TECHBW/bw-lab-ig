@@ -57,7 +57,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "DiagnosticReport.code.coding","","","",1,*,"Y","","","Coding {[CanonicalType[http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips]]} {[]}
-","A reference to a code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,"required","","http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-order-code-vs","",,,,"CodeableConcept.coding",0,*,"ele-1
+","A reference to a code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CE/CNE/CWE subset one of the sets of component 1-3 or 4-6","n/a","CV"
 "DiagnosticReport.code.text","","","",0,1,"Y","","Y","string {[]} {[]}

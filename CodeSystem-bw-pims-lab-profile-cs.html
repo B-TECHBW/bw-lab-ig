@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>FHIR.BW.LAB\Botswana Lab Order Code - JSON Representation - FHIR v4.0.1</title>
+    <title>FHIR.BW.LAB\PIMS Lab profile Code System - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"8.12"}
-    h3,h4,h5,h6{--heading-prefix:"8.12"}</style>
+    <style type="text/css">h2{--heading-prefix:"8.20"}
+    h3,h4,h5,h6{--heading-prefix:"8.20"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -111,7 +111,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Botswana Lab Order Code</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>PIMS Lab profile Code System</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -123,9 +123,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 8" class="col-12">
-  <!-- ReleaseHeader --><p id="publish-box">Botswana Laboratory HIE Workflow Implementation Guide - Local Development build (v0.2.0). See the <a href="http://b-techbw.github.io/bw-lab-ig/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Botswana Laboratory HIE Workflow Implementation Guide - Local Development build (v0.2.0). See the <a href="http://b-techbw.github.io/bw-lab-ig/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  
 
 
 
@@ -134,21 +134,21 @@
 
 <ul class="nav nav-tabs">
 
-  <li>
-    <a href="ValueSet-bw-lab-order-code-vs.html">Narrative Content</a>
+  <li class="active">
+    <a href="#">Narrative Content</a>
   </li>
 
 
   
     <li>
-      <a href="ValueSet-bw-lab-order-code-vs.xml.html">XML</a>
+      <a href="CodeSystem-bw-pims-lab-profile-cs.xml.html">XML</a>
     </li>
   
 
 
   
-    <li class="active">
-      <a href="#">JSON</a>
+    <li>
+      <a href="CodeSystem-bw-pims-lab-profile-cs.json.html">JSON</a>
     </li>
   
 
@@ -157,82 +157,51 @@
 
 </ul>
 
-
-<a name="root"> </a>
-
-
-<h2 id="root">: Botswana Lab Order Code - JSON Representation</h2>
-
-<p><a href="ValueSet-bw-lab-order-code-vs.json" no-download="true">Raw json</a> | <a download="null" href="ValueSet-bw-lab-order-code-vs.json">Download</a></p>
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: PIMS Lab profile Code System</h2>
 
     <!-- insert intro if present -->
   
 
 
 
-  <pre class="json"><code class="language-json">
-{
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "bw-lab-order-code-vs",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\"http://loinc.org\"&gt;&lt;code&gt;http://loinc.org&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
-  },
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-order-code-vs",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.2.0",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "BwLabOrderCodeVS",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "Botswana Lab Order Code",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2021-06-16T02:25:13+00:00",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "B-TECHBW",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "B-TECHBW",
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "www.github.com/b-techbw"
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "pmanko@uw.edu"
-        }
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "The code for the lab order.",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>" : [
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "072"
-        }
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "BW"
-        }
-      ]
-    }
-  ],
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
-    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
-      {
-        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "http://loinc.org"
-      }
-    ]
-  }
-}</code></pre>
+  <p>
+    <b>Summary</b>
+  </p>
 
+  <table class="grid">
+<tbody>
+<tr><td>Defining URL:</td><td>http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-profile-cs</td></tr>
+ <tr><td>Version:</td><td>0.2.0</td></tr>
+ <tr><td>Name:</td><td>BwPimsLabProfileCS</td></tr>
+ <tr><td>Title:</td><td>PIMS Lab profile Code System</td></tr>
+ <tr><td>Status:</td><td>Draft as of 2021-06-16T19:16:37+00:00</td></tr>
+ <tr><td>Definition:</td><td><p>PIMS Lab profile Code System</p>
+</td></tr>
+ <tr><td>Publisher:</td><td>B-TECHBW</td></tr>
+ <tr><td>Content:</td><td>Complete: All the concepts defined by the code system are included in the code system resource</td></tr>
+ <tr><td>Source Resource:</td><td><a href="CodeSystem-bw-pims-lab-profile-cs.xml.html">XML</a> / <a href="CodeSystem-bw-pims-lab-profile-cs.json.html">JSON</a> / <a href="CodeSystem-bw-pims-lab-profile-cs.ttl.html">Turtle</a></td></tr>
+</tbody></table>
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-bw-pims-lab-profile-vs.html">BwPimsLabProfileVS</a></li>
+</ul>
+
+
+  <div><p>This code system http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-profile-cs defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">CD4<a name="bw-pims-lab-profile-cs-CD4"> </a></td><td>CD4</td></tr><tr><td style="white-space:nowrap">VL<a name="bw-pims-lab-profile-cs-VL"> </a></td><td>Viral load</td></tr><tr><td style="white-space:nowrap">FBC<a name="bw-pims-lab-profile-cs-FBC"> </a></td><td>Full blood count</td></tr><tr><td style="white-space:nowrap">LFT<a name="bw-pims-lab-profile-cs-LFT"> </a></td><td>Liver function test</td></tr><tr><td style="white-space:nowrap">UE<a name="bw-pims-lab-profile-cs-UE"> </a></td><td>Urea and electrolytes</td></tr><tr><td style="white-space:nowrap">CVC<a name="bw-pims-lab-profile-cs-CVC"> </a></td><td>Cervical cancer</td></tr><tr><td style="white-space:nowrap">CREAT<a name="bw-pims-lab-profile-cs-CREAT"> </a></td><td>Serum creatinine</td></tr><tr><td style="white-space:nowrap">HB<a name="bw-pims-lab-profile-cs-HB"> </a></td><td>Haemoglobin</td></tr><tr><td style="white-space:nowrap">MAL<a name="bw-pims-lab-profile-cs-MAL"> </a></td><td>Malaria profile</td></tr><tr><td style="white-space:nowrap">ERYTH<a name="bw-pims-lab-profile-cs-ERYTH"> </a></td><td>Erythrocyte sed rate</td></tr><tr><td style="white-space:nowrap">UREA<a name="bw-pims-lab-profile-cs-UREA"> </a></td><td>Urea</td></tr><tr><td style="white-space:nowrap">URAT<a name="bw-pims-lab-profile-cs-URAT"> </a></td><td>Urate</td></tr><tr><td style="white-space:nowrap">BLCHEM<a name="bw-pims-lab-profile-cs-BLCHEM"> </a></td><td>Baseline chemistry</td></tr><tr><td style="white-space:nowrap">SKME<a name="bw-pims-lab-profile-cs-SKME"> </a></td><td>Skeletal muscle enzymes</td></tr><tr><td style="white-space:nowrap">ALB<a name="bw-pims-lab-profile-cs-ALB"> </a></td><td>Albumin</td></tr><tr><td style="white-space:nowrap">ALP<a name="bw-pims-lab-profile-cs-ALP"> </a></td><td>Alkaline phosphates</td></tr><tr><td style="white-space:nowrap">ALT<a name="bw-pims-lab-profile-cs-ALT"> </a></td><td>Alinine amino tran</td></tr><tr><td style="white-space:nowrap">BFL<a name="bw-pims-lab-profile-cs-BFL"> </a></td><td>Body fluids</td></tr><tr><td style="white-space:nowrap">BCL<a name="bw-pims-lab-profile-cs-BCL"> </a></td><td>Blood cultures</td></tr><tr><td style="white-space:nowrap">CE<a name="bw-pims-lab-profile-cs-CE"> </a></td><td>Cardiac enzymes</td></tr><tr><td style="white-space:nowrap">PE<a name="bw-pims-lab-profile-cs-PE"> </a></td><td>Pancreatic enzymes</td></tr><tr><td style="white-space:nowrap">LIP<a name="bw-pims-lab-profile-cs-LIP"> </a></td><td>Lipid profile</td></tr><tr><td style="white-space:nowrap">NVP<a name="bw-pims-lab-profile-cs-NVP"> </a></td><td>NVP Chemistry</td></tr><tr><td style="white-space:nowrap">REN<a name="bw-pims-lab-profile-cs-REN"> </a></td><td>Kidney/Renal function tests</td></tr><tr><td style="white-space:nowrap">BSCHEM<a name="bw-pims-lab-profile-cs-BSCHEM"> </a></td><td>Basic chemistry</td></tr><tr><td style="white-space:nowrap">DP<a name="bw-pims-lab-profile-cs-DP"> </a></td><td>Diabetic profile</td></tr><tr><td style="white-space:nowrap">COAG<a name="bw-pims-lab-profile-cs-COAG"> </a></td><td>Coagulation</td></tr><tr><td style="white-space:nowrap">ANC<a name="bw-pims-lab-profile-cs-ANC"> </a></td><td>ANC profile</td></tr><tr><td style="white-space:nowrap">ABO<a name="bw-pims-lab-profile-cs-ABO"> </a></td><td>ABO grouping</td></tr></table></div>
 
     <!-- insert notes if present -->
   
 
 
+
+  
 
 </div>
         </div>    <!-- /inner-wrapper -->
@@ -255,8 +224,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="a0df3517-b918-4ece-99f4-18d93a586169">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="www.github.com/b-techbw">B-TECHBW</a>.  Package fhir.bw.lab#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 16, 2021 02:25+0000">2021-06-16</span>
+        <p><a name="b9a862c2-2447-4dab-ae7e-f94098732b80">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="www.github.com/b-techbw">B-TECHBW</a>.  Package fhir.bw.lab#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 16, 2021 19:16+0000">2021-06-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

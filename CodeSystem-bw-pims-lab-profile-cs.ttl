@@ -1,0 +1,178 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-profile-cs> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "bw-pims-lab-profile-cs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-profile-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">CD4<a name=\"bw-pims-lab-profile-cs-CD4\"> </a></td><td>CD4</td></tr><tr><td style=\"white-space:nowrap\">VL<a name=\"bw-pims-lab-profile-cs-VL\"> </a></td><td>Viral load</td></tr><tr><td style=\"white-space:nowrap\">FBC<a name=\"bw-pims-lab-profile-cs-FBC\"> </a></td><td>Full blood count</td></tr><tr><td style=\"white-space:nowrap\">LFT<a name=\"bw-pims-lab-profile-cs-LFT\"> </a></td><td>Liver function test</td></tr><tr><td style=\"white-space:nowrap\">UE<a name=\"bw-pims-lab-profile-cs-UE\"> </a></td><td>Urea and electrolytes</td></tr><tr><td style=\"white-space:nowrap\">CVC<a name=\"bw-pims-lab-profile-cs-CVC\"> </a></td><td>Cervical cancer</td></tr><tr><td style=\"white-space:nowrap\">CREAT<a name=\"bw-pims-lab-profile-cs-CREAT\"> </a></td><td>Serum creatinine</td></tr><tr><td style=\"white-space:nowrap\">HB<a name=\"bw-pims-lab-profile-cs-HB\"> </a></td><td>Haemoglobin</td></tr><tr><td style=\"white-space:nowrap\">MAL<a name=\"bw-pims-lab-profile-cs-MAL\"> </a></td><td>Malaria profile</td></tr><tr><td style=\"white-space:nowrap\">ERYTH<a name=\"bw-pims-lab-profile-cs-ERYTH\"> </a></td><td>Erythrocyte sed rate</td></tr><tr><td style=\"white-space:nowrap\">UREA<a name=\"bw-pims-lab-profile-cs-UREA\"> </a></td><td>Urea</td></tr><tr><td style=\"white-space:nowrap\">URAT<a name=\"bw-pims-lab-profile-cs-URAT\"> </a></td><td>Urate</td></tr><tr><td style=\"white-space:nowrap\">BLCHEM<a name=\"bw-pims-lab-profile-cs-BLCHEM\"> </a></td><td>Baseline chemistry</td></tr><tr><td style=\"white-space:nowrap\">SKME<a name=\"bw-pims-lab-profile-cs-SKME\"> </a></td><td>Skeletal muscle enzymes</td></tr><tr><td style=\"white-space:nowrap\">ALB<a name=\"bw-pims-lab-profile-cs-ALB\"> </a></td><td>Albumin</td></tr><tr><td style=\"white-space:nowrap\">ALP<a name=\"bw-pims-lab-profile-cs-ALP\"> </a></td><td>Alkaline phosphates</td></tr><tr><td style=\"white-space:nowrap\">ALT<a name=\"bw-pims-lab-profile-cs-ALT\"> </a></td><td>Alinine amino tran</td></tr><tr><td style=\"white-space:nowrap\">BFL<a name=\"bw-pims-lab-profile-cs-BFL\"> </a></td><td>Body fluids</td></tr><tr><td style=\"white-space:nowrap\">BCL<a name=\"bw-pims-lab-profile-cs-BCL\"> </a></td><td>Blood cultures</td></tr><tr><td style=\"white-space:nowrap\">CE<a name=\"bw-pims-lab-profile-cs-CE\"> </a></td><td>Cardiac enzymes</td></tr><tr><td style=\"white-space:nowrap\">PE<a name=\"bw-pims-lab-profile-cs-PE\"> </a></td><td>Pancreatic enzymes</td></tr><tr><td style=\"white-space:nowrap\">LIP<a name=\"bw-pims-lab-profile-cs-LIP\"> </a></td><td>Lipid profile</td></tr><tr><td style=\"white-space:nowrap\">NVP<a name=\"bw-pims-lab-profile-cs-NVP\"> </a></td><td>NVP Chemistry</td></tr><tr><td style=\"white-space:nowrap\">REN<a name=\"bw-pims-lab-profile-cs-REN\"> </a></td><td>Kidney/Renal function tests</td></tr><tr><td style=\"white-space:nowrap\">BSCHEM<a name=\"bw-pims-lab-profile-cs-BSCHEM\"> </a></td><td>Basic chemistry</td></tr><tr><td style=\"white-space:nowrap\">DP<a name=\"bw-pims-lab-profile-cs-DP\"> </a></td><td>Diabetic profile</td></tr><tr><td style=\"white-space:nowrap\">COAG<a name=\"bw-pims-lab-profile-cs-COAG\"> </a></td><td>Coagulation</td></tr><tr><td style=\"white-space:nowrap\">ANC<a name=\"bw-pims-lab-profile-cs-ANC\"> </a></td><td>ANC profile</td></tr><tr><td style=\"white-space:nowrap\">ABO<a name=\"bw-pims-lab-profile-cs-ABO\"> </a></td><td>ABO grouping</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-profile-cs"];
+  fhir:CodeSystem.version [ fhir:value "0.2.0"];
+  fhir:CodeSystem.name [ fhir:value "BwPimsLabProfileCS"];
+  fhir:CodeSystem.title [ fhir:value "PIMS Lab profile Code System"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2021-06-16T19:16:37+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "B-TECHBW"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "B-TECHBW" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "www.github.com/b-techbw" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "pmanko@uw.edu" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "PIMS Lab profile Code System"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "072" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "BW" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "29"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "CD4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CD4" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "VL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Viral load" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "FBC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Full blood count" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "LFT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Liver function test" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "UE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Urea and electrolytes" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "CVC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cervical cancer" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "CREAT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Serum creatinine" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "HB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Haemoglobin" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "MAL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Malaria profile" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "ERYTH" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Erythrocyte sed rate" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "UREA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Urea" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "URAT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Urate" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "BLCHEM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Baseline chemistry" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "SKME" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Skeletal muscle enzymes" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "ALB" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Albumin" ]
+  ], [
+     fhir:index 15;
+     fhir:CodeSystem.concept.code [ fhir:value "ALP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Alkaline phosphates" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "ALT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Alinine amino tran" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "BFL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Body fluids" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "BCL" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Blood cultures" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "CE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cardiac enzymes" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "PE" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Pancreatic enzymes" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "LIP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lipid profile" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "NVP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "NVP Chemistry" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "REN" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kidney/Renal function tests" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "BSCHEM" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Basic chemistry" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "DP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Diabetic profile" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "COAG" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Coagulation" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "ANC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ANC profile" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "ABO" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ABO grouping" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-profile-cs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

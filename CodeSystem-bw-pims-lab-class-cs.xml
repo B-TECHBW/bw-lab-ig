@@ -3,7 +3,7 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="bw-pims-lab-class-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">CHM<a name="bw-pims-lab-class-cs-CHM"> </a></td><td>Routine-Chemistry</td><td/></tr><tr><td style="white-space:nowrap">MCB<a name="bw-pims-lab-class-cs-MCB"> </a></td><td>Microbiology</td><td>All Order specimens were drawn</td></tr><tr><td style="white-space:nowrap">HEM<a name="bw-pims-lab-class-cs-HEM"> </a></td><td>Haematology</td><td>Partial results are available</td></tr><tr><td style="white-space:nowrap">PTH<a name="bw-pims-lab-class-cs-PTH"> </a></td><td>Pathology</td><td>Order was cancelled</td></tr><tr><td style="white-space:nowrap">IMG<a name="bw-pims-lab-class-cs-IMG"> </a></td><td>Imaging</td><td>Some order specimens were drawn</td></tr><tr><td style="white-space:nowrap">END<a name="bw-pims-lab-class-cs-END"> </a></td><td>Endocrinology</td><td>Some order specimens were drawn</td></tr><tr><td style="white-space:nowrap">IMU<a name="bw-pims-lab-class-cs-IMU"> </a></td><td>Immunology</td><td>Some order specimens were drawn</td></tr><tr><td style="white-space:nowrap">BBK<a name="bw-pims-lab-class-cs-BBK"> </a></td><td>Blood-Bank</td><td>Order was cancelled</td></tr><tr><td style="white-space:nowrap">VL<a name="bw-pims-lab-class-cs-VL"> </a></td><td>Immunology-Viral-Load</td><td>Some order specimens were drawn</td></tr><tr><td style="white-space:nowrap">RS<a name="bw-pims-lab-class-cs-RS"> </a></td><td>Research-blood-draw</td><td>Some order specimens were drawn</td></tr><tr><td style="white-space:nowrap">TB<a name="bw-pims-lab-class-cs-TB"> </a></td><td>TB-diagnostic</td><td>Some order specimens were drawn</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">CHM<a name="bw-pims-lab-class-cs-CHM"> </a></td><td>Routine-Chemistry</td><td>Routine chimestry was conducted on a lab specimen</td></tr><tr><td style="white-space:nowrap">MCB<a name="bw-pims-lab-class-cs-MCB"> </a></td><td>Microbiology</td><td>Microbiology of a lab specimen</td></tr><tr><td style="white-space:nowrap">HEM<a name="bw-pims-lab-class-cs-HEM"> </a></td><td>Haematology</td><td>Haematology of a lab specimen</td></tr><tr><td style="white-space:nowrap">PTH<a name="bw-pims-lab-class-cs-PTH"> </a></td><td>Pathology</td><td>Pathology of a lab specimen</td></tr><tr><td style="white-space:nowrap">IMG<a name="bw-pims-lab-class-cs-IMG"> </a></td><td>Imaging</td><td>Imaging of a lab specimen</td></tr><tr><td style="white-space:nowrap">END<a name="bw-pims-lab-class-cs-END"> </a></td><td>Endocrinology</td><td>Endocrinology of a lab specimen</td></tr><tr><td style="white-space:nowrap">IMU<a name="bw-pims-lab-class-cs-IMU"> </a></td><td>Immunology</td><td>Some order specimens were drawn</td></tr><tr><td style="white-space:nowrap">BBK<a name="bw-pims-lab-class-cs-BBK"> </a></td><td>Blood-Bank</td><td>Order was cancelled</td></tr><tr><td style="white-space:nowrap">VL<a name="bw-pims-lab-class-cs-VL"> </a></td><td>Immunology-Viral-Load</td><td>Some order specimens were drawn</td></tr><tr><td style="white-space:nowrap">RS<a name="bw-pims-lab-class-cs-RS"> </a></td><td>Research-blood-draw</td><td>Some order specimens were drawn</td></tr><tr><td style="white-space:nowrap">TB<a name="bw-pims-lab-class-cs-TB"> </a></td><td>TB-diagnostic</td><td>Some order specimens were drawn</td></tr></table></div>
   </text>
   <url value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
   <version value="0.2.0"/>
@@ -11,7 +11,7 @@
   <title value="PIMS Lab Class Code System"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-06-16T02:25:13+00:00"/>
+  <date value="2021-06-16T19:16:37+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -42,31 +42,32 @@
   <concept>
     <code value="CHM"/>
     <display value="Routine-Chemistry"/>
+    <definition value="Routine chimestry was conducted on a lab specimen"/>
   </concept>
   <concept>
     <code value="MCB"/>
     <display value="Microbiology"/>
-    <definition value="All Order specimens were drawn"/>
+    <definition value="Microbiology of a lab specimen"/>
   </concept>
   <concept>
     <code value="HEM"/>
     <display value="Haematology"/>
-    <definition value="Partial results are available"/>
+    <definition value="Haematology of a lab specimen"/>
   </concept>
   <concept>
     <code value="PTH"/>
     <display value="Pathology"/>
-    <definition value="Order was cancelled"/>
+    <definition value="Pathology of a lab specimen"/>
   </concept>
   <concept>
     <code value="IMG"/>
     <display value="Imaging"/>
-    <definition value="Some order specimens were drawn"/>
+    <definition value="Imaging of a lab specimen"/>
   </concept>
   <concept>
     <code value="END"/>
     <display value="Endocrinology"/>
-    <definition value="Some order specimens were drawn"/>
+    <definition value="Endocrinology of a lab specimen"/>
   </concept>
   <concept>
     <code value="IMU"/>

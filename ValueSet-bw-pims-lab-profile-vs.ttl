@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-order-code-vs> a fhir:ValueSet;
+<http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-profile-vs> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "bw-lab-order-code-vs"];
+  fhir:Resource.id [ fhir:value "bw-pims-lab-profile-vs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-bw-pims-lab-profile-cs.html\"><code>http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-profile-cs</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-order-code-vs"];
+  fhir:ValueSet.url [ fhir:value "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-profile-vs"];
   fhir:ValueSet.version [ fhir:value "0.2.0"];
-  fhir:ValueSet.name [ fhir:value "BwLabOrderCodeVS"];
-  fhir:ValueSet.title [ fhir:value "Botswana Lab Order Code"];
+  fhir:ValueSet.name [ fhir:value "BwPimsLabProfileVS"];
+  fhir:ValueSet.title [ fhir:value "Status Values for PIMS Lab profile"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-06-16T02:25:13+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-06-16T19:16:37+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "B-TECHBW"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -32,7 +32,6 @@
        fhir:ContactPoint.value [ fhir:value "pmanko@uw.edu" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "The code for the lab order."];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -51,13 +50,13 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-profile-cs" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-order-code-vs.ttl> a owl:Ontology;
+<http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-profile-vs.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

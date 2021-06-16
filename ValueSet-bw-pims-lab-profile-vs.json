@@ -1,16 +1,16 @@
 {
   "resourceType": "ValueSet",
-  "id": "bw-lab-order-code-vs",
+  "id": "bw-pims-lab-profile-vs",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-bw-pims-lab-profile-cs.html\"><code>http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-profile-cs</code></a></li></ul></div>"
   },
-  "url": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-order-code-vs",
+  "url": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-profile-vs",
   "version": "0.2.0",
-  "name": "BwLabOrderCodeVS",
-  "title": "Botswana Lab Order Code",
+  "name": "BwPimsLabProfileVS",
+  "title": "Status Values for PIMS Lab profile",
   "status": "active",
-  "date": "2021-06-16T02:25:13+00:00",
+  "date": "2021-06-16T19:16:37+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -27,7 +27,6 @@
       ]
     }
   ],
-  "description": "The code for the lab order.",
   "jurisdiction": [
     {
       "coding": [
@@ -49,7 +48,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://loinc.org"
+        "system": "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-profile-cs"
       }
     ]
   }
