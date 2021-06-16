@@ -12,7 +12,7 @@
   <title value="Botswana Laboratory HIE Workflow Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-06-10T22:48:10+00:00"/>
+  <date value="2021-06-16T01:49:19+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -233,7 +233,7 @@
       <reference>
         <reference value="StructureDefinition/bw-lab-composition"/>
       </reference>
-      <name value="Botswana Lab Composition"/>
+      <name value="Botswana Lab Order Composition"/>
       <description value="This composition packages information needed to facilitate lab order communication between clinical systems in Botswana."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -479,13 +479,24 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/example-bw-lab-bundle"/>
+      </reference>
+      <name value="BW Lab Bundle"/>
+      <description value="Composition Bundle containing Lab Order Information for the Botswana HIE"/>
+      <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Composition"/>
       </extension>
       <reference>
-        <reference value="Composition/example-bw-lab-pims-composition"/>
+        <reference value="Composition/example-bw-lab-composition"/>
       </reference>
       <name value="Example PIMS Lab Composition (Work in Progress)"/>
-      <description value="Example PIMS Lab Composition"/>
+      <description value="Example Lab Order Composition"/>
       <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition"/>
     </resource>
     <resource>
@@ -496,7 +507,7 @@
         <reference value="Patient/example-bw-patient"/>
       </reference>
       <name value="BW Patient"/>
-      <description value="Patient in a Botswana Health System"/>
+      <description value="Example Botswana Patient"/>
       <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"/>
     </resource>
     <resource>
@@ -506,8 +517,8 @@
       <reference>
         <reference value="Patient/example-bw-patient-international"/>
       </reference>
-      <name value="INT BW Patient"/>
-      <description value="Patient in a Botswana Health System"/>
+      <name value="BW Patient"/>
+      <description value="Example International Botswana Patient"/>
       <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"/>
     </resource>
     <resource>

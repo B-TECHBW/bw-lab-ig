@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 206, errors = 26, warn = 98, info = 3 -->
+<!-- broken links = 212, errors = 35, warn = 99, info = 3 -->
 <head>
   <title>BwLabIG : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for BwLabIG</h1>
- <p>Generated Thu Jun 10 22:48:43 UTC 2021, FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = <a href="http://b-techbw.github.io/bw-lab-ig">http://b-techbw.github.io/bw-lab-ig</a> (<a href="http://b-techbw.github.io/bw-lab-ig/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Wed Jun 16 01:49:47 UTC 2021, FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = <a href="http://b-techbw.github.io/bw-lab-ig">http://b-techbw.github.io/bw-lab-ig</a> (<a href="http://b-techbw.github.io/bw-lab-ig/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.73</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.bw.lab, Canonical = http://b-techbw.github.io/bw-lab-ig</td></tr>
@@ -38,14 +38,17 @@
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://b-techbw.github.io/bw-lab-ig (Problem #1 with package-list.json at http://b-techbw.github.io/bw-lab-ig: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 2 column 2 path $)</td></tr>
- <tr><td>Summary:</td><td> broken links = 206, errors = 26, warn = 98, info = 3</td></tr>
+ <tr><td>Summary:</td><td> broken links = 212, errors = 35, warn = 99, info = 3</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>206</b></td><td><b>2</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>212</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-example-bw-lab-bundle"><b>/github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle</b></a></td><td><b>8</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-bw-pims-lab-class-cs"><b>/github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-class-cs</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
@@ -57,7 +60,7 @@
      <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-bw-pims-lab-test-cs"><b>/github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-test-cs</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_Composition-example-bw-lab-pims-composition"><b>/github/workspace/fsh-generated/resources/Composition-example-bw-lab-pims-composition</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>1</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_Composition-example-bw-lab-composition"><b>/github/workspace/fsh-generated/resources/Composition-example-bw-lab-composition</b></a></td><td><b>4</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM"><b>/github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
@@ -170,610 +173,666 @@
      <td><b><a href="ConceptMap-BwPimsLabTestLoincCM.ttl.html">ConceptMap-BwPimsLabTestLoincCM.ttl.html</a></b></td><td><b>error</b></td><td><b>Unable to Parse HTML - node 'title' has unexpected content '-' (last text = 'FHIR.BW.LAB\PIMS tblkLabTest ' at line 8 column 42</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-bw-pims-lab-class-cs.change.history.html#12003165-11c4-42a7-801d-010cf03d845e">CodeSystem-bw-pims-lab-class-cs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-example-bw-lab-bundle.change.history.html#a76e12d0-2477-4a3c-b49d-cb1fcadf755e">Bundle-example-bw-lab-bundle.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-bw-pims-lab-class-cs.html#72f23365-ce14-4d8b-b204-fcf82a75375f">CodeSystem-bw-pims-lab-class-cs.html#/html/body/div/div/div/p/a at Line 228, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-example-bw-lab-bundle.html#76d2d14b-1760-4f7b-bfdc-971428086370">Bundle-example-bw-lab-bundle.html#/html/body/div/div/div/div/div/div/p/a at Line 174, column 180</a></b></td><td><b>error</b></td><td><b>The link 'example-bw-practitioner' for &quot;example-bw-practitioner&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-bw-pims-lab-class-cs.json.html#66d590f6-8170-421a-b5d9-cb29b216e6fe">CodeSystem-bw-pims-lab-class-cs.json.html#/html/body/div/div/div/p/a at Line 313, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-example-bw-lab-bundle.html#9196dcbf-5e0d-4945-8ddf-15fb70874f2a">Bundle-example-bw-lab-bundle.html#/html/body/div/div/div/p/a at Line 203, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-bw-pims-lab-class-cs.ttl.html#e480d727-bee0-4d26-96e0-a0e1cee5737d">CodeSystem-bw-pims-lab-class-cs.ttl.html#/html/body/div/div/div/p/a at Line 317, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-example-bw-lab-bundle.json.html#8058d190-9060-4ab4-a105-7fe2dc375a58">Bundle-example-bw-lab-bundle.json.html#/html/body/div/div/div/p/a at Line 447, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-bw-pims-lab-class-cs.xml.html#f1d05cd8-d4d6-4268-95cf-19bd796c0159">CodeSystem-bw-pims-lab-class-cs.xml.html#/html/body/div/div/div/p/a at Line 302, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-example-bw-lab-bundle.ttl.html#a8c3ab9f-7648-4a4c-8a04-43b339fc8d78">Bundle-example-bw-lab-bundle.ttl.html#/html/body/div/div/div/p/a at Line 402, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-bw-pims-lab-order-status-cs.change.history.html#9ba21cb5-c75f-4b09-8203-c44e1cdf6b99">CodeSystem-bw-pims-lab-order-status-cs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-example-bw-lab-bundle.xml.html#62b5187f-260a-4a4b-a6bc-8ea2a8499aba">Bundle-example-bw-lab-bundle.xml.html#/html/body/div/div/div/p/a at Line 418, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-bw-pims-lab-order-status-cs.html#2bfa10bf-8b31-4c8d-8ca7-716e392ec50c">CodeSystem-bw-pims-lab-order-status-cs.html#/html/body/div/div/div/p/a at Line 228, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-bw-pims-lab-class-cs.change.history.html#a251e0dd-2a69-4fb6-aafa-b607e689648c">CodeSystem-bw-pims-lab-class-cs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-bw-pims-lab-order-status-cs.json.html#d11b27c8-5719-4659-9f98-31226d325ebb">CodeSystem-bw-pims-lab-order-status-cs.json.html#/html/body/div/div/div/p/a at Line 284, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-bw-pims-lab-class-cs.html#881cb46f-6365-4727-8ce1-d8405f9ae351">CodeSystem-bw-pims-lab-class-cs.html#/html/body/div/div/div/p/a at Line 228, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-bw-pims-lab-order-status-cs.ttl.html#c17a4f08-745d-47b2-b5f4-87fd8f5f4f4a">CodeSystem-bw-pims-lab-order-status-cs.ttl.html#/html/body/div/div/div/p/a at Line 288, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-bw-pims-lab-class-cs.json.html#2e60d0af-e2fd-4306-8c56-cdb8f9126ad4">CodeSystem-bw-pims-lab-class-cs.json.html#/html/body/div/div/div/p/a at Line 313, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-bw-pims-lab-order-status-cs.xml.html#f7381529-3b29-46c4-a80a-03cd78fccda5">CodeSystem-bw-pims-lab-order-status-cs.xml.html#/html/body/div/div/div/p/a at Line 273, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-bw-pims-lab-class-cs.ttl.html#5990620d-eee3-4f86-82a0-f9829bdd79cb">CodeSystem-bw-pims-lab-class-cs.ttl.html#/html/body/div/div/div/p/a at Line 317, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-bw-pims-lab-test-cs.change.history.html#4ba9c7fe-3643-4ab6-8d56-20e3c2941ba1">CodeSystem-bw-pims-lab-test-cs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-bw-pims-lab-class-cs.xml.html#2f40cedb-80bc-40b9-acd6-bb0a5d78c0b0">CodeSystem-bw-pims-lab-class-cs.xml.html#/html/body/div/div/div/p/a at Line 302, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-bw-pims-lab-test-cs.html#4e8a919c-466c-4c9a-9031-cb3ce4597f83">CodeSystem-bw-pims-lab-test-cs.html#/html/body/div/div/div/p/a at Line 228, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-bw-pims-lab-order-status-cs.change.history.html#8cfe49ec-e799-4953-a8ab-9097cd2d5758">CodeSystem-bw-pims-lab-order-status-cs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-bw-pims-lab-test-cs.json.html#004e8060-ce73-4975-8ae2-f4824a780451">CodeSystem-bw-pims-lab-test-cs.json.html#/html/body/div/div/div/p/a at Line 389, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-bw-pims-lab-order-status-cs.html#3a20c3b8-3f19-4c49-8429-57b4e46d6986">CodeSystem-bw-pims-lab-order-status-cs.html#/html/body/div/div/div/p/a at Line 228, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-bw-pims-lab-test-cs.ttl.html#829c33ef-9e77-4820-9e23-f4e44be25078">CodeSystem-bw-pims-lab-test-cs.ttl.html#/html/body/div/div/div/p/a at Line 393, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-bw-pims-lab-order-status-cs.json.html#bb6c7daf-eef9-4862-ae6a-3502eb936c29">CodeSystem-bw-pims-lab-order-status-cs.json.html#/html/body/div/div/div/p/a at Line 284, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="CodeSystem-bw-pims-lab-test-cs.xml.html#51fe1035-c0f5-4af3-87bd-3fd7727028ee">CodeSystem-bw-pims-lab-test-cs.xml.html#/html/body/div/div/div/p/a at Line 378, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-bw-pims-lab-order-status-cs.ttl.html#e584d977-d7a0-47f7-9013-6b2adcb283f0">CodeSystem-bw-pims-lab-order-status-cs.ttl.html#/html/body/div/div/div/p/a at Line 288, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Composition-example-bw-lab-pims-composition.change.history.html#d8516392-ac14-4336-9e28-714dbf398a68">Composition-example-bw-lab-pims-composition.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-bw-pims-lab-order-status-cs.xml.html#7a88cf8f-8693-4711-8b69-14ec83f021b3">CodeSystem-bw-pims-lab-order-status-cs.xml.html#/html/body/div/div/div/p/a at Line 273, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Composition-example-bw-lab-pims-composition.html#2315d1c1-a629-4406-bfd7-f26d2ea909e8">Composition-example-bw-lab-pims-composition.html#/html/body/div/div/div/div/div/div/p/a at Line 174, column 212</a></b></td><td><b>error</b></td><td><b>The link 'BwPractitioner' for &quot;BwPractitioner&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-bw-pims-lab-test-cs.change.history.html#f55bae19-cc71-411b-8b62-40d005fa22a2">CodeSystem-bw-pims-lab-test-cs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Composition-example-bw-lab-pims-composition.html#42f50e78-ef3b-4011-98cc-78cc87baa90d">Composition-example-bw-lab-pims-composition.html#/html/body/div/div/div/p/a at Line 203, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-bw-pims-lab-test-cs.html#fa30225c-741b-4cf2-866a-13e477d9201d">CodeSystem-bw-pims-lab-test-cs.html#/html/body/div/div/div/p/a at Line 228, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Composition-example-bw-lab-pims-composition.json.html#e28306cf-b270-432c-81d6-7b5a9abc9806">Composition-example-bw-lab-pims-composition.json.html#/html/body/div/div/div/p/a at Line 236, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-bw-pims-lab-test-cs.json.html#ff69aef6-323f-4f6c-a4e6-950430c6b590">CodeSystem-bw-pims-lab-test-cs.json.html#/html/body/div/div/div/p/a at Line 389, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Composition-example-bw-lab-pims-composition.ttl.html#d129c6bc-8b40-4d4e-802c-61f17c05a7fc">Composition-example-bw-lab-pims-composition.ttl.html#/html/body/div/div/div/p/a at Line 248, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-bw-pims-lab-test-cs.ttl.html#57ff9ed7-5e36-4298-b0fc-9a1f8a0b4f53">CodeSystem-bw-pims-lab-test-cs.ttl.html#/html/body/div/div/div/p/a at Line 393, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Composition-example-bw-lab-pims-composition.xml.html#8b500c7e-acde-40cb-bee6-64fe0fb6d96d">Composition-example-bw-lab-pims-composition.xml.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="CodeSystem-bw-pims-lab-test-cs.xml.html#226c8a1d-e056-4e60-9b10-4f57fc2e44f6">CodeSystem-bw-pims-lab-test-cs.xml.html#/html/body/div/div/div/p/a at Line 378, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.change.history.html#b855c955-6649-40d5-bbda-4cb2c30ad8ff">ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Composition-example-bw-lab-composition.change.history.html#c9a13ce1-0c99-4631-b255-6de09ba154b1">Composition-example-bw-lab-composition.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#e637d248-ec5d-4548-ba4d-7f9331ca6630">ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 570</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;www.github.com/b-techbw&quot; cannot be resolved</b></td>
+     <td><b><a href="Composition-example-bw-lab-composition.html#c43f9cd7-6911-48c3-b226-e1fd16f985b3">Composition-example-bw-lab-composition.html#/html/body/div/div/div/div/div/div/p/a at Line 174, column 212</a></b></td><td><b>error</b></td><td><b>The link 'example-bw-practitioner' for &quot;example-bw-practitioner&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#9f8c8ed2-c8b6-4e3d-a169-7b3277cf8b47">ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#/html/body/div/div/div/p/a at Line 204, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Composition-example-bw-lab-composition.html#3316e1c7-1c1c-4bc7-b20c-d1d948bff001">Composition-example-bw-lab-composition.html#/html/body/div/div/div/p/a at Line 203, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.json.html#fc0f2324-aad1-4bee-b037-43981d2f34b1">ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.json.html#/html/body/div/div/div/p/a at Line 308, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Composition-example-bw-lab-composition.json.html#44896a3c-a907-43c3-b63f-466f83f20c8e">Composition-example-bw-lab-composition.json.html#/html/body/div/div/div/p/a at Line 245, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.ttl.html#ae1201b3-fc20-4040-96e9-d2a213fe16a9">ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.ttl.html#/html/body/div/div/div/p/a at Line 299, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Composition-example-bw-lab-composition.ttl.html#ac253c41-82b5-4268-9c10-980a7a48416a">Composition-example-bw-lab-composition.ttl.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.xml.html#b67d0912-c3ab-43bf-87d1-a85220628876">ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.xml.html#/html/body/div/div/div/p/a at Line 287, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Composition-example-bw-lab-composition.xml.html#4893da08-91cd-43d5-b6af-4fffa71350f0">Composition-example-bw-lab-composition.xml.html#/html/body/div/div/div/p/a at Line 236, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwLabPimsOrderStatusRequestCM.change.history.html#a97c9710-9c0f-4db8-8c68-d72dd0c97bde">ConceptMap-BwLabPimsOrderStatusRequestCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.change.history.html#e6f47a5d-58d1-435b-b54f-e9873278a98e">ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwLabPimsOrderStatusRequestCM.html#b87f8f2e-f71e-4472-9fe9-0f1ff9205102">ConceptMap-BwLabPimsOrderStatusRequestCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 532</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;www.github.com/b-techbw&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#bc0f6a92-08c4-4b82-9d45-89a99cb4d6a9">ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 569</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;www.github.com/b-techbw&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwLabPimsOrderStatusRequestCM.html#4cfc8b01-faa5-4867-b509-77960b03794b">ConceptMap-BwLabPimsOrderStatusRequestCM.html#/html/body/div/div/div/p/a at Line 204, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#5d2eff8e-2b69-4868-a751-5f3520ac38a9">ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#/html/body/div/div/div/p/a at Line 204, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwLabPimsOrderStatusRequestCM.json.html#27e23220-5df2-425d-9963-7b477218bdc2">ConceptMap-BwLabPimsOrderStatusRequestCM.json.html#/html/body/div/div/div/p/a at Line 308, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.json.html#d600d5f7-477c-4809-bfac-8b8986cefb52">ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.json.html#/html/body/div/div/div/p/a at Line 308, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwLabPimsOrderStatusRequestCM.ttl.html#92878375-0d43-4145-b8ce-cc57fe1b0b88">ConceptMap-BwLabPimsOrderStatusRequestCM.ttl.html#/html/body/div/div/div/p/a at Line 299, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.ttl.html#edf3b04a-6dae-49a2-9392-b937898dd0ec">ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.ttl.html#/html/body/div/div/div/p/a at Line 299, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwLabPimsOrderStatusRequestCM.xml.html#1effffff-56c0-4a87-9b2a-5064618cd6b1">ConceptMap-BwLabPimsOrderStatusRequestCM.xml.html#/html/body/div/div/div/p/a at Line 287, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.xml.html#e69c1234-fef3-4fe5-a234-c22c82dc3b90">ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.xml.html#/html/body/div/div/div/p/a at Line 287, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwLabPimsOrderStatusTaskCM.change.history.html#681b58fd-26b9-4443-b0d3-5246f7d34939">ConceptMap-BwLabPimsOrderStatusTaskCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwLabPimsOrderStatusRequestCM.change.history.html#b8dc3407-5f3f-4077-ab02-ab71a709df18">ConceptMap-BwLabPimsOrderStatusRequestCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwLabPimsOrderStatusTaskCM.html#4bc82645-2332-472b-927f-ee1f1708c7d9">ConceptMap-BwLabPimsOrderStatusTaskCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 520</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;www.github.com/b-techbw&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwLabPimsOrderStatusRequestCM.html#57d5705c-51bb-4e15-a721-976f7960811d">ConceptMap-BwLabPimsOrderStatusRequestCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 531</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;www.github.com/b-techbw&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwLabPimsOrderStatusTaskCM.html#023bb5d3-77cf-4002-a577-4a35e6c9529b">ConceptMap-BwLabPimsOrderStatusTaskCM.html#/html/body/div/div/div/p/a at Line 204, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwLabPimsOrderStatusRequestCM.html#7d6872b5-aba0-4755-b9d1-8f378d6c7ac1">ConceptMap-BwLabPimsOrderStatusRequestCM.html#/html/body/div/div/div/p/a at Line 204, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwLabPimsOrderStatusTaskCM.json.html#345d7438-d660-4894-bf76-8830840ad859">ConceptMap-BwLabPimsOrderStatusTaskCM.json.html#/html/body/div/div/div/p/a at Line 308, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwLabPimsOrderStatusRequestCM.json.html#631b0a98-84c1-4cc9-8d6a-d538d4a724e3">ConceptMap-BwLabPimsOrderStatusRequestCM.json.html#/html/body/div/div/div/p/a at Line 308, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwLabPimsOrderStatusTaskCM.ttl.html#7a0d9a7d-b9fb-401b-b08d-65a51375bb83">ConceptMap-BwLabPimsOrderStatusTaskCM.ttl.html#/html/body/div/div/div/p/a at Line 299, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwLabPimsOrderStatusRequestCM.ttl.html#f04756df-7f9f-4a02-a1b8-12c8b92b4ee2">ConceptMap-BwLabPimsOrderStatusRequestCM.ttl.html#/html/body/div/div/div/p/a at Line 299, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwLabPimsOrderStatusTaskCM.xml.html#c8a1d49b-c0e9-4ad8-8309-db68d6a4e64f">ConceptMap-BwLabPimsOrderStatusTaskCM.xml.html#/html/body/div/div/div/p/a at Line 287, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwLabPimsOrderStatusRequestCM.xml.html#96f32c6c-4228-4676-8821-85613acae51c">ConceptMap-BwLabPimsOrderStatusRequestCM.xml.html#/html/body/div/div/div/p/a at Line 287, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ConceptMap-BwPimsLabTestLoincCM.change.history.html#3d159363-412e-41c5-a532-e19c065feb49">ConceptMap-BwPimsLabTestLoincCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwLabPimsOrderStatusTaskCM.change.history.html#387b9031-5347-4a81-ae74-a072badf076c">ConceptMap-BwLabPimsOrderStatusTaskCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Patient-example-bw-patient-international.change.history.html#331ec86a-d4ea-48fc-ac4f-1aafd9197256">Patient-example-bw-patient-international.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwLabPimsOrderStatusTaskCM.html#cdf5e73d-803c-4a14-b7e0-fa0f67970e13">ConceptMap-BwLabPimsOrderStatusTaskCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 519</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;www.github.com/b-techbw&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Patient-example-bw-patient-international.html#f7384d7c-8488-48e6-a475-0b4cccfe117b">Patient-example-bw-patient-international.html#/html/body/div/div/div/p/a at Line 203, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwLabPimsOrderStatusTaskCM.html#509d81a6-7dfa-49c6-834f-8d7c5bcb99ac">ConceptMap-BwLabPimsOrderStatusTaskCM.html#/html/body/div/div/div/p/a at Line 204, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Patient-example-bw-patient-international.json.html#acf55f61-10ce-46ab-85c3-3137536df650">Patient-example-bw-patient-international.json.html#/html/body/div/div/div/p/a at Line 238, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwLabPimsOrderStatusTaskCM.json.html#f8eb159a-327b-44bd-a8f7-7ad45da52259">ConceptMap-BwLabPimsOrderStatusTaskCM.json.html#/html/body/div/div/div/p/a at Line 308, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Patient-example-bw-patient-international.ttl.html#f6ab35ac-8477-47f8-937d-e3494ca0bc42">Patient-example-bw-patient-international.ttl.html#/html/body/div/div/div/p/a at Line 248, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwLabPimsOrderStatusTaskCM.ttl.html#6e067d0b-871d-4651-af60-f25f4b8e0b48">ConceptMap-BwLabPimsOrderStatusTaskCM.ttl.html#/html/body/div/div/div/p/a at Line 299, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Patient-example-bw-patient-international.xml.html#63fa1ca8-001f-4621-953a-b7ca3c48d47d">Patient-example-bw-patient-international.xml.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwLabPimsOrderStatusTaskCM.xml.html#1b1b6f5e-a205-4528-a43f-976d3012c88f">ConceptMap-BwLabPimsOrderStatusTaskCM.xml.html#/html/body/div/div/div/p/a at Line 287, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Patient-example-bw-patient.change.history.html#3d994010-58e3-49fd-9765-6c3b217ff417">Patient-example-bw-patient.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ConceptMap-BwPimsLabTestLoincCM.change.history.html#89d5432d-e3ea-483d-af4b-f6d6939493bb">ConceptMap-BwPimsLabTestLoincCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Patient-example-bw-patient.html#f2c469b9-696c-4937-9529-bbe9b2c91e39">Patient-example-bw-patient.html#/html/body/div/div/div/p/a at Line 203, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Patient-example-bw-patient-international.change.history.html#aceed47c-0b26-4ed2-9641-9e91e97b8099">Patient-example-bw-patient-international.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Patient-example-bw-patient.json.html#723ee5ed-b5f1-49dd-bb1f-c5427c54a50c">Patient-example-bw-patient.json.html#/html/body/div/div/div/p/a at Line 238, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Patient-example-bw-patient-international.html#de38ec76-8ade-4361-91a8-d2258a95a100">Patient-example-bw-patient-international.html#/html/body/div/div/div/p/a at Line 203, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Patient-example-bw-patient.ttl.html#0bb9337a-b8f6-4af5-9ce5-5b0d6a00ca6b">Patient-example-bw-patient.ttl.html#/html/body/div/div/div/p/a at Line 248, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Patient-example-bw-patient-international.json.html#95912dfb-db23-465d-9154-2d9cc363719f">Patient-example-bw-patient-international.json.html#/html/body/div/div/div/p/a at Line 238, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Patient-example-bw-patient.xml.html#b48c0b8e-61b3-4d4b-9560-7442ba094f02">Patient-example-bw-patient.xml.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Patient-example-bw-patient-international.ttl.html#8bc9ca40-ce98-4052-aa74-08c2ddce5c4d">Patient-example-bw-patient-international.ttl.html#/html/body/div/div/div/p/a at Line 248, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Practitioner-example-bw-pims-practitioner.change.history.html#4b6e32b7-cc85-4aab-a59d-3df52dc79570">Practitioner-example-bw-pims-practitioner.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Patient-example-bw-patient-international.xml.html#8d2de20e-4fdd-43a6-b75a-96dfced48eba">Patient-example-bw-patient-international.xml.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Practitioner-example-bw-pims-practitioner.html#11eb0c30-4107-431b-90de-40fe49fce00c">Practitioner-example-bw-pims-practitioner.html#/html/body/div/div/div/p/a at Line 203, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Patient-example-bw-patient.change.history.html#75ca5b40-49ef-4047-a899-add64a4cb9d2">Patient-example-bw-patient.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Practitioner-example-bw-pims-practitioner.json.html#03498224-27fa-4531-bbbb-9e1943b4cf5e">Practitioner-example-bw-pims-practitioner.json.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Patient-example-bw-patient.html#ccd58d5d-8b36-4230-8df3-9acf9108d795">Patient-example-bw-patient.html#/html/body/div/div/div/p/a at Line 203, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Practitioner-example-bw-pims-practitioner.ttl.html#7e974147-2856-4426-958b-f5c84717c1f4">Practitioner-example-bw-pims-practitioner.ttl.html#/html/body/div/div/div/p/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Patient-example-bw-patient.json.html#449596e7-aed2-4400-8dbc-c46d8c6fa5ab">Patient-example-bw-patient.json.html#/html/body/div/div/div/p/a at Line 238, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Practitioner-example-bw-pims-practitioner.xml.html#8a4d862f-294f-4525-a35a-046f83cf653f">Practitioner-example-bw-pims-practitioner.xml.html#/html/body/div/div/div/p/a at Line 225, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Patient-example-bw-patient.ttl.html#66feb3c1-072d-4e20-ad17-22ff90955c3d">Patient-example-bw-patient.ttl.html#/html/body/div/div/div/p/a at Line 248, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ServiceRequest-example-bw-pims-service-request-1.change.history.html#369ae20d-02da-4705-8c0c-bae4b203a2cf">ServiceRequest-example-bw-pims-service-request-1.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Patient-example-bw-patient.xml.html#35c6ca22-72be-4dda-859f-404ef71a1069">Patient-example-bw-patient.xml.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ServiceRequest-example-bw-pims-service-request-1.html#40bd5c0a-8a67-41cc-bbf4-4c8de0eda8f3">ServiceRequest-example-bw-pims-service-request-1.html#/html/body/div/div/div/p/a at Line 203, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Practitioner-example-bw-pims-practitioner.change.history.html#6f9d5d27-3354-4702-a258-4e1eca30f34c">Practitioner-example-bw-pims-practitioner.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ServiceRequest-example-bw-pims-service-request-1.json.html#af4b7338-098d-4121-8e11-93f13937cd93">ServiceRequest-example-bw-pims-service-request-1.json.html#/html/body/div/div/div/p/a at Line 236, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Practitioner-example-bw-pims-practitioner.html#3a50bac7-8f54-4ec2-9eba-12e5a65c0422">Practitioner-example-bw-pims-practitioner.html#/html/body/div/div/div/p/a at Line 203, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ServiceRequest-example-bw-pims-service-request-1.ttl.html#1d16fd05-bc68-41ef-88c7-8b643c6d2e9c">ServiceRequest-example-bw-pims-service-request-1.ttl.html#/html/body/div/div/div/p/a at Line 248, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Practitioner-example-bw-pims-practitioner.json.html#8b544cc2-c313-44e6-b104-6b875dbdf4c0">Practitioner-example-bw-pims-practitioner.json.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ServiceRequest-example-bw-pims-service-request-1.xml.html#c181492a-639e-44d2-a8ff-395accad0868">ServiceRequest-example-bw-pims-service-request-1.xml.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Practitioner-example-bw-pims-practitioner.ttl.html#ccbd59c9-c0de-4783-a3ad-88a26495f375">Practitioner-example-bw-pims-practitioner.ttl.html#/html/body/div/div/div/p/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ServiceRequest-example-bw-pims-service-request-2.change.history.html#4bc9caa8-18ea-4b30-903a-566270b55098">ServiceRequest-example-bw-pims-service-request-2.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Practitioner-example-bw-pims-practitioner.xml.html#434377fd-dc05-4ac5-a38b-9697e2270ea9">Practitioner-example-bw-pims-practitioner.xml.html#/html/body/div/div/div/p/a at Line 225, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ServiceRequest-example-bw-pims-service-request-2.html#5e3efe95-2927-41d1-80d7-4003d5069af5">ServiceRequest-example-bw-pims-service-request-2.html#/html/body/div/div/div/p/a at Line 203, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ServiceRequest-example-bw-pims-service-request-1.change.history.html#660cb480-e18c-4a2d-a993-41d8fe4854fc">ServiceRequest-example-bw-pims-service-request-1.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ServiceRequest-example-bw-pims-service-request-2.json.html#6d5f7167-5a77-40ce-962a-2fb32d5801f7">ServiceRequest-example-bw-pims-service-request-2.json.html#/html/body/div/div/div/p/a at Line 236, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ServiceRequest-example-bw-pims-service-request-1.html#8e0a7384-b8e8-4047-bd81-445e208d36a1">ServiceRequest-example-bw-pims-service-request-1.html#/html/body/div/div/div/p/a at Line 203, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ServiceRequest-example-bw-pims-service-request-2.ttl.html#831e7d9e-8f6a-4264-b9c5-c8654f2b5644">ServiceRequest-example-bw-pims-service-request-2.ttl.html#/html/body/div/div/div/p/a at Line 248, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ServiceRequest-example-bw-pims-service-request-1.json.html#13afc4f4-09a4-4d44-ae07-2c7c72b4f435">ServiceRequest-example-bw-pims-service-request-1.json.html#/html/body/div/div/div/p/a at Line 236, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ServiceRequest-example-bw-pims-service-request-2.xml.html#29568fbf-ced0-4507-804b-db185d6a712f">ServiceRequest-example-bw-pims-service-request-2.xml.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ServiceRequest-example-bw-pims-service-request-1.ttl.html#20415390-e014-4fe7-b33b-3d8cc7cd79e1">ServiceRequest-example-bw-pims-service-request-1.ttl.html#/html/body/div/div/div/p/a at Line 248, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ServiceRequest-example-bw-pims-service-request-profile.change.history.html#a268656d-47e7-4211-a459-ccf1f8f46bb3">ServiceRequest-example-bw-pims-service-request-profile.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ServiceRequest-example-bw-pims-service-request-1.xml.html#9ca27198-3964-41f4-a608-22632412105e">ServiceRequest-example-bw-pims-service-request-1.xml.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ServiceRequest-example-bw-pims-service-request-profile.html#c3f46831-44bf-4853-a106-9dbdd723d603">ServiceRequest-example-bw-pims-service-request-profile.html#/html/body/div/div/div/p/a at Line 203, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ServiceRequest-example-bw-pims-service-request-2.change.history.html#16ea54ed-0167-4d85-a4e6-b94ed8d08f72">ServiceRequest-example-bw-pims-service-request-2.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ServiceRequest-example-bw-pims-service-request-profile.json.html#01c1e018-2e97-48a4-b4a7-e8c47b453a84">ServiceRequest-example-bw-pims-service-request-profile.json.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ServiceRequest-example-bw-pims-service-request-2.html#78b0e49e-4b45-45c5-932c-b0f7059c7950">ServiceRequest-example-bw-pims-service-request-2.html#/html/body/div/div/div/p/a at Line 203, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ServiceRequest-example-bw-pims-service-request-profile.ttl.html#5a13d05a-013f-40e9-a722-b9a3f189730a">ServiceRequest-example-bw-pims-service-request-profile.ttl.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ServiceRequest-example-bw-pims-service-request-2.json.html#bcc4d9eb-ce8b-450a-8286-064e52356bb5">ServiceRequest-example-bw-pims-service-request-2.json.html#/html/body/div/div/div/p/a at Line 236, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ServiceRequest-example-bw-pims-service-request-profile.xml.html#bd48ad2f-73a4-401e-88d5-bbdb80c4ab51">ServiceRequest-example-bw-pims-service-request-profile.xml.html#/html/body/div/div/div/p/a at Line 228, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ServiceRequest-example-bw-pims-service-request-2.ttl.html#f365bace-3dd5-4743-9887-75cc394d052c">ServiceRequest-example-bw-pims-service-request-2.ttl.html#/html/body/div/div/div/p/a at Line 248, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-BwLabDataDictionary-definitions.html#ad56e082-c83f-40af-b62a-ae1fd7e694ba">StructureDefinition-BwLabDataDictionary-definitions.html#/html/body/div/div/div/p/a at Line 463, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ServiceRequest-example-bw-pims-service-request-2.xml.html#341691d1-4231-401a-aac3-7c30dc5c383e">ServiceRequest-example-bw-pims-service-request-2.xml.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-BwLabDataDictionary-examples.html#44e5986f-69e2-42bf-a279-3dd8baec685a">StructureDefinition-BwLabDataDictionary-examples.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ServiceRequest-example-bw-pims-service-request-profile.change.history.html#8c41ce9e-489d-4dc2-a071-733d4916f6be">ServiceRequest-example-bw-pims-service-request-profile.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-BwLabDataDictionary-mappings.html#e8ed6253-3b5a-4f1f-913a-c70ec3ea512a">StructureDefinition-BwLabDataDictionary-mappings.html#/html/body/div/div/div/p/a at Line 339, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ServiceRequest-example-bw-pims-service-request-profile.html#f958707a-4785-4f9f-ba37-f7fc77d68f47">ServiceRequest-example-bw-pims-service-request-profile.html#/html/body/div/div/div/p/a at Line 203, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-BwLabDataDictionary.html#9733512d-f130-4c1c-9699-f004ca36a370">StructureDefinition-BwLabDataDictionary.html#/html/body/div/div/div/p/a at Line 701, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ServiceRequest-example-bw-pims-service-request-profile.json.html#fb04cd84-b741-4889-9aca-fc411c915b5a">ServiceRequest-example-bw-pims-service-request-profile.json.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-BwLabDataDictionary.profile.history.html#ff703816-3e9c-48f2-989a-3f156cbcc221">StructureDefinition-BwLabDataDictionary.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ServiceRequest-example-bw-pims-service-request-profile.ttl.html#ef28e29f-aafa-45f8-8069-143cae930ac7">ServiceRequest-example-bw-pims-service-request-profile.ttl.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-BwLabDataDictionary.profile.json.html#b8270dbc-6da8-4cc4-8518-34c9bdbda07e">StructureDefinition-BwLabDataDictionary.profile.json.html#/html/body/div/div/div/p/a at Line 2443, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ServiceRequest-example-bw-pims-service-request-profile.xml.html#416577e9-ec52-42bf-b9b8-c2329786a0c8">ServiceRequest-example-bw-pims-service-request-profile.xml.html#/html/body/div/div/div/p/a at Line 228, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-BwLabDataDictionary.profile.ttl.html#64a03334-a685-4a48-aa81-3c9ab68169df">StructureDefinition-BwLabDataDictionary.profile.ttl.html#/html/body/div/div/div/p/a at Line 1921, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-BwLabDataDictionary-definitions.html#025ab902-80fc-4259-86b7-c3c47a4ca75b">StructureDefinition-BwLabDataDictionary-definitions.html#/html/body/div/div/div/p/a at Line 463, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-BwLabDataDictionary.profile.xml.html#4a273767-5845-49eb-94fc-828a43994ad9">StructureDefinition-BwLabDataDictionary.profile.xml.html#/html/body/div/div/div/p/a at Line 2075, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-BwLabDataDictionary-examples.html#66990685-646a-45e5-901e-8a5088c93d82">StructureDefinition-BwLabDataDictionary-examples.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-encounter-definitions.html#9f64d6be-cf4b-4550-a2b6-38972b39f448">StructureDefinition-bw-encounter-definitions.html#/html/body/div/div/div/p/a at Line 932, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-BwLabDataDictionary-mappings.html#6fee02ee-f1f7-4bf8-9ef3-5aa0de05a49b">StructureDefinition-BwLabDataDictionary-mappings.html#/html/body/div/div/div/p/a at Line 339, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-encounter-examples.html#04d9ec35-f940-484e-a55c-eb8be877cdcb">StructureDefinition-bw-encounter-examples.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-BwLabDataDictionary.html#f81a2333-e3ad-4bd7-9a90-3e756c4eb8dc">StructureDefinition-BwLabDataDictionary.html#/html/body/div/div/div/p/a at Line 701, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-encounter-mappings.html#58135faf-f76c-4599-90ca-4b49a0c83d88">StructureDefinition-bw-encounter-mappings.html#/html/body/div/div/div/p/a at Line 400, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-BwLabDataDictionary.profile.history.html#c8a24eb7-502c-41dd-b922-fd07f6c93a01">StructureDefinition-BwLabDataDictionary.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-encounter.html#6c643d4c-611b-42b8-ac75-5bae2a65e05a">StructureDefinition-bw-encounter.html#/html/body/div/div/div/p/a at Line 872, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-BwLabDataDictionary.profile.json.html#1de59ad2-74b8-43a6-a11f-0b197b3573be">StructureDefinition-BwLabDataDictionary.profile.json.html#/html/body/div/div/div/p/a at Line 2443, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-encounter.profile.history.html#be6deb18-15d7-4c21-89fe-dc79a17c8bea">StructureDefinition-bw-encounter.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-BwLabDataDictionary.profile.ttl.html#b58a530f-47fb-4bd5-a16e-5e8629d2e08a">StructureDefinition-BwLabDataDictionary.profile.ttl.html#/html/body/div/div/div/p/a at Line 1921, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-encounter.profile.json.html#3cb34863-cba0-445c-b3cd-9631cfeff1df">StructureDefinition-bw-encounter.profile.json.html#/html/body/div/div/div/p/a at Line 3775, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-BwLabDataDictionary.profile.xml.html#c433d306-0042-415c-b345-31c8ae15bb3d">StructureDefinition-BwLabDataDictionary.profile.xml.html#/html/body/div/div/div/p/a at Line 2075, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-encounter.profile.ttl.html#56e988cf-8804-4006-842c-0d105c4eb487">StructureDefinition-bw-encounter.profile.ttl.html#/html/body/div/div/div/p/a at Line 3322, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-encounter-definitions.html#4ddbd185-1627-485a-9106-d43ca8b90fe5">StructureDefinition-bw-encounter-definitions.html#/html/body/div/div/div/p/a at Line 932, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-encounter.profile.xml.html#30ac79c2-b90d-40dd-9e83-c91ce3d81b8e">StructureDefinition-bw-encounter.profile.xml.html#/html/body/div/div/div/p/a at Line 3324, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-encounter-examples.html#19e46b3a-26c5-431e-9261-85ca09230f55">StructureDefinition-bw-encounter-examples.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-composition-definitions.html#d96efaf2-491a-4092-8e80-2b63e0e0774f">StructureDefinition-bw-lab-composition-definitions.html#/html/body/div/div/div/p/a at Line 1793, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-encounter-mappings.html#f4450579-174a-4722-a022-20b0d7e2b513">StructureDefinition-bw-encounter-mappings.html#/html/body/div/div/div/p/a at Line 400, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-composition-examples.html#39365435-9c0a-444a-bb1f-87467a6d9274">StructureDefinition-bw-lab-composition-examples.html#/html/body/div/div/div/p/a at Line 271, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-encounter.html#2ff025d9-4f8e-4ae7-adea-9472728b7924">StructureDefinition-bw-encounter.html#/html/body/div/div/div/p/a at Line 872, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-composition-mappings.html#7733aed0-a446-457c-a089-29361f9d53d1">StructureDefinition-bw-lab-composition-mappings.html#/html/body/div/div/div/p/a at Line 552, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-encounter.profile.history.html#b5b02cf8-4920-418b-8025-3fb9cb364acb">StructureDefinition-bw-encounter.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-composition.html#7648950e-7078-4a5f-a3b6-11aae9f3d067">StructureDefinition-bw-lab-composition.html#/html/body/div/div/div/p/a at Line 1404, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-encounter.profile.json.html#1c7665aa-40f8-4995-8e6d-36349cdb1799">StructureDefinition-bw-encounter.profile.json.html#/html/body/div/div/div/p/a at Line 3775, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-composition.profile.history.html#ba262e95-e558-415e-bea6-8a84a4454c36">StructureDefinition-bw-lab-composition.profile.history.html#/html/body/div/div/div/p/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-encounter.profile.ttl.html#98f1ff74-220e-4f50-916d-00da3ff2380d">StructureDefinition-bw-encounter.profile.ttl.html#/html/body/div/div/div/p/a at Line 3322, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-composition.profile.json.html#fd0bcf65-1dff-45fc-91d3-e53ff4b2f148">StructureDefinition-bw-lab-composition.profile.json.html#/html/body/div/div/div/p/a at Line 7714, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-encounter.profile.xml.html#f8576759-1c6d-41f6-8c24-ff0ec3fcafe9">StructureDefinition-bw-encounter.profile.xml.html#/html/body/div/div/div/p/a at Line 3324, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-composition.profile.ttl.html#c5b1ab8c-8296-4e11-b8f7-39ce71f438bd">StructureDefinition-bw-lab-composition.profile.ttl.html#/html/body/div/div/div/p/a at Line 6770, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-composition-definitions.html#10e2c8b5-5329-4921-97ca-397b7049aca1">StructureDefinition-bw-lab-composition-definitions.html#/html/body/div/div/div/p/a at Line 1287, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-composition.profile.xml.html#319d5e59-bc56-4944-86da-1a72212b2364">StructureDefinition-bw-lab-composition.profile.xml.html#/html/body/div/div/div/p/a at Line 6900, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-composition-examples.html#b8dedc05-6c48-468d-b0e0-58c3cae84d08">StructureDefinition-bw-lab-composition-examples.html#/html/body/div/div/div/p/a at Line 277, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-diagnostic-report-definitions.html#b3bae5ff-20b8-4328-9e15-944a57e42f20">StructureDefinition-bw-lab-diagnostic-report-definitions.html#/html/body/div/div/div/p/a at Line 731, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-composition-mappings.html#6167f62a-4730-4171-b24a-24e76390a91f">StructureDefinition-bw-lab-composition-mappings.html#/html/body/div/div/div/p/a at Line 474, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-diagnostic-report-examples.html#281bce01-46b1-40c4-8e3d-d31716e01d6a">StructureDefinition-bw-lab-diagnostic-report-examples.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-composition.html#f0bb4eaa-0a60-48ca-9329-07d26db7bdda">StructureDefinition-bw-lab-composition.html#/html/body/div/div/div/p/a at Line 1088, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-diagnostic-report-mappings.html#c032c84a-df82-4139-9f8d-731ba8ee7b97">StructureDefinition-bw-lab-diagnostic-report-mappings.html#/html/body/div/div/div/p/a at Line 341, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-composition.profile.history.html#4f4740e8-a6bf-49d8-98de-d342feca402d">StructureDefinition-bw-lab-composition.profile.history.html#/html/body/div/div/div/p/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-diagnostic-report.html#17a0a817-8cf7-44ad-9acb-8acf98415bfc">StructureDefinition-bw-lab-diagnostic-report.html#/html/body/div/div/div/p/a at Line 770, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-composition.profile.json.html#47b76449-6f8b-43cf-9df0-ddb09cfc833c">StructureDefinition-bw-lab-composition.profile.json.html#/html/body/div/div/div/p/a at Line 5276, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-diagnostic-report.profile.history.html#48c1269a-d792-4d9e-8256-1d810b1799c0">StructureDefinition-bw-lab-diagnostic-report.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-composition.profile.ttl.html#a5257717-8755-498c-a9d3-3cdd3fe0aa4d">StructureDefinition-bw-lab-composition.profile.ttl.html#/html/body/div/div/div/p/a at Line 4661, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-diagnostic-report.profile.json.html#15fe7c00-8cea-4a3b-a755-abf15ea33cd5">StructureDefinition-bw-lab-diagnostic-report.profile.json.html#/html/body/div/div/div/p/a at Line 2623, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-composition.profile.xml.html#12c478fc-981f-4b89-90b6-04ed92b27468">StructureDefinition-bw-lab-composition.profile.xml.html#/html/body/div/div/div/p/a at Line 4745, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-diagnostic-report.profile.ttl.html#6fc65e6e-e8f2-406e-acee-28d06bda9ceb">StructureDefinition-bw-lab-diagnostic-report.profile.ttl.html#/html/body/div/div/div/p/a at Line 2376, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-diagnostic-report-definitions.html#d099a36b-a00c-49f2-b217-60ba8db6a071">StructureDefinition-bw-lab-diagnostic-report-definitions.html#/html/body/div/div/div/p/a at Line 731, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-diagnostic-report.profile.xml.html#b2ae1dcf-ffa0-49b2-9ef1-80fc43360f6d">StructureDefinition-bw-lab-diagnostic-report.profile.xml.html#/html/body/div/div/div/p/a at Line 2346, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-diagnostic-report-examples.html#e4a5a15b-1754-4bdd-aef7-d70a4b9bcb65">StructureDefinition-bw-lab-diagnostic-report-examples.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-observation-definitions.html#880eec56-8638-4fd8-a818-7ffd302a1e5b">StructureDefinition-bw-lab-observation-definitions.html#/html/body/div/div/div/p/a at Line 1079, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-diagnostic-report-mappings.html#9b9f0759-0bae-4175-b9b9-78960c76048f">StructureDefinition-bw-lab-diagnostic-report-mappings.html#/html/body/div/div/div/p/a at Line 341, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-observation-examples.html#2b87c4e1-1eac-4815-8bcf-ceaef89dc1d5">StructureDefinition-bw-lab-observation-examples.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-diagnostic-report.html#6ddaab20-d22f-4652-8cb8-00c2db9dbce5">StructureDefinition-bw-lab-diagnostic-report.html#/html/body/div/div/div/p/a at Line 770, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-observation-mappings.html#37e71d4a-8131-480f-ba89-c635f281db7d">StructureDefinition-bw-lab-observation-mappings.html#/html/body/div/div/div/p/a at Line 439, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-diagnostic-report.profile.history.html#11c22eac-bd28-435c-b767-5c72ddb84c95">StructureDefinition-bw-lab-diagnostic-report.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-observation.html#abd5e55d-5bbb-41eb-9b4d-81f11b150db6">StructureDefinition-bw-lab-observation.html#/html/body/div/div/div/p/a at Line 1072, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-diagnostic-report.profile.json.html#e6cd9fca-2ce7-4de7-9703-3272df0f37c4">StructureDefinition-bw-lab-diagnostic-report.profile.json.html#/html/body/div/div/div/p/a at Line 2623, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-observation.profile.history.html#25e20b9c-7e76-48ea-9615-afc3f4cc50fa">StructureDefinition-bw-lab-observation.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-diagnostic-report.profile.ttl.html#724e3d59-c9b1-43e9-9ea3-9783b8e7c4bb">StructureDefinition-bw-lab-diagnostic-report.profile.ttl.html#/html/body/div/div/div/p/a at Line 2376, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-observation.profile.json.html#5ea891f4-d2c3-44df-a4e4-34672640b436">StructureDefinition-bw-lab-observation.profile.json.html#/html/body/div/div/div/p/a at Line 4220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-diagnostic-report.profile.xml.html#cb217d07-c7e1-4bcf-9317-3151aa52ef83">StructureDefinition-bw-lab-diagnostic-report.profile.xml.html#/html/body/div/div/div/p/a at Line 2346, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-observation.profile.ttl.html#df6e7b21-f629-483a-806d-dc94cba84325">StructureDefinition-bw-lab-observation.profile.ttl.html#/html/body/div/div/div/p/a at Line 3725, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-observation-definitions.html#b72afa31-da4b-42fd-bb23-e9adc0d7e185">StructureDefinition-bw-lab-observation-definitions.html#/html/body/div/div/div/p/a at Line 1079, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-observation.profile.xml.html#90a16043-d2ea-4861-bdc8-86bc4db2b38c">StructureDefinition-bw-lab-observation.profile.xml.html#/html/body/div/div/div/p/a at Line 3839, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-observation-examples.html#29d16b68-5d9e-47d3-9b8b-c4c9998dbe8e">StructureDefinition-bw-lab-observation-examples.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-service-request-definitions.html#d50abaa7-d322-4dda-be7d-8ebb31767981">StructureDefinition-bw-lab-service-request-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 417, column 262</a></b></td><td><b>error</b></td><td><b>The link 'valueset-diagnostic-requests.html' for &quot;here&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-observation-mappings.html#9ce8daca-55fd-4125-92ed-fb1731864756">StructureDefinition-bw-lab-observation-mappings.html#/html/body/div/div/div/p/a at Line 439, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-service-request-definitions.html#01ff84c4-7c09-4425-80ad-26891f51f762">StructureDefinition-bw-lab-service-request-definitions.html#/html/body/div/div/div/p/a at Line 721, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-observation.html#75742f5b-3174-418c-8718-bf8de500ba30">StructureDefinition-bw-lab-observation.html#/html/body/div/div/div/p/a at Line 1072, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-service-request-examples.html#02f3629f-cf80-46cf-aa11-095c33005b5e">StructureDefinition-bw-lab-service-request-examples.html#/html/body/div/div/div/p/a at Line 283, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-observation.profile.history.html#fc2419c2-ef2f-4c22-a880-cd2e4d3da39e">StructureDefinition-bw-lab-observation.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-service-request-mappings.html#ea7a83a7-6dfb-4e20-8223-7b63b26ac6ee">StructureDefinition-bw-lab-service-request-mappings.html#/html/body/div/div/div/p/a at Line 404, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-observation.profile.json.html#6d1de576-9930-4373-bbc1-338f5859fdd0">StructureDefinition-bw-lab-observation.profile.json.html#/html/body/div/div/div/p/a at Line 4220, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-service-request.html#4d6644f3-daae-45e5-8e4f-cd196414c254">StructureDefinition-bw-lab-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 322, column 2448</a></b></td><td><b>error</b></td><td><b>The link 'valueset-diagnostic-requests.html' for &quot;here&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-observation.profile.ttl.html#3768a8e3-3a47-407b-9944-87e81f2ceb2d">StructureDefinition-bw-lab-observation.profile.ttl.html#/html/body/div/div/div/p/a at Line 3725, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-service-request.html#74a55406-7771-40a7-abe2-8f1b1bcbb5a3">StructureDefinition-bw-lab-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 512, column 2448</a></b></td><td><b>error</b></td><td><b>The link 'valueset-diagnostic-requests.html' for &quot;here&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-observation.profile.xml.html#17e61626-a63a-481e-9df7-64bd6ea886b8">StructureDefinition-bw-lab-observation.profile.xml.html#/html/body/div/div/div/p/a at Line 3839, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-service-request.html#8ee60b15-4ad9-4f71-b98b-ff44ff81db6b">StructureDefinition-bw-lab-service-request.html#/html/body/div/div/div/p/a at Line 770, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-service-request-definitions.html#52c53429-08fd-41ef-b65a-142692213e00">StructureDefinition-bw-lab-service-request-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 417, column 262</a></b></td><td><b>error</b></td><td><b>The link 'valueset-diagnostic-requests.html' for &quot;here&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-service-request.profile.history.html#fd27936e-42eb-4b92-b1d3-fe481c25c2d1">StructureDefinition-bw-lab-service-request.profile.history.html#/html/body/div/div/div/p/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-service-request-definitions.html#43242f2c-df15-47a4-8fe6-dd0c284bad98">StructureDefinition-bw-lab-service-request-definitions.html#/html/body/div/div/div/p/a at Line 721, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-service-request.profile.json.html#15095797-adec-4795-8869-c169e50646f0">StructureDefinition-bw-lab-service-request.profile.json.html#/html/body/div/div/div/p/a at Line 2807, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-service-request-examples.html#e5f258ed-3577-4fa3-a1cd-9f26ae93e518">StructureDefinition-bw-lab-service-request-examples.html#/html/body/div/div/div/p/a at Line 283, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-service-request.profile.ttl.html#8e60b9a1-c88a-470f-9194-296b89ad3464">StructureDefinition-bw-lab-service-request.profile.ttl.html#/html/body/div/div/div/p/a at Line 2496, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-service-request-mappings.html#83db1a8e-7321-4a75-8b10-4c4940559bbf">StructureDefinition-bw-lab-service-request-mappings.html#/html/body/div/div/div/p/a at Line 404, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-service-request.profile.xml.html#e23f04b4-71f8-4ea1-a860-722a1c17ca6d">StructureDefinition-bw-lab-service-request.profile.xml.html#/html/body/div/div/div/p/a at Line 2524, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-service-request.html#0cf050d4-10ff-4832-a1ee-9cf981786f86">StructureDefinition-bw-lab-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 322, column 2448</a></b></td><td><b>error</b></td><td><b>The link 'valueset-diagnostic-requests.html' for &quot;here&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-task-definitions.html#4b0998c2-9321-4889-8377-244271814304">StructureDefinition-bw-lab-task-definitions.html#/html/body/div/div/div/p/a at Line 842, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-service-request.html#6b7ad47d-8e86-4efe-a940-248aa1d32dcd">StructureDefinition-bw-lab-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 512, column 2448</a></b></td><td><b>error</b></td><td><b>The link 'valueset-diagnostic-requests.html' for &quot;here&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-task-examples.html#c08609e0-2940-4e95-b12e-f13560a49478">StructureDefinition-bw-lab-task-examples.html#/html/body/div/div/div/p/a at Line 271, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-service-request.html#6b4ed695-67bd-46c3-9b2c-7aa7020de722">StructureDefinition-bw-lab-service-request.html#/html/body/div/div/div/p/a at Line 770, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-task-mappings.html#92e31a16-814b-4cbe-8297-997510dbfe0a">StructureDefinition-bw-lab-task-mappings.html#/html/body/div/div/div/p/a at Line 375, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-service-request.profile.history.html#2a54646b-dc4c-4647-865c-4105be010990">StructureDefinition-bw-lab-service-request.profile.history.html#/html/body/div/div/div/p/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-task.html#1acc2dd6-0f02-4ff7-949d-d7b13005ef85">StructureDefinition-bw-lab-task.html#/html/body/div/div/div/p/a at Line 1041, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-service-request.profile.json.html#c1841384-c287-4123-a91d-d3ba242adcba">StructureDefinition-bw-lab-service-request.profile.json.html#/html/body/div/div/div/p/a at Line 2807, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-task.profile.history.html#de0781ab-fdd1-47e3-8c87-309b628c9796">StructureDefinition-bw-lab-task.profile.history.html#/html/body/div/div/div/p/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-service-request.profile.ttl.html#e7fd5f16-7997-4302-9694-f121458d3caf">StructureDefinition-bw-lab-service-request.profile.ttl.html#/html/body/div/div/div/p/a at Line 2496, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-task.profile.json.html#6d029cce-f883-4d5c-8a84-d3ebcddb4bd1">StructureDefinition-bw-lab-task.profile.json.html#/html/body/div/div/div/p/a at Line 3366, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-service-request.profile.xml.html#2ecc21b5-b518-4974-8a30-3cccf27dfb7c">StructureDefinition-bw-lab-service-request.profile.xml.html#/html/body/div/div/div/p/a at Line 2524, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-task.profile.ttl.html#4fa78b70-64de-4f5e-b4a1-2a46f92b73c9">StructureDefinition-bw-lab-task.profile.ttl.html#/html/body/div/div/div/p/a at Line 2948, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-task-definitions.html#e62962b9-fd74-404b-990e-705eb8c217e5">StructureDefinition-bw-lab-task-definitions.html#/html/body/div/div/div/p/a at Line 842, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-lab-task.profile.xml.html#17ba340d-914a-46c0-ac18-06243016b3ca">StructureDefinition-bw-lab-task.profile.xml.html#/html/body/div/div/div/p/a at Line 2998, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-task-examples.html#05bcbb1c-0802-4165-b00e-9201b0fbae2a">StructureDefinition-bw-lab-task-examples.html#/html/body/div/div/div/p/a at Line 271, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-national-identifier-definitions.html#154ab865-0b6c-42fc-8205-9c43659dea1f">StructureDefinition-bw-national-identifier-definitions.html#/html/body/div/div/div/p/a at Line 342, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-task-mappings.html#b2fcb978-7026-4009-94f7-9739b9d5f6e9">StructureDefinition-bw-lab-task-mappings.html#/html/body/div/div/div/p/a at Line 375, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-national-identifier-examples.html#19a75760-1d0f-4aeb-a3b4-255db0912ec4">StructureDefinition-bw-national-identifier-examples.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-task.html#4ad799fe-190d-45cc-beff-d5276544dfe9">StructureDefinition-bw-lab-task.html#/html/body/div/div/div/p/a at Line 1041, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-national-identifier-mappings.html#4296188e-06bc-4071-94dc-238bc487fcc9">StructureDefinition-bw-national-identifier-mappings.html#/html/body/div/div/div/p/a at Line 279, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-task.profile.history.html#484a3f56-a760-49a1-8b74-ffbfcf3734c8">StructureDefinition-bw-lab-task.profile.history.html#/html/body/div/div/div/p/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-national-identifier.html#3ce2983f-f2af-4292-8b50-1998ab745d96">StructureDefinition-bw-national-identifier.html#/html/body/div/div/div/p/a at Line 497, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-task.profile.json.html#0cf8c23f-981f-423c-aee9-47223dfa8d3a">StructureDefinition-bw-lab-task.profile.json.html#/html/body/div/div/div/p/a at Line 3366, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-national-identifier.profile.history.html#77b3ee11-4685-4093-9236-fa1ce75ee099">StructureDefinition-bw-national-identifier.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-task.profile.ttl.html#f6819d43-970e-4f15-8dd6-6679a10669b6">StructureDefinition-bw-lab-task.profile.ttl.html#/html/body/div/div/div/p/a at Line 2948, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-national-identifier.profile.json.html#3ae1acc5-77e8-4f63-bb14-02f041081995">StructureDefinition-bw-national-identifier.profile.json.html#/html/body/div/div/div/p/a at Line 785, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-lab-task.profile.xml.html#f791a0e7-1ce3-4791-a83f-82b0b167d9a8">StructureDefinition-bw-lab-task.profile.xml.html#/html/body/div/div/div/p/a at Line 2998, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-national-identifier.profile.ttl.html#50121937-5cf6-4036-8a74-fffe6186998d">StructureDefinition-bw-national-identifier.profile.ttl.html#/html/body/div/div/div/p/a at Line 715, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-national-identifier-definitions.html#0d04c396-cc52-4317-972c-7faa7d9b43b6">StructureDefinition-bw-national-identifier-definitions.html#/html/body/div/div/div/p/a at Line 342, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-national-identifier.profile.xml.html#0248e2cb-63ba-4c5b-987d-9bcafe6c7ee9">StructureDefinition-bw-national-identifier.profile.xml.html#/html/body/div/div/div/p/a at Line 716, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-national-identifier-examples.html#af8b9fb7-17b4-4416-9c0e-6a042c24b5cd">StructureDefinition-bw-national-identifier-examples.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-patient-definitions.html#417b978f-fa0f-405b-86a3-ff67a4cf2c59">StructureDefinition-bw-patient-definitions.html#/html/body/div/div/div/p/a at Line 849, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-national-identifier-mappings.html#c1e7b50f-39d7-4c1e-a841-2f3e4830d770">StructureDefinition-bw-national-identifier-mappings.html#/html/body/div/div/div/p/a at Line 279, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-patient-examples.html#64b9e389-cd18-499f-8c02-40009675c1f0">StructureDefinition-bw-patient-examples.html#/html/body/div/div/div/p/a at Line 277, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-national-identifier.html#552a84ed-527d-4442-9d13-d4acc492ce9f">StructureDefinition-bw-national-identifier.html#/html/body/div/div/div/p/a at Line 497, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-patient-mappings.html#030dec76-1a29-4a6a-9b68-f9a3618ac8ae">StructureDefinition-bw-patient-mappings.html#/html/body/div/div/div/p/a at Line 385, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-national-identifier.profile.history.html#cf68928d-9409-41b6-884c-344056dd3ab9">StructureDefinition-bw-national-identifier.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-patient.html#c1e52cdf-28e0-45d5-b3e4-c7fec2e03c18">StructureDefinition-bw-patient.html#/html/body/div/div/div/p/a at Line 836, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-national-identifier.profile.json.html#0e13c970-17e4-4dcc-a9f5-fa43ab831d03">StructureDefinition-bw-national-identifier.profile.json.html#/html/body/div/div/div/p/a at Line 785, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-patient.profile.history.html#02c2d720-2d50-4d30-9962-a67e2cd6f794">StructureDefinition-bw-patient.profile.history.html#/html/body/div/div/div/p/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-national-identifier.profile.ttl.html#41c740b5-e784-44bd-965b-10d511a056e2">StructureDefinition-bw-national-identifier.profile.ttl.html#/html/body/div/div/div/p/a at Line 715, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-patient.profile.json.html#06e993d5-ed2d-4dfe-8c5f-06be2b52de13">StructureDefinition-bw-patient.profile.json.html#/html/body/div/div/div/p/a at Line 2983, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-national-identifier.profile.xml.html#1f98ce93-2bae-47b6-b0c1-8f4620b9bb7e">StructureDefinition-bw-national-identifier.profile.xml.html#/html/body/div/div/div/p/a at Line 716, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-patient.profile.ttl.html#24a35f7e-5cc2-4600-ad9c-91500afe4156">StructureDefinition-bw-patient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2617, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-patient-definitions.html#14cc3637-6b10-4880-b719-f93d70caaf2c">StructureDefinition-bw-patient-definitions.html#/html/body/div/div/div/p/a at Line 849, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-patient.profile.xml.html#721715bc-8582-4a8d-9a58-69f64891ce98">StructureDefinition-bw-patient.profile.xml.html#/html/body/div/div/div/p/a at Line 2719, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-patient-examples.html#633c3a33-d75a-46bb-a877-971b1f666e13">StructureDefinition-bw-patient-examples.html#/html/body/div/div/div/p/a at Line 277, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-practitioner-definitions.html#1807c00f-c680-41e1-b2f7-6c675035933b">StructureDefinition-bw-practitioner-definitions.html#/html/body/div/div/div/p/a at Line 616, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-patient-mappings.html#a2baa3c6-a141-4347-ac60-6c9d7dc7ac56">StructureDefinition-bw-patient-mappings.html#/html/body/div/div/div/p/a at Line 385, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-practitioner-examples.html#7153a5be-3ff9-4636-b46e-047b5f518d22">StructureDefinition-bw-practitioner-examples.html#/html/body/div/div/div/p/a at Line 271, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-patient.html#68e997a2-7639-44ef-8b1c-f18c775f87ae">StructureDefinition-bw-patient.html#/html/body/div/div/div/p/a at Line 836, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-practitioner-mappings.html#937e8126-8b7f-45b7-b6dd-81b52faba66f">StructureDefinition-bw-practitioner-mappings.html#/html/body/div/div/div/p/a at Line 338, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-patient.profile.history.html#bcb91a7d-d008-4ab9-99d9-dedd2aa5327b">StructureDefinition-bw-patient.profile.history.html#/html/body/div/div/div/p/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-practitioner.html#bd9df61b-5b27-4329-911d-a9e55d16becd">StructureDefinition-bw-practitioner.html#/html/body/div/div/div/p/a at Line 667, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-patient.profile.json.html#99ac3e48-a199-48d2-a82c-bc6a92d790ef">StructureDefinition-bw-patient.profile.json.html#/html/body/div/div/div/p/a at Line 2983, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-practitioner.profile.history.html#2b3286e9-8e04-4f8a-bfff-d2dad143a0fe">StructureDefinition-bw-practitioner.profile.history.html#/html/body/div/div/div/p/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-patient.profile.ttl.html#1f6f3b43-56ed-4718-83cd-63f20b1e5189">StructureDefinition-bw-patient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2617, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-practitioner.profile.json.html#e999ca94-93bf-4bf7-b180-573c1a6de31f">StructureDefinition-bw-practitioner.profile.json.html#/html/body/div/div/div/p/a at Line 1977, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-patient.profile.xml.html#0e3c0616-6cf9-4ba0-bf05-22d3a5ce32a4">StructureDefinition-bw-patient.profile.xml.html#/html/body/div/div/div/p/a at Line 2719, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-practitioner.profile.ttl.html#de54552d-e6b5-47bc-a25e-fba972e165e0">StructureDefinition-bw-practitioner.profile.ttl.html#/html/body/div/div/div/p/a at Line 1748, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-practitioner-definitions.html#40156a20-fbad-47c2-99b7-b4138d8d8a4f">StructureDefinition-bw-practitioner-definitions.html#/html/body/div/div/div/p/a at Line 616, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-bw-practitioner.profile.xml.html#b6bb3dba-509d-489b-9c85-8a7481150259">StructureDefinition-bw-practitioner.profile.xml.html#/html/body/div/div/div/p/a at Line 1796, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-practitioner-examples.html#1189d49e-c0d0-45be-b084-3d64e85a01e5">StructureDefinition-bw-practitioner-examples.html#/html/body/div/div/div/p/a at Line 271, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Task-example-bw-task-requested.change.history.html#a33d04ce-e849-4d60-9900-bf5b5f22f23d">Task-example-bw-task-requested.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-practitioner-mappings.html#7c48abc5-1304-474a-8588-03b42b8e53e6">StructureDefinition-bw-practitioner-mappings.html#/html/body/div/div/div/p/a at Line 338, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Task-example-bw-task-requested.html#3fedfada-ed75-42fb-989b-5f903381a625">Task-example-bw-task-requested.html#/html/body/div/div/div/p/a at Line 203, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-practitioner.html#48dc52af-cba1-42d5-bb79-b16fbb1b84c7">StructureDefinition-bw-practitioner.html#/html/body/div/div/div/p/a at Line 667, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Task-example-bw-task-requested.json.html#c5a4a9d6-da0f-44cc-ba21-033eff69b398">Task-example-bw-task-requested.json.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-practitioner.profile.history.html#2785040c-03c7-4fa6-b847-32eebd2fbee0">StructureDefinition-bw-practitioner.profile.history.html#/html/body/div/div/div/p/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Task-example-bw-task-requested.ttl.html#0482e485-9624-425c-875a-49c19dadf322">Task-example-bw-task-requested.ttl.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-practitioner.profile.json.html#f89a6ac2-59e7-40c0-8d4a-1bf0d4c07ae3">StructureDefinition-bw-practitioner.profile.json.html#/html/body/div/div/div/p/a at Line 1977, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Task-example-bw-task-requested.xml.html#547a9ebf-933c-4d19-9723-8f53db7d9827">Task-example-bw-task-requested.xml.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-practitioner.profile.ttl.html#dc5adb60-fa95-4de2-8930-e2aa27e548db">StructureDefinition-bw-practitioner.profile.ttl.html#/html/body/div/div/div/p/a at Line 1748, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-diagnostic-report-status-vs.change.history.html#14df98c4-7d15-46c5-bbb3-f7f633572751">ValueSet-bw-lab-diagnostic-report-status-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-bw-practitioner.profile.xml.html#d67d4987-7486-4f4c-a631-f5f3a27f750d">StructureDefinition-bw-practitioner.profile.xml.html#/html/body/div/div/div/p/a at Line 1796, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-diagnostic-report-status-vs.html#9ccbecb8-ad89-430b-a003-a4b73499be54">ValueSet-bw-lab-diagnostic-report-status-vs.html#/html/body/div/div/div/p/a at Line 266, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Task-example-bw-task-requested.change.history.html#1b37b0c0-213a-4c1e-8157-39dae41f67f5">Task-example-bw-task-requested.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-diagnostic-report-status-vs.json.html#9764654f-457b-4391-bf72-21f1ef1c898c">ValueSet-bw-lab-diagnostic-report-status-vs.json.html#/html/body/div/div/div/p/a at Line 283, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Task-example-bw-task-requested.html#1031e5c2-c995-4ddc-aed7-919a12277b6a">Task-example-bw-task-requested.html#/html/body/div/div/div/p/a at Line 203, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-diagnostic-report-status-vs.ttl.html#5db9f043-ed6a-4b6d-a310-0280a1b1385b">ValueSet-bw-lab-diagnostic-report-status-vs.ttl.html#/html/body/div/div/div/p/a at Line 280, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Task-example-bw-task-requested.json.html#379a5e79-2531-4d65-a040-9730436cf4af">Task-example-bw-task-requested.json.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-diagnostic-report-status-vs.xml.html#e1ee2e4a-cffb-4658-ab6e-23a689a6168b">ValueSet-bw-lab-diagnostic-report-status-vs.xml.html#/html/body/div/div/div/p/a at Line 271, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Task-example-bw-task-requested.ttl.html#a89f7da5-de31-4569-b4a8-d32bd6481a75">Task-example-bw-task-requested.ttl.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-order-code-vs.change.history.html#96e2b574-8afe-46ec-8aad-c7e9037b7d54">ValueSet-bw-lab-order-code-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="Task-example-bw-task-requested.xml.html#5adc2cc4-3919-496e-8536-8fec007c977a">Task-example-bw-task-requested.xml.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-order-code-vs.html#9a033c42-2b3a-490d-9adc-08333d1a7b9f">ValueSet-bw-lab-order-code-vs.html#/html/body/div/div/div/p/a at Line 267, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-diagnostic-report-status-vs.change.history.html#f8efc6d5-172c-4064-aaab-00c30931762c">ValueSet-bw-lab-diagnostic-report-status-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-order-code-vs.json.html#f334f0a8-9b14-456e-a59b-7ef6530570e5">ValueSet-bw-lab-order-code-vs.json.html#/html/body/div/div/div/p/a at Line 261, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-diagnostic-report-status-vs.html#1c2f04bf-c367-4312-8008-0d929e6711b2">ValueSet-bw-lab-diagnostic-report-status-vs.html#/html/body/div/div/div/p/a at Line 266, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-order-code-vs.ttl.html#a2ce7499-c405-4514-98d2-43ba770a1083">ValueSet-bw-lab-order-code-vs.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-diagnostic-report-status-vs.json.html#94e96bb9-ea66-492a-854c-1e3cf1eecc09">ValueSet-bw-lab-diagnostic-report-status-vs.json.html#/html/body/div/div/div/p/a at Line 283, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-order-code-vs.xml.html#eabd7b62-b41d-4c7e-97c0-85f794dcf04a">ValueSet-bw-lab-order-code-vs.xml.html#/html/body/div/div/div/p/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-diagnostic-report-status-vs.ttl.html#0a116446-e1ba-48e2-9a43-9adfdc69e751">ValueSet-bw-lab-diagnostic-report-status-vs.ttl.html#/html/body/div/div/div/p/a at Line 280, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-task-intent-vs.change.history.html#a9bcda04-0a60-441f-8f8f-299ad12cf7fa">ValueSet-bw-lab-task-intent-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-diagnostic-report-status-vs.xml.html#bfeac862-32e0-4b54-983b-7e687af2d3f9">ValueSet-bw-lab-diagnostic-report-status-vs.xml.html#/html/body/div/div/div/p/a at Line 271, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-task-intent-vs.html#a4e78962-81e6-4f9b-9aea-c7aa52a28c01">ValueSet-bw-lab-task-intent-vs.html#/html/body/div/div/div/p/a at Line 267, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-order-code-vs.change.history.html#e2858b9d-58c8-4d40-acc6-5689874d6b94">ValueSet-bw-lab-order-code-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-task-intent-vs.json.html#2a0a0481-2100-47e9-9d36-89050265c182">ValueSet-bw-lab-task-intent-vs.json.html#/html/body/div/div/div/p/a at Line 267, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-order-code-vs.html#18e0408a-2cf6-4b13-a068-c61cbab1a5cd">ValueSet-bw-lab-order-code-vs.html#/html/body/div/div/div/p/a at Line 267, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-task-intent-vs.ttl.html#d6f407e8-ba18-4757-b6aa-e43c8774905b">ValueSet-bw-lab-task-intent-vs.ttl.html#/html/body/div/div/div/p/a at Line 268, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-order-code-vs.json.html#9ea1970d-afa3-4d45-b474-721cb0bea564">ValueSet-bw-lab-order-code-vs.json.html#/html/body/div/div/div/p/a at Line 261, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-task-intent-vs.xml.html#c522c79f-7bdd-4d0a-a5dd-6d1e31d7d7a8">ValueSet-bw-lab-task-intent-vs.xml.html#/html/body/div/div/div/p/a at Line 255, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-order-code-vs.ttl.html#95366b7c-aba6-48fa-afef-c41bddb77614">ValueSet-bw-lab-order-code-vs.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-task-status-vs.change.history.html#3d2c2a91-bb53-4d40-ac6a-bf1b9a2b3b73">ValueSet-bw-lab-task-status-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-order-code-vs.xml.html#f8956e26-2906-41c9-80f4-6679b8937c8f">ValueSet-bw-lab-order-code-vs.xml.html#/html/body/div/div/div/p/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-task-status-vs.html#c59120ea-d4db-498d-8297-09b96ba2ec23">ValueSet-bw-lab-task-status-vs.html#/html/body/div/div/div/p/a at Line 265, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-task-intent-vs.change.history.html#c62c9dbe-d100-4f8b-a90c-9833b826d7eb">ValueSet-bw-lab-task-intent-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-task-status-vs.json.html#b036eb8a-a0e3-4c62-81c2-aa82256bb8ef">ValueSet-bw-lab-task-status-vs.json.html#/html/body/div/div/div/p/a at Line 279, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-task-intent-vs.html#00c38839-0085-4c0a-8c2d-f5a7e9f4e131">ValueSet-bw-lab-task-intent-vs.html#/html/body/div/div/div/p/a at Line 267, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-task-status-vs.ttl.html#013f32c0-7439-4239-810e-bfa09e90478c">ValueSet-bw-lab-task-status-vs.ttl.html#/html/body/div/div/div/p/a at Line 277, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-task-intent-vs.json.html#aa583e64-9393-4d9e-bcfb-3eda23a8c696">ValueSet-bw-lab-task-intent-vs.json.html#/html/body/div/div/div/p/a at Line 267, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-lab-task-status-vs.xml.html#79dd21e4-5244-4cdc-bcb7-8d2ef6771ac1">ValueSet-bw-lab-task-status-vs.xml.html#/html/body/div/div/div/p/a at Line 267, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-task-intent-vs.ttl.html#451688b0-c45c-4435-b820-e8c7e5ec7f9a">ValueSet-bw-lab-task-intent-vs.ttl.html#/html/body/div/div/div/p/a at Line 268, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-pims-lab-class-vs.change.history.html#89f28925-3f6c-4fef-8464-699e46625ab0">ValueSet-bw-pims-lab-class-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-task-intent-vs.xml.html#d27a9329-2ab1-40a6-9a53-94decca9a0f3">ValueSet-bw-lab-task-intent-vs.xml.html#/html/body/div/div/div/p/a at Line 255, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-pims-lab-class-vs.html#f2f76cb3-dd89-42a9-8718-f678931a45c2">ValueSet-bw-pims-lab-class-vs.html#/html/body/div/div/div/p/a at Line 262, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-task-status-vs.change.history.html#adb7d35f-cbc7-4472-9c2f-7400c069fa44">ValueSet-bw-lab-task-status-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-pims-lab-class-vs.json.html#c9b49abe-398f-40dc-a52b-9325b21642a5">ValueSet-bw-pims-lab-class-vs.json.html#/html/body/div/div/div/p/a at Line 260, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-task-status-vs.html#51c3e333-8a2a-469b-aec2-b29f78835759">ValueSet-bw-lab-task-status-vs.html#/html/body/div/div/div/p/a at Line 265, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-pims-lab-class-vs.ttl.html#48de6e7f-9fd4-410f-b5a2-50dfd15f10fd">ValueSet-bw-pims-lab-class-vs.ttl.html#/html/body/div/div/div/p/a at Line 263, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-task-status-vs.json.html#ef3e5ee4-d70b-436d-b555-496cdbefdd30">ValueSet-bw-lab-task-status-vs.json.html#/html/body/div/div/div/p/a at Line 279, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-pims-lab-class-vs.xml.html#1d1cddf6-bb88-449a-9812-f2e58b4ce0c5">ValueSet-bw-pims-lab-class-vs.xml.html#/html/body/div/div/div/p/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-task-status-vs.ttl.html#457eeb3e-1c4b-4f47-b8e1-c533e337b017">ValueSet-bw-lab-task-status-vs.ttl.html#/html/body/div/div/div/p/a at Line 277, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-pims-lab-order-status-vs.change.history.html#19527e7b-7e06-4379-a57b-bbcb0c244f0b">ValueSet-bw-pims-lab-order-status-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-lab-task-status-vs.xml.html#45b19c5c-bb84-462c-bfb2-bdd4151c891c">ValueSet-bw-lab-task-status-vs.xml.html#/html/body/div/div/div/p/a at Line 267, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-pims-lab-order-status-vs.html#c32f80a3-09d9-4d5c-bb33-71d9d29ad1ee">ValueSet-bw-pims-lab-order-status-vs.html#/html/body/div/div/div/p/a at Line 264, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-pims-lab-class-vs.change.history.html#da1e55fe-0749-493c-9731-5b53699a5d1f">ValueSet-bw-pims-lab-class-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-pims-lab-order-status-vs.json.html#61c2248b-82e7-470a-9639-30e652269a07">ValueSet-bw-pims-lab-order-status-vs.json.html#/html/body/div/div/div/p/a at Line 260, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-pims-lab-class-vs.html#0afd4b8a-0e36-4c4b-a9e3-05d31db3f164">ValueSet-bw-pims-lab-class-vs.html#/html/body/div/div/div/p/a at Line 262, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-pims-lab-order-status-vs.ttl.html#64bf2780-f9b2-495c-a7f7-62e54819884c">ValueSet-bw-pims-lab-order-status-vs.ttl.html#/html/body/div/div/div/p/a at Line 263, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-pims-lab-class-vs.json.html#4b75c670-edc4-48d4-89b4-22b4bf075b35">ValueSet-bw-pims-lab-class-vs.json.html#/html/body/div/div/div/p/a at Line 260, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-pims-lab-order-status-vs.xml.html#66b89cc9-42b5-4e37-9e39-69a3cfa4d276">ValueSet-bw-pims-lab-order-status-vs.xml.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-pims-lab-class-vs.ttl.html#3416452a-8394-4a24-9de4-f91f64f325be">ValueSet-bw-pims-lab-class-vs.ttl.html#/html/body/div/div/div/p/a at Line 263, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-pims-lab-test-vs.change.history.html#3e84ef2f-eaff-4fce-a338-ea7dc32faec7">ValueSet-bw-pims-lab-test-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-pims-lab-class-vs.xml.html#7bd69129-6324-4418-bb84-9a16f82779f1">ValueSet-bw-pims-lab-class-vs.xml.html#/html/body/div/div/div/p/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-pims-lab-test-vs.html#22dda830-5cd2-4598-a5cf-90bf5bc9cf69">ValueSet-bw-pims-lab-test-vs.html#/html/body/div/div/div/p/a at Line 264, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-pims-lab-order-status-vs.change.history.html#0b3b2664-3e83-47fc-9ed2-1b6b4fa3ae31">ValueSet-bw-pims-lab-order-status-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-pims-lab-test-vs.json.html#8e90032b-c1ae-491c-b709-d2016fe603ac">ValueSet-bw-pims-lab-test-vs.json.html#/html/body/div/div/div/p/a at Line 261, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-pims-lab-order-status-vs.html#eca71055-0202-4149-8b3e-6cc49c7340c1">ValueSet-bw-pims-lab-order-status-vs.html#/html/body/div/div/div/p/a at Line 264, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-pims-lab-test-vs.ttl.html#40f347a5-ce15-4897-ba9b-8bbf91fcb3da">ValueSet-bw-pims-lab-test-vs.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-pims-lab-order-status-vs.json.html#303590bf-b427-4f49-934a-ce733392a7c8">ValueSet-bw-pims-lab-order-status-vs.json.html#/html/body/div/div/div/p/a at Line 260, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="ValueSet-bw-pims-lab-test-vs.xml.html#8359e85a-553a-4615-bc3d-14588036c9ee">ValueSet-bw-pims-lab-test-vs.xml.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-pims-lab-order-status-vs.ttl.html#c3d70dd9-1972-4072-8fc1-de125aaea528">ValueSet-bw-pims-lab-order-status-vs.ttl.html#/html/body/div/div/div/p/a at Line 263, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#f07874f2-f1fd-4ed8-a796-15341fc21220">artifacts.html#/html/body/div/div/div/p/a at Line 566, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-pims-lab-order-status-vs.xml.html#3eb66ede-c7eb-40a1-947c-d7ed90657a6f">ValueSet-bw-pims-lab-order-status-vs.xml.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="background.html#f7f698bf-dccc-4eb8-8882-6c3ac59714fc">background.html#/html/body/div/div/div/p/a at Line 168, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-pims-lab-test-vs.change.history.html#3981b93e-aba5-40d2-8ff4-97c25a330427">ValueSet-bw-pims-lab-test-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="changes.html#db0380fd-1198-4aee-bb5c-6c3f8686006c">changes.html#/html/body/div/div/div/p/a at Line 171, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-pims-lab-test-vs.html#c733bc0f-363d-4aae-b81a-2c20e990da16">ValueSet-bw-pims-lab-test-vs.html#/html/body/div/div/div/p/a at Line 264, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="downloads.html#91571f64-76c5-4ffd-9aa5-c9978a3fe7d4">downloads.html#/html/body/div/div/div/p/a at Line 199, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-pims-lab-test-vs.json.html#7792d864-ebaf-48bf-a333-691222e5574f">ValueSet-bw-pims-lab-test-vs.json.html#/html/body/div/div/div/p/a at Line 261, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#6e56f234-4fb9-4146-bc4f-a3ce836b5aad">index.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-pims-lab-test-vs.ttl.html#0b541462-cae0-4d5d-a122-5f595c0f17fa">ValueSet-bw-pims-lab-test-vs.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="spec.html#2dac42b4-61e6-44d6-a5ed-e62c7ae8c4b2">spec.html#/html/body/div/div/div/p/a at Line 177, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="ValueSet-bw-pims-lab-test-vs.xml.html#2b21ed93-960c-43c0-b8ac-9ea4745c2de3">ValueSet-bw-pims-lab-test-vs.xml.html#/html/body/div/div/div/p/a at Line 250, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="system_specification.html#956000a1-48f9-4314-9ede-d3e0c3d90699">system_specification.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#5ddf560b-414e-40f5-a774-14b8fb5baed1">artifacts.html#/html/body/div/div/div/p/a at Line 575, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="toc.html#166ba4a3-e995-4c7f-8f07-362fcfbe03f7">toc.html#/html/body/div/div/div/p/a at Line 160, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="background.html#60a7ed77-2d9f-4962-8ad7-7615bfa25f32">background.html#/html/body/div/div/div/p/a at Line 168, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="use_cases.html#775216c0-53d8-45ba-9de2-2df5d119facf">use_cases.html#/html/body/div/div/div/p/a at Line 450, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+     <td><b><a href="changes.html#ad1511ea-4465-4314-ae92-9369b932ec12">changes.html#/html/body/div/div/div/p/a at Line 171, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="downloads.html#7a66f4b3-828b-44be-85b9-ec0ff1ff0625">downloads.html#/html/body/div/div/div/p/a at Line 199, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#6e06e24a-88ee-4c32-95b6-63cfc58cf357">index.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="spec.html#46251c76-3b3a-4b54-9777-7e10172597fe">spec.html#/html/body/div/div/div/p/a at Line 177, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="system_specification.html#3e7832e0-8b60-4933-a88b-cae2b3f7fe86">system_specification.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#32323dfb-12ee-415a-a8a6-9d8ebba687d6">toc.html#/html/body/div/div/div/p/a at Line 160, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="use_cases.html#6071867f-85a1-4e7f-a414-22af2488eb15">use_cases.html#/html/body/div/div/div/p/a at Line 450, column 28</a></b></td><td><b>error</b></td><td><b>The link 'www.github.com/b-techbw' for &quot;B-TECHBW&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Bundle-example-bw-lab-bundle"> </a>
+<h2><a href="Bundle-example-bw-lab-bundle.html">/github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/example-bw-lab-bundle: Bundle.entry[0].resource (l24/c21)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[0] (l34/c12)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_MatchMultiple"><b>Profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition, Element matches more than one slice - labTask, labOrders</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[0] (l34/c12)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_MatchMultiple"><b>Profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition, Element matches more than one slice - labTask, labResults</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.status (l15/c28)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('active') is not in the value set http://hl7.org/fhir/ValueSet/composition-status|4.0.1 (http://hl7.org/fhir/ValueSet/composition-status), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/composition-status#active in http://hl7.org/fhir/composition-status)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.type.coding[0] (l19/c14)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/example-bw-lab-bundle: Bundle.entry[0] (l6/c6)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_Entry_NoFullUrl"><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.subject</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.author[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.author[0] (l29/c12)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'example-bw-practitioner'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[0].entry[0]</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
    </tr>
 </table>
 <hr/>
@@ -810,26 +869,29 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_Composition-example-bw-lab-pims-composition"> </a>
-<h2><a href="Composition-example-bw-lab-pims-composition.html">/github/workspace/fsh-generated/resources/Composition-example-bw-lab-pims-composition.json</a></h2>
+<a name="_github_workspace_fsh-generated_resources_Composition-example-bw-lab-composition"> </a>
+<h2><a href="Composition-example-bw-lab-composition.html">/github/workspace/fsh-generated/resources/Composition-example-bw-lab-composition.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #d6feff">
-     <td><b>Composition/example-bw-lab-pims-composition: Composition (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition</b></td>
+     <td><b>Composition/example-bw-lab-composition: Composition (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Composition/example-bw-lab-pims-composition: Composition.status (l9/c22)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('active') is not in the value set http://hl7.org/fhir/ValueSet/composition-status|4.0.1 (http://hl7.org/fhir/ValueSet/composition-status), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/composition-status#active in http://hl7.org/fhir/composition-status)</b></td>
+     <td><b>Composition/example-bw-lab-composition: Composition.section[0] (l28/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_MatchMultiple"><b>Profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition, Element matches more than one slice - labTask, labOrders</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/example-bw-lab-composition: Composition.section[0] (l28/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_MatchMultiple"><b>Profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition, Element matches more than one slice - labTask, labResults</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/example-bw-lab-composition: Composition.status (l9/c22)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('active') is not in the value set http://hl7.org/fhir/ValueSet/composition-status|4.0.1 (http://hl7.org/fhir/ValueSet/composition-status), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/composition-status#active in http://hl7.org/fhir/composition-status)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Composition/example-bw-lab-pims-composition: Composition.type.coding[0] (l13/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+     <td><b>Composition/example-bw-lab-composition: Composition.type.coding[0] (l13/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Composition/example-bw-lab-pims-composition: Composition.subject (l20/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'BwPatient'</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Composition/example-bw-lab-pims-composition: Composition.author[0] (l23/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'BwPractitioner'</b></td>
+     <td><b>Composition/example-bw-lab-composition: Composition.author[0] (l23/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'example-bw-practitioner'</b></td>
    </tr>
 </table>
 <hr/>
@@ -1530,14 +1592,36 @@
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
+<a name="Bundle_BUNDLE_Entry_NoFullUrl"> </a>
+<h2>Bundle_BUNDLE_Entry_NoFullUrl</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-example-bw-lab-bundle.html">/github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle.json</a></td><td><b>Bundle entry missing fullUrl</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Bundle_BUNDLE_FullUrl_Missing"> </a>
+<h2>Bundle_BUNDLE_FullUrl_Missing</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-example-bw-lab-bundle.html">/github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-example-bw-lab-bundle.html">/github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-example-bw-lab-bundle.html">/github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle.json</a></td><td><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="Reference_REF_CantResolve"> </a>
 <h2>Reference_REF_CantResolve</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="Composition-example-bw-lab-pims-composition.html">/github/workspace/fsh-generated/resources/Composition-example-bw-lab-pims-composition.json</a></td><td><b>Unable to resolve resource 'BwPatient'</b></td>
+     <td><a href="Bundle-example-bw-lab-bundle.html">/github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle.json</a></td><td><b>Unable to resolve resource 'example-bw-practitioner'</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Composition-example-bw-lab-pims-composition.html">/github/workspace/fsh-generated/resources/Composition-example-bw-lab-pims-composition.json</a></td><td><b>Unable to resolve resource 'BwPractitioner'</b></td>
+     <td><a href="Composition-example-bw-lab-composition.html">/github/workspace/fsh-generated/resources/Composition-example-bw-lab-composition.json</a></td><td><b>Unable to resolve resource 'example-bw-practitioner'</b></td>
    </tr>
 </table>
 <hr/>
@@ -1553,7 +1637,10 @@
 <h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="Composition-example-bw-lab-pims-composition.html">/github/workspace/fsh-generated/resources/Composition-example-bw-lab-pims-composition.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+     <td><a href="Bundle-example-bw-lab-bundle.html">/github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Composition-example-bw-lab-composition.html">/github/workspace/fsh-generated/resources/Composition-example-bw-lab-composition.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="Patient-example-bw-patient.html">/github/workspace/fsh-generated/resources/Patient-example-bw-patient.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
@@ -1589,7 +1676,10 @@
 <h2>Terminology_TX_NoValid_16</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="Composition-example-bw-lab-pims-composition.html">/github/workspace/fsh-generated/resources/Composition-example-bw-lab-pims-composition.json</a></td><td><b>The value provided ('active') is not in the value set http://hl7.org/fhir/ValueSet/composition-status|4.0.1 (http://hl7.org/fhir/ValueSet/composition-status), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/composition-status#active in http://hl7.org/fhir/composition-status)</b></td>
+     <td><a href="Bundle-example-bw-lab-bundle.html">/github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle.json</a></td><td><b>The value provided ('active') is not in the value set http://hl7.org/fhir/ValueSet/composition-status|4.0.1 (http://hl7.org/fhir/ValueSet/composition-status), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/composition-status#active in http://hl7.org/fhir/composition-status)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-example-bw-lab-composition.html">/github/workspace/fsh-generated/resources/Composition-example-bw-lab-composition.json</a></td><td><b>The value provided ('active') is not in the value set http://hl7.org/fhir/ValueSet/composition-status|4.0.1 (http://hl7.org/fhir/ValueSet/composition-status), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/composition-status#active in http://hl7.org/fhir/composition-status)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="Task-example-bw-task-requested.html">/github/workspace/fsh-generated/resources/Task-example-bw-task-requested.json</a></td><td><b>The value provided ('requested') is not in the value set http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs (http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs), and a code is required from this value set) (error message = Unknown Code http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs#requested in http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs)</b></td>
@@ -1610,6 +1700,23 @@
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="ServiceRequest-example-bw-pims-service-request-profile.html">/github/workspace/fsh-generated/resources/ServiceRequest-example-bw-pims-service-request-profile.json</a></td><td><b>Code System URI 'http://moh.bw.org/ext/laboratory/pims-lab-profile-code' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_MatchMultiple"> </a>
+<h2>Validation_VAL_Profile_MatchMultiple</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-example-bw-lab-bundle.html">/github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle.json</a></td><td><b>Profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition, Element matches more than one slice - labTask, labOrders</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-example-bw-lab-bundle.html">/github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle.json</a></td><td><b>Profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition, Element matches more than one slice - labTask, labResults</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-example-bw-lab-composition.html">/github/workspace/fsh-generated/resources/Composition-example-bw-lab-composition.json</a></td><td><b>Profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition, Element matches more than one slice - labTask, labOrders</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-example-bw-lab-composition.html">/github/workspace/fsh-generated/resources/Composition-example-bw-lab-composition.json</a></td><td><b>Profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition, Element matches more than one slice - labTask, labResults</b></td>
    </tr>
 </table>
 <hr/>

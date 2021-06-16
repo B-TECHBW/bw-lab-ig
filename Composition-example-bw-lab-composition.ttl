@@ -5,9 +5,9 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://b-techbw.github.io/bw-lab-ig/Composition/example-bw-lab-pims-composition> a fhir:Composition;
+<http://b-techbw.github.io/bw-lab-ig/Composition/example-bw-lab-composition> a fhir:Composition;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "example-bw-lab-pims-composition"];
+  fhir:Resource.id [ fhir:value "example-bw-lab-composition"];
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition";
@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: \">document</span></p><p><b>date</b>: 2021-06-06</p><p><b>author</b>: <a href=\"BwPractitioner\">BwPractitioner</a></p><p><b>title</b>: Lab Order Composition</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: \">document</span></p><p><b>date</b>: 2021-06-06</p><p><b>author</b>: <a href=\"example-bw-practitioner\">example-bw-practitioner</a></p><p><b>title</b>: BW Lab Order Composition</p></div>"
   ];
   fhir:Composition.status [ fhir:value "active"];
   fhir:Composition.type [
@@ -27,18 +27,27 @@
      ]
   ];
   fhir:Composition.subject [
-     fhir:Reference.reference [ fhir:value "BwPatient" ]
+     fhir:link <http://b-techbw.github.io/bw-lab-ig/Patient/example-bw-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/example-bw-patient" ]
   ];
   fhir:Composition.date [ fhir:value "2021-06-06"^^xsd:date];
   fhir:Composition.author [
      fhir:index 0;
-     fhir:Reference.reference [ fhir:value "BwPractitioner" ]
+     fhir:Reference.reference [ fhir:value "example-bw-practitioner" ]
   ];
-  fhir:Composition.title [ fhir:value "Lab Order Composition"] .
+  fhir:Composition.title [ fhir:value "BW Lab Order Composition"];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://b-techbw.github.io/bw-lab-ig/Task/example-bw-task-requested>;
+       fhir:Reference.reference [ fhir:value "Task/example-bw-task-requested" ]
+     ]
+  ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://b-techbw.github.io/bw-lab-ig/Composition/example-bw-lab-pims-composition.ttl> a owl:Ontology;
+<http://b-techbw.github.io/bw-lab-ig/Composition/example-bw-lab-composition.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
