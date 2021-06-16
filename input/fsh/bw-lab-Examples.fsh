@@ -90,13 +90,28 @@ Title: "BW PIMS Practitioner"
 * identifier[=].system = "http://<pims-instance-specific-url>/ext/practitioner/identifier"   
 
 
-Instance: example-bw-lab-pims-composition
+Instance: example-bw-lab-composition
 InstanceOf: BwLabComposition
 Usage: #example
-Description: "Example PIMS Lab Composition"
+Description: "Example Lab Order Composition"
 Title: "Example PIMS Lab Composition (Work in Progress)"
 * type = #document
-* subject = Reference(BwPatient)
+* subject = Reference(example-bw-patient)
 * date = "2021-06-06"
-* author = Reference(BwPractitioner)
+* author = Reference(example-bw-practitioner)
+* section[labTask].entry[+] = Reference(example-bw-task-requested)
 
+
+Instance: example-bw-lab-bundle
+InstanceOf: Bundle
+Usage: #example
+Description: "Example Full bundle"
+Title: "Example Lab Bundle"
+* type = #document
+* entry[+].resource = example-bw-lab-composition
+* entry[+].resource = example-bw-patient
+* entry[+].resource = example-bw-pims-practitioner
+* entry[+].resource = example-bw-task-requested
+* entry[+].resource = example-bw-pims-service-request-profile
+* entry[+].resource = example-bw-pims-service-request-1
+* entry[+].resource = example-bw-pims-service-request-2
