@@ -12,7 +12,7 @@
   <title value="Botswana Laboratory HIE Workflow Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-06-16T01:51:15+00:00"/>
+  <date value="2021-06-16T01:53:38+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -233,7 +233,7 @@
       <reference>
         <reference value="StructureDefinition/bw-lab-composition"/>
       </reference>
-      <name value="Botswana Lab Composition"/>
+      <name value="Botswana Lab Order Composition"/>
       <description value="This composition packages information needed to facilitate lab order communication between clinical systems in Botswana."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -363,9 +363,41 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/bw-pims-lab-class-vs"/>
+      </reference>
+      <name value="Status Values for PIMS Lab Orders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/bw-pims-lab-order-status-vs"/>
       </reference>
       <name value="Status Values for PIMS Lab Orders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/bw-pims-lab-test-vs"/>
+      </reference>
+      <name value="PIMS Lab Test Codes"/>
+      <description value="PIMS Lab Test Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/bw-pims-lab-class-cs"/>
+      </reference>
+      <name value="PIMS Lab Class Code System"/>
+      <description value="PIMS Lab Class Code System"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -381,6 +413,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/bw-pims-lab-test-cs"/>
+      </reference>
+      <name value="PIMS Lab Test Code System"/>
+      <description value="PIMS Lab Test Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
@@ -392,13 +435,68 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/BwLabPimsOrderStatusDiagnosticReportCM"/>
+      </reference>
+      <name value="PIMS Lab Order Diagnostic Report Status Mapping"/>
+      <description value="Mapping PIMS Lab Order Status to standard DiagnosticReport status value set."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/BwLabPimsOrderStatusRequestCM"/>
+      </reference>
+      <name value="PIMS Lab Order Service Request Status Mapping"/>
+      <description value="Mapping PIMS Lab Order Status to standard ServiceRequest status value set."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/BwLabPimsOrderStatusTaskCM"/>
+      </reference>
+      <name value="PIMS Lab Order Status Task Mapping"/>
+      <description value="Mapping PIMS Lab Order Status to standard Task status value set."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/BwPimsLabTestLoincCM"/>
+      </reference>
+      <name value="PIMS tblkLabTest &lt;-&gt; LOINC"/>
+      <description value="Mapping PIMS Lab Test Codes to LOINC."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/example-bw-lab-bundle"/>
+      </reference>
+      <name value="BW Lab Bundle"/>
+      <description value="Composition Bundle containing Lab Order Information for the Botswana HIE"/>
+      <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Composition"/>
       </extension>
       <reference>
-        <reference value="Composition/example-bw-lab-pims-composition"/>
+        <reference value="Composition/example-bw-lab-composition"/>
       </reference>
       <name value="Example PIMS Lab Composition (Work in Progress)"/>
-      <description value="Example PIMS Lab Composition"/>
+      <description value="Example Lab Order Composition"/>
       <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition"/>
     </resource>
     <resource>
@@ -409,7 +507,7 @@
         <reference value="Patient/example-bw-patient"/>
       </reference>
       <name value="BW Patient"/>
-      <description value="Patient in a Botswana Health System"/>
+      <description value="Example Botswana Patient"/>
       <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"/>
     </resource>
     <resource>
@@ -419,8 +517,8 @@
       <reference>
         <reference value="Patient/example-bw-patient-international"/>
       </reference>
-      <name value="INT BW Patient"/>
-      <description value="Patient in a Botswana Health System"/>
+      <name value="BW Patient"/>
+      <description value="Example International Botswana Patient"/>
       <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"/>
     </resource>
     <resource>

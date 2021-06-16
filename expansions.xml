@@ -1,11 +1,428 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1ccd3529-b49f-4ce2-bf8f-6f4394ffcd3e"/>
+  <id value="4f1cd413-26a6-4dc7-a88d-66065a29f83a"/>
   <meta>
-    <lastUpdated value="2021-06-16T01:51:15.225+00:00"/>
+    <lastUpdated value="2021-06-16T01:53:38.523+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-test-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="bw-pims-lab-test-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 26 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-bw-pims-lab-test-cs.html">PIMS Lab Test Code System v0.2.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-bw-pims-lab-test-cs.html">
+                <code>http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-CD4"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-CD4">CD4</a>
+                </td>
+                <td>CD4 Count</td>
+                <td>tblkLabTest#1 - CD4 count</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-CD4-"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-CD4.37">CD4%</a>
+                </td>
+                <td>CD4 Percentage</td>
+                <td>tblkLabTest#2 - CD4 Percent</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-VL"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-VL">VL</a>
+                </td>
+                <td>Viral Load</td>
+                <td>tblkLabTest#3 - Viral Load (HIV?)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-PCV"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-PCV">PCV</a>
+                </td>
+                <td>Packed Cell Volume (PCV)</td>
+                <td>tblkLabTest#4 - Packed Cell Volume</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-WBC"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-WBC">WBC</a>
+                </td>
+                <td>White Blood Cells(WBC)</td>
+                <td>tblkLabTest#5 - White Blood Cells</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-NP-"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-NP.37">NP%</a>
+                </td>
+                <td>Neutrophils %</td>
+                <td>tblkLabTest#7 - Neutrophils %</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-AST"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-AST">AST</a>
+                </td>
+                <td>Aspartate Aminotrasferase</td>
+                <td>tblkLabTest#9 - Aspartate aminotrasferase</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-GGT"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-GGT">GGT</a>
+                </td>
+                <td>Gamma Glutamyl Transferase</td>
+                <td>tblkLabTest#10 - Gamma glutamyl transferase</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-ALPL"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-ALPL">ALPL</a>
+                </td>
+                <td>Alkaline Phosphatase</td>
+                <td>tblkLabTest#11 - Alkaline Phosphatase</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-LIP"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-LIP">LIP</a>
+                </td>
+                <td>Lipase</td>
+                <td>tblkLabTest#12 - Lipase</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-TGS"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-TGS">TGS</a>
+                </td>
+                <td>TGS</td>
+                <td>tblkLabTest#13 - TGS</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-Urea"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-Urea">Urea</a>
+                </td>
+                <td>Urea</td>
+                <td>tblkLabTest#14 - Urea</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-Na"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-Na">Na</a>
+                </td>
+                <td>Sodium</td>
+                <td>tblkLabTest#15 - Sodium</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-K"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-K">K</a>
+                </td>
+                <td>Potassium</td>
+                <td>tblkLabTest#16 - Potassium</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-PCR"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-PCR">PCR</a>
+                </td>
+                <td>DNA PCR</td>
+                <td>tblkLabTest#17 - DNA PCR</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-Ag"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-Ag">Ag</a>
+                </td>
+                <td>Ag</td>
+                <td>tblkLabTest#18 - DNA PCR</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-CST"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-CST">CST</a>
+                </td>
+                <td>Culture Sensitive Test</td>
+                <td>tblkLabTest#19 - Culture Sensitive Test</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-MCV"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-MCV">MCV</a>
+                </td>
+                <td>Mean Cell Volume</td>
+                <td>tblkLabTest#20 - Mean cell volume</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-Rapid"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-Rapid">Rapid</a>
+                </td>
+                <td>Rapid</td>
+                <td>tblkLabTest#21 - Rapid</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-ELISA"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-ELISA">ELISA</a>
+                </td>
+                <td>ELISA</td>
+                <td>tblkLabTest#22 - ELISA</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-UP"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-UP">UP</a>
+                </td>
+                <td>Urine Pregnancy</td>
+                <td>tblkLabTest#23 - Urine pregnancy test</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-CXRAY"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-CXRAY">CXRAY</a>
+                </td>
+                <td>Chest X-Ray</td>
+                <td>tblkLabTest#25 - Chest x-ray</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-PT"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-PT">PT</a>
+                </td>
+                <td>Pleural Tap</td>
+                <td>tblkLabTest#26 - Pleural tap</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-CSF"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-CSF">CSF</a>
+                </td>
+                <td>CSF</td>
+                <td>tblkLabTest#27 - CSF</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-LNB"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-LNB">LNB</a>
+                </td>
+                <td>Lymph Node Biopsy</td>
+                <td>tblkLabTest#28 - Lymph node biopsy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-SM"> </a>
+                  <a href="CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-SM">SM</a>
+                </td>
+                <td>Sputum Microscopy</td>
+                <td>tblkLabTest#130 - Sputum microscopy</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-test-vs"/>
+        <version value="0.2.0"/>
+        <name value="BwPimsLabTestVS"/>
+        <title value="PIMS Lab Test Codes"/>
+        <status value="active"/>
+        <date value="2021-06-16T01:53:38+00:00"/>
+        <publisher value="B-TECHBW"/>
+        <contact>
+          <name value="B-TECHBW"/>
+          <telecom>
+            <system value="url"/>
+            <value value="www.github.com/b-techbw"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="pmanko@uw.edu"/>
+          </telecom>
+        </contact>
+        <description value="PIMS Lab Test Codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="072"/>
+          </coding>
+        </jurisdiction>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BW"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ce815075-3422-499d-bde7-0a96d93a0b09"/>
+          <timestamp value="2021-06-16T01:53:55+00:00"/>
+          <total value="26"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="CD4"/>
+            <display value="CD4 Count"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="CD4%"/>
+            <display value="CD4 Percentage"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="VL"/>
+            <display value="Viral Load"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="PCV"/>
+            <display value="Packed Cell Volume (PCV)"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="WBC"/>
+            <display value="White Blood Cells(WBC)"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="NP%"/>
+            <display value="Neutrophils %"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="AST"/>
+            <display value="Aspartate Aminotrasferase"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="GGT"/>
+            <display value="Gamma Glutamyl Transferase"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="ALPL"/>
+            <display value="Alkaline Phosphatase"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="LIP"/>
+            <display value="Lipase"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="TGS"/>
+            <display value="TGS"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="Urea"/>
+            <display value="Urea"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="Na"/>
+            <display value="Sodium"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="K"/>
+            <display value="Potassium"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="PCR"/>
+            <display value="DNA PCR"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="Ag"/>
+            <display value="Ag"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="CST"/>
+            <display value="Culture Sensitive Test"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="MCV"/>
+            <display value="Mean Cell Volume"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="Rapid"/>
+            <display value="Rapid"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="ELISA"/>
+            <display value="ELISA"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="UP"/>
+            <display value="Urine Pregnancy"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="CXRAY"/>
+            <display value="Chest X-Ray"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="PT"/>
+            <display value="Pleural Tap"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="CSF"/>
+            <display value="CSF"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="LNB"/>
+            <display value="Lymph Node Biopsy"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs"/>
+            <code value="SM"/>
+            <display value="Sputum Microscopy"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-diagnostic-report-status-vs"/>
     <resource>
@@ -83,7 +500,7 @@
         <name value="BwLabDiagnosticReportStatusVS"/>
         <title value="Botswana Diagnostic Report Status Flag"/>
         <status value="active"/>
-        <date value="2021-06-16T01:51:15+00:00"/>
+        <date value="2021-06-16T01:53:38+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -110,8 +527,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:af3ead4a-0f6a-4bea-a8a4-cfeea32b599d"/>
-          <timestamp value="2021-06-16T01:51:31+00:00"/>
+          <identifier value="urn:uuid:c2f0ca33-0c68-4254-9a72-bf993b645b26"/>
+          <timestamp value="2021-06-16T01:53:55+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -145,6 +562,227 @@
             <system value="http://hl7.org/fhir/diagnostic-report-status"/>
             <code value="diagnostic-report-status-amended"/>
             <display value="Amended"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-class-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="bw-pims-lab-class-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 11 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-bw-pims-lab-class-cs.html">PIMS Lab Class Code System v0.2.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-bw-pims-lab-class-cs.html">
+                <code>http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-CHM"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-CHM">CHM</a>
+                </td>
+                <td>Routine-Chemistry</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-MCB"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-MCB">MCB</a>
+                </td>
+                <td>Microbiology</td>
+                <td>All Order specimens were drawn</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-HEM"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-HEM">HEM</a>
+                </td>
+                <td>Haematology</td>
+                <td>Partial results are available</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-PTH"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-PTH">PTH</a>
+                </td>
+                <td>Pathology</td>
+                <td>Order was cancelled</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-IMG"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-IMG">IMG</a>
+                </td>
+                <td>Imaging</td>
+                <td>Some order specimens were drawn</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-END"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-END">END</a>
+                </td>
+                <td>Endocrinology</td>
+                <td>Some order specimens were drawn</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-IMU"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-IMU">IMU</a>
+                </td>
+                <td>Immunology</td>
+                <td>Some order specimens were drawn</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-BBK"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-BBK">BBK</a>
+                </td>
+                <td>Blood-Bank</td>
+                <td>Order was cancelled</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-VL"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-VL">VL</a>
+                </td>
+                <td>Immunology-Viral-Load</td>
+                <td>Some order specimens were drawn</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-RS"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-RS">RS</a>
+                </td>
+                <td>Research-blood-draw</td>
+                <td>Some order specimens were drawn</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-TB"> </a>
+                  <a href="CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-TB">TB</a>
+                </td>
+                <td>TB-diagnostic</td>
+                <td>Some order specimens were drawn</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-class-vs"/>
+        <version value="0.2.0"/>
+        <name value="BwPimsLabClassVS"/>
+        <title value="Status Values for PIMS Lab Orders"/>
+        <status value="active"/>
+        <date value="2021-06-16T01:53:38+00:00"/>
+        <publisher value="B-TECHBW"/>
+        <contact>
+          <name value="B-TECHBW"/>
+          <telecom>
+            <system value="url"/>
+            <value value="www.github.com/b-techbw"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="pmanko@uw.edu"/>
+          </telecom>
+        </contact>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="072"/>
+          </coding>
+        </jurisdiction>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="BW"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:2b82b98f-5430-4425-b185-4226aae69cd6"/>
+          <timestamp value="2021-06-16T01:53:55+00:00"/>
+          <total value="11"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="CHM"/>
+            <display value="Routine-Chemistry"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="MCB"/>
+            <display value="Microbiology"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="HEM"/>
+            <display value="Haematology"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="PTH"/>
+            <display value="Pathology"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="IMG"/>
+            <display value="Imaging"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="END"/>
+            <display value="Endocrinology"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="IMU"/>
+            <display value="Immunology"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="BBK"/>
+            <display value="Blood-Bank"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="VL"/>
+            <display value="Immunology-Viral-Load"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="RS"/>
+            <display value="Research-blood-draw"/>
+          </contains>
+          <contains>
+            <system value="http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs"/>
+            <code value="TB"/>
+            <display value="TB-diagnostic"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -13274,7 +13912,7 @@
         <name value="BwPimsLabOrderStatusVS"/>
         <title value="Status Values for PIMS Lab Orders"/>
         <status value="active"/>
-        <date value="2021-06-16T01:51:15+00:00"/>
+        <date value="2021-06-16T01:53:38+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -13300,8 +13938,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3d843fb1-c911-4c98-a9a3-14eab21e197e"/>
-          <timestamp value="2021-06-16T01:51:32+00:00"/>
+          <identifier value="urn:uuid:4db7beac-541f-4d94-b921-b832eb70f3f5"/>
+          <timestamp value="2021-06-16T01:53:57+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>

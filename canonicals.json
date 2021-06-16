@@ -7,11 +7,53 @@
     "name": "BwLabDataDictionary"
   },
   {
+    "id": "bw-pims-lab-class-cs",
+    "type": "CodeSystem",
+    "url": "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs",
+    "version": "0.2.0",
+    "name": "BwPimsLabClassCS"
+  },
+  {
     "id": "bw-pims-lab-order-status-cs",
     "type": "CodeSystem",
     "url": "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs",
     "version": "0.2.0",
     "name": "BwPimsLabOrderStatusCS"
+  },
+  {
+    "id": "bw-pims-lab-test-cs",
+    "type": "CodeSystem",
+    "url": "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
+    "version": "0.2.0",
+    "name": "BwPimsLabTestCS"
+  },
+  {
+    "id": "BwLabPimsOrderStatusDiagnosticReportCM",
+    "type": "ConceptMap",
+    "url": "http://b-techbw.github.io/bw-lab-ig/ConceptMap/BwLabPimsOrderStatusDiagnosticReportCM",
+    "version": "0.2.0",
+    "name": "BwLabPimsOrderStatusDiagnosticReportCM"
+  },
+  {
+    "id": "BwLabPimsOrderStatusRequestCM",
+    "type": "ConceptMap",
+    "url": "http://b-techbw.github.io/bw-lab-ig/ConceptMap/BwLabPimsOrderStatusRequestCM",
+    "version": "0.2.0",
+    "name": "BwLabPimsOrderStatusRequestCM"
+  },
+  {
+    "id": "BwLabPimsOrderStatusTaskCM",
+    "type": "ConceptMap",
+    "url": "http://b-techbw.github.io/bw-lab-ig/ConceptMap/BwLabPimsOrderStatusTaskCM",
+    "version": "0.2.0",
+    "name": "BwLabPimsOrderStatusTaskCM"
+  },
+  {
+    "id": "BwPimsLabTestLoincCM",
+    "type": "ConceptMap",
+    "url": "http://b-techbw.github.io/bw-lab-ig/ConceptMap/BwPimsLabTestLoincCM",
+    "version": "0.2.0",
+    "name": "BwPimsLabTestLoincCM"
   },
   {
     "id": "fhir.bw.lab",
@@ -112,10 +154,24 @@
     "name": "BwLabTaskStatusVS"
   },
   {
+    "id": "bw-pims-lab-class-vs",
+    "type": "ValueSet",
+    "url": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-class-vs",
+    "version": "0.2.0",
+    "name": "BwPimsLabClassVS"
+  },
+  {
     "id": "bw-pims-lab-order-status-vs",
     "type": "ValueSet",
     "url": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs",
     "version": "0.2.0",
     "name": "BwPimsLabOrderStatusVS"
+  },
+  {
+    "id": "bw-pims-lab-test-vs",
+    "type": "ValueSet",
+    "url": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-test-vs",
+    "version": "0.2.0",
+    "name": "BwPimsLabTestVS"
   }
 ]
