@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="example-bw-lab-pims-composition"/>
+  <meta>
+    <profile value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: <span title="Codes: ">document</span></p><p><b>date</b>: 2021-06-06</p><p><b>author</b>: <a href="BwPractitioner">BwPractitioner</a></p><p><b>title</b>: Lab Order Composition</p></div>
+  </text>
+  <status value="active"/>
+  <type>
+    <coding>
+      <code value="document"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="BwPatient"/>
+  </subject>
+  <date value="2021-06-06"/>
+  <author>
+    <reference value="BwPractitioner"/>
+  </author>
+  <title value="Lab Order Composition"/>
+</Composition>

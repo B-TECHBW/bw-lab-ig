@@ -14,7 +14,7 @@
     "Composition": [
       {
         "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition",
-        "title": "Botswana Lab Order Composition"
+        "title": "Botswana Lab Composition"
       }
     ],
     "DiagnosticReport": [

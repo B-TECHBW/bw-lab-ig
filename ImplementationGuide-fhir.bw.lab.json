@@ -11,7 +11,7 @@
   "title": "Botswana Laboratory HIE Workflow Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-06-16T01:53:38+00:00",
+  "date": "2021-06-16T01:59:47+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -361,7 +361,7 @@
         "reference": {
           "reference": "StructureDefinition/bw-lab-composition"
         },
-        "name": "Botswana Lab Order Composition",
+        "name": "Botswana Lab Composition",
         "description": "This composition packages information needed to facilitate lab order communication between clinical systems in Botswana.",
         "exampleBoolean": false
       },
@@ -675,28 +675,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/example-bw-lab-bundle"
-        },
-        "name": "BW Lab Bundle",
-        "description": "Composition Bundle containing Lab Order Information for the Botswana HIE",
-        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Composition"
           }
         ],
         "reference": {
-          "reference": "Composition/example-bw-lab-composition"
+          "reference": "Composition/example-bw-lab-pims-composition"
         },
         "name": "Example PIMS Lab Composition (Work in Progress)",
-        "description": "Example Lab Order Composition",
+        "description": "Example PIMS Lab Composition",
         "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition"
       },
       {
@@ -710,7 +696,7 @@
           "reference": "Patient/example-bw-patient"
         },
         "name": "BW Patient",
-        "description": "Example Botswana Patient",
+        "description": "Patient in a Botswana Health System",
         "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"
       },
       {
@@ -723,8 +709,8 @@
         "reference": {
           "reference": "Patient/example-bw-patient-international"
         },
-        "name": "BW Patient",
-        "description": "Example International Botswana Patient",
+        "name": "INT BW Patient",
+        "description": "Patient in a Botswana Health System",
         "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"
       },
       {
