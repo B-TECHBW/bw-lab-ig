@@ -3,7 +3,7 @@
 
 err = 38, warn = 99, info = 5
 IG Publisher Version: 1.1.73
-Generated Wed Jun 16 02:25:07 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
+Generated Wed Jun 16 02:25:45 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
 
  Build Errors : 212 / 2 / 0
  /github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle : 11 / 1 / 2
