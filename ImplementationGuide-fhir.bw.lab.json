@@ -11,7 +11,7 @@
   "title": "Botswana Laboratory HIE Workflow Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-06-16T02:03:26+00:00",
+  "date": "2021-06-16T02:24:42+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -695,7 +695,7 @@
         "reference": {
           "reference": "Composition/example-bw-lab-composition"
         },
-        "name": "Example PIMS Lab Composition (Work in Progress)",
+        "name": "Example PIMS Lab Composition",
         "description": "Example Lab Order Composition",
         "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition"
       },

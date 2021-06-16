@@ -41,6 +41,19 @@
                 "reference": "Task/example-bw-task-requested"
               }
             ]
+          },
+          {
+            "entry": [
+              {
+                "reference": "ServiceRequest/example-bw-pims-service-request-profile"
+              },
+              {
+                "reference": "ServiceRequest/example-bw-pims-service-request-1"
+              },
+              {
+                "reference": "ServiceRequest/example-bw-pims-service-request-2"
+              }
+            ]
           }
         ]
       }

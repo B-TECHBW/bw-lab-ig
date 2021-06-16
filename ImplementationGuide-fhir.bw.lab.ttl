@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Botswana Laboratory HIE Workflow Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-06-16T02:03:26+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-06-16T02:24:42+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "B-TECHBW"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -681,7 +681,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/Composition/example-bw-lab-composition>;
          fhir:Reference.reference [ fhir:value "Composition/example-bw-lab-composition" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example PIMS Lab Composition (Work in Progress)" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example PIMS Lab Composition" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Lab Order Composition" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition";

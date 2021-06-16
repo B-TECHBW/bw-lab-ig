@@ -43,6 +43,21 @@
        fhir:link <http://b-techbw.github.io/bw-lab-ig/Task/example-bw-task-requested>;
        fhir:Reference.reference [ fhir:value "Task/example-bw-task-requested" ]
      ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <http://b-techbw.github.io/bw-lab-ig/ServiceRequest/example-bw-pims-service-request-profile>;
+       fhir:Reference.reference [ fhir:value "ServiceRequest/example-bw-pims-service-request-profile" ]
+     ], [
+       fhir:index 1;
+       fhir:link <http://b-techbw.github.io/bw-lab-ig/ServiceRequest/example-bw-pims-service-request-1>;
+       fhir:Reference.reference [ fhir:value "ServiceRequest/example-bw-pims-service-request-1" ]
+     ], [
+       fhir:index 2;
+       fhir:link <http://b-techbw.github.io/bw-lab-ig/ServiceRequest/example-bw-pims-service-request-2>;
+       fhir:Reference.reference [ fhir:value "ServiceRequest/example-bw-pims-service-request-2" ]
+     ]
   ] .
 
 # - ontology header ------------------------------------------------------------

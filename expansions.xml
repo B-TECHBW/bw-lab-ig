@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="38edc358-2d79-4b38-b1bf-f9475beeb291"/>
+  <id value="179489a3-de35-4c2c-b982-d59b05086167"/>
   <meta>
-    <lastUpdated value="2021-06-16T02:03:26.169+00:00"/>
+    <lastUpdated value="2021-06-16T02:24:42.221+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -251,7 +251,7 @@
         <name value="BwPimsLabTestVS"/>
         <title value="PIMS Lab Test Codes"/>
         <status value="active"/>
-        <date value="2021-06-16T02:03:26+00:00"/>
+        <date value="2021-06-16T02:24:42+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -278,8 +278,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:caaaea45-d17c-475f-ba62-5f5e18e2cab3"/>
-          <timestamp value="2021-06-16T02:03:41+00:00"/>
+          <identifier value="urn:uuid:dbfe8fc6-c227-4957-9c91-af7f6f5a9865"/>
+          <timestamp value="2021-06-16T02:24:54+00:00"/>
           <total value="26"/>
           <parameter>
             <name value="excludeNested"/>
@@ -500,7 +500,7 @@
         <name value="BwLabDiagnosticReportStatusVS"/>
         <title value="Botswana Diagnostic Report Status Flag"/>
         <status value="active"/>
-        <date value="2021-06-16T02:03:26+00:00"/>
+        <date value="2021-06-16T02:24:42+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -527,8 +527,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:22ef28f5-2eae-4475-8d5c-8d6aa5ab2a1c"/>
-          <timestamp value="2021-06-16T02:03:42+00:00"/>
+          <identifier value="urn:uuid:bf3dd747-e9bd-4861-93e8-5d7d47166787"/>
+          <timestamp value="2021-06-16T02:24:54+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -692,7 +692,7 @@
         <name value="BwPimsLabClassVS"/>
         <title value="Status Values for PIMS Lab Orders"/>
         <status value="active"/>
-        <date value="2021-06-16T02:03:26+00:00"/>
+        <date value="2021-06-16T02:24:42+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -718,8 +718,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:297a24c7-b527-4456-9425-0d865895b9d1"/>
-          <timestamp value="2021-06-16T02:03:42+00:00"/>
+          <identifier value="urn:uuid:a96b47a7-4058-4a42-9133-3dcc7e8e2d94"/>
+          <timestamp value="2021-06-16T02:24:54+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13912,7 +13912,7 @@
         <name value="BwPimsLabOrderStatusVS"/>
         <title value="Status Values for PIMS Lab Orders"/>
         <status value="active"/>
-        <date value="2021-06-16T02:03:26+00:00"/>
+        <date value="2021-06-16T02:24:42+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -13938,8 +13938,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b6ca550c-06ad-4ee3-95c6-e40e8cbd33dc"/>
-          <timestamp value="2021-06-16T02:03:43+00:00"/>
+          <identifier value="urn:uuid:76400922-36e6-46b1-82ca-7e8356346a2c"/>
+          <timestamp value="2021-06-16T02:24:55+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>

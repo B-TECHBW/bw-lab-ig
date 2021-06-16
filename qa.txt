@@ -1,16 +1,16 @@
 ﻿BwLabIG : Validation Results
 =========================================
 
-err = 35, warn = 99, info = 3
+err = 38, warn = 99, info = 5
 IG Publisher Version: 1.1.73
-Generated Wed Jun 16 02:03:57 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
+Generated Wed Jun 16 02:25:07 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
 
  Build Errors : 212 / 2 / 0
- /github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle : 8 / 1 / 1
+ /github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle : 11 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-class-cs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-order-status-cs : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-test-cs : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Composition-example-bw-lab-composition : 4 / 1 / 1
+ /github/workspace/fsh-generated/resources/Composition-example-bw-lab-composition : 4 / 1 / 2
  /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusRequestCM : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusTaskCM : 0 / 0 / 1
@@ -51,9 +51,9 @@ ERROR: /github/workspace/output/ConceptMap-BwPimsLabTestLoincCM.ttl.html: Unable
 ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.html#/html/body/div/div/div/div/div/div/p/a at Line 174, column 180: The link 'example-bw-practitioner' for "example-bw-practitioner" cannot be resolved
 ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.json.html#/html/body/div/div/div/p/a at Line 447, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.ttl.html#/html/body/div/div/div/p/a at Line 402, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.xml.html#/html/body/div/div/div/p/a at Line 418, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.json.html#/html/body/div/div/div/p/a at Line 460, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.ttl.html#/html/body/div/div/div/p/a at Line 410, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.xml.html#/html/body/div/div/div/p/a at Line 430, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-class-cs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-class-cs.html#/html/body/div/div/div/p/a at Line 228, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-class-cs.json.html#/html/body/div/div/div/p/a at Line 313, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -72,9 +72,9 @@ ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-test-cs.xml.html#/html/bo
 ERROR: /github/workspace/output/Composition-example-bw-lab-composition.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Composition-example-bw-lab-composition.html#/html/body/div/div/div/div/div/div/p/a at Line 174, column 212: The link 'example-bw-practitioner' for "example-bw-practitioner" cannot be resolved
 ERROR: /github/workspace/output/Composition-example-bw-lab-composition.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/Composition-example-bw-lab-composition.json.html#/html/body/div/div/div/p/a at Line 245, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/Composition-example-bw-lab-composition.ttl.html#/html/body/div/div/div/p/a at Line 254, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/Composition-example-bw-lab-composition.xml.html#/html/body/div/div/div/p/a at Line 236, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Composition-example-bw-lab-composition.json.html#/html/body/div/div/div/p/a at Line 258, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Composition-example-bw-lab-composition.ttl.html#/html/body/div/div/div/p/a at Line 263, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Composition-example-bw-lab-composition.xml.html#/html/body/div/div/div/p/a at Line 247, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 569: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#/html/body/div/div/div/p/a at Line 204, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -260,6 +260,7 @@ ERROR: /github/workspace/output/use_cases.html#/html/body/div/div/div/p/a at Lin
 INFORMATION: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource: Validate resource against profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition
 ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[0]: Profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition, Element matches more than one slice - labTask, labOrders
 ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[0]: Profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition, Element matches more than one slice - labTask, labResults
+INFORMATION: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[1]: This element does not match any known slice defined in the profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition
 ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.status: The value provided ('active') is not in the value set http://hl7.org/fhir/ValueSet/composition-status|4.0.1 (http://hl7.org/fhir/ValueSet/composition-status), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/composition-status#active in http://hl7.org/fhir/composition-status)
 WARNING: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.type.coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0]: Bundle entry missing fullUrl
@@ -267,6 +268,9 @@ ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.subject: Relative 
 ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.author[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.author[0]: Unable to resolve resource 'example-bw-practitioner'
 ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[0].entry[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[1].entry[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[1].entry[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[1].entry[2]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 == /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-class-cs.json ==
 INFORMATION: CodeSystem/bw-pims-lab-class-cs: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-order-status-cs.json ==
@@ -277,6 +281,7 @@ INFORMATION: CodeSystem/bw-pims-lab-test-cs: CodeSystem: Validate resource again
 INFORMATION: Composition/example-bw-lab-composition: Composition: Validate resource against profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition
 ERROR: Composition/example-bw-lab-composition: Composition.section[0]: Profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition, Element matches more than one slice - labTask, labOrders
 ERROR: Composition/example-bw-lab-composition: Composition.section[0]: Profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition, Element matches more than one slice - labTask, labResults
+INFORMATION: Composition/example-bw-lab-composition: Composition.section[1]: This element does not match any known slice defined in the profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition
 ERROR: Composition/example-bw-lab-composition: Composition.status: The value provided ('active') is not in the value set http://hl7.org/fhir/ValueSet/composition-status|4.0.1 (http://hl7.org/fhir/ValueSet/composition-status), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/composition-status#active in http://hl7.org/fhir/composition-status)
 WARNING: Composition/example-bw-lab-composition: Composition.type.coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: Composition/example-bw-lab-composition: Composition.author[0]: Unable to resolve resource 'example-bw-practitioner'

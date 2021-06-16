@@ -27,4 +27,15 @@
       <reference value="Task/example-bw-task-requested"/>
     </entry>
   </section>
+  <section>
+    <entry>
+      <reference value="ServiceRequest/example-bw-pims-service-request-profile"/>
+    </entry>
+    <entry>
+      <reference value="ServiceRequest/example-bw-pims-service-request-1"/>
+    </entry>
+    <entry>
+      <reference value="ServiceRequest/example-bw-pims-service-request-2"/>
+    </entry>
+  </section>
 </Composition>
