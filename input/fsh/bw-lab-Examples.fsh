@@ -94,18 +94,21 @@ Instance: example-bw-lab-composition
 InstanceOf: BwLabComposition
 Usage: #example
 Description: "Example Lab Order Composition"
-Title: "Example PIMS Lab Composition (Work in Progress)"
+Title: "Example PIMS Lab Composition"
 * type = #document
 * subject = Reference(example-bw-patient)
 * date = "2021-06-06"
 * author = Reference(example-bw-practitioner)
 * section[labTask].entry[+] = Reference(example-bw-task-requested)
+* section[labOrders].entry[+] = Reference(example-bw-pims-service-request-profile)
+* section[labOrders].entry[+] = Reference(example-bw-pims-service-request-1)
+* section[labOrders].entry[+] = Reference(example-bw-pims-service-request-2)
 
 
 Instance: example-bw-lab-bundle
 InstanceOf: Bundle
 Usage: #example
-Description: "Example Full bundle"
+Description: "Example Full PIMS Lab Bundle"
 Title: "Example Lab Bundle"
 * type = #document
 * entry[+].resource = example-bw-lab-composition
