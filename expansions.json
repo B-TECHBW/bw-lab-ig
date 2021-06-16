@@ -1,196 +1,11 @@
 {
   "resourceType" : "Bundle",
-  "id" : "45ea3524-772c-44cb-8d89-54b6222d363c",
+  "id" : "1ccd3529-b49f-4ce2-bf8f-6f4394ffcd3e",
   "meta" : {
-    "lastUpdated" : "2021-06-16T01:49:19.895+00:00"
+    "lastUpdated" : "2021-06-16T01:51:15.225+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-test-vs",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "bw-pims-lab-test-vs",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 26 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-bw-pims-lab-test-cs.html\">PIMS Lab Test Code System v0.2.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-bw-pims-lab-test-cs.html\"><code>http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-CD4\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-CD4\">CD4</a></td><td>CD4 Count</td><td>tblkLabTest#1 - CD4 count</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-CD4-\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-CD4.37\">CD4%</a></td><td>CD4 Percentage</td><td>tblkLabTest#2 - CD4 Percent</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-VL\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-VL\">VL</a></td><td>Viral Load</td><td>tblkLabTest#3 - Viral Load (HIV?)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-PCV\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-PCV\">PCV</a></td><td>Packed Cell Volume (PCV)</td><td>tblkLabTest#4 - Packed Cell Volume</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-WBC\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-WBC\">WBC</a></td><td>White Blood Cells(WBC)</td><td>tblkLabTest#5 - White Blood Cells</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-NP-\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-NP.37\">NP%</a></td><td>Neutrophils %</td><td>tblkLabTest#7 - Neutrophils %</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-AST\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-AST\">AST</a></td><td>Aspartate Aminotrasferase</td><td>tblkLabTest#9 - Aspartate aminotrasferase</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-GGT\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-GGT\">GGT</a></td><td>Gamma Glutamyl Transferase</td><td>tblkLabTest#10 - Gamma glutamyl transferase</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-ALPL\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-ALPL\">ALPL</a></td><td>Alkaline Phosphatase</td><td>tblkLabTest#11 - Alkaline Phosphatase</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-LIP\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-LIP\">LIP</a></td><td>Lipase</td><td>tblkLabTest#12 - Lipase</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-TGS\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-TGS\">TGS</a></td><td>TGS</td><td>tblkLabTest#13 - TGS</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-Urea\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-Urea\">Urea</a></td><td>Urea</td><td>tblkLabTest#14 - Urea</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-Na\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-Na\">Na</a></td><td>Sodium</td><td>tblkLabTest#15 - Sodium</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-K\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-K\">K</a></td><td>Potassium</td><td>tblkLabTest#16 - Potassium</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-PCR\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-PCR\">PCR</a></td><td>DNA PCR</td><td>tblkLabTest#17 - DNA PCR</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-Ag\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-Ag\">Ag</a></td><td>Ag</td><td>tblkLabTest#18 - DNA PCR</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-CST\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-CST\">CST</a></td><td>Culture Sensitive Test</td><td>tblkLabTest#19 - Culture Sensitive Test</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-MCV\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-MCV\">MCV</a></td><td>Mean Cell Volume</td><td>tblkLabTest#20 - Mean cell volume</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-Rapid\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-Rapid\">Rapid</a></td><td>Rapid</td><td>tblkLabTest#21 - Rapid</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-ELISA\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-ELISA\">ELISA</a></td><td>ELISA</td><td>tblkLabTest#22 - ELISA</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-UP\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-UP\">UP</a></td><td>Urine Pregnancy</td><td>tblkLabTest#23 - Urine pregnancy test</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-CXRAY\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-CXRAY\">CXRAY</a></td><td>Chest X-Ray</td><td>tblkLabTest#25 - Chest x-ray</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-PT\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-PT\">PT</a></td><td>Pleural Tap</td><td>tblkLabTest#26 - Pleural tap</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-CSF\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-CSF\">CSF</a></td><td>CSF</td><td>tblkLabTest#27 - CSF</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-LNB\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-LNB\">LNB</a></td><td>Lymph Node Biopsy</td><td>tblkLabTest#28 - Lymph node biopsy</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-test-cs-SM\"> </a><a href=\"CodeSystem-bw-pims-lab-test-cs.html#bw-pims-lab-test-cs-SM\">SM</a></td><td>Sputum Microscopy</td><td>tblkLabTest#130 - Sputum microscopy</td></tr></table></div>"
-      },
-      "url" : "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-test-vs",
-      "version" : "0.2.0",
-      "name" : "BwPimsLabTestVS",
-      "title" : "PIMS Lab Test Codes",
-      "status" : "active",
-      "date" : "2021-06-16T01:49:19+00:00",
-      "publisher" : "B-TECHBW",
-      "contact" : [{
-        "name" : "B-TECHBW",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "www.github.com/b-techbw"
-        },
-        {
-          "system" : "email",
-          "value" : "pmanko@uw.edu"
-        }]
-      }],
-      "description" : "PIMS Lab Test Codes",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "072"
-        }]
-      },
-      {
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "BW"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:7b477ecb-6d6c-4b28-a308-68e21ac67d43",
-        "timestamp" : "2021-06-16T01:49:32+00:00",
-        "total" : 26,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs|0.2.0"
-        }],
-        "contains" : [{
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "CD4",
-          "display" : "CD4 Count"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "CD4%",
-          "display" : "CD4 Percentage"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "VL",
-          "display" : "Viral Load"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "PCV",
-          "display" : "Packed Cell Volume (PCV)"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "WBC",
-          "display" : "White Blood Cells(WBC)"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "NP%",
-          "display" : "Neutrophils %"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "AST",
-          "display" : "Aspartate Aminotrasferase"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "GGT",
-          "display" : "Gamma Glutamyl Transferase"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "ALPL",
-          "display" : "Alkaline Phosphatase"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "LIP",
-          "display" : "Lipase"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "TGS",
-          "display" : "TGS"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "Urea",
-          "display" : "Urea"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "Na",
-          "display" : "Sodium"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "K",
-          "display" : "Potassium"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "PCR",
-          "display" : "DNA PCR"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "Ag",
-          "display" : "Ag"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "CST",
-          "display" : "Culture Sensitive Test"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "MCV",
-          "display" : "Mean Cell Volume"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "Rapid",
-          "display" : "Rapid"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "ELISA",
-          "display" : "ELISA"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "UP",
-          "display" : "Urine Pregnancy"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "CXRAY",
-          "display" : "Chest X-Ray"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "PT",
-          "display" : "Pleural Tap"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "CSF",
-          "display" : "CSF"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "LNB",
-          "display" : "Lymph Node Biopsy"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
-          "code" : "SM",
-          "display" : "Sputum Microscopy"
-        }]
-      }
-    }
-  },
-  {
     "fullUrl" : "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-diagnostic-report-status-vs",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -204,7 +19,7 @@
       "name" : "BwLabDiagnosticReportStatusVS",
       "title" : "Botswana Diagnostic Report Status Flag",
       "status" : "active",
-      "date" : "2021-06-16T01:49:19+00:00",
+      "date" : "2021-06-16T01:51:15+00:00",
       "publisher" : "B-TECHBW",
       "contact" : [{
         "name" : "B-TECHBW",
@@ -231,8 +46,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8b98a35c-a967-4250-83a1-9a74e63094ef",
-        "timestamp" : "2021-06-16T01:49:33+00:00",
+        "identifier" : "urn:uuid:af3ead4a-0f6a-4bea-a8a4-cfeea32b599d",
+        "timestamp" : "2021-06-16T01:51:31+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -266,115 +81,6 @@
           "system" : "http://hl7.org/fhir/diagnostic-report-status",
           "code" : "diagnostic-report-status-amended",
           "display" : "Amended"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-class-vs",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "bw-pims-lab-class-vs",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 11 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-bw-pims-lab-class-cs.html\">PIMS Lab Class Code System v0.2.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-bw-pims-lab-class-cs.html\"><code>http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-CHM\"> </a><a href=\"CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-CHM\">CHM</a></td><td>Routine-Chemistry</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-MCB\"> </a><a href=\"CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-MCB\">MCB</a></td><td>Microbiology</td><td>All Order specimens were drawn</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-HEM\"> </a><a href=\"CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-HEM\">HEM</a></td><td>Haematology</td><td>Partial results are available</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-PTH\"> </a><a href=\"CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-PTH\">PTH</a></td><td>Pathology</td><td>Order was cancelled</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-IMG\"> </a><a href=\"CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-IMG\">IMG</a></td><td>Imaging</td><td>Some order specimens were drawn</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-END\"> </a><a href=\"CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-END\">END</a></td><td>Endocrinology</td><td>Some order specimens were drawn</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-IMU\"> </a><a href=\"CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-IMU\">IMU</a></td><td>Immunology</td><td>Some order specimens were drawn</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-BBK\"> </a><a href=\"CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-BBK\">BBK</a></td><td>Blood-Bank</td><td>Order was cancelled</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-VL\"> </a><a href=\"CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-VL\">VL</a></td><td>Immunology-Viral-Load</td><td>Some order specimens were drawn</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-RS\"> </a><a href=\"CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-RS\">RS</a></td><td>Research-blood-draw</td><td>Some order specimens were drawn</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---b-techbw.github.io-bw-lab-ig-CodeSystem-bw-pims-lab-class-cs-TB\"> </a><a href=\"CodeSystem-bw-pims-lab-class-cs.html#bw-pims-lab-class-cs-TB\">TB</a></td><td>TB-diagnostic</td><td>Some order specimens were drawn</td></tr></table></div>"
-      },
-      "url" : "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-class-vs",
-      "version" : "0.2.0",
-      "name" : "BwPimsLabClassVS",
-      "title" : "Status Values for PIMS Lab Orders",
-      "status" : "active",
-      "date" : "2021-06-16T01:49:19+00:00",
-      "publisher" : "B-TECHBW",
-      "contact" : [{
-        "name" : "B-TECHBW",
-        "telecom" : [{
-          "system" : "url",
-          "value" : "www.github.com/b-techbw"
-        },
-        {
-          "system" : "email",
-          "value" : "pmanko@uw.edu"
-        }]
-      }],
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "072"
-        }]
-      },
-      {
-        "coding" : [{
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "BW"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:9f2919fe-0552-4bb0-ab0a-00d241609c90",
-        "timestamp" : "2021-06-16T01:49:33+00:00",
-        "total" : 11,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs|0.2.0"
-        }],
-        "contains" : [{
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs",
-          "code" : "CHM",
-          "display" : "Routine-Chemistry"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs",
-          "code" : "MCB",
-          "display" : "Microbiology"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs",
-          "code" : "HEM",
-          "display" : "Haematology"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs",
-          "code" : "PTH",
-          "display" : "Pathology"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs",
-          "code" : "IMG",
-          "display" : "Imaging"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs",
-          "code" : "END",
-          "display" : "Endocrinology"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs",
-          "code" : "IMU",
-          "display" : "Immunology"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs",
-          "code" : "BBK",
-          "display" : "Blood-Bank"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs",
-          "code" : "VL",
-          "display" : "Immunology-Viral-Load"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs",
-          "code" : "RS",
-          "display" : "Research-blood-draw"
-        },
-        {
-          "system" : "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs",
-          "code" : "TB",
-          "display" : "TB-diagnostic"
         }]
       }
     }
@@ -5419,7 +5125,7 @@
       "name" : "BwPimsLabOrderStatusVS",
       "title" : "Status Values for PIMS Lab Orders",
       "status" : "active",
-      "date" : "2021-06-16T01:49:19+00:00",
+      "date" : "2021-06-16T01:51:15+00:00",
       "publisher" : "B-TECHBW",
       "contact" : [{
         "name" : "B-TECHBW",
@@ -5445,8 +5151,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7bce3136-75cd-448d-9738-50c4e01fe359",
-        "timestamp" : "2021-06-16T01:49:35+00:00",
+        "identifier" : "urn:uuid:3d843fb1-c911-4c98-a9a3-14eab21e197e",
+        "timestamp" : "2021-06-16T01:51:32+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
