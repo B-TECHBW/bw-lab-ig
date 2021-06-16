@@ -33,3 +33,43 @@ Description:  "The status of the diagnostic report, subset from https://www.hl7.
 * DS#diagnostic-report-status-unknown "Unknown"
 * DS#diagnostic-report-status-canceled "Canceled"
 * DS#diagnostic-report-status-amended "Amended"
+
+
+
+/*
+tblkLabOrderStatus	
+LabOrderStatusID	LabOrderStatus
+1	Ordered
+2	Fully drawn
+3	Partially resulted
+4	Fully resulted
+5	Cancelled
+6	Partially drawn
+*/
+
+CodeSystem: BwPimsLabOrderStatusCS
+Id: bw-pims-lab-order-status-cs
+Title: "PIMS Lab Order Status Code System"
+Description: "PIMS Lab Order Status Code System"
+* insert PublisherContextDefinitional
+* #ordered
+    "Ordered"
+    "Order was requested"
+* #fully-drawn
+    "Fully-drawn"
+    "All Order specimens were drawn"
+* #partially-resulted
+    "Partially-resulted"
+    "Partial results are available"
+* #cancelled
+    "Cancelled"
+    "Order was cancelled" 
+* #partially-drawn
+    "Partially-drawn"
+    "Some order specimens were drawn"
+
+ValueSet: BwPimsLabOrderStatusVS
+Id: bw-pims-lab-order-status-vs
+Title: "Status Values for PIMS Lab Orders"
+Description: ""
+* include codes from system BwPimsLabOrderStatusCS
