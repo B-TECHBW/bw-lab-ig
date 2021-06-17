@@ -93,7 +93,7 @@ Step:
 Comments
 
 
-#### USE CASE NAME: RETIEVING LAB TEST RESULTS
+#### USE CASE NAME: RETRIEVING LAB TEST RESULTS
 
 ACTOR/s:  Clinicians 
 
@@ -142,7 +142,7 @@ Comments
 <br />
 
 
-#### USE CASE NAME: TRANSMISSION OF LABORATORY RESULTS
+#### USE CASE NAME: TRANSMISSION DATA
 <br />
 ACTOR:
 PIMS, IPMS, OpenHIM, SHR, OpenCR
@@ -170,7 +170,7 @@ Actions:
     2. MFL update the facility information in the SHR
     3. Patient demographic data is queried from the omang system as well as the deaths and births register.
     4. Updated lab order details with results are received by the interoperability layer and stored in the SHR
-    5. PIMS pings the interoperability layer for lab test results
+    5. PIMS queries the interoperability layer for lab test results
     6. Available results in the SHR are pulled to PIMS.
 
 POST-CONDITION:
@@ -179,7 +179,7 @@ POST-CONDITION:
 
 ASSUMPTIONS:
 
-- Each and every order that is created is assigned an identifier by IPMS.
+- Each and every order that is created is assigned a global identifier.
 - Lab orders are assigned identifiers by the system.
 - No data is pushed to IPMS from SHR, only a pull is allowed
 
