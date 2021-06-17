@@ -21,13 +21,6 @@
     "name": "BwPimsLabOrderStatusCS"
   },
   {
-    "id": "bw-pims-lab-profile-cs",
-    "type": "CodeSystem",
-    "url": "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-profile-cs",
-    "version": "0.2.0",
-    "name": "BwPimsLabProfileCS"
-  },
-  {
     "id": "bw-pims-lab-test-cs",
     "type": "CodeSystem",
     "url": "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-test-cs",
@@ -140,6 +133,13 @@
     "name": "BwLabDiagnosticReportStatusVS"
   },
   {
+    "id": "bw-lab-order-code-vs",
+    "type": "ValueSet",
+    "url": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-order-code-vs",
+    "version": "0.2.0",
+    "name": "BwLabOrderCodeVS"
+  },
+  {
     "id": "bw-lab-task-intent-vs",
     "type": "ValueSet",
     "url": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs",
@@ -166,13 +166,6 @@
     "url": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs",
     "version": "0.2.0",
     "name": "BwPimsLabOrderStatusVS"
-  },
-  {
-    "id": "bw-pims-lab-profile-vs",
-    "type": "ValueSet",
-    "url": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-profile-vs",
-    "version": "0.2.0",
-    "name": "BwPimsLabProfileVS"
   },
   {
     "id": "bw-pims-lab-test-vs",

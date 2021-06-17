@@ -11,7 +11,7 @@
   "title": "Botswana Laboratory HIE Workflow Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-06-16T19:16:37+00:00",
+  "date": "2021-06-17T15:41:58+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -485,6 +485,20 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/bw-lab-order-code-vs"
+        },
+        "name": "Botswana Lab Order Code",
+        "description": "The code for the lab order.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/bw-lab-task-intent-vs"
         },
         "name": "Botswana Intent for Lab Task",
@@ -539,19 +553,6 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/bw-pims-lab-profile-vs"
-        },
-        "name": "Status Values for PIMS Lab profile",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
           "reference": "ValueSet/bw-pims-lab-test-vs"
         },
         "name": "PIMS Lab Test Codes",
@@ -584,20 +585,6 @@
         },
         "name": "PIMS Lab Order Status Code System",
         "description": "PIMS Lab Order Status Code System",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/bw-pims-lab-profile-cs"
-        },
-        "name": "PIMS Lab profile Code System",
-        "description": "PIMS Lab profile Code System",
         "exampleBoolean": false
       },
       {
