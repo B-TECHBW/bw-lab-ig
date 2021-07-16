@@ -3,6 +3,7 @@ Alias: TI = http://hl7.org/fhir/ValueSet/task-intent
 Alias: DS = http://hl7.org/fhir/diagnostic-report-status
 Alias: LOINC = http://loinc.org
 
+// Task Status
 ValueSet:   BwLabTaskStatusVS
 Id: bw-lab-task-status-vs
 Title: "Botswana Status for Lab Task"
@@ -12,18 +13,14 @@ Description:  "The status of the task, subset from https://www.hl7.org/FHIR/valu
 * TS#task-status-accepted "Accepted"
 * TS#task-status-completed "Completed"
 
+// Task Intent
 ValueSet:   BwLabTaskIntentVS
 Id: bw-lab-task-intent-vs
 Title: "Botswana Intent for Lab Task"
 Description:  "The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html"
 * TI#task-intent-order "Order"
 
-ValueSet: BwLabOrderCodeVS
-Id: bw-lab-order-code-vs
-Title: "Botswana Lab Order Code"
-Description: "The code for the lab order."
-* include codes from system LOINC
-
+// Diagnostic Report Status
 ValueSet: BwLabDiagnosticReportStatusVS
 Id: bw-lab-diagnostic-report-status-vs
 Title: "Botswana Diagnostic Report Status Flag"
@@ -73,7 +70,6 @@ Id: bw-pims-lab-order-status-vs
 Title: "Status Values for PIMS Lab Orders"
 Description: ""
 * include codes from system BwPimsLabOrderStatusCS
-
 /**
 * tblkLabClass				
     LabClassID	LabClass	LabClassCode	SpecimenSequence	SortOrder
@@ -97,22 +93,22 @@ Description: "PIMS Lab Class Code System"
 * insert PublisherContextDefinitional
 * #CHM
     "Routine-Chemistry"
-    ""
+    "Routine chimestry was conducted on a lab specimen"
 * #MCB
     "Microbiology"
-    "All Order specimens were drawn"
+    "Microbiology of a lab specimen"
 * #HEM
     "Haematology"
-    "Partial results are available"
+    "Haematology of a lab specimen"
 * #PTH
     "Pathology"
-    "Order was cancelled" 
+    "Pathology of a lab specimen" 
 * #IMG
     "Imaging"
-    "Some order specimens were drawn"
+    "Imaging of a lab specimen"
 * #END
      "Endocrinology"
-    "Some order specimens were drawn"
+    "Endocrinology of a lab specimen"
 * #IMU
     "Immunology"
     "Some order specimens were drawn"
@@ -351,3 +347,167 @@ Id: bw-pims-lab-test-vs
 Title: "PIMS Lab Test Codes"
 Description: "PIMS Lab Test Codes"
 * include codes from system BwPimsLabTestCS
+
+/*  
+LabProfileID	LabProfile	Active	LabClassID	LabProfileCode	SpecimenSequence
+1	CD4	1	9	CD4	6
+2	Viral load	1	14	VL	4
+3	Full blood count	1	3	FBC	3
+4	Liver function test	1	1	LFT	3
+5	Urea and electrolytes	1	1	UE	2
+10	Cervical cancer	1	5	CVC	0
+11	Serum creatinine	1	1	CREAT	0
+12	Haemoglobin	1	3	HB	0
+13	Malaria profile	1	3	MAL	0
+14	Erythrocyte sed rate	1	3	ERYTH	0
+15	Urea	0	1	UREA	8
+16	Urate	1	1	URAT	0
+17	Baseline chemistry	1	1	BLCHEM	0
+18	Skeletal muscle enzymes	1	1	SKME	0
+19	Albumin	1	1	ALB	0
+20	Alkaline phosphates	1	1	ALP	0
+21	Alinine amino tran	1	1	ALT	0
+22	Body fluids	1	1	BFL	0
+23	Blood cultures	1	1	BCL	0
+24	Cardiac enzymes	1	1	CE	0
+25	Pancreatic enzymes	1	1	PE	0
+26	Lipid profile	1	1	LIP	0
+27	NVP Chemistry	1	1	NVP	0
+28	Kidney/Renal function tests	1	1	REN	8
+29	Basic chemistry	1	1	BSCHEM	0
+30	Diabetic profile	1	1	DP	1
+31	Coagulation	1	3	COAG	0
+32	ANC profile	1	12	ANC	2
+33	ABO grouping	1	12	ABO	0
+34	Crossmatch	1	12	CRSS	0
+35	Indirect COOMBS	1	12	ICO	0
+36	Direct COOMBS	1	12	DCO	0
+37	Antibody screening	1	12	ABS	0
+38	Antibody identification	1	12	ABI	1
+39	Antibody titration	1	12	ABT	0
+40	RH grouping	1	12	RH	0
+41	Cerebral spinal fluid	1	2	CSF	0
+42	Urine	1	2	URN	0
+43	High vaginal swab	1	2	HVS	0
+44	Cervical/endocervical swab	1	2	CES	0
+45	Urethral and penile swab	1	2	UPS	0
+46	Pus swab	1	2	PUS	0
+47	Surgical biopsy and tissue specimen	1	2	SBT	0
+48	Ear swabs	1	2	EAR	0
+49	Eye and conjuctival swabs	1	2	ECS	0
+50	Nose swabs	1	2	NOS	0
+51	Throat swabs	1	2	THS	0
+52	Bartholin's abscess swabs / aspirates	1	2	BAS	0
+53	Intra-uterine devices	1	2	IUD	0
+54	Gastric aspirates / swabs from neonates/stillborn	1	2	GNSS	0
+55	Gastric aspirates/biopsies for Helicobacter pylori	1	2	HEP	0
+56	Sputum, tracheal, endotracheal, bronchial aspir	1	2	SPUT	9
+57	Stools and rectal swabs	1	2	SRS	0
+58	Serology	1	2	SER	0
+59	Obstetric ultrasound	1	6	OBS	0
+60	Pelvis ultrasound	1	6	PEL	0
+61	Chest X-Ray	1	6	XR	0
+62	Cytology	1	5	CYT	0
+63	Histology	1	5	HIST	0
+64	HIV test	1	9	HIV	0
+65	Research blood	1	15	RSB	1
+66	TB	1	16	TB	0
+*/
+
+CodeSystem: BwPimsLabProfileCS
+Id: bw-pims-lab-profile-cs
+Title: "PIMS Lab profile Code System"
+Description: "PIMS Lab profile Code System"
+* insert PublisherContextDefinitional
+* #CD4
+    "CD4"
+    ""
+* #VL
+    "Viral load"
+    ""
+* #FBC
+    "Full blood count"
+    ""
+* #LFT
+    "Liver function test"
+    "" 
+* #UE
+    "Urea and electrolytes"
+    ""
+* #CVC
+     "Cervical cancer"
+    ""
+* #CREAT
+    "Serum creatinine"
+    ""
+* #HB
+    "Haemoglobin"
+    "" 
+* #MAL
+    "Malaria profile"
+    ""
+* #ERYTH
+     "Erythrocyte sed rate"
+    ""
+* #UREA
+    "Urea"
+    ""
+* #URAT
+    "Urate"
+    ""
+* #BLCHEM
+    "Baseline chemistry"
+    ""
+* #SKME
+    "Skeletal muscle enzymes"
+    ""
+* #ALB
+    "Albumin"
+    "" 
+* #ALP
+    "Alkaline phosphates"
+    ""
+* #ALT
+     "Alinine amino tran"
+    ""
+* #BFL
+    "Body fluids"
+    ""
+* #BCL
+    "Blood cultures"
+    "" 
+* #CE
+    "Cardiac enzymes"
+    ""
+* #PE
+     "Pancreatic enzymes"
+    ""
+* #LIP
+    "Lipid profile"
+    ""
+* #NVP
+    "NVP Chemistry"
+    ""
+* #REN
+     "Kidney/Renal function tests"
+    ""
+* #BSCHEM
+    "Basic chemistry"
+    ""
+* #DP
+    "Diabetic profile"
+    "" 
+* #COAG
+    "Coagulation"
+    ""
+* #ANC
+     "ANC profile"
+    ""
+* #ABO
+    "ABO grouping"
+    ""
+ValueSet: BwPimsLabProfileVS
+Id: bw-pims-lab-profile-vs
+Title: "Status Values for PIMS Lab profile"
+Description: ""
+* include codes from system BwPimsLabProfileCS
