@@ -8,14 +8,18 @@ InstanceOf: BwPatient
 Usage: #example 
 Description: "Example Botswana Patient"
 Title:   "BW Patient"
-* name.text = "Bw TestPatient"
+* name.use = #official
+* name.family = "BwPatient"
+* name.given[+] = "Test"
 * gender = #female
 * birthDate = "1988-03-02"
 * identifier[+].value = "urn:uuid:<Pims-specific Patient ID>"
 * identifier[=].system = "urn:ietf:rfc:3986"
 * identifier[=].type = #MR
-* identifier.value = "<OmangNumber>"
-* identifier.system = "http://moh.bw.org/ext/identifier/omang"
+* identifier[+].value = "<OmangNumber>"
+* identifier[=].system = "http://moh.bw.org/ext/identifier/omang"
+* identifier[=].use = #official
+
 
 Instance: example-bw-patient-international
 InstanceOf: BwPatient 
