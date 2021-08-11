@@ -30,7 +30,7 @@ Description: "This composition packages information needed to facilitate lab ord
 * section[labTask].entry MS
 
 * section[labOrders].title = "Lab Orders"
-* section[labOrders].entry only Reference(BwLabServiceRequest)
+* section[labOrders].entry only Reference(BwServiceRequest)
 * section[labOrders].entry MS
 
 * section[labResults].title = "Results"

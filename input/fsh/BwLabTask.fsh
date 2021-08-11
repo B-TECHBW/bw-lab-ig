@@ -5,7 +5,7 @@ Title: "Botswana Lab Task Resource"
 Description: "A Task resource for tracking order state and synchronizing Lab Order communication in Botswana"
 * identifier 1..*
 * basedOn 1..*
-* basedOn only Reference(BwLabServiceRequest)
+* basedOn only Reference(BwServiceRequest)
 * for only Reference(BwPatient)
 * encounter only Reference(BwEncounter)
 * owner only Reference(Practitioner or Organization or HealthcareService)

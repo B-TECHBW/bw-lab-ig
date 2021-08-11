@@ -50,7 +50,7 @@ Title:   "BW Requested Lab Task"
 * owner = Reference(example-bw-pims-practitioner)
 
 Instance: example-bw-pims-service-request-profile
-InstanceOf: BwLabServiceRequest
+InstanceOf: BwServiceRequest
 Usage: #example
 Description: "Example ServiceRequest resource representing a PIMS Profile"
 Title: "BW PIMS ServiceRequest Profile"
@@ -61,7 +61,7 @@ Title: "BW PIMS ServiceRequest Profile"
 * subject = Reference(example-bw-patient)
 
 Instance: example-bw-pims-service-request-1
-InstanceOf: BwLabServiceRequest
+InstanceOf: BwServiceRequest
 Usage: #example
 Description: "Example ServiceRequest resource representing a PIMS Lab Order"
 Title: "BW PIMS ServiceRequest 1"
@@ -73,7 +73,7 @@ Title: "BW PIMS ServiceRequest 1"
 * subject = Reference(example-bw-patient)
 
 Instance: example-bw-pims-service-request-2
-InstanceOf: BwLabServiceRequest
+InstanceOf: BwServiceRequest
 Usage: #example
 Description: "Example ServiceRequest resource representing a PIMS Lab Order"
 Title: "BW PIMS ServiceRequest 2"
