@@ -6,7 +6,7 @@
     <profile value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: MR: &lt;OmangNumber&gt;</p><p><b>name</b>: Bw TestPatient</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: MR: urn:uuid:&lt;Pims-specific Patient ID&gt;, id: &lt;OmangNumber&gt; (OFFICIAL)</p><p><b>name</b>: Test BwPatient (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p></div>
   </text>
   <identifier>
     <type>
@@ -14,11 +14,18 @@
         <code value="MR"/>
       </coding>
     </type>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:&lt;Pims-specific Patient ID&gt;"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
     <system value="http://moh.bw.org/ext/identifier/omang"/>
     <value value="&lt;OmangNumber&gt;"/>
   </identifier>
   <name>
-    <text value="Bw TestPatient"/>
+    <use value="official"/>
+    <family value="BwPatient"/>
+    <given value="Test"/>
   </name>
   <gender value="female"/>
   <birthDate value="1988-03-02"/>

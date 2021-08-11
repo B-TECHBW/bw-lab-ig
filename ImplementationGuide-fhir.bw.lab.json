@@ -11,7 +11,7 @@
   "title": "Botswana Laboratory HIE Workflow Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-06-17T15:41:58+00:00",
+  "date": "2021-08-11T23:29:44+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -401,20 +401,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/bw-lab-service-request"
-        },
-        "name": "Botswana Lab Service Request",
-        "description": "A service request a lab order for for a given patient.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/bw-lab-task"
         },
         "name": "Botswana Lab Task Resource",
@@ -457,10 +443,66 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/bw-pims-lab-profile-service-request"
+        },
+        "name": "PIMS Lab Profile Service Request",
+        "description": "A service request representing a PIMS lab profile as part of a PIMS lab order.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/bw-pims-lab-test-service-request"
+        },
+        "name": "PIMS Lab Test Service Request",
+        "description": "A service request representing a PIMS lab test as part of a PIMS lab order.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/bw-practitioner"
         },
         "name": "Botswana Practitioner",
         "description": "A practitioner in a Botswana Health System",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/bw-basic-service-request"
+        },
+        "name": "Basic Botswana Lab Service Request",
+        "description": "A service request a lab order for for a given patient.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/pims-patient"
+        },
+        "name": "PIMS Patient",
+        "description": "A patient in a PIMS instance",
         "exampleBoolean": false
       },
       {
@@ -753,7 +795,7 @@
         },
         "name": "BW PIMS ServiceRequest 1",
         "description": "Example ServiceRequest resource representing a PIMS Lab Order",
-        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request"
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-basic-service-request"
       },
       {
         "extension": [
@@ -767,7 +809,7 @@
         },
         "name": "BW PIMS ServiceRequest 2",
         "description": "Example ServiceRequest resource representing a PIMS Lab Order",
-        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request"
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-basic-service-request"
       },
       {
         "extension": [
@@ -781,7 +823,7 @@
         },
         "name": "BW PIMS ServiceRequest Profile",
         "description": "Example ServiceRequest resource representing a PIMS Profile",
-        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request"
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-basic-service-request"
       },
       {
         "extension": [

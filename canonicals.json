@@ -63,6 +63,13 @@
     "name": "BwLabIG"
   },
   {
+    "id": "bw-basic-service-request",
+    "type": "StructureDefinition",
+    "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-basic-service-request",
+    "version": "0.2.0",
+    "name": "BwServiceRequest"
+  },
+  {
     "id": "bw-encounter",
     "type": "StructureDefinition",
     "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-encounter",
@@ -91,13 +98,6 @@
     "name": "BwLabObservation"
   },
   {
-    "id": "bw-lab-service-request",
-    "type": "StructureDefinition",
-    "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-service-request",
-    "version": "0.2.0",
-    "name": "BwLabServiceRequest"
-  },
-  {
     "id": "bw-lab-task",
     "type": "StructureDefinition",
     "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task",
@@ -119,11 +119,32 @@
     "name": "BwPatient"
   },
   {
+    "id": "bw-pims-lab-profile-service-request",
+    "type": "StructureDefinition",
+    "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-pims-lab-profile-service-request",
+    "version": "0.2.0",
+    "name": "BwPimsLabProfile"
+  },
+  {
+    "id": "bw-pims-lab-test-service-request",
+    "type": "StructureDefinition",
+    "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-pims-lab-test-service-request",
+    "version": "0.2.0",
+    "name": "BwPimsLabTest"
+  },
+  {
     "id": "bw-practitioner",
     "type": "StructureDefinition",
     "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-practitioner",
     "version": "0.2.0",
     "name": "BwPractitioner"
+  },
+  {
+    "id": "pims-patient",
+    "type": "StructureDefinition",
+    "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/pims-patient",
+    "version": "0.2.0",
+    "name": "PimsPatient"
   },
   {
     "id": "bw-lab-diagnostic-report-status-vs",
