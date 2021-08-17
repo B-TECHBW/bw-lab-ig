@@ -8,14 +8,18 @@ InstanceOf: BwPatient
 Usage: #example 
 Description: "Example Botswana Patient"
 Title:   "BW Patient"
-* name.text = "Bw TestPatient"
+* name.use = #official
+* name.family = "BwPatient"
+* name.given[+] = "Test"
 * gender = #female
 * birthDate = "1988-03-02"
 * identifier[+].value = "urn:uuid:<Pims-specific Patient ID>"
 * identifier[=].system = "urn:ietf:rfc:3986"
 * identifier[=].type = #MR
-* identifier.value = "<OmangNumber>"
-* identifier.system = "http://moh.bw.org/ext/identifier/omang"
+* identifier[+].value = "<OmangNumber>"
+* identifier[=].system = "http://moh.bw.org/ext/identifier/omang"
+* identifier[=].use = #official
+
 
 Instance: example-bw-patient-international
 InstanceOf: BwPatient 
@@ -46,7 +50,7 @@ Title:   "BW Requested Lab Task"
 * owner = Reference(example-bw-pims-practitioner)
 
 Instance: example-bw-pims-service-request-profile
-InstanceOf: BwLabServiceRequest
+InstanceOf: BwServiceRequest
 Usage: #example
 Description: "Example ServiceRequest resource representing a PIMS Profile"
 Title: "BW PIMS ServiceRequest Profile"
@@ -57,7 +61,7 @@ Title: "BW PIMS ServiceRequest Profile"
 * subject = Reference(example-bw-patient)
 
 Instance: example-bw-pims-service-request-1
-InstanceOf: BwLabServiceRequest
+InstanceOf: BwServiceRequest
 Usage: #example
 Description: "Example ServiceRequest resource representing a PIMS Lab Order"
 Title: "BW PIMS ServiceRequest 1"
@@ -69,7 +73,7 @@ Title: "BW PIMS ServiceRequest 1"
 * subject = Reference(example-bw-patient)
 
 Instance: example-bw-pims-service-request-2
-InstanceOf: BwLabServiceRequest
+InstanceOf: BwServiceRequest
 Usage: #example
 Description: "Example ServiceRequest resource representing a PIMS Lab Order"
 Title: "BW PIMS ServiceRequest 2"

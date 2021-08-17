@@ -409,7 +409,7 @@ Usage: #definition
 * differential.element[=].mapping[+].identity = "PIMS"
 * differential.element[=].mapping[=].map = "Laboratory.tblLabOrder; Laboratory.tblLabOrderProfile, Laboratory.tblLabOrderProfileTest"
 * differential.element[=].mapping[+].identity = "FHIR-R4"
-* differential.element[=].mapping[=].map = "BwLabServiceRequest"
+* differential.element[=].mapping[=].map = "BwServiceRequest"
 
 * differential.element[+].id = "EmrLisDataDictionary.LabOrder.Patient"
 * differential.element[=].path = "EmrLisDataDictionary.LabOrder.Patient"
