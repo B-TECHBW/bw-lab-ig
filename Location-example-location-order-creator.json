@@ -1,0 +1,37 @@
+{
+  "resourceType": "Location",
+  "id": "example-location-order-creator",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {urn:ietf:rfc:3986 HOSP}\">HOSP</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></p><p><b>physicalType</b>: <span title=\"Codes: \">bu</span></p><p><b>managingOrganization</b>: <a href=\"Organization-example-facility-order-creator.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 prov}\">prov</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></a></p></div>"
+  },
+  "status": "active",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "urn:ietf:rfc:3986",
+          "code": "HOSP"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://github.com/ihe/ITI.mCSD",
+          "code": "Facility"
+        }
+      ]
+    }
+  ],
+  "physicalType": {
+    "coding": [
+      {
+        "code": "bu"
+      }
+    ]
+  },
+  "managingOrganization": {
+    "reference": "Organization/example-facility-order-creator"
+  }
+}

@@ -84,7 +84,7 @@ In most cases, Tasks will have an intent of ""order"".","","","","","","","","",
 ","Start and end time of execution","Identifies the time action was first taken against the task (start) and/or the time final action was taken against the task prior to marking it as completed (end).","","","","","","","","","",,,,,"",,,,"Task.executionPeriod",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.occurrence[x]",".effectiveTime","FiveWs.done[x]"
 "Task.authoredOn","","Created Date
-","",1,1,"","","","dateTime {[]} {[]}
+","",0,1,"","","","dateTime {[]} {[]}
 ","Task Creation Date","The date and time this task was created.","","Most often used along with lastUpdated to track duration of task to supporting monitoring and management.","","","","","","","",,,,,"",,,,"Task.authoredOn",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.authoredOn",".participation[typeCode=AUT].time","FiveWs.recorded"
@@ -100,10 +100,10 @@ In most cases, Tasks will have an intent of ""order"".","","","","","","","","",
 ","Requested performer","The kind of participant that should perform the task.","","Use to distinguish tasks on different activity queues.","","","","","","","",,"preferred","The type(s) of task performers allowed.","http://hl7.org/fhir/ValueSet/performer-role","",,,,"Task.performerType",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.role, Request.performerType",".participation[typeCode=PRF].role.code","FiveWs.actor"
 "Task.owner","","Performer
-Executer","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/HealthcareService]]}
+Executer","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Responsible individual","Individual organization or Device currently responsible for task execution.","Tasks may be created with an owner not yet identified.","Identifies who is expected to perform this task.","","","","","","","",,,,,"",,,,"Task.owner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.actor, Request.performer",".participation[typeCode=PRF].role","FiveWs.actor"
-"Task.location","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
+"Task.location","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}
 ","Where task occurs","Principal physical location where the this task is performed.","","Ties the event to where the records are likely kept and provides context around the event occurrence (e.g. if it occurred inside or outside a dedicated healthcare setting).","","","","","","","",,,,,"",,,,"Task.location",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.reasonCode, Event.reasonCode",".participation[typeCode=LOC].role","FiveWs.where[x]"
 "Task.reasonCode","","","",0,1,"","","","CodeableConcept {[]} {[]}

@@ -108,7 +108,7 @@
           <profile value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: PimsSpecificLabOrderID</p><p><b>basedOn</b>: </p><ul><li><a href="#ServiceRequest_example-bw-pims-service-request-1">See above (ServiceRequest/example-bw-pims-service-request-1)</a></li><li><a href="#ServiceRequest_example-bw-pims-service-request-2">See above (ServiceRequest/example-bw-pims-service-request-2)</a></li></ul><p><b>status</b>: requested</p><p><b>intent</b>: order</p><p><b>for</b>: <a href="#Patient_example-bw-patient">See above (Patient/example-bw-patient)</a></p><p><b>authoredOn</b>: 2021-05-20</p><p><b>owner</b>: <a href="#Practitioner_example-bw-pims-practitioner">See above (Practitioner/example-bw-pims-practitioner)</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: PimsSpecificLabOrderID</p><p><b>basedOn</b>: </p><ul><li><a href="#ServiceRequest_example-bw-pims-service-request-1">See above (ServiceRequest/example-bw-pims-service-request-1)</a></li><li><a href="#ServiceRequest_example-bw-pims-service-request-2">See above (ServiceRequest/example-bw-pims-service-request-2)</a></li></ul><p><b>status</b>: requested</p><p><b>intent</b>: order</p><p><b>for</b>: <a href="#Patient_example-bw-patient">See above (Patient/example-bw-patient)</a></p><p><b>authoredOn</b>: 2021-05-20</p><p><b>owner</b>: <a href="Organization-example-facility-order-reciever.html">Generated Summary: active; <span title="Codes: {urn:ietf:rfc:3986 dept}">dept</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}">Facility</span></a></p><p><b>location</b>: <a href="Location-example-location-order-creator.html">Generated Summary: status: active; <span title="Codes: {urn:ietf:rfc:3986 HOSP}">HOSP</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}">Facility</span>; <span title="Codes: ">bu</span></a></p></div>
         </text>
         <identifier>
           <system value="http://&lt;pims-instance-specific-url&gt;/ext/lab-task/identifier"/>
@@ -127,8 +127,11 @@
         </for>
         <authoredOn value="2021-05-20"/>
         <owner>
-          <reference value="Practitioner/example-bw-pims-practitioner"/>
+          <reference value="Organization/example-facility-order-reciever"/>
         </owner>
+        <location>
+          <reference value="Location/example-location-order-creator"/>
+        </location>
       </Task>
     </resource>
   </entry>

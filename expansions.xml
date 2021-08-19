@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="b2271fed-bf79-4db2-8986-411fb185d697"/>
+  <id value="40c130d4-b35c-48e0-b2a5-6d41226416a3"/>
   <meta>
-    <lastUpdated value="2021-08-17T21:51:39.931+00:00"/>
+    <lastUpdated value="2021-08-19T05:27:33.391+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -8041,7 +8041,7 @@
         <name value="BwLabOrderCodeVS"/>
         <title value="Botswana Lab Order Code"/>
         <status value="active"/>
-        <date value="2021-08-17T21:51:39+00:00"/>
+        <date value="2021-08-19T05:27:33+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -8071,8 +8071,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-toocostly">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:5ad055b4-9be4-4d09-a3f0-536711f98807"/>
-          <timestamp value="2021-08-17T21:51:57+00:00"/>
+          <identifier value="urn:uuid:126900b1-6adb-4d6d-82bc-afdff16523d3"/>
+          <timestamp value="2021-08-19T05:27:57+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13167,7 +13167,7 @@
         <name value="BwLabDiagnosticReportStatusVS"/>
         <title value="Botswana Diagnostic Report Status Flag"/>
         <status value="active"/>
-        <date value="2021-08-17T21:51:39+00:00"/>
+        <date value="2021-08-19T05:27:33+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -13194,8 +13194,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9c8522ca-62b6-4963-93d9-b63efaeabb31"/>
-          <timestamp value="2021-08-17T21:51:57+00:00"/>
+          <identifier value="urn:uuid:47a9d1c3-8092-456b-b826-c5e2edf02e26"/>
+          <timestamp value="2021-08-19T05:27:58+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13311,7 +13311,7 @@
         <name value="BwPimsLabOrderStatusVS"/>
         <title value="Status Values for PIMS Lab Orders"/>
         <status value="active"/>
-        <date value="2021-08-17T21:51:39+00:00"/>
+        <date value="2021-08-19T05:27:33+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -13337,8 +13337,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2e258b76-d53e-479b-b4be-67d3f804b891"/>
-          <timestamp value="2021-08-17T21:51:59+00:00"/>
+          <identifier value="urn:uuid:769bc257-cb28-48d4-a62a-2ad9f5e41436"/>
+          <timestamp value="2021-08-19T05:27:59+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13622,7 +13622,7 @@
         <name value="BwPimsLabTestVS"/>
         <title value="PIMS Lab Test Codes"/>
         <status value="active"/>
-        <date value="2021-08-17T21:51:39+00:00"/>
+        <date value="2021-08-19T05:27:33+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -13649,8 +13649,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e41298d9-e714-4702-81b7-117ebb644fb5"/>
-          <timestamp value="2021-08-17T21:52:01+00:00"/>
+          <identifier value="urn:uuid:3a4e7e89-2cd6-497f-aa16-e316d0bd15d5"/>
+          <timestamp value="2021-08-19T05:28:02+00:00"/>
           <total value="26"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13919,7 +13919,7 @@
         <name value="BwPimsLabClassVS"/>
         <title value="Status Values for PIMS Lab Orders"/>
         <status value="active"/>
-        <date value="2021-08-17T21:51:39+00:00"/>
+        <date value="2021-08-19T05:27:33+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -13945,8 +13945,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:143033d4-959d-44ca-9acc-1f0575e28cf5"/>
-          <timestamp value="2021-08-17T21:52:04+00:00"/>
+          <identifier value="urn:uuid:d27fa58b-a0c6-4c55-9d1c-728bbec1f8a0"/>
+          <timestamp value="2021-08-19T05:28:05+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>

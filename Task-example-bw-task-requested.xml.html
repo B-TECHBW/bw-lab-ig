@@ -180,7 +180,7 @@
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/R4/task.html#Task.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
-    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: PimsSpecificLabOrderID&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="ServiceRequest-example-bw-pims-service-request-1.html"&gt;Generated Summary: status: active; intent: order; &lt;span title="Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}"&gt;pims-labtest-code&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="ServiceRequest-example-bw-pims-service-request-2.html"&gt;Generated Summary: status: active; intent: order; &lt;span title="Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}"&gt;pims-labtest-code&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: requested&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href="Patient-example-bw-patient.html"&gt;Generated Summary: MR: urn:uuid:&amp;lt;Pims-specific Patient ID&amp;gt;, id: &amp;lt;OmangNumber&amp;gt; (OFFICIAL); Test BwPatient (OFFICIAL); gender: female; birthDate: 1988-03-02&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: 2021-05-20&lt;/p&gt;&lt;p&gt;&lt;b&gt;owner&lt;/b&gt;: &lt;a href="Practitioner-example-bw-pims-practitioner.html"&gt;Generated Summary: id: RequesterID; BW PimsProvider&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: PimsSpecificLabOrderID&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="ServiceRequest-example-bw-pims-service-request-1.html"&gt;Generated Summary: status: active; intent: order; &lt;span title="Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}"&gt;pims-labtest-code&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="ServiceRequest-example-bw-pims-service-request-2.html"&gt;Generated Summary: status: active; intent: order; &lt;span title="Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}"&gt;pims-labtest-code&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: requested&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;for&lt;/b&gt;: &lt;a href="Patient-example-bw-patient.html"&gt;Generated Summary: MR: urn:uuid:&amp;lt;Pims-specific Patient ID&amp;gt;, id: &amp;lt;OmangNumber&amp;gt; (OFFICIAL); Test BwPatient (OFFICIAL); gender: female; birthDate: 1988-03-02&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: 2021-05-20&lt;/p&gt;&lt;p&gt;&lt;b&gt;owner&lt;/b&gt;: &lt;a href="Organization-example-facility-order-reciever.html"&gt;Generated Summary: active; &lt;span title="Codes: {urn:ietf:rfc:3986 dept}"&gt;dept&lt;/span&gt;, &lt;span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}"&gt;Facility&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: &lt;a href="Location-example-location-order-creator.html"&gt;Generated Summary: status: active; &lt;span title="Codes: {urn:ietf:rfc:3986 HOSP}"&gt;HOSP&lt;/span&gt;, &lt;span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}"&gt;Facility&lt;/span&gt;; &lt;span title="Codes: "&gt;bu&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/task.html#Task.identifier">identifier</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>
@@ -200,8 +200,11 @@
   &lt;/for&gt;
   &lt;<a href="http://hl7.org/fhir/R4/task.html#Task.authoredOn">authoredOn</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2021-05-20"/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/task.html#Task.owner">owner</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Practitioner/example-bw-pims-practitioner"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Organization/example-facility-order-reciever"/&gt;
   &lt;/owner&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/task.html#Task.location">location</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Location/example-location-order-creator"/&gt;
+  &lt;/location&gt;
 &lt;/Task&gt;</code></pre>
 
 
@@ -231,8 +234,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="31ad7d96-dcb0-4a36-8672-6c7e4f025ad4">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="www.github.com/b-techbw">B-TECHBW</a>.  Package fhir.bw.lab#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 17, 2021 21:51+0000">2021-08-17</span>
+        <p><a name="4eb566b1-fe86-4ef3-a2bc-33670660aba4">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="www.github.com/b-techbw">B-TECHBW</a>.  Package fhir.bw.lab#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 19, 2021 05:27+0000">2021-08-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

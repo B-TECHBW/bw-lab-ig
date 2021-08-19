@@ -11,7 +11,7 @@
   "title": "Botswana Laboratory HIE Workflow Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-08-17T21:51:39+00:00",
+  "date": "2021-08-19T05:27:33+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -838,6 +838,62 @@
         "name": "BW Requested Lab Task",
         "description": "Example Task for Requested Lab Orders and Results in Botswana",
         "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/example-facility-order-creator"
+        },
+        "name": "PIMS Facility",
+        "description": "Example PIMS Facility",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/example-facility-order-reciever"
+        },
+        "name": "IPMS Facility",
+        "description": "Example IPMS Facility",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          }
+        ],
+        "reference": {
+          "reference": "Location/example-location-order-creator"
+        },
+        "name": "PIMS Location",
+        "description": "Example PIMS Facility Location",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Location"
+          }
+        ],
+        "reference": {
+          "reference": "Location/example-location-order-reciever"
+        },
+        "name": "IPMS Location",
+        "description": "Example IPMS Facility Location",
+        "exampleBoolean": true
       }
     ],
     "page": {

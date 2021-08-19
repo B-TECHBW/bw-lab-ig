@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Botswana Laboratory HIE Workflow Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-08-17T21:51:39+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-08-19T05:27:33+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "B-TECHBW"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -848,6 +848,62 @@
          fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task";
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task>
        ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/Organization/example-facility-order-creator>;
+         fhir:Reference.reference [ fhir:value "Organization/example-facility-order-creator" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PIMS Facility" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example PIMS Facility" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/Organization/example-facility-order-reciever>;
+         fhir:Reference.reference [ fhir:value "Organization/example-facility-order-reciever" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "IPMS Facility" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example IPMS Facility" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/Location/example-location-order-creator>;
+         fhir:Reference.reference [ fhir:value "Location/example-location-order-creator" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PIMS Location" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example PIMS Facility Location" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/Location/example-location-order-reciever>;
+         fhir:Reference.reference [ fhir:value "Location/example-location-order-reciever" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "IPMS Location" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example IPMS Facility Location" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

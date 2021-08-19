@@ -1,0 +1,37 @@
+{
+  "resourceType": "Location",
+  "id": "example-location-order-reciever",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {urn:ietf:rfc:3986 HLAB}\">HLAB</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></p><p><b>physicalType</b>: <span title=\"Codes: \">bu</span></p><p><b>managingOrganization</b>: <a href=\"Organization-example-facility-order-reciever.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 dept}\">dept</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></a></p></div>"
+  },
+  "status": "active",
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "urn:ietf:rfc:3986",
+          "code": "HLAB"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "https://github.com/ihe/ITI.mCSD",
+          "code": "Facility"
+        }
+      ]
+    }
+  ],
+  "physicalType": {
+    "coding": [
+      {
+        "code": "bu"
+      }
+    ]
+  },
+  "managingOrganization": {
+    "reference": "Organization/example-facility-order-reciever"
+  }
+}
