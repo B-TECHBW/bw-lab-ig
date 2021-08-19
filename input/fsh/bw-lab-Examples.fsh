@@ -131,6 +131,8 @@ Title: "BW PIMS ServiceRequest Profile"
 * code.coding[+].system = "http://moh.bw.org/ext/laboratory/pims-lab-profile-code"
 * code.coding[=].code = #pims-profile-code
 * subject = Reference(example-pims-patient)
+* performer = Reference(example-facility-order-reciever)
+* locationReference = Reference(example-location-order-reciever)
 
 Instance: example-bw-pims-service-request-1
 InstanceOf: BwServiceRequest
@@ -143,6 +145,8 @@ Title: "BW PIMS ServiceRequest 1"
 * code.coding[=].code = #pims-labtest-code
 * basedOn[+] = Reference(example-bw-pims-service-request-profile)
 * subject = Reference(example-pims-patient)
+* performer = Reference(example-facility-order-reciever)
+* locationReference = Reference(example-location-order-reciever)
 
 Instance: example-bw-pims-service-request-2
 InstanceOf: BwServiceRequest
@@ -155,6 +159,8 @@ Title: "BW PIMS ServiceRequest 2"
 * code.coding[=].code = #pims-labtest-code
 * basedOn[+] = Reference(example-bw-pims-service-request-profile)
 * subject = Reference(example-pims-patient)
+* performer = Reference(example-facility-order-reciever)
+* locationReference = Reference(example-location-order-reciever)
 
 Instance: example-bw-pims-practitioner
 InstanceOf: BwPractitioner
