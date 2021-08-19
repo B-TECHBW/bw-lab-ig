@@ -3,13 +3,13 @@
 ==============================================================================================================================
 */
 
-Instance: example-bw-patient
+Instance: example-pims-patient
 InstanceOf: BwPatient 
 Usage: #example 
-Description: "Example Botswana Patient"
-Title:   "BW Patient"
+Description: "Example PIMS Patient"
+Title:   "PIMS Patient"
 * name.use = #official
-* name.family = "BwPatient"
+* name.family = "PimsPatient"
 * name.given[+] = "Test"
 * gender = #female
 * birthDate = "1988-03-02"
@@ -19,9 +19,27 @@ Title:   "BW Patient"
 * identifier[+].value = "<OmangNumber>"
 * identifier[=].system = "http://moh.bw.org/ext/identifier/omang"
 * identifier[=].use = #official
+* managingOrganization = Reference(example-facility-order-creator)
 
+Instance: example-ipms-patient
+InstanceOf: BwPatient 
+Usage: #example 
+Description: "Example IPMS Patient"
+Title:   "IPMS Patient"
+* name.use = #official
+* name.family = "IpmsPatient"
+* name.given[+] = "Demo"
+* gender = #male
+* birthDate = "1948-01-22"
+* identifier[+].value = "urn:uuid:<IPMS Patient ID>"
+* identifier[=].system = "urn:ietf:rfc:3986"
+* identifier[=].type = #MR
+* identifier[+].value = "<OmangNumber>"
+* identifier[=].system = "http://moh.bw.org/ext/identifier/omang"
+* identifier[=].use = #official
+* managingOrganization = Reference(example-facility-order-reciever)
 
-Instance: example-bw-patient-international
+Instance: example-pims-patient-international
 InstanceOf: BwPatient 
 Usage: #example 
 Description: "Example International Botswana Patient"
@@ -98,7 +116,7 @@ Title:   "BW Requested Lab Task"
 * basedOn[+] = Reference(example-bw-pims-service-request-2)
 * status = #requested
 * intent = #order
-* for = Reference(example-bw-patient)
+* for = Reference(example-pims-patient)
 * authoredOn = "2021-05-20"
 * owner = Reference(example-facility-order-reciever)
 * location = Reference(example-location-order-creator)
@@ -112,7 +130,7 @@ Title: "BW PIMS ServiceRequest Profile"
 * intent = #order
 * code.coding[+].system = "http://moh.bw.org/ext/laboratory/pims-lab-profile-code"
 * code.coding[=].code = #pims-profile-code
-* subject = Reference(example-bw-patient)
+* subject = Reference(example-pims-patient)
 
 Instance: example-bw-pims-service-request-1
 InstanceOf: BwServiceRequest
@@ -124,7 +142,7 @@ Title: "BW PIMS ServiceRequest 1"
 * code.coding[+].system = "http://moh.bw.org/ext/laboratory/pims-lab-test-code"
 * code.coding[=].code = #pims-labtest-code
 * basedOn[+] = Reference(example-bw-pims-service-request-profile)
-* subject = Reference(example-bw-patient)
+* subject = Reference(example-pims-patient)
 
 Instance: example-bw-pims-service-request-2
 InstanceOf: BwServiceRequest
@@ -136,7 +154,7 @@ Title: "BW PIMS ServiceRequest 2"
 * code.coding[+].system = "http://moh.bw.org/ext/laboratory/pims-lab-test-code"
 * code.coding[=].code = #pims-labtest-code
 * basedOn[+] = Reference(example-bw-pims-service-request-profile)
-* subject = Reference(example-bw-patient)
+* subject = Reference(example-pims-patient)
 
 Instance: example-bw-pims-practitioner
 InstanceOf: BwPractitioner
@@ -154,7 +172,7 @@ Usage: #example
 Description: "Example Lab Order Composition"
 Title: "Example PIMS Lab Composition"
 * type = #document
-* subject = Reference(example-bw-patient)
+* subject = Reference(example-pims-patient)
 * date = "2021-06-06"
 * author = Reference(example-bw-practitioner)
 * section[labTask].entry[+] = Reference(example-bw-task-requested)
@@ -170,7 +188,7 @@ Description: "Example Full PIMS Lab Bundle"
 Title: "Example Lab Bundle"
 * type = #document
 * entry[+].resource = example-bw-lab-composition
-* entry[+].resource = example-bw-patient
+* entry[+].resource = example-pims-patient
 * entry[+].resource = example-bw-pims-practitioner
 * entry[+].resource = example-bw-task-requested
 * entry[+].resource = example-bw-pims-service-request-profile
