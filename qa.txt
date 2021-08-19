@@ -3,7 +3,7 @@
 
 err = 40, warn = 131, info = 9
 IG Publisher Version: 1.1.77
-Generated Thu Aug 19 05:40:33 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
+Generated Thu Aug 19 05:48:37 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
 
  Build Errors : 268 / 2 / 0
  /github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle : 11 / 1 / 2
@@ -55,9 +55,9 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.html#/html/body/div/div/div/div/div/div/p/a at Line 174, column 180: The link 'example-bw-practitioner' for "example-bw-practitioner" cannot be resolved
 ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.json.html#/html/body/div/div/div/p/a at Line 475, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.ttl.html#/html/body/div/div/div/p/a at Line 422, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.xml.html#/html/body/div/div/div/p/a at Line 443, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.json.html#/html/body/div/div/div/p/a at Line 505, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.ttl.html#/html/body/div/div/div/p/a at Line 440, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.xml.html#/html/body/div/div/div/p/a at Line 461, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-class-cs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-class-cs.html#/html/body/div/div/div/p/a at Line 228, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-class-cs.json.html#/html/body/div/div/div/p/a at Line 313, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -145,19 +145,19 @@ ERROR: /github/workspace/output/Practitioner-example-bw-pims-practitioner.ttl.ht
 ERROR: /github/workspace/output/Practitioner-example-bw-pims-practitioner.xml.html#/html/body/div/div/div/p/a at Line 225, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-1.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-1.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-1.json.html#/html/body/div/div/div/p/a at Line 236, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-1.ttl.html#/html/body/div/div/div/p/a at Line 248, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-1.xml.html#/html/body/div/div/div/p/a at Line 231, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-1.json.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-1.ttl.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-1.xml.html#/html/body/div/div/div/p/a at Line 237, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-2.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-2.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-2.json.html#/html/body/div/div/div/p/a at Line 236, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-2.ttl.html#/html/body/div/div/div/p/a at Line 248, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-2.xml.html#/html/body/div/div/div/p/a at Line 231, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-2.json.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-2.ttl.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-2.xml.html#/html/body/div/div/div/p/a at Line 237, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-profile.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-profile.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-profile.json.html#/html/body/div/div/div/p/a at Line 231, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-profile.ttl.html#/html/body/div/div/div/p/a at Line 244, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-profile.xml.html#/html/body/div/div/div/p/a at Line 228, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-profile.json.html#/html/body/div/div/div/p/a at Line 241, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-profile.ttl.html#/html/body/div/div/div/p/a at Line 252, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-profile.xml.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BwLabDataDictionary-definitions.html#/html/body/div/div/div/p/a at Line 463, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BwLabDataDictionary-examples.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BwLabDataDictionary-mappings.html#/html/body/div/div/div/p/a at Line 339, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -170,13 +170,13 @@ ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request-def
 ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request-definitions.html#/html/body/div/div/div/p/a at Line 720, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request-examples.html#/html/body/div/div/div/p/a at Line 283, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request-mappings.html#/html/body/div/div/div/p/a at Line 404, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 322, column 2450: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 512, column 2450: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request.html#/html/body/div/div/div/p/a at Line 769, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 324, column 2450: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 516, column 2450: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request.html#/html/body/div/div/div/p/a at Line 773, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request.profile.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request.profile.json.html#/html/body/div/div/div/p/a at Line 2799, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request.profile.ttl.html#/html/body/div/div/div/p/a at Line 2486, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request.profile.xml.html#/html/body/div/div/div/p/a at Line 2514, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request.profile.json.html#/html/body/div/div/div/p/a at Line 2812, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request.profile.ttl.html#/html/body/div/div/div/p/a at Line 2482, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request.profile.xml.html#/html/body/div/div/div/p/a at Line 2520, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-encounter-definitions.html#/html/body/div/div/div/p/a at Line 932, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-encounter-examples.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-encounter-mappings.html#/html/body/div/div/div/p/a at Line 400, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -241,9 +241,9 @@ ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-profile-service-
 ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-profile-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 498, column 2461: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-profile-service-request.html#/html/body/div/div/div/p/a at Line 755, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-profile-service-request.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-profile-service-request.profile.json.html#/html/body/div/div/div/p/a at Line 2772, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-profile-service-request.profile.ttl.html#/html/body/div/div/div/p/a at Line 2462, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-profile-service-request.profile.xml.html#/html/body/div/div/div/p/a at Line 2493, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-profile-service-request.profile.json.html#/html/body/div/div/div/p/a at Line 2765, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-profile-service-request.profile.ttl.html#/html/body/div/div/div/p/a at Line 2441, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-profile-service-request.profile.xml.html#/html/body/div/div/div/p/a at Line 2482, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-test-service-request-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 407, column 262: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-test-service-request-definitions.html#/html/body/div/div/div/p/a at Line 710, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-test-service-request-examples.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -252,9 +252,9 @@ ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-test-service-req
 ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-test-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 502, column 2458: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-test-service-request.html#/html/body/div/div/div/p/a at Line 759, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-test-service-request.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-test-service-request.profile.json.html#/html/body/div/div/div/p/a at Line 2783, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-test-service-request.profile.ttl.html#/html/body/div/div/div/p/a at Line 2467, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-test-service-request.profile.xml.html#/html/body/div/div/div/p/a at Line 2500, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-test-service-request.profile.json.html#/html/body/div/div/div/p/a at Line 2776, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-test-service-request.profile.ttl.html#/html/body/div/div/div/p/a at Line 2446, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-pims-lab-test-service-request.profile.xml.html#/html/body/div/div/div/p/a at Line 2489, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-practitioner-definitions.html#/html/body/div/div/div/p/a at Line 616, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-practitioner-examples.html#/html/body/div/div/div/p/a at Line 271, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-practitioner-mappings.html#/html/body/div/div/div/p/a at Line 338, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved

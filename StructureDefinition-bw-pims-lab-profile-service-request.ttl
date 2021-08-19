@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "BwPimsLabProfile"];
   fhir:StructureDefinition.title [ fhir:value "PIMS Lab Profile Service Request"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-19T05:39:40+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-19T05:47:55+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "B-TECHBW"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -2011,8 +2011,8 @@
          fhir:value "request recipient";
          fhir:index 0
        ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "ServiceRequest.performer" ];
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
@@ -2022,37 +2022,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Practitioner";
-           fhir:index 0;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Practitioner>
-         ], [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/PractitionerRole";
-           fhir:index 1;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/PractitionerRole>
-         ], [
            fhir:value "http://hl7.org/fhir/StructureDefinition/Organization";
-           fhir:index 2;
+           fhir:index 0;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Organization>
-         ], [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/CareTeam";
-           fhir:index 3;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/CareTeam>
-         ], [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/HealthcareService";
-           fhir:index 4;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/HealthcareService>
-         ], [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Patient";
-           fhir:index 5;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
-         ], [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Device";
-           fhir:index 6;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Device>
-         ], [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/RelatedPerson";
-           fhir:index 7;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/RelatedPerson>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2145,8 +2117,8 @@
        fhir:ElementDefinition.path [ fhir:value "ServiceRequest.locationReference" ];
        fhir:ElementDefinition.short [ fhir:value "Requested location" ];
        fhir:ElementDefinition.definition [ fhir:value "A reference to the the preferred location(s) where the procedure should actually happen. E.g. at home or nursing day care center." ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "ServiceRequest.locationReference" ];
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];

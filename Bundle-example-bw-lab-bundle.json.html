@@ -356,7 +356,7 @@
         },
         "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-profile-code pims-profile-code}\"&gt;pims-profile-code&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"#Patient_example-pims-patient\"&gt;See above (Patient/example-pims-patient)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-profile-code pims-profile-code}\"&gt;pims-profile-code&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"#Patient_example-pims-patient\"&gt;See above (Patient/example-pims-patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\"Organization-example-facility-order-reciever.html\"&gt;Generated Summary: active; &lt;span title=\"Codes: {urn:ietf:rfc:3986 dept}\"&gt;dept&lt;/span&gt;, &lt;span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\"&gt;Facility&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;locationReference&lt;/b&gt;: &lt;a href=\"Location-example-location-order-reciever.html\"&gt;Generated Summary: status: active; &lt;span title=\"Codes: {urn:ietf:rfc:3986 HLAB}\"&gt;HLAB&lt;/span&gt;, &lt;span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\"&gt;Facility&lt;/span&gt;; &lt;span title=\"Codes: \"&gt;bu&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.status">status</a>" : "active",
         "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.intent">intent</a>" : "order",
@@ -370,7 +370,17 @@
         },
         "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.subject">subject</a>" : {
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/example-pims-patient"
-        }
+        },
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.performer">performer</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/example-facility-order-reciever"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.locationReference">locationReference</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Location/example-location-order-reciever"
+          }
+        ]
       }
     },
     {
@@ -384,7 +394,7 @@
         },
         "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=\"#ServiceRequest_example-bw-pims-service-request-profile\"&gt;See above (ServiceRequest/example-bw-pims-service-request-profile)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}\"&gt;pims-labtest-code&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"#Patient_example-pims-patient\"&gt;See above (Patient/example-pims-patient)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=\"#ServiceRequest_example-bw-pims-service-request-profile\"&gt;See above (ServiceRequest/example-bw-pims-service-request-profile)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}\"&gt;pims-labtest-code&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"#Patient_example-pims-patient\"&gt;See above (Patient/example-pims-patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\"Organization-example-facility-order-reciever.html\"&gt;Generated Summary: active; &lt;span title=\"Codes: {urn:ietf:rfc:3986 dept}\"&gt;dept&lt;/span&gt;, &lt;span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\"&gt;Facility&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;locationReference&lt;/b&gt;: &lt;a href=\"Location-example-location-order-reciever.html\"&gt;Generated Summary: status: active; &lt;span title=\"Codes: {urn:ietf:rfc:3986 HLAB}\"&gt;HLAB&lt;/span&gt;, &lt;span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\"&gt;Facility&lt;/span&gt;; &lt;span title=\"Codes: \"&gt;bu&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.basedOn">basedOn</a>" : [
           {
@@ -403,7 +413,17 @@
         },
         "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.subject">subject</a>" : {
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/example-pims-patient"
-        }
+        },
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.performer">performer</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/example-facility-order-reciever"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.locationReference">locationReference</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Location/example-location-order-reciever"
+          }
+        ]
       }
     },
     {
@@ -417,7 +437,7 @@
         },
         "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=\"#ServiceRequest_example-bw-pims-service-request-profile\"&gt;See above (ServiceRequest/example-bw-pims-service-request-profile)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}\"&gt;pims-labtest-code&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"#Patient_example-pims-patient\"&gt;See above (Patient/example-pims-patient)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=\"#ServiceRequest_example-bw-pims-service-request-profile\"&gt;See above (ServiceRequest/example-bw-pims-service-request-profile)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}\"&gt;pims-labtest-code&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\"#Patient_example-pims-patient\"&gt;See above (Patient/example-pims-patient)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\"Organization-example-facility-order-reciever.html\"&gt;Generated Summary: active; &lt;span title=\"Codes: {urn:ietf:rfc:3986 dept}\"&gt;dept&lt;/span&gt;, &lt;span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\"&gt;Facility&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;locationReference&lt;/b&gt;: &lt;a href=\"Location-example-location-order-reciever.html\"&gt;Generated Summary: status: active; &lt;span title=\"Codes: {urn:ietf:rfc:3986 HLAB}\"&gt;HLAB&lt;/span&gt;, &lt;span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\"&gt;Facility&lt;/span&gt;; &lt;span title=\"Codes: \"&gt;bu&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.basedOn">basedOn</a>" : [
           {
@@ -436,7 +456,17 @@
         },
         "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.subject">subject</a>" : {
           "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/example-pims-patient"
-        }
+        },
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.performer">performer</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Organization/example-facility-order-reciever"
+          }
+        ],
+        "<a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.locationReference">locationReference</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Location/example-location-order-reciever"
+          }
+        ]
       }
     }
   ]
@@ -469,8 +499,8 @@
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
-        <p><a name="b1be9fc2-545a-4fb7-8519-2d13ca1c043c">​</a>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="www.github.com/b-techbw">B-TECHBW</a>.  Package fhir.bw.lab#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 19, 2021 05:39+0000">2021-08-19</span>
+        <p><a name="85e90565-91d3-409b-b239-1fe9dc53b302">​</a>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="www.github.com/b-techbw">B-TECHBW</a>.  Package fhir.bw.lab#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 19, 2021 05:47+0000">2021-08-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

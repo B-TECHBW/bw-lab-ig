@@ -183,7 +183,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-profile-code pims-profile-code}\">pims-profile-code</span></p><p><b>subject</b>: <a href=\"#Patient_example-pims-patient\">See above (Patient/example-pims-patient)</a></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-profile-code pims-profile-code}\">pims-profile-code</span></p><p><b>subject</b>: <a href=\"#Patient_example-pims-patient\">See above (Patient/example-pims-patient)</a></p><p><b>performer</b>: <a href=\"Organization-example-facility-order-reciever.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 dept}\">dept</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></a></p><p><b>locationReference</b>: <a href=\"Location-example-location-order-reciever.html\">Generated Summary: status: active; <span title=\"Codes: {urn:ietf:rfc:3986 HLAB}\">HLAB</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span>; <span title=\"Codes: \">bu</span></a></p></div>"
         },
         "status": "active",
         "intent": "order",
@@ -197,7 +197,17 @@
         },
         "subject": {
           "reference": "Patient/example-pims-patient"
-        }
+        },
+        "performer": [
+          {
+            "reference": "Organization/example-facility-order-reciever"
+          }
+        ],
+        "locationReference": [
+          {
+            "reference": "Location/example-location-order-reciever"
+          }
+        ]
       }
     },
     {
@@ -211,7 +221,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>basedOn</b>: <a href=\"#ServiceRequest_example-bw-pims-service-request-profile\">See above (ServiceRequest/example-bw-pims-service-request-profile)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}\">pims-labtest-code</span></p><p><b>subject</b>: <a href=\"#Patient_example-pims-patient\">See above (Patient/example-pims-patient)</a></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>basedOn</b>: <a href=\"#ServiceRequest_example-bw-pims-service-request-profile\">See above (ServiceRequest/example-bw-pims-service-request-profile)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}\">pims-labtest-code</span></p><p><b>subject</b>: <a href=\"#Patient_example-pims-patient\">See above (Patient/example-pims-patient)</a></p><p><b>performer</b>: <a href=\"Organization-example-facility-order-reciever.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 dept}\">dept</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></a></p><p><b>locationReference</b>: <a href=\"Location-example-location-order-reciever.html\">Generated Summary: status: active; <span title=\"Codes: {urn:ietf:rfc:3986 HLAB}\">HLAB</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span>; <span title=\"Codes: \">bu</span></a></p></div>"
         },
         "basedOn": [
           {
@@ -230,7 +240,17 @@
         },
         "subject": {
           "reference": "Patient/example-pims-patient"
-        }
+        },
+        "performer": [
+          {
+            "reference": "Organization/example-facility-order-reciever"
+          }
+        ],
+        "locationReference": [
+          {
+            "reference": "Location/example-location-order-reciever"
+          }
+        ]
       }
     },
     {
@@ -244,7 +264,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>basedOn</b>: <a href=\"#ServiceRequest_example-bw-pims-service-request-profile\">See above (ServiceRequest/example-bw-pims-service-request-profile)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}\">pims-labtest-code</span></p><p><b>subject</b>: <a href=\"#Patient_example-pims-patient\">See above (Patient/example-pims-patient)</a></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>basedOn</b>: <a href=\"#ServiceRequest_example-bw-pims-service-request-profile\">See above (ServiceRequest/example-bw-pims-service-request-profile)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}\">pims-labtest-code</span></p><p><b>subject</b>: <a href=\"#Patient_example-pims-patient\">See above (Patient/example-pims-patient)</a></p><p><b>performer</b>: <a href=\"Organization-example-facility-order-reciever.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 dept}\">dept</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></a></p><p><b>locationReference</b>: <a href=\"Location-example-location-order-reciever.html\">Generated Summary: status: active; <span title=\"Codes: {urn:ietf:rfc:3986 HLAB}\">HLAB</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span>; <span title=\"Codes: \">bu</span></a></p></div>"
         },
         "basedOn": [
           {
@@ -263,7 +283,17 @@
         },
         "subject": {
           "reference": "Patient/example-pims-patient"
-        }
+        },
+        "performer": [
+          {
+            "reference": "Organization/example-facility-order-reciever"
+          }
+        ],
+        "locationReference": [
+          {
+            "reference": "Location/example-location-order-reciever"
+          }
+        ]
       }
     }
   ]

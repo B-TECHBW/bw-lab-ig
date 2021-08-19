@@ -3,7 +3,7 @@
   "name": "BwLabIG",
   "package-id": "fhir.bw.lab",
   "ig-ver": "0.2.0",
-  "date": "Thu, 19 Aug, 2021 05:39:40 +0000",
+  "date": "Thu, 19 Aug, 2021 05:47:55 +0000",
   "errs": 40,
   "warnings": 131,
   "hints": 9,
