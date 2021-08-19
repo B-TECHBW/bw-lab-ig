@@ -3,7 +3,7 @@
 <Location xmlns="http://hl7.org/fhir">
   <id value="example-location-order-reciever"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: <span title="Codes: {urn:ietf:rfc:3986 HLAB}">HLAB</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}">Facility</span></p><p><b>physicalType</b>: <span title="Codes: ">bu</span></p><p><b>managingOrganization</b>: <a href="Organization-example-facility-order-reciever.html">Generated Summary: active; <span title="Codes: {urn:ietf:rfc:3986 dept}">dept</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}">Facility</span></a></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: <span title="Codes: {urn:ietf:rfc:3986 HLAB}">HLAB</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}">Facility</span></p><p><b>physicalType</b>: <span title="Codes: ">bu</span></p><p><b>managingOrganization</b>: <a href="Organization-example-facility-order-reciever.html">Generated Summary: id: &lt;ipms-facility-code&gt;; active; <span title="Codes: {urn:ietf:rfc:3986 dept}">dept</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}">Facility</span></a></p></div>
   </text>
   <status value="active"/>
   <type>

@@ -69,7 +69,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: MR: urn:uuid:&lt;Pims-specific Patient ID&gt;, id: &lt;OmangNumber&gt; (OFFICIAL)</p><p><b>name</b>: Test PimsPatient (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p><p><b>managingOrganization</b>: <a href=\"Organization-example-facility-order-creator.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 prov}\">prov</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></a></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: MR: urn:uuid:&lt;Pims-specific Patient ID&gt;, id: &lt;OmangNumber&gt; (OFFICIAL)</p><p><b>name</b>: Test PimsPatient (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p><p><b>managingOrganization</b>: <a href=\"#Organization_example-facility-order-creator\">See above (Organization/example-facility-order-creator)</a></p></div>"
         },
         "identifier": [
           {
@@ -142,7 +142,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: PimsSpecificLabOrderID</p><p><b>basedOn</b>: </p><ul><li><a href=\"#ServiceRequest_example-bw-pims-service-request-1\">See above (ServiceRequest/example-bw-pims-service-request-1)</a></li><li><a href=\"#ServiceRequest_example-bw-pims-service-request-2\">See above (ServiceRequest/example-bw-pims-service-request-2)</a></li></ul><p><b>status</b>: requested</p><p><b>intent</b>: order</p><p><b>for</b>: <a href=\"#Patient_example-pims-patient\">See above (Patient/example-pims-patient)</a></p><p><b>authoredOn</b>: 2021-05-20</p><p><b>owner</b>: <a href=\"Organization-example-facility-order-reciever.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 dept}\">dept</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></a></p><p><b>location</b>: <a href=\"Location-example-location-order-creator.html\">Generated Summary: status: active; <span title=\"Codes: {urn:ietf:rfc:3986 HOSP}\">HOSP</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span>; <span title=\"Codes: \">bu</span></a></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: PimsSpecificLabOrderID</p><p><b>basedOn</b>: </p><ul><li><a href=\"#ServiceRequest_example-bw-pims-service-request-1\">See above (ServiceRequest/example-bw-pims-service-request-1)</a></li><li><a href=\"#ServiceRequest_example-bw-pims-service-request-2\">See above (ServiceRequest/example-bw-pims-service-request-2)</a></li></ul><p><b>status</b>: requested</p><p><b>intent</b>: order</p><p><b>for</b>: <a href=\"#Patient_example-pims-patient\">See above (Patient/example-pims-patient)</a></p><p><b>authoredOn</b>: 2021-05-20</p><p><b>owner</b>: <a href=\"#Organization_example-facility-order-reciever\">See above (Organization/example-facility-order-reciever)</a></p><p><b>location</b>: <a href=\"#Location_example-location-order-creator\">See above (Location/example-location-order-creator)</a></p></div>"
         },
         "identifier": [
           {
@@ -183,7 +183,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-profile-code pims-profile-code}\">pims-profile-code</span></p><p><b>subject</b>: <a href=\"#Patient_example-pims-patient\">See above (Patient/example-pims-patient)</a></p><p><b>performer</b>: <a href=\"Organization-example-facility-order-reciever.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 dept}\">dept</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></a></p><p><b>locationReference</b>: <a href=\"Location-example-location-order-reciever.html\">Generated Summary: status: active; <span title=\"Codes: {urn:ietf:rfc:3986 HLAB}\">HLAB</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span>; <span title=\"Codes: \">bu</span></a></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-profile-code pims-profile-code}\">pims-profile-code</span></p><p><b>subject</b>: <a href=\"#Patient_example-pims-patient\">See above (Patient/example-pims-patient)</a></p><p><b>performer</b>: <a href=\"#Organization_example-facility-order-reciever\">See above (Organization/example-facility-order-reciever)</a></p><p><b>locationReference</b>: <a href=\"#Location_example-location-order-reciever\">See above (Location/example-location-order-reciever)</a></p></div>"
         },
         "status": "active",
         "intent": "order",
@@ -221,7 +221,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>basedOn</b>: <a href=\"#ServiceRequest_example-bw-pims-service-request-profile\">See above (ServiceRequest/example-bw-pims-service-request-profile)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}\">pims-labtest-code</span></p><p><b>subject</b>: <a href=\"#Patient_example-pims-patient\">See above (Patient/example-pims-patient)</a></p><p><b>performer</b>: <a href=\"Organization-example-facility-order-reciever.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 dept}\">dept</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></a></p><p><b>locationReference</b>: <a href=\"Location-example-location-order-reciever.html\">Generated Summary: status: active; <span title=\"Codes: {urn:ietf:rfc:3986 HLAB}\">HLAB</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span>; <span title=\"Codes: \">bu</span></a></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>basedOn</b>: <a href=\"#ServiceRequest_example-bw-pims-service-request-profile\">See above (ServiceRequest/example-bw-pims-service-request-profile)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}\">pims-labtest-code</span></p><p><b>subject</b>: <a href=\"#Patient_example-pims-patient\">See above (Patient/example-pims-patient)</a></p><p><b>performer</b>: <a href=\"#Organization_example-facility-order-reciever\">See above (Organization/example-facility-order-reciever)</a></p><p><b>locationReference</b>: <a href=\"#Location_example-location-order-reciever\">See above (Location/example-location-order-reciever)</a></p></div>"
         },
         "basedOn": [
           {
@@ -264,7 +264,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>basedOn</b>: <a href=\"#ServiceRequest_example-bw-pims-service-request-profile\">See above (ServiceRequest/example-bw-pims-service-request-profile)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}\">pims-labtest-code</span></p><p><b>subject</b>: <a href=\"#Patient_example-pims-patient\">See above (Patient/example-pims-patient)</a></p><p><b>performer</b>: <a href=\"Organization-example-facility-order-reciever.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 dept}\">dept</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></a></p><p><b>locationReference</b>: <a href=\"Location-example-location-order-reciever.html\">Generated Summary: status: active; <span title=\"Codes: {urn:ietf:rfc:3986 HLAB}\">HLAB</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span>; <span title=\"Codes: \">bu</span></a></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>basedOn</b>: <a href=\"#ServiceRequest_example-bw-pims-service-request-profile\">See above (ServiceRequest/example-bw-pims-service-request-profile)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}\">pims-labtest-code</span></p><p><b>subject</b>: <a href=\"#Patient_example-pims-patient\">See above (Patient/example-pims-patient)</a></p><p><b>performer</b>: <a href=\"#Organization_example-facility-order-reciever\">See above (Organization/example-facility-order-reciever)</a></p><p><b>locationReference</b>: <a href=\"#Location_example-location-order-reciever\">See above (Location/example-location-order-reciever)</a></p></div>"
         },
         "basedOn": [
           {
@@ -294,6 +294,154 @@
             "reference": "Location/example-location-order-reciever"
           }
         ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "example-facility-order-creator",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: &lt;pims-facility-code&gt;</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {urn:ietf:rfc:3986 prov}\">prov</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></p></div>"
+        },
+        "identifier": [
+          {
+            "system": "http://moh.bw.org/ext/mfl/facility-code",
+            "value": "<pims-facility-code>"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "prov"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "https://github.com/ihe/ITI.mCSD",
+                "code": "Facility"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "example-location-order-creator",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {urn:ietf:rfc:3986 HOSP}\">HOSP</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></p><p><b>physicalType</b>: <span title=\"Codes: \">bu</span></p><p><b>managingOrganization</b>: <a href=\"#Organization_example-facility-order-creator\">See above (Organization/example-facility-order-creator)</a></p></div>"
+        },
+        "status": "active",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "HOSP"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "https://github.com/ihe/ITI.mCSD",
+                "code": "Facility"
+              }
+            ]
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu"
+            }
+          ]
+        },
+        "managingOrganization": {
+          "reference": "Organization/example-facility-order-creator"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Organization",
+        "id": "example-facility-order-reciever",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: &lt;ipms-facility-code&gt;</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {urn:ietf:rfc:3986 dept}\">dept</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></p></div>"
+        },
+        "identifier": [
+          {
+            "system": "http://moh.bw.org/ext/mfl/facility-code",
+            "value": "<ipms-facility-code>"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "dept"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "https://github.com/ihe/ITI.mCSD",
+                "code": "Facility"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "id": "example-location-order-reciever",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>type</b>: <span title=\"Codes: {urn:ietf:rfc:3986 HLAB}\">HLAB</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></p><p><b>physicalType</b>: <span title=\"Codes: \">bu</span></p><p><b>managingOrganization</b>: <a href=\"#Organization_example-facility-order-reciever\">See above (Organization/example-facility-order-reciever)</a></p></div>"
+        },
+        "status": "active",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "HLAB"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "system": "https://github.com/ihe/ITI.mCSD",
+                "code": "Facility"
+              }
+            ]
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "code": "bu"
+            }
+          ]
+        },
+        "managingOrganization": {
+          "reference": "Organization/example-facility-order-reciever"
+        }
       }
     }
   ]

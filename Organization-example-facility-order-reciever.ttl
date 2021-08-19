@@ -10,7 +10,12 @@
   fhir:Resource.id [ fhir:value "example-facility-order-reciever"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {urn:ietf:rfc:3986 dept}\">dept</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: &lt;ipms-facility-code&gt;</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {urn:ietf:rfc:3986 dept}\">dept</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://moh.bw.org/ext/mfl/facility-code" ];
+     fhir:Identifier.value [ fhir:value "<ipms-facility-code>" ]
   ];
   fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
   fhir:Organization.type [

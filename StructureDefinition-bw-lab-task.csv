@@ -100,7 +100,7 @@ In most cases, Tasks will have an intent of ""order"".","","","","","","","","",
 ","Requested performer","The kind of participant that should perform the task.","","Use to distinguish tasks on different activity queues.","","","","","","","",,"preferred","The type(s) of task performers allowed.","http://hl7.org/fhir/ValueSet/performer-role","",,,,"Task.performerType",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.role, Request.performerType",".participation[typeCode=PRF].role.code","FiveWs.actor"
 "Task.owner","","Performer
-Executer","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+Executer","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Responsible individual","Individual organization or Device currently responsible for task execution.","Tasks may be created with an owner not yet identified.","Identifies who is expected to perform this task.","","","","","","","",,,,,"",,,,"Task.owner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer.actor, Request.performer",".participation[typeCode=PRF].role","FiveWs.actor"
 "Task.location","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]}

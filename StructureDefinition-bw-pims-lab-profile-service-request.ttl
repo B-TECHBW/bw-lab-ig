@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "BwPimsLabProfile"];
   fhir:StructureDefinition.title [ fhir:value "PIMS Lab Profile Service Request"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-19T05:47:55+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-19T06:27:50+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "B-TECHBW"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -2011,7 +2011,7 @@
          fhir:value "request recipient";
          fhir:index 0
        ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "ServiceRequest.performer" ];
@@ -2117,7 +2117,7 @@
        fhir:ElementDefinition.path [ fhir:value "ServiceRequest.locationReference" ];
        fhir:ElementDefinition.short [ fhir:value "Requested location" ];
        fhir:ElementDefinition.definition [ fhir:value "A reference to the the preferred location(s) where the procedure should actually happen. E.g. at home or nursing day care center." ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "ServiceRequest.locationReference" ];

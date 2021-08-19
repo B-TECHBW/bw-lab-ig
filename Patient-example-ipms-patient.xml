@@ -6,7 +6,7 @@
     <profile value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: MR: urn:uuid:&lt;IPMS Patient ID&gt;, id: &lt;OmangNumber&gt; (OFFICIAL)</p><p><b>name</b>: Demo IpmsPatient (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1948-01-22</p><p><b>managingOrganization</b>: <a href="Organization-example-facility-order-reciever.html">Generated Summary: active; <span title="Codes: {urn:ietf:rfc:3986 dept}">dept</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}">Facility</span></a></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: MR: urn:uuid:&lt;IPMS Patient ID&gt;, id: &lt;OmangNumber&gt; (OFFICIAL)</p><p><b>name</b>: Demo IpmsPatient (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1948-01-22</p><p><b>managingOrganization</b>: <a href="Organization-example-facility-order-reciever.html">Generated Summary: id: &lt;ipms-facility-code&gt;; active; <span title="Codes: {urn:ietf:rfc:3986 dept}">dept</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}">Facility</span></a></p></div>
   </text>
   <identifier>
     <type>

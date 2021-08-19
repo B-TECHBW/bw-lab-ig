@@ -20,7 +20,7 @@
   "name": "BwPimsLabTest",
   "title": "PIMS Lab Test Service Request",
   "status": "active",
-  "date": "2021-08-19T05:47:55+00:00",
+  "date": "2021-08-19T06:27:50+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -1882,7 +1882,7 @@
         "alias": [
           "request recipient"
         ],
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "ServiceRequest.performer",
@@ -1984,7 +1984,7 @@
         "path": "ServiceRequest.locationReference",
         "short": "Requested location",
         "definition": "A reference to the the preferred location(s) where the procedure should actually happen. E.g. at home or nursing day care center.",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "ServiceRequest.locationReference",
