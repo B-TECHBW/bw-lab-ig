@@ -27,8 +27,8 @@
      ]
   ];
   fhir:Composition.subject [
-     fhir:link <http://b-techbw.github.io/bw-lab-ig/Patient/example-bw-patient>;
-     fhir:Reference.reference [ fhir:value "Patient/example-bw-patient" ]
+     fhir:link <http://b-techbw.github.io/bw-lab-ig/Patient/example-pims-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/example-pims-patient" ]
   ];
   fhir:Composition.date [ fhir:value "2021-06-06"^^xsd:date];
   fhir:Composition.author [

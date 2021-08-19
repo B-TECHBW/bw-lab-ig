@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "example-bw-patient-international",
+  "id": "example-pims-patient-international",
   "meta": {
     "profile": [
       "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"

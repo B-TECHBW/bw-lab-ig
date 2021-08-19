@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-profile-code pims-profile-code}\">pims-profile-code</span></p><p><b>subject</b>: <a href=\"Patient-example-bw-patient.html\">Generated Summary: MR: urn:uuid:&lt;Pims-specific Patient ID&gt;, id: &lt;OmangNumber&gt; (OFFICIAL); Test BwPatient (OFFICIAL); gender: female; birthDate: 1988-03-02</a></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-profile-code pims-profile-code}\">pims-profile-code</span></p><p><b>subject</b>: <a href=\"Patient-example-pims-patient.html\">Generated Summary: MR: urn:uuid:&lt;Pims-specific Patient ID&gt;, id: &lt;OmangNumber&gt; (OFFICIAL); Test PimsPatient (OFFICIAL); gender: female; birthDate: 1988-03-02</a></p></div>"
   },
   "status": "active",
   "intent": "order",
@@ -21,6 +21,6 @@
     ]
   },
   "subject": {
-    "reference": "Patient/example-bw-patient"
+    "reference": "Patient/example-pims-patient"
   }
 }

@@ -15,7 +15,7 @@
     </coding>
   </type>
   <subject>
-    <reference value="Patient/example-bw-patient"/>
+    <reference value="Patient/example-pims-patient"/>
   </subject>
   <date value="2021-06-06"/>
   <author>

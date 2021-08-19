@@ -1,0 +1,45 @@
+{
+  "resourceType": "Patient",
+  "id": "example-ipms-patient",
+  "meta": {
+    "profile": [
+      "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: MR: urn:uuid:&lt;IPMS Patient ID&gt;, id: &lt;OmangNumber&gt; (OFFICIAL)</p><p><b>name</b>: Demo IpmsPatient (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1948-01-22</p><p><b>managingOrganization</b>: <a href=\"Organization-example-facility-order-reciever.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 dept}\">dept</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></a></p></div>"
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:<IPMS Patient ID>"
+    },
+    {
+      "use": "official",
+      "system": "http://moh.bw.org/ext/identifier/omang",
+      "value": "<OmangNumber>"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "IpmsPatient",
+      "given": [
+        "Demo"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1948-01-22",
+  "managingOrganization": {
+    "reference": "Organization/example-facility-order-reciever"
+  }
+}

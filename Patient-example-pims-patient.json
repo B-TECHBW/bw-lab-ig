@@ -1,0 +1,45 @@
+{
+  "resourceType": "Patient",
+  "id": "example-pims-patient",
+  "meta": {
+    "profile": [
+      "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: MR: urn:uuid:&lt;Pims-specific Patient ID&gt;, id: &lt;OmangNumber&gt; (OFFICIAL)</p><p><b>name</b>: Test PimsPatient (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p><p><b>managingOrganization</b>: <a href=\"Organization-example-facility-order-creator.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 prov}\">prov</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></a></p></div>"
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:<Pims-specific Patient ID>"
+    },
+    {
+      "use": "official",
+      "system": "http://moh.bw.org/ext/identifier/omang",
+      "value": "<OmangNumber>"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "PimsPatient",
+      "given": [
+        "Test"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1988-03-02",
+  "managingOrganization": {
+    "reference": "Organization/example-facility-order-creator"
+  }
+}

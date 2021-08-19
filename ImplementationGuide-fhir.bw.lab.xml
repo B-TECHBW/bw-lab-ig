@@ -12,7 +12,7 @@
   <title value="Botswana Laboratory HIE Workflow Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-08-19T05:27:33+00:00"/>
+  <date value="2021-08-19T05:39:40+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -534,28 +534,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/example-bw-patient"/>
-      </reference>
-      <name value="BW Patient"/>
-      <description value="Example Botswana Patient"/>
-      <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/example-bw-patient-international"/>
-      </reference>
-      <name value="BW Patient"/>
-      <description value="Example International Botswana Patient"/>
-      <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Practitioner"/>
       </extension>
       <reference>
@@ -633,6 +611,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/example-ipms-patient"/>
+      </reference>
+      <name value="IPMS Patient"/>
+      <description value="Example IPMS Patient"/>
+      <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <reference>
@@ -652,6 +641,28 @@
       <name value="IPMS Location"/>
       <description value="Example IPMS Facility Location"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/example-pims-patient"/>
+      </reference>
+      <name value="PIMS Patient"/>
+      <description value="Example PIMS Patient"/>
+      <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/example-pims-patient-international"/>
+      </reference>
+      <name value="BW Patient"/>
+      <description value="Example International Botswana Patient"/>
+      <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

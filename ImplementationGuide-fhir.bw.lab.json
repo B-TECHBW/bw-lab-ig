@@ -11,7 +11,7 @@
   "title": "Botswana Laboratory HIE Workflow Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-08-19T05:27:33+00:00",
+  "date": "2021-08-19T05:39:40+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -745,34 +745,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/example-bw-patient"
-        },
-        "name": "BW Patient",
-        "description": "Example Botswana Patient",
-        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
-          }
-        ],
-        "reference": {
-          "reference": "Patient/example-bw-patient-international"
-        },
-        "name": "BW Patient",
-        "description": "Example International Botswana Patient",
-        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Practitioner"
           }
         ],
@@ -871,6 +843,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/example-ipms-patient"
+        },
+        "name": "IPMS Patient",
+        "description": "Example IPMS Patient",
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Location"
           }
         ],
@@ -894,6 +880,34 @@
         "name": "IPMS Location",
         "description": "Example IPMS Facility Location",
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/example-pims-patient"
+        },
+        "name": "PIMS Patient",
+        "description": "Example PIMS Patient",
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/example-pims-patient-international"
+        },
+        "name": "BW Patient",
+        "description": "Example International Botswana Patient",
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"
       }
     ],
     "page": {

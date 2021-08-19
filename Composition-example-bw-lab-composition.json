@@ -19,7 +19,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/example-bw-patient"
+    "reference": "Patient/example-pims-patient"
   },
   "date": "2021-06-06",
   "author": [

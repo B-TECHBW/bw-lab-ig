@@ -33,8 +33,8 @@
          ]
        ];
        fhir:Composition.subject [
-         fhir:link <http://b-techbw.github.io/bw-lab-ig/Patient/example-bw-patient>;
-         fhir:Reference.reference [ fhir:value "Patient/example-bw-patient" ]
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/Patient/example-pims-patient>;
+         fhir:Reference.reference [ fhir:value "Patient/example-pims-patient" ]
        ];
        fhir:Composition.date [ fhir:value "2021-06-06"^^xsd:date ];
        fhir:Composition.author [
@@ -70,7 +70,7 @@
      fhir:index 1;
      fhir:Bundle.entry.resource [
        a fhir:Patient;
-       fhir:Resource.id [ fhir:value "example-bw-patient" ];
+       fhir:Resource.id [ fhir:value "example-pims-patient" ];
        fhir:Resource.meta [
          fhir:Meta.profile [
            fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient";
@@ -80,7 +80,7 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: MR: urn:uuid:&lt;Pims-specific Patient ID&gt;, id: &lt;OmangNumber&gt; (OFFICIAL)</p><p><b>name</b>: Test BwPatient (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: MR: urn:uuid:&lt;Pims-specific Patient ID&gt;, id: &lt;OmangNumber&gt; (OFFICIAL)</p><p><b>name</b>: Test PimsPatient (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p><p><b>managingOrganization</b>: <a href=\"Organization-example-facility-order-creator.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 prov}\">prov</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></a></p></div>"
        ];
        fhir:Patient.identifier [
          fhir:index 0;
@@ -101,14 +101,18 @@
        fhir:Patient.name [
          fhir:index 0;
          fhir:HumanName.use [ fhir:value "official" ];
-         fhir:HumanName.family [ fhir:value "BwPatient" ];
+         fhir:HumanName.family [ fhir:value "PimsPatient" ];
          fhir:HumanName.given [
            fhir:value "Test";
            fhir:index 0
          ]
        ];
        fhir:Patient.gender [ fhir:value "female" ];
-       fhir:Patient.birthDate [ fhir:value "1988-03-02"^^xsd:date ]
+       fhir:Patient.birthDate [ fhir:value "1988-03-02"^^xsd:date ];
+       fhir:Patient.managingOrganization [
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/Organization/example-facility-order-creator>;
+         fhir:Reference.reference [ fhir:value "Organization/example-facility-order-creator" ]
+       ]
      ]
   ], [
      fhir:index 2;
@@ -150,7 +154,7 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: PimsSpecificLabOrderID</p><p><b>basedOn</b>: </p><ul><li><a href=\"#ServiceRequest_example-bw-pims-service-request-1\">See above (ServiceRequest/example-bw-pims-service-request-1)</a></li><li><a href=\"#ServiceRequest_example-bw-pims-service-request-2\">See above (ServiceRequest/example-bw-pims-service-request-2)</a></li></ul><p><b>status</b>: requested</p><p><b>intent</b>: order</p><p><b>for</b>: <a href=\"#Patient_example-bw-patient\">See above (Patient/example-bw-patient)</a></p><p><b>authoredOn</b>: 2021-05-20</p><p><b>owner</b>: <a href=\"Organization-example-facility-order-reciever.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 dept}\">dept</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></a></p><p><b>location</b>: <a href=\"Location-example-location-order-creator.html\">Generated Summary: status: active; <span title=\"Codes: {urn:ietf:rfc:3986 HOSP}\">HOSP</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span>; <span title=\"Codes: \">bu</span></a></p></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: PimsSpecificLabOrderID</p><p><b>basedOn</b>: </p><ul><li><a href=\"#ServiceRequest_example-bw-pims-service-request-1\">See above (ServiceRequest/example-bw-pims-service-request-1)</a></li><li><a href=\"#ServiceRequest_example-bw-pims-service-request-2\">See above (ServiceRequest/example-bw-pims-service-request-2)</a></li></ul><p><b>status</b>: requested</p><p><b>intent</b>: order</p><p><b>for</b>: <a href=\"#Patient_example-pims-patient\">See above (Patient/example-pims-patient)</a></p><p><b>authoredOn</b>: 2021-05-20</p><p><b>owner</b>: <a href=\"Organization-example-facility-order-reciever.html\">Generated Summary: active; <span title=\"Codes: {urn:ietf:rfc:3986 dept}\">dept</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></a></p><p><b>location</b>: <a href=\"Location-example-location-order-creator.html\">Generated Summary: status: active; <span title=\"Codes: {urn:ietf:rfc:3986 HOSP}\">HOSP</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span>; <span title=\"Codes: \">bu</span></a></p></div>"
        ];
        fhir:Task.identifier [
          fhir:index 0;
@@ -169,8 +173,8 @@
        fhir:Task.status [ fhir:value "requested" ];
        fhir:Task.intent [ fhir:value "order" ];
        fhir:Task.for [
-         fhir:link <http://b-techbw.github.io/bw-lab-ig/Patient/example-bw-patient>;
-         fhir:Reference.reference [ fhir:value "Patient/example-bw-patient" ]
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/Patient/example-pims-patient>;
+         fhir:Reference.reference [ fhir:value "Patient/example-pims-patient" ]
        ];
        fhir:Task.authoredOn [ fhir:value "2021-05-20"^^xsd:date ];
        fhir:Task.owner [
@@ -196,7 +200,7 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-profile-code pims-profile-code}\">pims-profile-code</span></p><p><b>subject</b>: <a href=\"#Patient_example-bw-patient\">See above (Patient/example-bw-patient)</a></p></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-profile-code pims-profile-code}\">pims-profile-code</span></p><p><b>subject</b>: <a href=\"#Patient_example-pims-patient\">See above (Patient/example-pims-patient)</a></p></div>"
        ];
        fhir:ServiceRequest.status [ fhir:value "active" ];
        fhir:ServiceRequest.intent [ fhir:value "order" ];
@@ -208,8 +212,8 @@
          ]
        ];
        fhir:ServiceRequest.subject [
-         fhir:link <http://b-techbw.github.io/bw-lab-ig/Patient/example-bw-patient>;
-         fhir:Reference.reference [ fhir:value "Patient/example-bw-patient" ]
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/Patient/example-pims-patient>;
+         fhir:Reference.reference [ fhir:value "Patient/example-pims-patient" ]
        ]
      ]
   ], [
@@ -226,7 +230,7 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>basedOn</b>: <a href=\"#ServiceRequest_example-bw-pims-service-request-profile\">See above (ServiceRequest/example-bw-pims-service-request-profile)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}\">pims-labtest-code</span></p><p><b>subject</b>: <a href=\"#Patient_example-bw-patient\">See above (Patient/example-bw-patient)</a></p></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>basedOn</b>: <a href=\"#ServiceRequest_example-bw-pims-service-request-profile\">See above (ServiceRequest/example-bw-pims-service-request-profile)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}\">pims-labtest-code</span></p><p><b>subject</b>: <a href=\"#Patient_example-pims-patient\">See above (Patient/example-pims-patient)</a></p></div>"
        ];
        fhir:ServiceRequest.basedOn [
          fhir:index 0;
@@ -243,8 +247,8 @@
          ]
        ];
        fhir:ServiceRequest.subject [
-         fhir:link <http://b-techbw.github.io/bw-lab-ig/Patient/example-bw-patient>;
-         fhir:Reference.reference [ fhir:value "Patient/example-bw-patient" ]
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/Patient/example-pims-patient>;
+         fhir:Reference.reference [ fhir:value "Patient/example-pims-patient" ]
        ]
      ]
   ], [
@@ -261,7 +265,7 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>basedOn</b>: <a href=\"#ServiceRequest_example-bw-pims-service-request-profile\">See above (ServiceRequest/example-bw-pims-service-request-profile)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}\">pims-labtest-code</span></p><p><b>subject</b>: <a href=\"#Patient_example-bw-patient\">See above (Patient/example-bw-patient)</a></p></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>basedOn</b>: <a href=\"#ServiceRequest_example-bw-pims-service-request-profile\">See above (ServiceRequest/example-bw-pims-service-request-profile)</a></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code pims-labtest-code}\">pims-labtest-code</span></p><p><b>subject</b>: <a href=\"#Patient_example-pims-patient\">See above (Patient/example-pims-patient)</a></p></div>"
        ];
        fhir:ServiceRequest.basedOn [
          fhir:index 0;
@@ -278,8 +282,8 @@
          ]
        ];
        fhir:ServiceRequest.subject [
-         fhir:link <http://b-techbw.github.io/bw-lab-ig/Patient/example-bw-patient>;
-         fhir:Reference.reference [ fhir:value "Patient/example-bw-patient" ]
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/Patient/example-pims-patient>;
+         fhir:Reference.reference [ fhir:value "Patient/example-pims-patient" ]
        ]
      ]
   ] .
