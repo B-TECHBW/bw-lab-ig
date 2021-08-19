@@ -18,8 +18,8 @@ Description: "This composition packages information needed to facilitate lab ord
 
 * section contains 
     labTask 1..1 and
-    labOrders 0..1 and 
-    labResults 0..1
+    labOrders 0..* and 
+    labResults 0..* 
 
 * section 1..*
 * section.section 0..0          //can't have sub sections
@@ -37,27 +37,3 @@ Description: "This composition packages information needed to facilitate lab ord
 * section[labResults].entry only Reference(BwLabDiagnosticReport)
 * section[labResults].entry MS
 
-
-// * section[labOrders].title = "Lab Orders"
-// * section[labOrders].entry only Reference(BwLabServiceRequest)
-// * section[labOrders].entry MS
-// * section[labOrders].code.text = "bw-lab-orders"
-// * section[labOrders].code MS
-
-// * section[labResults].title = "Lab Results"
-// * section[labResults].entry only Reference(BwLabDiagnosticReport)
-// * section[labResults].entry MS
-// * section[labResults].code.text = "bw-lab-results"
-// * section[labResults].code MS
-
-// * section[subject].title = "Patient"
-// * section[subject].entry only Reference(BwPatient)
-// * section[subject].entry MS
-// * section[subject].code.text = "bw-patient"
-// * section[subject].code MS
-
-// * section[requester].title = "Requester"
-// * section[requester].entry only Reference(BwPractitioner)
-// * section[requester].entry MS
-// * section[requester].code.text = "bw-requester"
-// * section[requester].code MS

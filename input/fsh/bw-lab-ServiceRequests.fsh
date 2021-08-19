@@ -8,9 +8,9 @@ Description: "A service request a lab order for for a given patient."
 * subject only Reference(BwPatient)
 * encounter 0..1
 * encounter only Reference(BwEncounter)
-* performer 1..1
+* performer 0..1
 * performer only Reference(Organization)
-* locationReference 1..1
+* locationReference 0..1
 
 Profile: BwPimsLabTest
 Parent: BwServiceRequest

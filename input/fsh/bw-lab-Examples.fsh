@@ -59,6 +59,8 @@ InstanceOf: Organization
 Title: "PIMS Facility"
 Usage: #example
 Description: "Example PIMS Facility"
+* identifier[+].value = "<pims-facility-code>"
+* identifier[=].system = "http://moh.bw.org/ext/mfl/facility-code"
 * type[+].coding[+].system = "urn:ietf:rfc:3986"
 * type[=].coding[=].code = #prov
 * type[+].coding[+].system = "https://github.com/ihe/ITI.mCSD"
@@ -85,6 +87,8 @@ InstanceOf: Organization
 Title: "IPMS Facility"
 Usage: #example
 Description: "Example IPMS Facility"
+* identifier[+].value = "<ipms-facility-code>"
+* identifier[=].system = "http://moh.bw.org/ext/mfl/facility-code"
 * type[+].coding[+].system = "urn:ietf:rfc:3986"
 * type[=].coding[=].code = #dept
 * type[+].coding[+].system = "https://github.com/ihe/ITI.mCSD"
@@ -200,3 +204,8 @@ Title: "Example Lab Bundle"
 * entry[+].resource = example-bw-pims-service-request-profile
 * entry[+].resource = example-bw-pims-service-request-1
 * entry[+].resource = example-bw-pims-service-request-2
+* entry[+].resource = example-facility-order-creator
+* entry[+].resource = example-location-order-creator
+* entry[+].resource = example-facility-order-reciever
+* entry[+].resource = example-location-order-reciever
+

@@ -8,7 +8,7 @@ Description: "A Task resource for tracking order state and synchronizing Lab Ord
 * basedOn only Reference(BwServiceRequest)
 * for only Reference(BwPatient)
 * encounter only Reference(BwEncounter)
-* owner 1..1
+* owner 0..1
 * owner only Reference(Organization)
 * location 1..1
 * location only Reference(Location)
