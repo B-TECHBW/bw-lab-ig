@@ -34,6 +34,59 @@ Title:   "BW Patient"
 * identifier.value = "<PassportNumber>"
 * identifier.type = #PPN
 
+// mCSD Location & Facility
+Instance: example-facility-order-creator
+// InstanceOf: MCSDFacilityOrganization
+InstanceOf: Organization
+Title: "PIMS Facility"
+Usage: #example
+Description: "Example PIMS Facility"
+* type[+].coding[+].system = "urn:ietf:rfc:3986"
+* type[=].coding[=].code = #prov
+* type[+].coding[+].system = "https://github.com/ihe/ITI.mCSD"
+* type[=].coding[=].code = #Facility
+* active = true
+
+Instance: example-location-order-creator
+// InstanceOf: MCSDFacilityLocation
+InstanceOf: Location
+Title: "PIMS Location"
+Usage: #example
+Description: "Example PIMS Facility Location"
+* status = #active
+* type[+].coding[+].system = "urn:ietf:rfc:3986"
+* type[=].coding[=].code = #HOSP
+* type[+].coding[+].system = "https://github.com/ihe/ITI.mCSD"
+* type[=].coding[=].code = #Facility
+* physicalType = #bu
+* managingOrganization = Reference(example-facility-order-creator)
+
+Instance: example-facility-order-reciever
+// InstanceOf: MCSDFacilityOrganization
+InstanceOf: Organization
+Title: "IPMS Facility"
+Usage: #example
+Description: "Example IPMS Facility"
+* type[+].coding[+].system = "urn:ietf:rfc:3986"
+* type[=].coding[=].code = #dept
+* type[+].coding[+].system = "https://github.com/ihe/ITI.mCSD"
+* type[=].coding[=].code = #Facility
+* active = true
+
+Instance: example-location-order-reciever
+// InstanceOf: MCSDFacilityLocation
+InstanceOf: Location
+Title: "IPMS Location"
+Usage: #example
+Description: "Example IPMS Facility Location"
+* status = #active
+* type[+].coding[+].system = "urn:ietf:rfc:3986"
+* type[=].coding[=].code = #HLAB
+* type[+].coding[+].system = "https://github.com/ihe/ITI.mCSD"
+* type[=].coding[=].code = #Facility
+* physicalType = #bu
+* managingOrganization = Reference(example-facility-order-reciever)
+
 Instance: example-bw-task-requested
 InstanceOf: BwLabTask 
 Usage: #example 
@@ -47,7 +100,8 @@ Title:   "BW Requested Lab Task"
 * intent = #order
 * for = Reference(example-bw-patient)
 * authoredOn = "2021-05-20"
-* owner = Reference(example-bw-pims-practitioner)
+* owner = Reference(example-facility-order-reciever)
+* location = Reference(example-location-order-creator)
 
 Instance: example-bw-pims-service-request-profile
 InstanceOf: BwServiceRequest
