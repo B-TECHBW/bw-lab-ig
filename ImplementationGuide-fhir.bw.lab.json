@@ -11,7 +11,7 @@
   "title": "Botswana Laboratory HIE Workflow Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-08-19T06:27:50+00:00",
+  "date": "2021-08-24T19:01:20+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -717,6 +717,62 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/example-bw-ipms-diagnostic-report"
+        },
+        "name": "Laboratory DiagnosticReport",
+        "description": "Example Laboratory DiagnosticReport",
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/example-bw-ipms-obs-1"
+        },
+        "name": "IPMS Observation #1",
+        "description": "Example IPMS Observation",
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/example-bw-ipms-obs-2"
+        },
+        "name": "IPMS Observation #2",
+        "description": "Example IPMS Observation",
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/example-bw-ipms-service-request"
+        },
+        "name": "BW PIMS ServiceRequest 2",
+        "description": "Example ServiceRequest resource representing a IPMS Lab Order",
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-basic-service-request"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Bundle"
           }
         ],
@@ -740,6 +796,20 @@
         "name": "Example PIMS Lab Composition",
         "description": "Example Lab Order Composition",
         "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/example-bw-lab-results-bundle"
+        },
+        "name": "Example IPMS Results Lab Bundle",
+        "description": "Example IPMS Results Lab Bundle translated from HL7 ORU message",
+        "exampleBoolean": true
       },
       {
         "extension": [

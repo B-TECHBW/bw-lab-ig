@@ -1,12 +1,13 @@
 ﻿BwLabIG : Validation Results
 =========================================
 
-err = 38, warn = 131, info = 9
+err = 63, warn = 134, info = 23
 IG Publisher Version: 1.1.77
-Generated Thu Aug 19 06:28:27 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
+Generated Tue Aug 24 19:02:13 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
 
- Build Errors : 268 / 2 / 0
+ Build Errors : 293 / 2 / 0
  /github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle : 11 / 1 / 2
+ /github/workspace/fsh-generated/resources/Bundle-example-bw-lab-results-bundle : 24 / 3 / 20
  /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-class-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-order-status-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-test-cs : 0 / 1 / 1
@@ -15,15 +16,19 @@ Generated Thu Aug 19 06:28:27 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0
  /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusRequestCM : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusTaskCM : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-BwPimsLabTestLoincCM : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/DiagnosticReport-example-bw-ipms-diagnostic-report : 2 / 2 / 4
  /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.bw.lab : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Location-example-location-order-creator : 1 / 1 / 2
  /github/workspace/fsh-generated/resources/Location-example-location-order-reciever : 1 / 1 / 2
+ /github/workspace/fsh-generated/resources/Observation-example-bw-ipms-obs-1 : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/Observation-example-bw-ipms-obs-2 : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/Organization-example-facility-order-creator : 1 / 0 / 2
- /github/workspace/fsh-generated/resources/Organization-example-facility-order-reciever : 1 / 0 / 2
+ /github/workspace/fsh-generated/resources/Organization-example-facility-order-reciever : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-example-ipms-patient : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Patient-example-pims-patient : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Patient-example-pims-patient-international : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/Practitioner-example-bw-pims-practitioner : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-example-bw-ipms-service-request : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/ServiceRequest-example-bw-pims-service-request-1 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/ServiceRequest-example-bw-pims-service-request-2 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/ServiceRequest-example-bw-pims-service-request-profile : 0 / 0 / 2
@@ -31,8 +36,8 @@ Generated Thu Aug 19 06:28:27 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-basic-service-request : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-encounter : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-composition : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-diagnostic-report : 2 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-observation : 3 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-diagnostic-report : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-observation : 3 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-task : 2 / 3 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-national-identifier : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-patient : 0 / 1 / 1
@@ -55,9 +60,14 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.html#/html/body/div/div/div/div/div/div/p/a at Line 174, column 180: The link 'example-bw-practitioner' for "example-bw-practitioner" cannot be resolved
 ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.json.html#/html/body/div/div/div/p/a at Line 653, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.ttl.html#/html/body/div/div/div/p/a at Line 540, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.xml.html#/html/body/div/div/div/p/a at Line 581, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.json.html#/html/body/div/div/div/p/a at Line 635, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.ttl.html#/html/body/div/div/div/p/a at Line 529, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Bundle-example-bw-lab-bundle.xml.html#/html/body/div/div/div/p/a at Line 569, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Bundle-example-bw-lab-results-bundle.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Bundle-example-bw-lab-results-bundle.html#/html/body/div/div/div/p/a at Line 208, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Bundle-example-bw-lab-results-bundle.json.html#/html/body/div/div/div/p/a at Line 485, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Bundle-example-bw-lab-results-bundle.ttl.html#/html/body/div/div/div/p/a at Line 425, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Bundle-example-bw-lab-results-bundle.xml.html#/html/body/div/div/div/p/a at Line 441, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-class-cs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-class-cs.html#/html/body/div/div/div/p/a at Line 228, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-class-cs.json.html#/html/body/div/div/div/p/a at Line 313, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -103,6 +113,11 @@ ERROR: /github/workspace/output/ConceptMap-BwPimsLabTestLoincCM.html#/html/body/
 ERROR: /github/workspace/output/ConceptMap-BwPimsLabTestLoincCM.json.html#/html/body/div/div/div/p/a at Line 398, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwPimsLabTestLoincCM.ttl.html#/html/body/div/div/div/p/a at Line 359, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwPimsLabTestLoincCM.xml.html#/html/body/div/div/div/p/a at Line 357, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/DiagnosticReport-example-bw-ipms-diagnostic-report.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/DiagnosticReport-example-bw-ipms-diagnostic-report.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/DiagnosticReport-example-bw-ipms-diagnostic-report.json.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/DiagnosticReport-example-bw-ipms-diagnostic-report.ttl.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/DiagnosticReport-example-bw-ipms-diagnostic-report.xml.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Location-example-location-order-creator.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Location-example-location-order-creator.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Location-example-location-order-creator.json.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -113,6 +128,16 @@ ERROR: /github/workspace/output/Location-example-location-order-reciever.html#/h
 ERROR: /github/workspace/output/Location-example-location-order-reciever.json.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Location-example-location-order-reciever.ttl.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Location-example-location-order-reciever.xml.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Observation-example-bw-ipms-obs-1.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Observation-example-bw-ipms-obs-1.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Observation-example-bw-ipms-obs-1.json.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Observation-example-bw-ipms-obs-1.ttl.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Observation-example-bw-ipms-obs-1.xml.html#/html/body/div/div/div/p/a at Line 248, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Observation-example-bw-ipms-obs-2.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Observation-example-bw-ipms-obs-2.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Observation-example-bw-ipms-obs-2.json.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Observation-example-bw-ipms-obs-2.ttl.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Observation-example-bw-ipms-obs-2.xml.html#/html/body/div/div/div/p/a at Line 248, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Organization-example-facility-order-creator.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Organization-example-facility-order-creator.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Organization-example-facility-order-creator.json.html#/html/body/div/div/div/p/a at Line 238, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -120,9 +145,9 @@ ERROR: /github/workspace/output/Organization-example-facility-order-creator.ttl.
 ERROR: /github/workspace/output/Organization-example-facility-order-creator.xml.html#/html/body/div/div/div/p/a at Line 230, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Organization-example-facility-order-reciever.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Organization-example-facility-order-reciever.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/Organization-example-facility-order-reciever.json.html#/html/body/div/div/div/p/a at Line 238, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/Organization-example-facility-order-reciever.ttl.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/Organization-example-facility-order-reciever.xml.html#/html/body/div/div/div/p/a at Line 230, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Organization-example-facility-order-reciever.json.html#/html/body/div/div/div/p/a at Line 220, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Organization-example-facility-order-reciever.ttl.html#/html/body/div/div/div/p/a at Line 233, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/Organization-example-facility-order-reciever.xml.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Patient-example-ipms-patient.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Patient-example-ipms-patient.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Patient-example-ipms-patient.json.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -143,6 +168,11 @@ ERROR: /github/workspace/output/Practitioner-example-bw-pims-practitioner.html#/
 ERROR: /github/workspace/output/Practitioner-example-bw-pims-practitioner.json.html#/html/body/div/div/div/p/a at Line 229, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Practitioner-example-bw-pims-practitioner.ttl.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Practitioner-example-bw-pims-practitioner.xml.html#/html/body/div/div/div/p/a at Line 225, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ServiceRequest-example-bw-ipms-service-request.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ServiceRequest-example-bw-ipms-service-request.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ServiceRequest-example-bw-ipms-service-request.json.html#/html/body/div/div/div/p/a at Line 232, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ServiceRequest-example-bw-ipms-service-request.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ServiceRequest-example-bw-ipms-service-request.xml.html#/html/body/div/div/div/p/a at Line 229, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-1.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-1.html#/html/body/div/div/div/p/a at Line 203, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ServiceRequest-example-bw-pims-service-request-1.json.html#/html/body/div/div/div/p/a at Line 246, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -168,7 +198,7 @@ ERROR: /github/workspace/output/StructureDefinition-BwLabDataDictionary.profile.
 ERROR: /github/workspace/output/StructureDefinition-BwLabDataDictionary.profile.xml.html#/html/body/div/div/div/p/a at Line 2075, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 417, column 262: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request-definitions.html#/html/body/div/div/div/p/a at Line 720, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request-examples.html#/html/body/div/div/div/p/a at Line 283, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request-examples.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request-mappings.html#/html/body/div/div/div/p/a at Line 404, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 324, column 2450: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 516, column 2450: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
@@ -193,22 +223,22 @@ ERROR: /github/workspace/output/StructureDefinition-bw-lab-composition.profile.h
 ERROR: /github/workspace/output/StructureDefinition-bw-lab-composition.profile.json.html#/html/body/div/div/div/p/a at Line 5276, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-lab-composition.profile.ttl.html#/html/body/div/div/div/p/a at Line 4661, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-lab-composition.profile.xml.html#/html/body/div/div/div/p/a at Line 4745, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-lab-diagnostic-report-definitions.html#/html/body/div/div/div/p/a at Line 731, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-lab-diagnostic-report-examples.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-lab-diagnostic-report-mappings.html#/html/body/div/div/div/p/a at Line 341, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-lab-diagnostic-report.html#/html/body/div/div/div/p/a at Line 770, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-lab-diagnostic-report.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-lab-diagnostic-report.profile.json.html#/html/body/div/div/div/p/a at Line 2623, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-lab-diagnostic-report.profile.ttl.html#/html/body/div/div/div/p/a at Line 2376, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-lab-diagnostic-report.profile.xml.html#/html/body/div/div/div/p/a at Line 2346, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-lab-observation-definitions.html#/html/body/div/div/div/p/a at Line 1079, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-lab-observation-examples.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-lab-observation-mappings.html#/html/body/div/div/div/p/a at Line 439, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-lab-observation.html#/html/body/div/div/div/p/a at Line 1072, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-lab-observation.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-lab-observation.profile.json.html#/html/body/div/div/div/p/a at Line 4220, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-lab-observation.profile.ttl.html#/html/body/div/div/div/p/a at Line 3725, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-bw-lab-observation.profile.xml.html#/html/body/div/div/div/p/a at Line 3839, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-lab-diagnostic-report-definitions.html#/html/body/div/div/div/p/a at Line 742, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-lab-diagnostic-report-examples.html#/html/body/div/div/div/p/a at Line 271, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-lab-diagnostic-report-mappings.html#/html/body/div/div/div/p/a at Line 351, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-lab-diagnostic-report.html#/html/body/div/div/div/p/a at Line 777, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-lab-diagnostic-report.profile.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-lab-diagnostic-report.profile.json.html#/html/body/div/div/div/p/a at Line 2624, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-lab-diagnostic-report.profile.ttl.html#/html/body/div/div/div/p/a at Line 2373, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-lab-diagnostic-report.profile.xml.html#/html/body/div/div/div/p/a at Line 2342, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-lab-observation-definitions.html#/html/body/div/div/div/p/a at Line 1089, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-lab-observation-examples.html#/html/body/div/div/div/p/a at Line 277, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-lab-observation-mappings.html#/html/body/div/div/div/p/a at Line 449, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-lab-observation.html#/html/body/div/div/div/p/a at Line 1082, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-lab-observation.profile.history.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-lab-observation.profile.json.html#/html/body/div/div/div/p/a at Line 4230, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-lab-observation.profile.ttl.html#/html/body/div/div/div/p/a at Line 3735, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-bw-lab-observation.profile.xml.html#/html/body/div/div/div/p/a at Line 3849, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-lab-task-definitions.html#/html/body/div/div/div/p/a at Line 842, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-lab-task-examples.html#/html/body/div/div/div/p/a at Line 271, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-lab-task-mappings.html#/html/body/div/div/div/p/a at Line 375, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -277,12 +307,12 @@ ERROR: /github/workspace/output/Task-example-bw-task-requested.json.html#/html/b
 ERROR: /github/workspace/output/Task-example-bw-task-requested.ttl.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Task-example-bw-task-requested.xml.html#/html/body/div/div/div/p/a at Line 240, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-diagnostic-report-status-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-bw-lab-diagnostic-report-status-vs.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-lab-diagnostic-report-status-vs.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-diagnostic-report-status-vs.json.html#/html/body/div/div/div/p/a at Line 283, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-diagnostic-report-status-vs.ttl.html#/html/body/div/div/div/p/a at Line 280, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-diagnostic-report-status-vs.xml.html#/html/body/div/div/div/p/a at Line 271, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-order-code-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-bw-lab-order-code-vs.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-lab-order-code-vs.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-order-code-vs.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-order-code-vs.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-order-code-vs.xml.html#/html/body/div/div/div/p/a at Line 249, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -311,7 +341,7 @@ ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.html#/html/body/div
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.xml.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 647, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 692, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/background.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/p/a at Line 199, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -334,6 +364,43 @@ ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[0].entry[0
 ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[1].entry[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[1].entry[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[1].entry[2]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+== /github/workspace/fsh-generated/resources/Bundle-example-bw-lab-results-bundle.json ==
+WARNING: Bundle/example-bw-lab-results-bundle: Bundle.entry[0].resource.ofType(Patient).identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[0]: Bundle entry missing fullUrl
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[0].resource.ofType(Patient).managingOrganization: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/example-bw-lab-results-bundle: Bundle.entry[1].resource.ofType(ServiceRequest).code.coding[0]: Code System URI 'http://moh.bw.org/ext/laboratory/pims-lab-test-code' is unknown so the code cannot be validated
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[1]: Bundle entry missing fullUrl
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[1].resource.ofType(ServiceRequest).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+WARNING: Bundle/example-bw-lab-results-bundle: Bundle.entry[2].resource.ofType(DiagnosticReport).identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/example-bw-lab-results-bundle: Bundle.entry[2].resource.ofType(DiagnosticReport).category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: Bundle/example-bw-lab-results-bundle: Bundle.entry[2].resource.ofType(DiagnosticReport).code: None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/report-codes (http://hl7.org/fhir/ValueSet/report-codes), and a coding is recommended to come from this value set) (codes = L#COVID)
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[2].resource.ofType(DiagnosticReport).code.coding[0]: Coding.system must be an absolute reference, not a local reference
+INFORMATION: Bundle/example-bw-lab-results-bundle: Bundle.entry[2].resource.ofType(DiagnosticReport).code.coding[0]: Code System URI 'L' is unknown so the code cannot be validated
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[2]: Bundle entry missing fullUrl
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[2].resource.ofType(DiagnosticReport).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[2].resource.ofType(DiagnosticReport).subject: Unable to resolve resource 'example-ipms-patient'
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[2].resource.ofType(DiagnosticReport).result[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[2].resource.ofType(DiagnosticReport).result[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/example-bw-lab-results-bundle: Bundle.entry[2].resource.ofType(DiagnosticReport).result[0]: This element does not match any known slice defined in the profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report
+INFORMATION: Bundle/example-bw-lab-results-bundle: Bundle.entry[2].resource.ofType(DiagnosticReport).result[1]: This element does not match any known slice defined in the profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[3].resource.ofType(Observation).code.coding[0]: Coding.system must be an absolute reference, not a local reference
+INFORMATION: Bundle/example-bw-lab-results-bundle: Bundle.entry[3].resource.ofType(Observation).code.coding[0]: Code System URI 'L' is unknown so the code cannot be validated
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[3]: Bundle entry missing fullUrl
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[3].resource.ofType(Observation).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[3].resource.ofType(Observation).performer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[3].resource.code.coding[0]: Coding.system must be an absolute reference, not a local reference
+INFORMATION: Bundle/example-bw-lab-results-bundle: Bundle.entry[3].resource.code.coding[0]: Code System URI 'L' is unknown so the code cannot be validated
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[3].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[3].resource.performer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[4].resource.ofType(Observation).code.coding[0]: Coding.system must be an absolute reference, not a local reference
+INFORMATION: Bundle/example-bw-lab-results-bundle: Bundle.entry[4].resource.ofType(Observation).code.coding[0]: Code System URI 'L' is unknown so the code cannot be validated
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[4]: Bundle entry missing fullUrl
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[4].resource.ofType(Observation).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[4].resource.ofType(Observation).performer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[4].resource.code.coding[0]: Coding.system must be an absolute reference, not a local reference
+INFORMATION: Bundle/example-bw-lab-results-bundle: Bundle.entry[4].resource.code.coding[0]: Code System URI 'L' is unknown so the code cannot be validated
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[4].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[4].resource.performer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 == /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-class-cs.json ==
 WARNING: CodeSystem/bw-pims-lab-class-cs: CodeSystem.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-order-status-cs.json ==
@@ -355,6 +422,14 @@ WARNING: ConceptMap/BwLabPimsOrderStatusRequestCM: ConceptMap.jurisdiction[0]: [
 WARNING: ConceptMap/BwLabPimsOrderStatusTaskCM: ConceptMap.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/fsh-generated/resources/ConceptMap-BwPimsLabTestLoincCM.json ==
 WARNING: ConceptMap/BwPimsLabTestLoincCM: ConceptMap.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== /github/workspace/fsh-generated/resources/DiagnosticReport-example-bw-ipms-diagnostic-report.json ==
+INFORMATION: DiagnosticReport/example-bw-ipms-diagnostic-report: DiagnosticReport.result[0]: This element does not match any known slice defined in the profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report
+INFORMATION: DiagnosticReport/example-bw-ipms-diagnostic-report: DiagnosticReport.result[1]: This element does not match any known slice defined in the profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report
+WARNING: DiagnosticReport/example-bw-ipms-diagnostic-report: DiagnosticReport.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: DiagnosticReport/example-bw-ipms-diagnostic-report: DiagnosticReport.category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: DiagnosticReport/example-bw-ipms-diagnostic-report: DiagnosticReport.code.coding[0]: Coding.system must be an absolute reference, not a local reference
+INFORMATION: DiagnosticReport/example-bw-ipms-diagnostic-report: DiagnosticReport.code.coding[0]: Code System URI 'L' is unknown so the code cannot be validated
+ERROR: DiagnosticReport/example-bw-ipms-diagnostic-report: DiagnosticReport.subject: Unable to resolve resource 'example-ipms-patient'
 == /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.bw.lab.json ==
 WARNING: ImplementationGuide/fhir.bw.lab: ImplementationGuide.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/fsh-generated/resources/Location-example-location-order-creator.json ==
@@ -365,12 +440,16 @@ WARNING: Location/example-location-order-creator: Location.physicalType.coding[0
 ERROR: Location/example-location-order-reciever: Location.type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#HLAB in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#HLAB'
 INFORMATION: Location/example-location-order-reciever: Location.type[1].coding[0]: Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated
 WARNING: Location/example-location-order-reciever: Location.physicalType.coding[0]: A code with no system has no defined meaning. A system should be provided
+== /github/workspace/fsh-generated/resources/Observation-example-bw-ipms-obs-1.json ==
+ERROR: Observation/example-bw-ipms-obs-1: Observation.code.coding[0]: Coding.system must be an absolute reference, not a local reference
+INFORMATION: Observation/example-bw-ipms-obs-1: Observation.code.coding[0]: Code System URI 'L' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/Observation-example-bw-ipms-obs-2.json ==
+ERROR: Observation/example-bw-ipms-obs-2: Observation.code.coding[0]: Coding.system must be an absolute reference, not a local reference
+INFORMATION: Observation/example-bw-ipms-obs-2: Observation.code.coding[0]: Code System URI 'L' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/Organization-example-facility-order-creator.json ==
 ERROR: Organization/example-facility-order-creator: Organization.type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#prov in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#prov'
 INFORMATION: Organization/example-facility-order-creator: Organization.type[1].coding[0]: Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/Organization-example-facility-order-reciever.json ==
-ERROR: Organization/example-facility-order-reciever: Organization.type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#dept in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#dept'
-INFORMATION: Organization/example-facility-order-reciever: Organization.type[1].coding[0]: Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/Patient-example-ipms-patient.json ==
 WARNING: Patient/example-ipms-patient: Patient.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
 == /github/workspace/fsh-generated/resources/Patient-example-pims-patient.json ==
@@ -380,6 +459,8 @@ ERROR: Patient/example-pims-patient-international: Patient.identifier[0]: if ide
 WARNING: Patient/example-pims-patient-international: Patient.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: Patient/example-pims-patient-international: Patient.name[0]: ips-pat-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Rule 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
 == /github/workspace/fsh-generated/resources/Practitioner-example-bw-pims-practitioner.json ==
+== /github/workspace/fsh-generated/resources/ServiceRequest-example-bw-ipms-service-request.json ==
+INFORMATION: ServiceRequest/example-bw-ipms-service-request: ServiceRequest.code.coding[0]: Code System URI 'http://moh.bw.org/ext/laboratory/pims-lab-test-code' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/ServiceRequest-example-bw-pims-service-request-1.json ==
 INFORMATION: ServiceRequest/example-bw-pims-service-request-1: ServiceRequest.code.coding[0]: Code System URI 'http://moh.bw.org/ext/laboratory/pims-lab-test-code' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/ServiceRequest-example-bw-pims-service-request-2.json ==
@@ -480,16 +561,12 @@ WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/St
 == /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-composition.json ==
 WARNING: StructureDefinition/bw-lab-composition: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-diagnostic-report.json ==
-ERROR: Botswana Lab Diagnostic Report.DiagnosticReport.status: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-diagnostic-report-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1
 WARNING: StructureDefinition/bw-lab-diagnostic-report: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-ERROR: StructureDefinition/bw-lab-diagnostic-report: StructureDefinition: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-diagnostic-report-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/diagnostic-report-status|4.0.1
-WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-observation.json ==
 ERROR: http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation#Observation.specimen: The profile http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips has type Specimen which is not consistent with the stated type CodeableConcept
 WARNING: StructureDefinition/bw-lab-observation: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 ERROR: StructureDefinition/bw-lab-observation: StructureDefinition.differential.element.where(path = 'Observation.specimen'): The profile http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips has type Specimen which is not consistent with the stated type CodeableConcept
 ERROR: StructureDefinition/bw-lab-observation: StructureDefinition.snapshot.element[44].type[0].profile[0]: Profile http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Specimen], but the Observation.specimen element has type CodeableConcept
-WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-task.json ==
 ERROR: Botswana Lab Task Resource.Task.status: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/task-status|4.0.1
 WARNING: Botswana Lab Task Resource.Task.intent: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs could not be expanded
@@ -514,7 +591,7 @@ WARNING: StructureDefinition/pims-patient: StructureDefinition.jurisdiction[0]: 
 WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/StructureDefinition/pims-patient'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/Task-example-bw-task-requested.json ==
 ERROR: Task/example-bw-task-requested: Task.status: The value provided ('requested') is not in the value set http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs (http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs), and a code is required from this value set) (error message = Unknown Code http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs#requested in http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs)
-ERROR: Task/example-bw-task-requested: Task.intent: The value provided ('order') is not in the value set http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs (http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs), and a code is required from this value set) (error message = The code system "http://hl7.org/fhir/ValueSet/task-intent" is not known (encountered paired with code = "order"); The code provided (http://hl7.org/fhir/ValueSet/task-intent#order) is not valid in the value set 'BwLabTaskIntentVS' (from http://tx.fhir.org/r4))
+ERROR: Task/example-bw-task-requested: Task.intent: The value provided ('order') is not in the value set http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs (http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs), and a code is required from this value set) (error message = The code system "http://hl7.org/fhir/ValueSet/task-intent" in the include in "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs" is not known; The code system "http://hl7.org/fhir/ValueSet/task-intent" is not known (encountered paired with code = "order"); The code provided (http://hl7.org/fhir/ValueSet/task-intent#order) is not valid in the value set 'BwLabTaskIntentVS' (from http://tx.fhir.org/r4))
 == /github/workspace/fsh-generated/resources/ValueSet-bw-lab-diagnostic-report-status-vs.json ==
 WARNING: ValueSet/bw-lab-diagnostic-report-status-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 WARNING: ValueSet/bw-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[0]: The code diagnostic-report-status-partial is not valid in the system http://hl7.org/fhir/diagnostic-report-status

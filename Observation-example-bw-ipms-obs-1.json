@@ -1,0 +1,55 @@
+{
+  "resourceType": "Observation",
+  "id": "example-bw-ipms-obs-1",
+  "meta": {
+    "profile": [
+      "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {L COVID}\">SARS-CoV-2 PCR</span></p><p><b>subject</b>: <a href=\"Patient-example-ipms-patient.html\">Generated Summary: MR: urn:uuid:&lt;IPMS Patient ID&gt;, id: &lt;OmangNumber&gt; (OFFICIAL); Demo IpmsPatient (OFFICIAL); gender: male; birthDate: 1948-01-22</a></p><p><b>effective</b>: Jun 10, 2021, 3:49:00 PM</p><p><b>performer</b>: <a href=\"Organization-example-facility-order-reciever.html\">Generated Summary: id: MOH001; active</a></p><p><b>value</b>: INCONCLUSIVE</p><p><b>interpretation</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "L",
+        "code": "COVID",
+        "display": "SARS-CoV-2 PCR"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example-ipms-patient",
+    "type": "Patient"
+  },
+  "effectiveDateTime": "2021-06-10T15:49:00.000Z",
+  "performer": [
+    {
+      "reference": "Organization/example-facility-order-reciever"
+    }
+  ],
+  "valueString": "INCONCLUSIVE",
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "code": "N",
+          "display": "Normal"
+        }
+      ]
+    }
+  ]
+}

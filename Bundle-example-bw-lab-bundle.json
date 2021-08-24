@@ -376,33 +376,15 @@
         "id": "example-facility-order-reciever",
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: &lt;ipms-facility-code&gt;</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {urn:ietf:rfc:3986 dept}\">dept</span>, <span title=\"Codes: {https://github.com/ihe/ITI.mCSD Facility}\">Facility</span></p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: MOH001</p><p><b>active</b>: true</p></div>"
         },
         "identifier": [
           {
             "system": "http://moh.bw.org/ext/mfl/facility-code",
-            "value": "<ipms-facility-code>"
+            "value": "MOH001"
           }
         ],
-        "active": true,
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "urn:ietf:rfc:3986",
-                "code": "dept"
-              }
-            ]
-          },
-          {
-            "coding": [
-              {
-                "system": "https://github.com/ihe/ITI.mCSD",
-                "code": "Facility"
-              }
-            ]
-          }
-        ]
+        "active": true
       }
     },
     {

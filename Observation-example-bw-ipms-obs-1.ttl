@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://b-techbw.github.io/bw-lab-ig/Observation/example-bw-ipms-obs-1> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-bw-ipms-obs-1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation";
+       fhir:index 0;
+       fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {L COVID}\">SARS-CoV-2 PCR</span></p><p><b>subject</b>: <a href=\"Patient-example-ipms-patient.html\">Generated Summary: MR: urn:uuid:&lt;IPMS Patient ID&gt;, id: &lt;OmangNumber&gt; (OFFICIAL); Demo IpmsPatient (OFFICIAL); gender: male; birthDate: 1948-01-22</a></p><p><b>effective</b>: Jun 10, 2021, 3:49:00 PM</p><p><b>performer</b>: <a href=\"Organization-example-facility-order-reciever.html\">Generated Summary: id: MOH001; active</a></p><p><b>value</b>: INCONCLUSIVE</p><p><b>interpretation</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation N}\">Normal</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "L" ];
+       fhir:Coding.code [ fhir:value "COVID" ];
+       fhir:Coding.display [ fhir:value "SARS-CoV-2 PCR" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <http://b-techbw.github.io/bw-lab-ig/Patient/example-ipms-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/example-ipms-patient" ];
+     fhir:Reference.type [ fhir:value "Patient" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2021-06-10T15:49:00.000Z"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://b-techbw.github.io/bw-lab-ig/Organization/example-facility-order-reciever>;
+     fhir:Reference.reference [ fhir:value "Organization/example-facility-order-reciever" ]
+  ];
+  fhir:Observation.valueString [ fhir:value "INCONCLUSIVE"];
+  fhir:Observation.interpretation [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" ];
+       fhir:Coding.code [ fhir:value "N" ];
+       fhir:Coding.display [ fhir:value "Normal" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://b-techbw.github.io/bw-lab-ig/Observation/example-bw-ipms-obs-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,27 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "example-bw-ipms-service-request",
+  "meta": {
+    "profile": [
+      "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-basic-service-request"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>code</b>: <span title=\"Codes: {http://moh.bw.org/ext/laboratory/pims-lab-test-code COVID}\">SARS-CoV-2 PCR</span></p><p><b>subject</b>: <a href=\"Patient-example-ipms-patient.html\">Generated Summary: MR: urn:uuid:&lt;IPMS Patient ID&gt;, id: &lt;OmangNumber&gt; (OFFICIAL); Demo IpmsPatient (OFFICIAL); gender: male; birthDate: 1948-01-22</a></p></div>"
+  },
+  "status": "active",
+  "intent": "order",
+  "code": {
+    "coding": [
+      {
+        "system": "http://moh.bw.org/ext/laboratory/pims-lab-test-code",
+        "code": "COVID",
+        "display": "SARS-CoV-2 PCR"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example-ipms-patient"
+  }
+}
