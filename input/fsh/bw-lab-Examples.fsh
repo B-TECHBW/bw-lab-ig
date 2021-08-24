@@ -87,12 +87,8 @@ InstanceOf: Organization
 Title: "IPMS Facility"
 Usage: #example
 Description: "Example IPMS Facility"
-* identifier[+].value = "<ipms-facility-code>"
+* identifier[+].value = "MOH001"
 * identifier[=].system = "http://moh.bw.org/ext/mfl/facility-code"
-* type[+].coding[+].system = "urn:ietf:rfc:3986"
-* type[=].coding[=].code = #dept
-* type[+].coding[+].system = "https://github.com/ihe/ITI.mCSD"
-* type[=].coding[=].code = #Facility
 * active = true
 
 Instance: example-location-order-reciever
@@ -214,12 +210,22 @@ InstanceOf: Bundle
 Usage: #example
 Description: "Example IPMS Results Lab Bundle translated from HL7 ORU message"
 Title: "Example IPMS Results Lab Bundle"
-* type = #document
-* entry[+].resource = example-pims-patient
+* type = #transaction
+* entry[+].resource = example-ipms-patient
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Patient/example-ipms-patient"
 * entry[+].resource = example-bw-ipms-service-request
+* entry[=].request.method = #PUT
+* entry[=].request.url = "ServiceRequest/example-bw-ipms-service-request"
 * entry[+].resource = example-bw-ipms-diagnostic-report
+* entry[=].request.method = #PUT
+* entry[=].request.url = "DiagnosticReport/example-bw-ipms-diagnostic-report"
 * entry[+].resource = example-bw-ipms-obs-1
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/example-bw-ipms-obs-1"
 * entry[+].resource = example-bw-ipms-obs-2
+* entry[=].request.method = #PUT
+* entry[=].request.url = "Observation/example-bw-ipms-obs-2"
 
 Instance: example-bw-ipms-service-request
 InstanceOf: BwServiceRequest
@@ -243,12 +249,10 @@ Title: "Laboratory DiagnosticReport"
 * code.coding[=].code = #COVID
 * code.coding[=].display = "SARS-CoV-2 PCR"
 * category[+].coding[+].code = #LAB
-* identifier[+].value = "MOH001"
-* identifier[+].value = "69222"
 * identifier[+].type.coding[+].code = #FILL
 * identifier[=].type.coding[+].system = "http://terminology.hl7.org/CodeSystem/v2-0203"
 * effectiveDateTime = "2021-06-03T14:00:00.000Z"
-* subject.reference = "example-laboratory-patient" 
+* subject.reference = "example-ipms-patient" 
 * subject.type = "Patient"
 * result[+] = Reference(example-bw-ipms-obs-1)
 * result[=].type = "Observation"
@@ -268,11 +272,11 @@ Title: "IPMS Observation #1"
 * interpretation[+].coding[+].code = #N
 * interpretation[=].coding[=].display = "Normal"
 * interpretation[=].coding[=].system = "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-* subject = Reference(example-laboratory-patient)
+* subject = Reference(example-ipms-patient)
 * subject.type = "Patient"
 * status = #final
 * effectiveDateTime = "2021-06-10T15:49:00.000Z"
-* performer = Reference(ipms-organization)
+* performer = Reference(example-facility-order-reciever)
 
 Instance: example-bw-ipms-obs-2
 InstanceOf: BwLabObservation
@@ -286,19 +290,9 @@ Title: "IPMS Observation #2"
 * interpretation[+].coding[+].code = #N
 * interpretation[=].coding[=].display = "Normal"
 * interpretation[=].coding[=].system = "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-* subject = Reference(example-laboratory-patient)
+* subject = Reference(example-ipms-patient)
 * subject.type = "Patient"
 * status = #final
 * effectiveDateTime = "2021-06-10T15:49:00.000Z"
-* performer = Reference(ipms-organization)
+* performer = Reference(example-facility-order-reciever)
 
-Instance: example-ipms-organization
-InstanceOf: Organization
-Usage: #example
-Title: "IPMS"
-Description: "IPMS Organization"
-* identifier[+].type.coding[+].code = #FILL
-* identifier[=].type.coding[+].system = "http://moh.bw.org/ext/ipms/facility-code"
-* active = true
-* type[+].coding[+].system = "http://moh.bw.org/ext/mfl/facility-type"
-* type[+].coding[+].code = #IPMS
