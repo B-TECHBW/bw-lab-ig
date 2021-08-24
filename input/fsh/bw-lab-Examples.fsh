@@ -209,3 +209,96 @@ Title: "Example Lab Bundle"
 * entry[+].resource = example-facility-order-reciever
 * entry[+].resource = example-location-order-reciever
 
+Instance: example-bw-lab-results-bundle
+InstanceOf: Bundle
+Usage: #example
+Description: "Example IPMS Results Lab Bundle translated from HL7 ORU message"
+Title: "Example IPMS Results Lab Bundle"
+* type = #document
+* entry[+].resource = example-pims-patient
+* entry[+].resource = example-bw-ipms-service-request
+* entry[+].resource = example-bw-ipms-diagnostic-report
+* entry[+].resource = example-bw-ipms-obs-1
+* entry[+].resource = example-bw-ipms-obs-2
+
+Instance: example-bw-ipms-service-request
+InstanceOf: BwServiceRequest
+Usage: #example
+Description: "Example ServiceRequest resource representing a IPMS Lab Order"
+Title: "BW PIMS ServiceRequest 2"
+* status = #active
+* intent = #order
+* code.coding[+].system = "http://moh.bw.org/ext/laboratory/pims-lab-test-code"
+* code.coding[=].code = #COVID
+* code.coding[=].display = "SARS-CoV-2 PCR"
+* subject = Reference(example-ipms-patient)
+
+// IPMS Resulting
+Instance: example-bw-ipms-diagnostic-report
+InstanceOf: BwLabDiagnosticReport
+Usage: #example
+Description: "Example Laboratory DiagnosticReport"
+Title: "Laboratory DiagnosticReport"
+* code.coding[+].system = "L"
+* code.coding[=].code = #COVID
+* code.coding[=].display = "SARS-CoV-2 PCR"
+* category[+].coding[+].code = #LAB
+* identifier[+].value = "MOH001"
+* identifier[+].value = "69222"
+* identifier[+].type.coding[+].code = #FILL
+* identifier[=].type.coding[+].system = "http://terminology.hl7.org/CodeSystem/v2-0203"
+* effectiveDateTime = "2021-06-03T14:00:00.000Z"
+* subject.reference = "example-laboratory-patient" 
+* subject.type = "Patient"
+* result[+] = Reference(example-bw-ipms-obs-1)
+* result[=].type = "Observation"
+* result[+] = Reference(example-bw-ipms-obs-2)
+* result[=].type = "Observation"
+* status = #final
+
+Instance: example-bw-ipms-obs-1
+InstanceOf: BwLabObservation
+Usage: #example
+Description: "Example IPMS Observation"
+Title: "IPMS Observation #1"
+* code.coding[+].system = "L"
+* code.coding[=].code = #COVID
+* code.coding[=].display = "SARS-CoV-2 PCR"
+* valueString = "INCONCLUSIVE"
+* interpretation[+].coding[+].code = #N
+* interpretation[=].coding[=].display = "Normal"
+* interpretation[=].coding[=].system = "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+* subject = Reference(example-laboratory-patient)
+* subject.type = "Patient"
+* status = #final
+* effectiveDateTime = "2021-06-10T15:49:00.000Z"
+* performer = Reference(ipms-organization)
+
+Instance: example-bw-ipms-obs-2
+InstanceOf: BwLabObservation
+Usage: #example
+Description: "Example IPMS Observation"
+Title: "IPMS Observation #2"
+* code.coding[+].system = "L"
+* code.coding[=].code = #S-Cov-2-RVW
+* code.coding[=].display = "SARS-CoV-2 PCR REVIEW"
+* valueString = "."
+* interpretation[+].coding[+].code = #N
+* interpretation[=].coding[=].display = "Normal"
+* interpretation[=].coding[=].system = "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+* subject = Reference(example-laboratory-patient)
+* subject.type = "Patient"
+* status = #final
+* effectiveDateTime = "2021-06-10T15:49:00.000Z"
+* performer = Reference(ipms-organization)
+
+Instance: example-ipms-organization
+InstanceOf: Organization
+Usage: #example
+Title: "IPMS"
+Description: "IPMS Organization"
+* identifier[+].type.coding[+].code = #FILL
+* identifier[=].type.coding[+].system = "http://moh.bw.org/ext/ipms/facility-code"
+* active = true
+* type[+].coding[+].system = "http://moh.bw.org/ext/mfl/facility-type"
+* type[+].coding[+].code = #IPMS
