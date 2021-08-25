@@ -12,7 +12,7 @@
   <title value="Botswana Laboratory HIE Workflow Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-08-25T03:59:10+00:00"/>
+  <date value="2021-08-25T04:05:46+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -497,6 +497,17 @@
       </reference>
       <name value="PIMS Lab Test Code System"/>
       <description value="PIMS Lab Test Code System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/BwIpmsFacilityCodeMap"/>
+      </reference>
+      <name value="IPMS Facility Code Mappings"/>
+      <description value="Mapping between IPMS facility codes and BW MFL codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

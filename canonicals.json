@@ -42,6 +42,13 @@
     "name": "BwPimsLabTestCS"
   },
   {
+    "id": "BwIpmsFacilityCodeMap",
+    "type": "ConceptMap",
+    "url": "http://b-techbw.github.io/bw-lab-ig/ConceptMap/BwIpmsFacilityCodeMap",
+    "version": "0.2.0",
+    "name": "BwIpmsFacilityCodeCM"
+  },
+  {
     "id": "BwLabPimsOrderStatusDiagnosticReportCM",
     "type": "ConceptMap",
     "url": "http://b-techbw.github.io/bw-lab-ig/ConceptMap/BwLabPimsOrderStatusDiagnosticReportCM",

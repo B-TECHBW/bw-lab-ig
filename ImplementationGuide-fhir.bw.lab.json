@@ -11,7 +11,7 @@
   "title": "Botswana Laboratory HIE Workflow Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-08-25T03:59:10+00:00",
+  "date": "2021-08-25T04:05:46+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -697,6 +697,20 @@
         },
         "name": "PIMS Lab Test Code System",
         "description": "PIMS Lab Test Code System",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/BwIpmsFacilityCodeMap"
+        },
+        "name": "IPMS Facility Code Mappings",
+        "description": "Mapping between IPMS facility codes and BW MFL codes",
         "exampleBoolean": false
       },
       {

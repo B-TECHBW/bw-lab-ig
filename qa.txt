@@ -1,11 +1,11 @@
 ﻿BwLabIG : Validation Results
 =========================================
 
-err = 63, warn = 147, info = 23
+err = 63, warn = 148, info = 23
 IG Publisher Version: 1.1.77
-Generated Wed Aug 25 03:59:59 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
+Generated Wed Aug 25 04:06:36 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
 
- Build Errors : 313 / 2 / 0
+ Build Errors : 319 / 2 / 0
  /github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle : 11 / 1 / 2
  /github/workspace/fsh-generated/resources/Bundle-example-bw-lab-results-bundle : 24 / 3 / 20
  /github/workspace/fsh-generated/resources/CodeSystem-bw-ipms-facility-code-cs : 0 / 1 / 1
@@ -14,6 +14,7 @@ Generated Wed Aug 25 03:59:59 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0
  /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-order-status-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-test-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Composition-example-bw-lab-composition : 4 / 1 / 2
+ /github/workspace/fsh-generated/resources/ConceptMap-BwIpmsFacilityCodeMap : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusRequestCM : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusTaskCM : 0 / 1 / 1
@@ -103,6 +104,12 @@ ERROR: /github/workspace/output/Composition-example-bw-lab-composition.html#/htm
 ERROR: /github/workspace/output/Composition-example-bw-lab-composition.json.html#/html/body/div/div/div/p/a at Line 258, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Composition-example-bw-lab-composition.ttl.html#/html/body/div/div/div/p/a at Line 263, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Composition-example-bw-lab-composition.xml.html#/html/body/div/div/div/p/a at Line 247, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwIpmsFacilityCodeMap.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwIpmsFacilityCodeMap.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 519: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwIpmsFacilityCodeMap.html#/html/body/div/div/div/p/a at Line 204, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwIpmsFacilityCodeMap.json.html#/html/body/div/div/div/p/a at Line 6005, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwIpmsFacilityCodeMap.ttl.html#/html/body/div/div/div/p/a at Line 4100, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwIpmsFacilityCodeMap.xml.html#/html/body/div/div/div/p/a at Line 4720, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 569: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#/html/body/div/div/div/p/a at Line 204, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -365,7 +372,7 @@ ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.html#/html/body/div
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.xml.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 728, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 737, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/background.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/p/a at Line 199, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -451,6 +458,8 @@ INFORMATION: Composition/example-bw-lab-composition: Composition.section[1]: Thi
 ERROR: Composition/example-bw-lab-composition: Composition.status: The value provided ('active') is not in the value set http://hl7.org/fhir/ValueSet/composition-status|4.0.1 (http://hl7.org/fhir/ValueSet/composition-status), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/composition-status#active in http://hl7.org/fhir/composition-status)
 WARNING: Composition/example-bw-lab-composition: Composition.type.coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: Composition/example-bw-lab-composition: Composition.author[0]: Unable to resolve resource 'example-bw-practitioner'
+== /github/workspace/fsh-generated/resources/ConceptMap-BwIpmsFacilityCodeMap.json ==
+WARNING: ConceptMap/BwIpmsFacilityCodeMap: ConceptMap.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.json ==
 WARNING: ConceptMap/BwLabPimsOrderStatusDiagnosticReportCM: ConceptMap.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusRequestCM.json ==
