@@ -1,13 +1,15 @@
 ﻿BwLabIG : Validation Results
 =========================================
 
-err = 63, warn = 134, info = 23
+err = 63, warn = 147, info = 23
 IG Publisher Version: 1.1.77
-Generated Wed Aug 25 03:04:03 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
+Generated Wed Aug 25 03:59:59 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
 
- Build Errors : 293 / 2 / 0
+ Build Errors : 313 / 2 / 0
  /github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle : 11 / 1 / 2
  /github/workspace/fsh-generated/resources/Bundle-example-bw-lab-results-bundle : 24 / 3 / 20
+ /github/workspace/fsh-generated/resources/CodeSystem-bw-ipms-facility-code-cs : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-bw-mfl-facility-code-cs : 0 / 10 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-class-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-order-status-cs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-test-cs : 0 / 1 / 1
@@ -46,10 +48,12 @@ Generated Wed Aug 25 03:04:03 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-practitioner : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-pims-patient : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/Task-example-bw-task-requested : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-bw-ipms-facility-code-vs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-bw-lab-diagnostic-report-status-vs : 0 / 6 / 1
  /github/workspace/fsh-generated/resources/ValueSet-bw-lab-order-code-vs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-bw-lab-task-intent-vs : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-bw-lab-task-status-vs : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-bw-mfl-facility-code-vs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-bw-pims-lab-class-vs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-bw-pims-lab-order-status-vs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-bw-pims-lab-test-vs : 0 / 1 / 1
@@ -68,6 +72,16 @@ ERROR: /github/workspace/output/Bundle-example-bw-lab-results-bundle.html#/html/
 ERROR: /github/workspace/output/Bundle-example-bw-lab-results-bundle.json.html#/html/body/div/div/div/p/a at Line 485, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Bundle-example-bw-lab-results-bundle.ttl.html#/html/body/div/div/div/p/a at Line 425, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Bundle-example-bw-lab-results-bundle.xml.html#/html/body/div/div/div/p/a at Line 441, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-bw-ipms-facility-code-cs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-bw-ipms-facility-code-cs.html#/html/body/div/div/div/p/a at Line 228, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-bw-ipms-facility-code-cs.json.html#/html/body/div/div/div/p/a at Line 3783, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-bw-ipms-facility-code-cs.ttl.html#/html/body/div/div/div/p/a at Line 3787, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-bw-ipms-facility-code-cs.xml.html#/html/body/div/div/div/p/a at Line 3772, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-bw-mfl-facility-code-cs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-bw-mfl-facility-code-cs.html#/html/body/div/div/div/p/a at Line 228, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-bw-mfl-facility-code-cs.json.html#/html/body/div/div/div/p/a at Line 2811, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-bw-mfl-facility-code-cs.ttl.html#/html/body/div/div/div/p/a at Line 2815, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-bw-mfl-facility-code-cs.xml.html#/html/body/div/div/div/p/a at Line 2800, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-class-cs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-class-cs.html#/html/body/div/div/div/p/a at Line 228, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-bw-pims-lab-class-cs.json.html#/html/body/div/div/div/p/a at Line 313, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -306,6 +320,11 @@ ERROR: /github/workspace/output/Task-example-bw-task-requested.html#/html/body/d
 ERROR: /github/workspace/output/Task-example-bw-task-requested.json.html#/html/body/div/div/div/p/a at Line 244, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Task-example-bw-task-requested.ttl.html#/html/body/div/div/div/p/a at Line 257, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Task-example-bw-task-requested.xml.html#/html/body/div/div/div/p/a at Line 240, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-ipms-facility-code-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-ipms-facility-code-vs.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-ipms-facility-code-vs.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-ipms-facility-code-vs.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-ipms-facility-code-vs.xml.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-diagnostic-report-status-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-diagnostic-report-status-vs.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-diagnostic-report-status-vs.json.html#/html/body/div/div/div/p/a at Line 283, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -326,6 +345,11 @@ ERROR: /github/workspace/output/ValueSet-bw-lab-task-status-vs.html#/html/body/d
 ERROR: /github/workspace/output/ValueSet-bw-lab-task-status-vs.json.html#/html/body/div/div/div/p/a at Line 279, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-task-status-vs.ttl.html#/html/body/div/div/div/p/a at Line 277, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-lab-task-status-vs.xml.html#/html/body/div/div/div/p/a at Line 267, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-mfl-facility-code-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-mfl-facility-code-vs.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-mfl-facility-code-vs.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-mfl-facility-code-vs.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-bw-mfl-facility-code-vs.xml.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-class-vs.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-class-vs.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-class-vs.json.html#/html/body/div/div/div/p/a at Line 260, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -341,7 +365,7 @@ ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.html#/html/body/div
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.xml.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 692, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 728, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/background.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/p/a at Line 199, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -401,6 +425,19 @@ ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[4].resource.code.codin
 INFORMATION: Bundle/example-bw-lab-results-bundle: Bundle.entry[4].resource.code.coding[0]: Code System URI 'L' is unknown so the code cannot be validated
 ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[4].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[4].resource.performer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+== /github/workspace/fsh-generated/resources/CodeSystem-bw-ipms-facility-code-cs.json ==
+WARNING: CodeSystem/bw-ipms-facility-code-cs: CodeSystem.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== /github/workspace/fsh-generated/resources/CodeSystem-bw-mfl-facility-code-cs.json ==
+WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.concept[39].display: value should not start or finish with whitespace
+WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.concept[44].display: value should not start or finish with whitespace
+WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.concept[189].display: value should not start or finish with whitespace
+WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.concept[208].display: value should not start or finish with whitespace
+WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.concept[230].display: value should not start or finish with whitespace
+WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.concept[350].display: value should not start or finish with whitespace
+WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.concept[392].display: value should not start or finish with whitespace
+WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.concept[406].display: value should not start or finish with whitespace
+WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.concept[443].display: value should not start or finish with whitespace
 == /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-class-cs.json ==
 WARNING: CodeSystem/bw-pims-lab-class-cs: CodeSystem.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-order-status-cs.json ==
@@ -592,6 +629,8 @@ WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/St
 == /github/workspace/fsh-generated/resources/Task-example-bw-task-requested.json ==
 ERROR: Task/example-bw-task-requested: Task.status: The value provided ('requested') is not in the value set http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs (http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs), and a code is required from this value set) (error message = Unknown Code http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs#requested in http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs)
 ERROR: Task/example-bw-task-requested: Task.intent: The value provided ('order') is not in the value set http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs (http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs), and a code is required from this value set) (error message = The code system "http://hl7.org/fhir/ValueSet/task-intent" in the include in "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs" is not known; The code system "http://hl7.org/fhir/ValueSet/task-intent" is not known (encountered paired with code = "order"); The code provided (http://hl7.org/fhir/ValueSet/task-intent#order) is not valid in the value set 'BwLabTaskIntentVS' (from http://tx.fhir.org/r4))
+== /github/workspace/fsh-generated/resources/ValueSet-bw-ipms-facility-code-vs.json ==
+WARNING: ValueSet/bw-ipms-facility-code-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/fsh-generated/resources/ValueSet-bw-lab-diagnostic-report-status-vs.json ==
 WARNING: ValueSet/bw-lab-diagnostic-report-status-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 WARNING: ValueSet/bw-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[0]: The code diagnostic-report-status-partial is not valid in the system http://hl7.org/fhir/diagnostic-report-status
@@ -609,6 +648,8 @@ WARNING: ValueSet.where(id = 'bw-lab-task-intent-vs'): Error from server: Unable
 WARNING: ValueSet/bw-lab-task-status-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 WARNING: ValueSet/bw-lab-task-status-vs: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'bw-lab-task-status-vs'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-status
+== /github/workspace/fsh-generated/resources/ValueSet-bw-mfl-facility-code-vs.json ==
+WARNING: ValueSet/bw-mfl-facility-code-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/fsh-generated/resources/ValueSet-bw-pims-lab-class-vs.json ==
 WARNING: ValueSet/bw-pims-lab-class-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
 == /github/workspace/fsh-generated/resources/ValueSet-bw-pims-lab-order-status-vs.json ==

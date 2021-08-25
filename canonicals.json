@@ -7,6 +7,20 @@
     "name": "BwLabDataDictionary"
   },
   {
+    "id": "bw-ipms-facility-code-cs",
+    "type": "CodeSystem",
+    "url": "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-ipms-facility-code-cs",
+    "version": "0.2.0",
+    "name": "BwIpmsFacilityCodeCS"
+  },
+  {
+    "id": "bw-mfl-facility-code-cs",
+    "type": "CodeSystem",
+    "url": "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-mfl-facility-code-cs",
+    "version": "0.2.0",
+    "name": "BwMflFacilityCodeCS"
+  },
+  {
     "id": "bw-pims-lab-class-cs",
     "type": "CodeSystem",
     "url": "http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-class-cs",
@@ -147,6 +161,13 @@
     "name": "PimsPatient"
   },
   {
+    "id": "bw-ipms-facility-code-vs",
+    "type": "ValueSet",
+    "url": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-ipms-facility-code-vs",
+    "version": "0.2.0",
+    "name": "BwIpmsFacilityCodeVS"
+  },
+  {
     "id": "bw-lab-diagnostic-report-status-vs",
     "type": "ValueSet",
     "url": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-diagnostic-report-status-vs",
@@ -173,6 +194,13 @@
     "url": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-status-vs",
     "version": "0.2.0",
     "name": "BwLabTaskStatusVS"
+  },
+  {
+    "id": "bw-mfl-facility-code-vs",
+    "type": "ValueSet",
+    "url": "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-mfl-facility-code-vs",
+    "version": "0.2.0",
+    "name": "BwMflFacilityCodeVS"
   },
   {
     "id": "bw-pims-lab-class-vs",

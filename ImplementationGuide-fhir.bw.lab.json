@@ -11,7 +11,7 @@
   "title": "Botswana Laboratory HIE Workflow Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-08-25T03:03:13+00:00",
+  "date": "2021-08-25T03:59:10+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -513,6 +513,20 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/bw-ipms-facility-code-vs"
+        },
+        "name": "IPMS Facility Code Valueset",
+        "description": "IPMS Facility Code Valueset",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/bw-lab-diagnostic-report-status-vs"
         },
         "name": "Botswana Diagnostic Report Status Flag",
@@ -569,6 +583,20 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/bw-mfl-facility-code-vs"
+        },
+        "name": "MFL Facility Code Valueset",
+        "description": "MFL Facility Code Valueset",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/bw-pims-lab-class-vs"
         },
         "name": "Status Values for PIMS Lab Orders",
@@ -599,6 +627,34 @@
         },
         "name": "PIMS Lab Test Codes",
         "description": "PIMS Lab Test Codes",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/bw-ipms-facility-code-cs"
+        },
+        "name": "IPMS Facility Codes",
+        "description": "IPMS Facility Codes",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/bw-mfl-facility-code-cs"
+        },
+        "name": "BW MFL Facility Codes",
+        "description": "BW MFLFacility Codes",
         "exampleBoolean": false
       },
       {

@@ -12,7 +12,7 @@
   <title value="Botswana Laboratory HIE Workflow Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-08-25T03:03:13+00:00"/>
+  <date value="2021-08-25T03:59:10+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -352,6 +352,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/bw-ipms-facility-code-vs"/>
+      </reference>
+      <name value="IPMS Facility Code Valueset"/>
+      <description value="IPMS Facility Code Valueset"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/bw-lab-diagnostic-report-status-vs"/>
       </reference>
       <name value="Botswana Diagnostic Report Status Flag"/>
@@ -396,6 +407,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/bw-mfl-facility-code-vs"/>
+      </reference>
+      <name value="MFL Facility Code Valueset"/>
+      <description value="MFL Facility Code Valueset"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/bw-pims-lab-class-vs"/>
       </reference>
       <name value="Status Values for PIMS Lab Orders"/>
@@ -420,6 +442,28 @@
       </reference>
       <name value="PIMS Lab Test Codes"/>
       <description value="PIMS Lab Test Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/bw-ipms-facility-code-cs"/>
+      </reference>
+      <name value="IPMS Facility Codes"/>
+      <description value="IPMS Facility Codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/bw-mfl-facility-code-cs"/>
+      </reference>
+      <name value="BW MFL Facility Codes"/>
+      <description value="BW MFLFacility Codes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
