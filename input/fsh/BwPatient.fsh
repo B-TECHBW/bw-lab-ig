@@ -27,7 +27,7 @@ Description:    "A patient in the Omang system"
 Profile:        BirthPlaceObservation
 Parent:         Observation
 Id:             birth-place-observation
-Title:          Birth Place
+Title:          "Birth Place"
 Description:    "Describes a Birth Place in the Omang System"
 * subject 1..1 MS
 * subject only Reference(OmangPatient)
@@ -35,7 +35,7 @@ Description:    "Describes a Birth Place in the Omang System"
 * identifier.system = "http://moh.bw.org/ext/identifier/omang"
 * identifier.value 1..1 MS
 * code = $LNC#21842-0
-* value[x] only integer
+* value[x] only Quantity
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
@@ -44,12 +44,12 @@ Description:    "Describes a Birth Place in the Omang System"
 * component[birthDistrict].code = $LNC#80910-3
 * component[birthDistrict].value[x] only integer
 * component[birthPlaceName].code = $LNC#21842-0
-* component[deceabirthPlaceNamesedDate].value[x] only string
+* component[birthPlaceName].value[x] only string
 
 Profile:        DeathCertificateObservation
 Parent:         Observation
 Id:             death-certificate-observation
-Title:          Death Certificate
+Title:          "Death Certificate"
 Description:    "Death Certificate in the Omang System"
 * subject 1..1 MS
 * subject only Reference(OmangPatient)
@@ -59,6 +59,6 @@ Description:    "Death Certificate in the Omang System"
 * component ^slicing.description = "Slice based on the component.code pattern"
 * component contains deathCertificateNumber 1..1 MS and deceasedDate 1..1 MS
 * component[deathCertificateNumber].code = $LNC#64297-5
-* component[deathCertificateNumber].value[x] only Identifier
+* component[deathCertificateNumber].value[x] only string
 * component[deceasedDate].code = $LNC#81954-0
 * component[deceasedDate].value[x] only dateTime
