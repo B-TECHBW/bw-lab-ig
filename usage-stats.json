@@ -5,6 +5,12 @@
   "jurisdiction": "072",
   "extensions": [],
   "profiles": {
+    "Observation": [
+      {
+        "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/death-certificate-observation",
+        "title": "Death Certificate"
+      }
+    ],
     "ServiceRequest": [
       {
         "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-pims-lab-profile-service-request",
@@ -33,12 +39,6 @@
         "title": "Botswana Lab Diagnostic Report"
       }
     ],
-    "Observation": [
-      {
-        "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation",
-        "title": "Botswana Lab Observation"
-      }
-    ],
     "Task": [
       {
         "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task",
@@ -46,6 +46,10 @@
       }
     ],
     "Patient": [
+      {
+        "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/omang-patient",
+        "title": "Omang System Patient"
+      },
       {
         "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/pims-patient",
         "title": "PIMS Patient"

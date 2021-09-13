@@ -12,7 +12,7 @@
   <title value="Botswana Laboratory HIE Workflow Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-08-25T04:07:13+00:00"/>
+  <date value="2021-09-13T23:50:16+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -220,6 +220,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/birth-place-observation"/>
+      </reference>
+      <name value="Birth Place"/>
+      <description value="Describes a Birth Place in the Omang System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/bw-encounter"/>
       </reference>
       <name value="Botswana Encounter (TODO)"/>
@@ -334,6 +345,28 @@
       </reference>
       <name value="Basic Botswana Lab Service Request"/>
       <description value="A service request a lab order for for a given patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/death-certificate-observation"/>
+      </reference>
+      <name value="Death Certificate"/>
+      <description value="Death Certificate in the Omang System"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/omang-patient"/>
+      </reference>
+      <name value="Omang System Patient"/>
+      <description value="A patient in the Omang system"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

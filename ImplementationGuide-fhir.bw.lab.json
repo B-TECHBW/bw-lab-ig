@@ -11,7 +11,7 @@
   "title": "Botswana Laboratory HIE Workflow Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-08-25T04:07:13+00:00",
+  "date": "2021-09-13T23:50:16+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -345,6 +345,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/birth-place-observation"
+        },
+        "name": "Birth Place",
+        "description": "Describes a Birth Place in the Omang System",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/bw-encounter"
         },
         "name": "Botswana Encounter (TODO)",
@@ -489,6 +503,34 @@
         },
         "name": "Basic Botswana Lab Service Request",
         "description": "A service request a lab order for for a given patient.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/death-certificate-observation"
+        },
+        "name": "Death Certificate",
+        "description": "Death Certificate in the Omang System",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/omang-patient"
+        },
+        "name": "Omang System Patient",
+        "description": "A patient in the Omang system",
         "exampleBoolean": false
       },
       {

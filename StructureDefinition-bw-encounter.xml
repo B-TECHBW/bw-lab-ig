@@ -17,7 +17,7 @@
   <name value="BwEncounter"/>
   <title value="Botswana Encounter (TODO)"/>
   <status value="active"/>
-  <date value="2021-08-25T04:07:13+00:00"/>
+  <date value="2021-09-13T23:50:16+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -1888,8 +1888,8 @@
     </element>
     <element id="Encounter.diagnosis.use">
       <path value="Encounter.diagnosis.use"/>
-      <short value="Role that this diagnosis has within the encounter (e.g. admission, billing, discharge &#x2026;)"/>
-      <definition value="Role that this diagnosis has within the encounter (e.g. admission, billing, discharge &#x2026;)."/>
+      <short value="Role that this diagnosis has within the encounter (e.g. admission, billing, discharge …)"/>
+      <definition value="Role that this diagnosis has within the encounter (e.g. admission, billing, discharge …)."/>
       <min value="0"/>
       <max value="1"/>
       <base>

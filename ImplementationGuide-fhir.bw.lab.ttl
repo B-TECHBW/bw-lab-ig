@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Botswana Laboratory HIE Workflow Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2021-08-25T04:07:13+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-09-13T23:50:16+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "B-TECHBW"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -327,6 +327,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/birth-place-observation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/birth-place-observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Birth Place" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes a Birth Place in the Omang System" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-encounter>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/bw-encounter" ]
        ];
@@ -334,7 +348,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encounter resource for clinical encounters in Botswana" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1;
+       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -348,7 +362,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This composition packages information needed to facilitate lab order communication between clinical systems in Botswana." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -362,7 +376,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DiagnosticReport resource that holds the results of a lab order" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -376,7 +390,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Observation resource that holds the result values a lab order in Botswana" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -390,7 +404,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Task resource for tracking order state and synchronizing Lab Order communication in Botswana" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -404,7 +418,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A national-level identifier for Botswana, usually either OMANG or a Passport number." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -418,7 +432,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A patient in a Botswana Health System" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -432,7 +446,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A service request representing a PIMS lab profile as part of a PIMS lab order." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -446,7 +460,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A service request representing a PIMS lab test as part of a PIMS lab order." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -460,7 +474,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A practitioner in a Botswana Health System" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -474,7 +488,35 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A service request a lab order for for a given patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/death-certificate-observation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/death-certificate-observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Death Certificate" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Death Certificate in the Omang System" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/omang-patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/omang-patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Omang System Patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A patient in the Omang system" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -488,7 +530,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A patient in a PIMS instance" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -502,7 +544,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "IPMS Facility Code Valueset" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -516,7 +558,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The status of the diagnostic report, subset from https://www.hl7.org/fhir/valueset-diagnostic-report-status.html" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -530,7 +572,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The code for the lab order." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -544,7 +586,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The intent of the task, subset from https://www.hl7.org/FHIR/valueset-task-intent.html" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -558,7 +600,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The status of the task, subset from https://www.hl7.org/FHIR/valueset-task-status.html" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -572,7 +614,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "MFL Facility Code Valueset" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -585,7 +627,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Status Values for PIMS Lab Orders" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -598,7 +640,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Status Values for PIMS Lab Orders" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -612,7 +654,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PIMS Lab Test Codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -626,7 +668,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "IPMS Facility Codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -640,7 +682,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "BW MFLFacility Codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 23;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -654,7 +696,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PIMS Lab Class Code System" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 24;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -668,7 +710,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PIMS Lab Order Status Code System" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -682,7 +724,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PIMS Lab Test Code System" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -696,7 +738,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping between IPMS facility codes and BW MFL codes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 27;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -710,7 +752,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Botswana Laboratory Data Dictionary - Logical Model" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 28;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -724,7 +766,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping PIMS Lab Order Status to standard DiagnosticReport status value set." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -738,7 +780,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping PIMS Lab Order Status to standard ServiceRequest status value set." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 30;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -752,7 +794,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping PIMS Lab Order Status to standard Task status value set." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 31;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -766,7 +808,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping PIMS Lab Test Codes to LOINC." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 32;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -783,7 +825,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report>
        ]
      ], [
-       fhir:index 33;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -800,7 +842,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation>
        ]
      ], [
-       fhir:index 34;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -817,7 +859,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation>
        ]
      ], [
-       fhir:index 35;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -834,7 +876,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-basic-service-request>
        ]
      ], [
-       fhir:index 36;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -851,7 +893,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition>
        ]
      ], [
-       fhir:index 37;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -868,7 +910,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition>
        ]
      ], [
-       fhir:index 38;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -882,7 +924,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example IPMS Results Lab Bundle translated from HL7 ORU message" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 39;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -899,7 +941,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-practitioner>
        ]
      ], [
-       fhir:index 40;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -916,7 +958,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-basic-service-request>
        ]
      ], [
-       fhir:index 41;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -933,7 +975,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-basic-service-request>
        ]
      ], [
-       fhir:index 42;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -950,7 +992,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-basic-service-request>
        ]
      ], [
-       fhir:index 43;
+       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -967,7 +1009,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-task>
        ]
      ], [
-       fhir:index 44;
+       fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -981,7 +1023,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example PIMS Facility" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 45;
+       fhir:index 48;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -995,7 +1037,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example IPMS Facility" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 46;
+       fhir:index 49;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1012,7 +1054,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient>
        ]
      ], [
-       fhir:index 47;
+       fhir:index 50;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1026,7 +1068,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example PIMS Facility Location" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 48;
+       fhir:index 51;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1040,7 +1082,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example IPMS Facility Location" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 49;
+       fhir:index 52;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1057,7 +1099,7 @@
          fhir:link <http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient>
        ]
      ], [
-       fhir:index 50;
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

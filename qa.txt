@@ -1,11 +1,11 @@
 ﻿BwLabIG : Validation Results
 =========================================
 
-err = 63, warn = 148, info = 23
-IG Publisher Version: 1.1.77
-Generated Wed Aug 25 04:08:11 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
+err = 63, warn = 154, info = 23
+IG Publisher Version: 1.1.80
+Generated Mon Sep 13 23:51:17 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0 (canonical = http://b-techbw.github.io/bw-lab-ig)
 
- Build Errors : 319 / 2 / 0
+ Build Errors : 343 / 2 / 0
  /github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle : 11 / 1 / 2
  /github/workspace/fsh-generated/resources/Bundle-example-bw-lab-results-bundle : 24 / 3 / 20
  /github/workspace/fsh-generated/resources/CodeSystem-bw-ipms-facility-code-cs : 0 / 1 / 1
@@ -36,6 +36,7 @@ Generated Wed Aug 25 04:08:11 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0
  /github/workspace/fsh-generated/resources/ServiceRequest-example-bw-pims-service-request-2 : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/ServiceRequest-example-bw-pims-service-request-profile : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-BwLabDataDictionary : 8 / 77 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-birth-place-observation : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-basic-service-request : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-encounter : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-composition : 0 / 1 / 1
@@ -47,6 +48,8 @@ Generated Wed Aug 25 04:08:11 UTC 2021. FHIR version 4.0.1 for fhir.bw.lab#0.2.0
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-pims-lab-profile-service-request : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-pims-lab-test-service-request : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-bw-practitioner : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-death-certificate-observation : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-omang-patient : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-pims-patient : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/Task-example-bw-task-requested : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-bw-ipms-facility-code-vs : 0 / 1 / 1
@@ -105,31 +108,31 @@ ERROR: /github/workspace/output/Composition-example-bw-lab-composition.json.html
 ERROR: /github/workspace/output/Composition-example-bw-lab-composition.ttl.html#/html/body/div/div/div/p/a at Line 263, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/Composition-example-bw-lab-composition.xml.html#/html/body/div/div/div/p/a at Line 247, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwIpmsFacilityCodeMap.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ConceptMap-BwIpmsFacilityCodeMap.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 519: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwIpmsFacilityCodeMap.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 520: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwIpmsFacilityCodeMap.html#/html/body/div/div/div/p/a at Line 204, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwIpmsFacilityCodeMap.json.html#/html/body/div/div/div/p/a at Line 6005, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwIpmsFacilityCodeMap.ttl.html#/html/body/div/div/div/p/a at Line 4100, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwIpmsFacilityCodeMap.xml.html#/html/body/div/div/div/p/a at Line 4720, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 569: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 570: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.html#/html/body/div/div/div/p/a at Line 204, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.json.html#/html/body/div/div/div/p/a at Line 308, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.ttl.html#/html/body/div/div/div/p/a at Line 299, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.xml.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 531: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 532: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.html#/html/body/div/div/div/p/a at Line 204, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.json.html#/html/body/div/div/div/p/a at Line 308, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.ttl.html#/html/body/div/div/div/p/a at Line 299, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusRequestCM.xml.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 519: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 520: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.html#/html/body/div/div/div/p/a at Line 204, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.json.html#/html/body/div/div/div/p/a at Line 308, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.ttl.html#/html/body/div/div/div/p/a at Line 299, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwLabPimsOrderStatusTaskCM.xml.html#/html/body/div/div/div/p/a at Line 287, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwPimsLabTestLoincCM.change.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/ConceptMap-BwPimsLabTestLoincCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 476: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
+ERROR: /github/workspace/output/ConceptMap-BwPimsLabTestLoincCM.html#/html/body/div/div/div/div/div/div/p/a at Line 173, column 477: The link 'www.github.com/b-techbw' for "www.github.com/b-techbw" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwPimsLabTestLoincCM.html#/html/body/div/div/div/p/a at Line 204, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwPimsLabTestLoincCM.json.html#/html/body/div/div/div/p/a at Line 398, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ConceptMap-BwPimsLabTestLoincCM.ttl.html#/html/body/div/div/div/p/a at Line 359, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -217,6 +220,14 @@ ERROR: /github/workspace/output/StructureDefinition-BwLabDataDictionary.profile.
 ERROR: /github/workspace/output/StructureDefinition-BwLabDataDictionary.profile.json.html#/html/body/div/div/div/p/a at Line 2443, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BwLabDataDictionary.profile.ttl.html#/html/body/div/div/div/p/a at Line 1921, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-BwLabDataDictionary.profile.xml.html#/html/body/div/div/div/p/a at Line 2075, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-birth-place-observation-definitions.html#/html/body/div/div/div/p/a at Line 1107, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-birth-place-observation-examples.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-birth-place-observation-mappings.html#/html/body/div/div/div/p/a at Line 472, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-birth-place-observation.html#/html/body/div/div/div/p/a at Line 1057, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-birth-place-observation.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-birth-place-observation.profile.json.html#/html/body/div/div/div/p/a at Line 4419, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-birth-place-observation.profile.ttl.html#/html/body/div/div/div/p/a at Line 3869, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-birth-place-observation.profile.xml.html#/html/body/div/div/div/p/a at Line 4025, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request-definitions.html#/html/body/div/div/div/div/div/table/tr/td/a at Line 417, column 262: The link 'valueset-diagnostic-requests.html' for "here" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request-definitions.html#/html/body/div/div/div/p/a at Line 720, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-basic-service-request-examples.html#/html/body/div/div/div/p/a at Line 289, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -314,6 +325,22 @@ ERROR: /github/workspace/output/StructureDefinition-bw-practitioner.profile.hist
 ERROR: /github/workspace/output/StructureDefinition-bw-practitioner.profile.json.html#/html/body/div/div/div/p/a at Line 1977, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-practitioner.profile.ttl.html#/html/body/div/div/div/p/a at Line 1748, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-bw-practitioner.profile.xml.html#/html/body/div/div/div/p/a at Line 1796, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-death-certificate-observation-definitions.html#/html/body/div/div/div/p/a at Line 1018, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-death-certificate-observation-examples.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-death-certificate-observation-mappings.html#/html/body/div/div/div/p/a at Line 458, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-death-certificate-observation.html#/html/body/div/div/div/p/a at Line 1017, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-death-certificate-observation.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-death-certificate-observation.profile.json.html#/html/body/div/div/div/p/a at Line 3999, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-death-certificate-observation.profile.ttl.html#/html/body/div/div/div/p/a at Line 3517, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-death-certificate-observation.profile.xml.html#/html/body/div/div/div/p/a at Line 3659, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-omang-patient-definitions.html#/html/body/div/div/div/p/a at Line 840, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-omang-patient-examples.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-omang-patient-mappings.html#/html/body/div/div/div/p/a at Line 377, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-omang-patient.html#/html/body/div/div/div/p/a at Line 813, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-omang-patient.profile.history.html#/html/body/div/div/div/p/a at Line 239, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-omang-patient.profile.json.html#/html/body/div/div/div/p/a at Line 2962, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-omang-patient.profile.ttl.html#/html/body/div/div/div/p/a at Line 2596, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-omang-patient.profile.xml.html#/html/body/div/div/div/p/a at Line 2701, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-pims-patient-definitions.html#/html/body/div/div/div/p/a at Line 839, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-pims-patient-examples.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-pims-patient-mappings.html#/html/body/div/div/div/p/a at Line 377, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -372,7 +399,7 @@ ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.html#/html/body/div
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.json.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-bw-pims-lab-test-vs.xml.html#/html/body/div/div/div/p/a at Line 250, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 737, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 764, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/background.html#/html/body/div/div/div/p/a at Line 168, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 171, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/p/a at Line 199, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
@@ -381,7 +408,7 @@ ERROR: /github/workspace/output/spec.html#/html/body/div/div/div/p/a at Line 177
 ERROR: /github/workspace/output/system_specification.html#/html/body/div/div/div/p/a at Line 223, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 160, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
 ERROR: /github/workspace/output/use_cases.html#/html/body/div/div/div/p/a at Line 450, column 28: The link 'www.github.com/b-techbw' for "B-TECHBW" cannot be resolved
-== /github/workspace/fsh-generated/resources/Bundle-example-bw-lab-bundle.json ==
+== fsh-generated/resources/Bundle-example-bw-lab-bundle.json ==
 ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[0]: Profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition, Element matches more than one slice - labTask, labOrders
 ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[0]: Profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition, Element matches more than one slice - labTask, labResults
 INFORMATION: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[1]: This element does not match any known slice defined in the profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition
@@ -395,7 +422,7 @@ ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[0].entry[0
 ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[1].entry[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[1].entry[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/example-bw-lab-bundle: Bundle.entry[0].resource.section[1].entry[2]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-== /github/workspace/fsh-generated/resources/Bundle-example-bw-lab-results-bundle.json ==
+== fsh-generated/resources/Bundle-example-bw-lab-results-bundle.json ==
 WARNING: Bundle/example-bw-lab-results-bundle: Bundle.entry[0].resource.ofType(Patient).identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[0]: Bundle entry missing fullUrl
 ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[0].resource.ofType(Patient).managingOrganization: Relative Reference appears inside Bundle whose entry is missing a fullUrl
@@ -432,10 +459,10 @@ ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[4].resource.code.codin
 INFORMATION: Bundle/example-bw-lab-results-bundle: Bundle.entry[4].resource.code.coding[0]: Code System URI 'L' is unknown so the code cannot be validated
 ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[4].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
 ERROR: Bundle/example-bw-lab-results-bundle: Bundle.entry[4].resource.performer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-== /github/workspace/fsh-generated/resources/CodeSystem-bw-ipms-facility-code-cs.json ==
-WARNING: CodeSystem/bw-ipms-facility-code-cs: CodeSystem.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/CodeSystem-bw-mfl-facility-code-cs.json ==
-WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== fsh-generated/resources/CodeSystem-bw-ipms-facility-code-cs.json ==
+WARNING: CodeSystem/bw-ipms-facility-code-cs: CodeSystem.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/CodeSystem-bw-mfl-facility-code-cs.json ==
+WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
 WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.concept[39].display: value should not start or finish with whitespace
 WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.concept[44].display: value should not start or finish with whitespace
 WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.concept[189].display: value should not start or finish with whitespace
@@ -445,30 +472,30 @@ WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.concept[350].display: va
 WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.concept[392].display: value should not start or finish with whitespace
 WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.concept[406].display: value should not start or finish with whitespace
 WARNING: CodeSystem/bw-mfl-facility-code-cs: CodeSystem.concept[443].display: value should not start or finish with whitespace
-== /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-class-cs.json ==
-WARNING: CodeSystem/bw-pims-lab-class-cs: CodeSystem.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-order-status-cs.json ==
-WARNING: CodeSystem/bw-pims-lab-order-status-cs: CodeSystem.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/CodeSystem-bw-pims-lab-test-cs.json ==
-WARNING: CodeSystem/bw-pims-lab-test-cs: CodeSystem.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/Composition-example-bw-lab-composition.json ==
+== fsh-generated/resources/CodeSystem-bw-pims-lab-class-cs.json ==
+WARNING: CodeSystem/bw-pims-lab-class-cs: CodeSystem.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/CodeSystem-bw-pims-lab-order-status-cs.json ==
+WARNING: CodeSystem/bw-pims-lab-order-status-cs: CodeSystem.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/CodeSystem-bw-pims-lab-test-cs.json ==
+WARNING: CodeSystem/bw-pims-lab-test-cs: CodeSystem.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/Composition-example-bw-lab-composition.json ==
 ERROR: Composition/example-bw-lab-composition: Composition.section[0]: Profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition, Element matches more than one slice - labTask, labOrders
 ERROR: Composition/example-bw-lab-composition: Composition.section[0]: Profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition, Element matches more than one slice - labTask, labResults
 INFORMATION: Composition/example-bw-lab-composition: Composition.section[1]: This element does not match any known slice defined in the profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-composition
 ERROR: Composition/example-bw-lab-composition: Composition.status: The value provided ('active') is not in the value set http://hl7.org/fhir/ValueSet/composition-status|4.0.1 (http://hl7.org/fhir/ValueSet/composition-status), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/composition-status#active in http://hl7.org/fhir/composition-status)
 WARNING: Composition/example-bw-lab-composition: Composition.type.coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: Composition/example-bw-lab-composition: Composition.author[0]: Unable to resolve resource 'example-bw-practitioner'
-== /github/workspace/fsh-generated/resources/ConceptMap-BwIpmsFacilityCodeMap.json ==
-WARNING: ConceptMap/BwIpmsFacilityCodeMap: ConceptMap.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.json ==
-WARNING: ConceptMap/BwLabPimsOrderStatusDiagnosticReportCM: ConceptMap.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusRequestCM.json ==
-WARNING: ConceptMap/BwLabPimsOrderStatusRequestCM: ConceptMap.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusTaskCM.json ==
-WARNING: ConceptMap/BwLabPimsOrderStatusTaskCM: ConceptMap.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/ConceptMap-BwPimsLabTestLoincCM.json ==
-WARNING: ConceptMap/BwPimsLabTestLoincCM: ConceptMap.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/DiagnosticReport-example-bw-ipms-diagnostic-report.json ==
+== fsh-generated/resources/ConceptMap-BwIpmsFacilityCodeMap.json ==
+WARNING: ConceptMap/BwIpmsFacilityCodeMap: ConceptMap.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusDiagnosticReportCM.json ==
+WARNING: ConceptMap/BwLabPimsOrderStatusDiagnosticReportCM: ConceptMap.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusRequestCM.json ==
+WARNING: ConceptMap/BwLabPimsOrderStatusRequestCM: ConceptMap.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/ConceptMap-BwLabPimsOrderStatusTaskCM.json ==
+WARNING: ConceptMap/BwLabPimsOrderStatusTaskCM: ConceptMap.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/ConceptMap-BwPimsLabTestLoincCM.json ==
+WARNING: ConceptMap/BwPimsLabTestLoincCM: ConceptMap.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/DiagnosticReport-example-bw-ipms-diagnostic-report.json ==
 INFORMATION: DiagnosticReport/example-bw-ipms-diagnostic-report: DiagnosticReport.result[0]: This element does not match any known slice defined in the profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report
 INFORMATION: DiagnosticReport/example-bw-ipms-diagnostic-report: DiagnosticReport.result[1]: This element does not match any known slice defined in the profile http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-diagnostic-report
 WARNING: DiagnosticReport/example-bw-ipms-diagnostic-report: DiagnosticReport.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -476,45 +503,45 @@ WARNING: DiagnosticReport/example-bw-ipms-diagnostic-report: DiagnosticReport.ca
 ERROR: DiagnosticReport/example-bw-ipms-diagnostic-report: DiagnosticReport.code.coding[0]: Coding.system must be an absolute reference, not a local reference
 INFORMATION: DiagnosticReport/example-bw-ipms-diagnostic-report: DiagnosticReport.code.coding[0]: Code System URI 'L' is unknown so the code cannot be validated
 ERROR: DiagnosticReport/example-bw-ipms-diagnostic-report: DiagnosticReport.subject: Unable to resolve resource 'example-ipms-patient'
-== /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.bw.lab.json ==
-WARNING: ImplementationGuide/fhir.bw.lab: ImplementationGuide.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/Location-example-location-order-creator.json ==
+== fsh-generated/resources/ImplementationGuide-fhir.bw.lab.json ==
+WARNING: ImplementationGuide/fhir.bw.lab: ImplementationGuide.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/Location-example-location-order-creator.json ==
 ERROR: Location/example-location-order-creator: Location.type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#HOSP in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#HOSP'
 INFORMATION: Location/example-location-order-creator: Location.type[1].coding[0]: Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated
 WARNING: Location/example-location-order-creator: Location.physicalType.coding[0]: A code with no system has no defined meaning. A system should be provided
-== /github/workspace/fsh-generated/resources/Location-example-location-order-reciever.json ==
+== fsh-generated/resources/Location-example-location-order-reciever.json ==
 ERROR: Location/example-location-order-reciever: Location.type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#HLAB in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#HLAB'
 INFORMATION: Location/example-location-order-reciever: Location.type[1].coding[0]: Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated
 WARNING: Location/example-location-order-reciever: Location.physicalType.coding[0]: A code with no system has no defined meaning. A system should be provided
-== /github/workspace/fsh-generated/resources/Observation-example-bw-ipms-obs-1.json ==
+== fsh-generated/resources/Observation-example-bw-ipms-obs-1.json ==
 ERROR: Observation/example-bw-ipms-obs-1: Observation.code.coding[0]: Coding.system must be an absolute reference, not a local reference
 INFORMATION: Observation/example-bw-ipms-obs-1: Observation.code.coding[0]: Code System URI 'L' is unknown so the code cannot be validated
-== /github/workspace/fsh-generated/resources/Observation-example-bw-ipms-obs-2.json ==
+== fsh-generated/resources/Observation-example-bw-ipms-obs-2.json ==
 ERROR: Observation/example-bw-ipms-obs-2: Observation.code.coding[0]: Coding.system must be an absolute reference, not a local reference
 INFORMATION: Observation/example-bw-ipms-obs-2: Observation.code.coding[0]: Code System URI 'L' is unknown so the code cannot be validated
-== /github/workspace/fsh-generated/resources/Organization-example-facility-order-creator.json ==
+== fsh-generated/resources/Organization-example-facility-order-creator.json ==
 ERROR: Organization/example-facility-order-creator: Organization.type[0].coding[0]: Unknown Code urn:ietf:rfc:3986#prov in urn:ietf:rfc:3986 for 'urn:ietf:rfc:3986#prov'
 INFORMATION: Organization/example-facility-order-creator: Organization.type[1].coding[0]: Code System URI 'https://github.com/ihe/ITI.mCSD' is unknown so the code cannot be validated
-== /github/workspace/fsh-generated/resources/Organization-example-facility-order-reciever.json ==
-== /github/workspace/fsh-generated/resources/Patient-example-ipms-patient.json ==
+== fsh-generated/resources/Organization-example-facility-order-reciever.json ==
+== fsh-generated/resources/Patient-example-ipms-patient.json ==
 WARNING: Patient/example-ipms-patient: Patient.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
-== /github/workspace/fsh-generated/resources/Patient-example-pims-patient.json ==
+== fsh-generated/resources/Patient-example-pims-patient.json ==
 WARNING: Patient/example-pims-patient: Patient.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
-== /github/workspace/fsh-generated/resources/Patient-example-pims-patient-international.json ==
+== fsh-generated/resources/Patient-example-pims-patient-international.json ==
 ERROR: Patient/example-pims-patient-international: Patient.identifier[0]: if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
 WARNING: Patient/example-pims-patient-international: Patient.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: Patient/example-pims-patient-international: Patient.name[0]: ips-pat-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Rule 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-== /github/workspace/fsh-generated/resources/Practitioner-example-bw-pims-practitioner.json ==
-== /github/workspace/fsh-generated/resources/ServiceRequest-example-bw-ipms-service-request.json ==
+== fsh-generated/resources/Practitioner-example-bw-pims-practitioner.json ==
+== fsh-generated/resources/ServiceRequest-example-bw-ipms-service-request.json ==
 INFORMATION: ServiceRequest/example-bw-ipms-service-request: ServiceRequest.code.coding[0]: Code System URI 'http://moh.bw.org/ext/laboratory/pims-lab-test-code' is unknown so the code cannot be validated
-== /github/workspace/fsh-generated/resources/ServiceRequest-example-bw-pims-service-request-1.json ==
+== fsh-generated/resources/ServiceRequest-example-bw-pims-service-request-1.json ==
 INFORMATION: ServiceRequest/example-bw-pims-service-request-1: ServiceRequest.code.coding[0]: Code System URI 'http://moh.bw.org/ext/laboratory/pims-lab-test-code' is unknown so the code cannot be validated
-== /github/workspace/fsh-generated/resources/ServiceRequest-example-bw-pims-service-request-2.json ==
+== fsh-generated/resources/ServiceRequest-example-bw-pims-service-request-2.json ==
 INFORMATION: ServiceRequest/example-bw-pims-service-request-2: ServiceRequest.code.coding[0]: Code System URI 'http://moh.bw.org/ext/laboratory/pims-lab-test-code' is unknown so the code cannot be validated
-== /github/workspace/fsh-generated/resources/ServiceRequest-example-bw-pims-service-request-profile.json ==
+== fsh-generated/resources/ServiceRequest-example-bw-pims-service-request-profile.json ==
 INFORMATION: ServiceRequest/example-bw-pims-service-request-profile: ServiceRequest.code.coding[0]: Code System URI 'http://moh.bw.org/ext/laboratory/pims-lab-profile-code' is unknown so the code cannot be validated
-== /github/workspace/fsh-generated/resources/StructureDefinition-BwLabDataDictionary.json ==
-WARNING: StructureDefinition/BwLabDataDictionary: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== fsh-generated/resources/StructureDefinition-BwLabDataDictionary.json ==
+WARNING: StructureDefinition/BwLabDataDictionary: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
 ERROR: StructureDefinition/BwLabDataDictionary: StructureDefinition.snapshot.element[0].mapping[1]: ElementDefinition.mapping.map: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
 ERROR: StructureDefinition/BwLabDataDictionary: StructureDefinition.snapshot.element[0].mapping[2]: ElementDefinition.mapping.map: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
 WARNING: StructureDefinition/BwLabDataDictionary: StructureDefinition.snapshot.element[3]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
@@ -599,69 +626,78 @@ WARNING: StructureDefinition/BwLabDataDictionary: StructureDefinition.differenti
 WARNING: StructureDefinition/BwLabDataDictionary: StructureDefinition.differential.element[36]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/BwLabDataDictionary: StructureDefinition.differential.element[37]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
 WARNING: StructureDefinition/BwLabDataDictionary: StructureDefinition.differential.element[38]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-== /github/workspace/fsh-generated/resources/StructureDefinition-bw-basic-service-request.json ==
-WARNING: StructureDefinition/bw-basic-service-request: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/StructureDefinition-bw-encounter.json ==
-WARNING: StructureDefinition/bw-encounter: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== fsh-generated/resources/StructureDefinition-birth-place-observation.json ==
+WARNING: StructureDefinition/birth-place-observation: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/StructureDefinition/birth-place-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-bw-basic-service-request.json ==
+WARNING: StructureDefinition/bw-basic-service-request: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/StructureDefinition-bw-encounter.json ==
+WARNING: StructureDefinition/bw-encounter: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
 WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-encounter'): The Implementation Guide contains no examples for this profile
-== /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-composition.json ==
-WARNING: StructureDefinition/bw-lab-composition: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-diagnostic-report.json ==
-WARNING: StructureDefinition/bw-lab-diagnostic-report: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-observation.json ==
+== fsh-generated/resources/StructureDefinition-bw-lab-composition.json ==
+WARNING: StructureDefinition/bw-lab-composition: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/StructureDefinition-bw-lab-diagnostic-report.json ==
+WARNING: StructureDefinition/bw-lab-diagnostic-report: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/StructureDefinition-bw-lab-observation.json ==
 ERROR: http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-lab-observation#Observation.specimen: The profile http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips has type Specimen which is not consistent with the stated type CodeableConcept
-WARNING: StructureDefinition/bw-lab-observation: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+WARNING: StructureDefinition/bw-lab-observation: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
 ERROR: StructureDefinition/bw-lab-observation: StructureDefinition.differential.element.where(path = 'Observation.specimen'): The profile http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips has type Specimen which is not consistent with the stated type CodeableConcept
 ERROR: StructureDefinition/bw-lab-observation: StructureDefinition.snapshot.element[44].type[0].profile[0]: Profile http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips is for type StructureDefinition[http://hl7.org/fhir/StructureDefinition/Specimen], but the Observation.specimen element has type CodeableConcept
-== /github/workspace/fsh-generated/resources/StructureDefinition-bw-lab-task.json ==
+== fsh-generated/resources/StructureDefinition-bw-lab-task.json ==
 ERROR: Botswana Lab Task Resource.Task.status: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/task-status|4.0.1
 WARNING: Botswana Lab Task Resource.Task.intent: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs could not be expanded
-WARNING: StructureDefinition/bw-lab-task: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+WARNING: StructureDefinition/bw-lab-task: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
 ERROR: StructureDefinition/bw-lab-task: StructureDefinition: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs is not a subset of binding http://hl7.org/fhir/ValueSet/task-status|4.0.1
 WARNING: StructureDefinition/bw-lab-task: StructureDefinition: Binding http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs could not be expanded
-== /github/workspace/fsh-generated/resources/StructureDefinition-bw-national-identifier.json ==
-WARNING: StructureDefinition/bw-national-identifier: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== fsh-generated/resources/StructureDefinition-bw-national-identifier.json ==
+WARNING: StructureDefinition/bw-national-identifier: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
 WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-national-identifier'): The Implementation Guide contains no examples for this data type profile
-== /github/workspace/fsh-generated/resources/StructureDefinition-bw-patient.json ==
-WARNING: StructureDefinition/bw-patient: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/StructureDefinition-bw-pims-lab-profile-service-request.json ==
-WARNING: StructureDefinition/bw-pims-lab-profile-service-request: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== fsh-generated/resources/StructureDefinition-bw-patient.json ==
+WARNING: StructureDefinition/bw-patient: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/StructureDefinition-bw-pims-lab-profile-service-request.json ==
+WARNING: StructureDefinition/bw-pims-lab-profile-service-request: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
 WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-pims-lab-profile-service-request'): The Implementation Guide contains no examples for this profile
-== /github/workspace/fsh-generated/resources/StructureDefinition-bw-pims-lab-test-service-request.json ==
-WARNING: StructureDefinition/bw-pims-lab-test-service-request: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== fsh-generated/resources/StructureDefinition-bw-pims-lab-test-service-request.json ==
+WARNING: StructureDefinition/bw-pims-lab-test-service-request: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
 WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-pims-lab-test-service-request'): The Implementation Guide contains no examples for this profile
-== /github/workspace/fsh-generated/resources/StructureDefinition-bw-practitioner.json ==
-WARNING: StructureDefinition/bw-practitioner: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/StructureDefinition-pims-patient.json ==
-WARNING: StructureDefinition/pims-patient: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== fsh-generated/resources/StructureDefinition-bw-practitioner.json ==
+WARNING: StructureDefinition/bw-practitioner: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/StructureDefinition-death-certificate-observation.json ==
+WARNING: StructureDefinition/death-certificate-observation: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/StructureDefinition/death-certificate-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-omang-patient.json ==
+WARNING: StructureDefinition/omang-patient: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/StructureDefinition/omang-patient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-pims-patient.json ==
+WARNING: StructureDefinition/pims-patient: StructureDefinition.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
 WARNING: StructureDefinition.where(url = 'http://b-techbw.github.io/bw-lab-ig/StructureDefinition/pims-patient'): The Implementation Guide contains no examples for this profile
-== /github/workspace/fsh-generated/resources/Task-example-bw-task-requested.json ==
+== fsh-generated/resources/Task-example-bw-task-requested.json ==
 ERROR: Task/example-bw-task-requested: Task.status: The value provided ('requested') is not in the value set http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs (http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-pims-lab-order-status-vs), and a code is required from this value set) (error message = Unknown Code http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs#requested in http://b-techbw.github.io/bw-lab-ig/CodeSystem/bw-pims-lab-order-status-cs)
 ERROR: Task/example-bw-task-requested: Task.intent: The value provided ('order') is not in the value set http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs (http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs), and a code is required from this value set) (error message = The code system "http://hl7.org/fhir/ValueSet/task-intent" in the include in "http://b-techbw.github.io/bw-lab-ig/ValueSet/bw-lab-task-intent-vs" is not known; The code system "http://hl7.org/fhir/ValueSet/task-intent" is not known (encountered paired with code = "order"); The code provided (http://hl7.org/fhir/ValueSet/task-intent#order) is not valid in the value set 'BwLabTaskIntentVS' (from http://tx.fhir.org/r4))
-== /github/workspace/fsh-generated/resources/ValueSet-bw-ipms-facility-code-vs.json ==
-WARNING: ValueSet/bw-ipms-facility-code-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/ValueSet-bw-lab-diagnostic-report-status-vs.json ==
-WARNING: ValueSet/bw-lab-diagnostic-report-status-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== fsh-generated/resources/ValueSet-bw-ipms-facility-code-vs.json ==
+WARNING: ValueSet/bw-ipms-facility-code-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/ValueSet-bw-lab-diagnostic-report-status-vs.json ==
+WARNING: ValueSet/bw-lab-diagnostic-report-status-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
 WARNING: ValueSet/bw-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[0]: The code diagnostic-report-status-partial is not valid in the system http://hl7.org/fhir/diagnostic-report-status
 WARNING: ValueSet/bw-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[1]: The code diagnostic-report-status-final is not valid in the system http://hl7.org/fhir/diagnostic-report-status
 WARNING: ValueSet/bw-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[2]: The code diagnostic-report-status-unknown is not valid in the system http://hl7.org/fhir/diagnostic-report-status
 WARNING: ValueSet/bw-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[3]: The code diagnostic-report-status-canceled is not valid in the system http://hl7.org/fhir/diagnostic-report-status
 WARNING: ValueSet/bw-lab-diagnostic-report-status-vs: ValueSet.compose[0].include[0].concept[4]: The code diagnostic-report-status-amended is not valid in the system http://hl7.org/fhir/diagnostic-report-status
-== /github/workspace/fsh-generated/resources/ValueSet-bw-lab-order-code-vs.json ==
-WARNING: ValueSet/bw-lab-order-code-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/ValueSet-bw-lab-task-intent-vs.json ==
-WARNING: ValueSet/bw-lab-task-intent-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== fsh-generated/resources/ValueSet-bw-lab-order-code-vs.json ==
+WARNING: ValueSet/bw-lab-order-code-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/ValueSet-bw-lab-task-intent-vs.json ==
+WARNING: ValueSet/bw-lab-task-intent-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
 WARNING: ValueSet/bw-lab-task-intent-vs: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'bw-lab-task-intent-vs'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-intent
-== /github/workspace/fsh-generated/resources/ValueSet-bw-lab-task-status-vs.json ==
-WARNING: ValueSet/bw-lab-task-status-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== fsh-generated/resources/ValueSet-bw-lab-task-status-vs.json ==
+WARNING: ValueSet/bw-lab-task-status-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
 WARNING: ValueSet/bw-lab-task-status-vs: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'bw-lab-task-status-vs'): Error from server: Unable to provide support for code system http://hl7.org/fhir/ValueSet/task-status
-== /github/workspace/fsh-generated/resources/ValueSet-bw-mfl-facility-code-vs.json ==
-WARNING: ValueSet/bw-mfl-facility-code-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/ValueSet-bw-pims-lab-class-vs.json ==
-WARNING: ValueSet/bw-pims-lab-class-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/ValueSet-bw-pims-lab-order-status-vs.json ==
-WARNING: ValueSet/bw-pims-lab-order-status-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
-== /github/workspace/fsh-generated/resources/ValueSet-bw-pims-lab-test-vs.json ==
-WARNING: ValueSet/bw-pims-lab-test-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or code system is not known to the validator]
+== fsh-generated/resources/ValueSet-bw-mfl-facility-code-vs.json ==
+WARNING: ValueSet/bw-mfl-facility-code-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/ValueSet-bw-pims-lab-class-vs.json ==
+WARNING: ValueSet/bw-pims-lab-class-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/ValueSet-bw-pims-lab-order-status-vs.json ==
+WARNING: ValueSet/bw-pims-lab-order-status-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]
+== fsh-generated/resources/ValueSet-bw-pims-lab-test-vs.json ==
+WARNING: ValueSet/bw-pims-lab-test-vs: ValueSet.jurisdiction[0]: [Unable to determine whether the provided codes are in the value set http://hl7.org/fhir/ValueSet/jurisdiction because the value set or a code system it depends on is not known to the validator]

@@ -84,6 +84,13 @@
     "name": "BwLabIG"
   },
   {
+    "id": "birth-place-observation",
+    "type": "StructureDefinition",
+    "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/birth-place-observation",
+    "version": "0.2.0",
+    "name": "BirthPlaceObservation"
+  },
+  {
     "id": "bw-basic-service-request",
     "type": "StructureDefinition",
     "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-basic-service-request",
@@ -159,6 +166,20 @@
     "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-practitioner",
     "version": "0.2.0",
     "name": "BwPractitioner"
+  },
+  {
+    "id": "death-certificate-observation",
+    "type": "StructureDefinition",
+    "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/death-certificate-observation",
+    "version": "0.2.0",
+    "name": "DeathCertificateObservation"
+  },
+  {
+    "id": "omang-patient",
+    "type": "StructureDefinition",
+    "url": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/omang-patient",
+    "version": "0.2.0",
+    "name": "OmangPatient"
   },
   {
     "id": "pims-patient",
