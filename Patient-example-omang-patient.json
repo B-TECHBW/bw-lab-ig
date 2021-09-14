@@ -1,0 +1,45 @@
+{
+  "resourceType": "Patient",
+  "id": "example-omang-patient",
+  "meta": {
+    "profile": [
+      "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/omang-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: &lt;ID_NO&gt; (OFFICIAL)</p><p><b>name</b>: &lt;SURNME&gt; &lt;FIRST_NME&gt; (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 2000-01-01</p><p><b>deceased</b>: 2010-01-01</p><p><b>address</b>: &lt;DISTRICT_CDE&gt; </p><p><b>maritalStatus</b>: <span title=\"Codes: \">M</span></p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://moh.bw.org/ext/identifier/omang",
+      "value": "<ID_NO>"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "<FIRST_NME>",
+      "given": [
+        "<SURNME>"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "2000-01-01",
+  "deceasedDateTime": "2010-01-01",
+  "address": [
+    {
+      "district": "<DISTRICT_NME>",
+      "postalCode": "<DISTRICT_CDE>"
+    }
+  ],
+  "maritalStatus": {
+    "coding": [
+      {
+        "code": "M"
+      }
+    ]
+  }
+}

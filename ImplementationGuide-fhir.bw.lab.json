@@ -11,7 +11,7 @@
   "title": "Botswana Laboratory HIE Workflow Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-09-13T23:50:16+00:00",
+  "date": "2021-09-14T04:26:25+00:00",
   "publisher": "B-TECHBW",
   "contact": [
     {
@@ -829,6 +829,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/example-birth-place"
+        },
+        "name": "Birth Place",
+        "description": "Birth Place for Patient",
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/birth-place-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "DiagnosticReport"
           }
         ],
@@ -997,6 +1011,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/example-death-cert"
+        },
+        "name": "Death Certificate",
+        "description": "Death Certificate Information for Patient",
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/death-certificate-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Organization"
           }
         ],
@@ -1062,6 +1090,20 @@
         "name": "IPMS Location",
         "description": "Example IPMS Facility Location",
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/example-omang-patient"
+        },
+        "name": "Omang Patient",
+        "description": "Omang Patient",
+        "exampleCanonical": "http://b-techbw.github.io/bw-lab-ig/StructureDefinition/omang-patient"
       },
       {
         "extension": [

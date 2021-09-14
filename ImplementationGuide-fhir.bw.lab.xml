@@ -12,7 +12,7 @@
   <title value="Botswana Laboratory HIE Workflow Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-09-13T23:50:16+00:00"/>
+  <date value="2021-09-14T04:26:25+00:00"/>
   <publisher value="B-TECHBW"/>
   <contact>
     <name value="B-TECHBW"/>
@@ -600,6 +600,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-birth-place"/>
+      </reference>
+      <name value="Birth Place"/>
+      <description value="Birth Place for Patient"/>
+      <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/birth-place-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="DiagnosticReport"/>
       </extension>
       <reference>
@@ -732,6 +743,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-death-cert"/>
+      </reference>
+      <name value="Death Certificate"/>
+      <description value="Death Certificate Information for Patient"/>
+      <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/death-certificate-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
       </extension>
       <reference>
@@ -784,6 +806,17 @@
       <name value="IPMS Location"/>
       <description value="Example IPMS Facility Location"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/example-omang-patient"/>
+      </reference>
+      <name value="Omang Patient"/>
+      <description value="Omang Patient"/>
+      <exampleCanonical value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/omang-patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
