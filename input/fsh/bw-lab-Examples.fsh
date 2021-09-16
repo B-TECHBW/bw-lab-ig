@@ -296,3 +296,40 @@ Title: "IPMS Observation #2"
 * effectiveDateTime = "2021-06-10T15:49:00.000Z"
 * performer = Reference(example-facility-order-reciever)
 
+Instance: example-omang-patient
+InstanceOf: OmangPatient
+Usage: #example
+Description: "Omang Patient"
+Title: "Omang Patient"
+* name.use = #official
+* name.family = "<FIRST_NME>"
+* name.given[+] = "<SURNME>"
+* gender = #female
+* birthDate = "2000-01-01"
+* identifier[+].value = "<ID_NO>"
+* identifier[=].system = "http://moh.bw.org/ext/identifier/omang"
+* identifier[=].use = #official
+* deceasedDateTime = "2010-01-01"
+* maritalStatus = #M // "MARITAL_STATUS_CDE - see <https://www.hl7.org/fhir/valueset-marital-status.html>"
+* address[+].district = "<DISTRICT_NME>"
+* address[=].postalCode = "<DISTRICT_CDE>"
+
+Instance: example-birth-place
+InstanceOf: BirthPlaceObservation
+Usage: #example
+Description: "Birth Place for Patient"
+Title: "Birth Place"
+* subject = Reference(example-omang-patient)
+* component[+].code = $LNC#21842-0
+* component[=].valueString = "<BIRTH_PLACE_NME>"
+* status = #final
+
+Instance: example-death-cert
+InstanceOf: DeathCertificateObservation
+Usage: #example
+Description: "Death Certificate Information for Patient"
+Title: "Death Certificate"
+* subject = Reference(example-omang-patient)
+* component[+].code = $LNC#64297-5
+* component[=].valueString = "<DEATH_CERT_NO>"
+* status = #final
