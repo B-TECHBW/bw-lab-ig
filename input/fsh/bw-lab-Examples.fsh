@@ -37,7 +37,7 @@ Title:   "IPMS Patient"
 * identifier[+].value = "<OmangNumber>"
 * identifier[=].system = "http://moh.bw.org/ext/identifier/omang"
 * identifier[=].use = #official
-* managingOrganization = Reference(example-facility-order-reciever)
+* managingOrganization = Reference(example-facility-order-receiver)
 
 Instance: example-pims-patient-international
 InstanceOf: BwPatient 
@@ -81,7 +81,7 @@ Description: "Example PIMS Facility Location"
 * physicalType = #bu
 * managingOrganization = Reference(example-facility-order-creator)
 
-Instance: example-facility-order-reciever
+Instance: example-facility-order-receiver
 // InstanceOf: MCSDFacilityOrganization
 InstanceOf: Organization
 Title: "IPMS Facility"
@@ -91,7 +91,7 @@ Description: "Example IPMS Facility"
 * identifier[=].system = "http://moh.bw.org/ext/mfl/facility-code"
 * active = true
 
-Instance: example-location-order-reciever
+Instance: example-location-order-receiver
 // InstanceOf: MCSDFacilityLocation
 InstanceOf: Location
 Title: "IPMS Location"
@@ -103,7 +103,7 @@ Description: "Example IPMS Facility Location"
 * type[+].coding[+].system = "https://github.com/ihe/ITI.mCSD"
 * type[=].coding[=].code = #Facility
 * physicalType = #bu
-* managingOrganization = Reference(example-facility-order-reciever)
+* managingOrganization = Reference(example-facility-order-receiver)
 
 Instance: example-bw-task-requested
 InstanceOf: BwLabTask 
@@ -118,7 +118,7 @@ Title:   "BW Requested Lab Task"
 * intent = #order
 * for = Reference(example-pims-patient)
 * authoredOn = "2021-05-20"
-* owner = Reference(example-facility-order-reciever)
+* owner = Reference(example-facility-order-receiver)
 * location = Reference(example-location-order-creator)
 
 Instance: example-bw-pims-service-request-profile
@@ -128,11 +128,12 @@ Description: "Example ServiceRequest resource representing a PIMS Profile"
 Title: "BW PIMS ServiceRequest Profile"
 * status = #active
 * intent = #order
-* code.coding[+].system = "http://moh.bw.org/ext/laboratory/pims-lab-profile-code"
-* code.coding[=].code = #pims-profile-code
+* code.coding[+].system = "https://api.openconceptlab.org/orgs/B-TECHBW/sources/PIMS-LAB-PROFILE-DICT/"
+* code.coding[=].code = #2
+* code.coding[=].display = "CD4 %"
 * subject = Reference(example-pims-patient)
-* performer = Reference(example-facility-order-reciever)
-* locationReference = Reference(example-location-order-reciever)
+* performer = Reference(example-facility-order-receiver)
+* locationReference = Reference(example-location-order-receiver)
 
 Instance: example-bw-pims-service-request-1
 InstanceOf: BwServiceRequest
@@ -141,12 +142,13 @@ Description: "Example ServiceRequest resource representing a PIMS Lab Order"
 Title: "BW PIMS ServiceRequest 1"
 * status = #active
 * intent = #order
-* code.coding[+].system = "http://moh.bw.org/ext/laboratory/pims-lab-test-code"
-* code.coding[=].code = #pims-labtest-code
+* code.coding[+].system = "https://api.openconceptlab.org/orgs/B-TECHBW/sources/PIMS-LAB-PROFILE-DICT/"
+* code.coding[=].code = #2
+* code.coding[=].display = "CD4 %"
 * basedOn[+] = Reference(example-bw-pims-service-request-profile)
 * subject = Reference(example-pims-patient)
-* performer = Reference(example-facility-order-reciever)
-* locationReference = Reference(example-location-order-reciever)
+* performer = Reference(example-facility-order-receiver)
+* locationReference = Reference(example-location-order-receiver)
 
 Instance: example-bw-pims-service-request-2
 InstanceOf: BwServiceRequest
@@ -159,8 +161,8 @@ Title: "BW PIMS ServiceRequest 2"
 * code.coding[=].code = #pims-labtest-code
 * basedOn[+] = Reference(example-bw-pims-service-request-profile)
 * subject = Reference(example-pims-patient)
-* performer = Reference(example-facility-order-reciever)
-* locationReference = Reference(example-location-order-reciever)
+* performer = Reference(example-facility-order-receiver)
+* locationReference = Reference(example-location-order-receiver)
 
 Instance: example-bw-pims-practitioner
 InstanceOf: BwPractitioner
@@ -202,8 +204,8 @@ Title: "Example Lab Bundle"
 * entry[+].resource = example-bw-pims-service-request-2
 * entry[+].resource = example-facility-order-creator
 * entry[+].resource = example-location-order-creator
-* entry[+].resource = example-facility-order-reciever
-* entry[+].resource = example-location-order-reciever
+* entry[+].resource = example-facility-order-receiver
+* entry[+].resource = example-location-order-receiver
 
 Instance: example-bw-lab-results-bundle
 InstanceOf: Bundle
@@ -276,7 +278,7 @@ Title: "IPMS Observation #1"
 * subject.type = "Patient"
 * status = #final
 * effectiveDateTime = "2021-06-10T15:49:00.000Z"
-* performer = Reference(example-facility-order-reciever)
+* performer = Reference(example-facility-order-receiver)
 
 Instance: example-bw-ipms-obs-2
 InstanceOf: BwLabObservation
@@ -294,7 +296,7 @@ Title: "IPMS Observation #2"
 * subject.type = "Patient"
 * status = #final
 * effectiveDateTime = "2021-06-10T15:49:00.000Z"
-* performer = Reference(example-facility-order-reciever)
+* performer = Reference(example-facility-order-receiver)
 
 Instance: example-omang-patient
 InstanceOf: OmangPatient
