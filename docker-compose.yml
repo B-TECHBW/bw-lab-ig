@@ -6,5 +6,5 @@ services:
     image: bw-lab-ig:latest
     container_name: ig
     volumes:
-    #   # - /input:/ig/input
+    - ./input:/ig/input
     - ./output:/ig/output
