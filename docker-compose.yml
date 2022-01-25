@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  ig:
+    build: ./
+    image: bw-lab-ig:latest
+    container_name: ig
+    volumes:
+    #   # - /input:/ig/input
+    - /output:/ig/output
