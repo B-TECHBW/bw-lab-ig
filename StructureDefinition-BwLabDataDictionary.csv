@@ -13,22 +13,22 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","EMR-LIS Patient Logical Model","Logical model of EMR-LIS Patient","","","","","","","","","",,,,,"",,,,"EmrLisDataDictionary.Patient",0,1,"","","Patient.tblPatient","Patient"
 "EmrLisDataDictionary.Patient.NationalID","","","",0,1,"","","","Identifier {[]} {[]}
 ","National Patient Identification Number","Main national-level identification number (Omang or Passport)","","","","","","","","","",,,,,"",,,,"EmrLisDataDictionary.Patient.NationalID",0,1,"","","Patient.tblPatient.IDNo; Patient.tblPatient.IDNoType","Patient.identifier"
-"EmrLisDataDictionary.Patient.Active","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Patient Active Flag","Flag for distinguishing between active and not active Patients","","","","","","","","","",,"extensible","","","",,,,"EmrLisDataDictionary.Patient.Active",0,1,"","","Patient.tblPatientProgramActivity","Patient.active"
-"EmrLisDataDictionary.Patient.MaritalStatus","","","",0,*,"","","","CodeableConcept {[]} {[]}
-","Marital Status","Marital Status","","","","","","","","","",,"extensible","","","",,,,"EmrLisDataDictionary.Patient.MaritalStatus",0,*,"","","Patient.tblPatient.MartitalStatusID; Patient.tblkMaritalStatus","Patient.maritalStatus"
+"EmrLisDataDictionary.Patient.Active","","","",0,1,"","","","text {[]} {[]}
+","Patient Active Flag","Flag for distinguishing between active and not active Patients","","","","","","","","","",,,,,"",,,,"EmrLisDataDictionary.Patient.Active",0,1,"","","Patient.tblPatientProgramActivity","Patient.active"
+"EmrLisDataDictionary.Patient.MaritalStatus","","","",0,*,"","","","string {[]} {[]}
+","Marital Status","Marital Status","","","","","","","","","",,,,,"",,,,"EmrLisDataDictionary.Patient.MaritalStatus",0,*,"","","Patient.tblPatient.MartitalStatusID; Patient.tblkMaritalStatus","Patient.maritalStatus"
 "EmrLisDataDictionary.Patient.Address","","","",0,*,"","","","Address {[]} {[]}
 ","Patient Address","Patient Address","","","","","","","","","",,,,,"",,,,"EmrLisDataDictionary.Patient.Address",0,*,"","","Patient.tblAddress; Patient.tblkAddressType","Patient.address"
 "EmrLisDataDictionary.Patient.birthDate","","","",0,1,"","","","date {[]} {[]}
 ","Patient Date of Birth","Patient Date of Birth","","","","","","","","","",,,,,"",,,,"EmrLisDataDictionary.Patient.birthDate",0,1,"","","Patient.tblPatient.DOB","Patient.birthDate"
-"EmrLisDataDictionary.Patient.birthDateType","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Birth Date Type","Type of Birth Date","","","","","","","","","",,"extensible","","","",,,,"EmrLisDataDictionary.Patient.birthDateType",0,1,"","","Patient.tblPatient.DOBType","TODO"
+"EmrLisDataDictionary.Patient.birthDateType","","","",0,1,"","","","string {[]} {[]}
+","Birth Date Type","Type of Birth Date","","","","","","","","","",,,,,"",,,,"EmrLisDataDictionary.Patient.birthDateType",0,1,"","","Patient.tblPatient.DOBType","TODO"
 "EmrLisDataDictionary.Patient.Contact","","","",0,*,"","","","ContactPoint {[]} {[]}
 ","Patient Contact Information","Patient Contact Information","","","","","","","","","",,,,,"",,,,"EmrLisDataDictionary.Patient.Contact",0,*,"","","Patient.tblContactDetail","Patient.telecom"
 "EmrLisDataDictionary.Patient.Name","","","",0,*,"","","","HumanName {[]} {[]}
 ","Patient Name","Patient Name","","","","","","","","","",,,,,"",,,,"EmrLisDataDictionary.Patient.Name",0,*,"","","Patient.tblPatient.Surname; Patient.tblPatient.Firstname; Patient.tblPatient.Middlename","Patient.name"
-"EmrLisDataDictionary.Patient.GenderID","","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Gender","Gender","","","","","","","","","",,"extensible","","","",,,,"EmrLisDataDictionary.Patient.GenderID",0,1,"","","Patient.tblPatient.GenderID; Patient.tblkGender","Patient.gender"
+"EmrLisDataDictionary.Patient.GenderID","","","",0,1,"","","","string {[]} {[]}
+","Gender","Gender","","","","","","","","","",,,,,"",,,,"EmrLisDataDictionary.Patient.GenderID",0,1,"","","Patient.tblPatient.GenderID; Patient.tblkGender","Patient.gender"
 "EmrLisDataDictionary.LabOrderTask","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","EMR-LIS Lab Order Task Logical Model","Logical model of a EMR-LIS Lab Order Task","","","","","","","","","",,,,,"",,,,"EmrLisDataDictionary.LabOrderTask",0,1,"","","Laboratory.tblLabOrder","BwLabTask"
 "EmrLisDataDictionary.LabOrderTask.Patient","","","",1,1,"","","","Reference {[]} {[]}
@@ -75,6 +75,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Requesting Facility","Requesting Facility","","","","","","","","","",,,,,"",,,,"EmrLisDataDictionary.LabOrder.RequestingFacility",1,1,"","","Laboratory.tblLabOrder.RequestingFacilityID","ServiceRequest.requester"
 "EmrLisDataDictionary.LabOrder.LabTest","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Ordered Lab Test","Ordered Lab Test","","","","","","","","","",,,,,"",,,,"EmrLisDataDictionary.LabOrder.LabTest",1,1,"","","Laboratory.tblLabOrderProfileTest.LabTestID","ServiceRequest.code"
+"EmrLisDataDictionary.LabTest","","","",1,*,"","","","Reference {[]} {[]}
+","Lab Test","Reference to Lab Test","","","","","","","","","",,,,,"",,,,"EmrLisDataDictionary.LabTest",1,*,"","","Laboratory.tblLabOrderProfile.LabTestID","ServiceRequest.code"
 "EmrLisDataDictionary.Result","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","Result for Lab Orders","Result for Lab Orders","","","","","","","","","",,,,,"",,,,"EmrLisDataDictionary.Result",0,*,"","","Laboratory.tblLabOrderProfile; Laboratory.tblLabOrderProfileTest; Laboratory.tblLabOrderProfileTestParameter","DiagnosticReport"
 "EmrLisDataDictionary.Result.LabTest","","","",0,1,"","","","Reference {[]} {[]}

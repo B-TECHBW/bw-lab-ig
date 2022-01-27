@@ -6,7 +6,7 @@
     <profile value="http://b-techbw.github.io/bw-lab-ig/StructureDefinition/bw-patient"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: MR: urn:uuid:&lt;Pims-specific Patient ID&gt;, id: &lt;OmangNumber&gt; (OFFICIAL)</p><p><b>name</b>: Test PimsPatient (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p><p><b>managingOrganization</b>: <a href="Organization-example-facility-order-creator.html">Generated Summary: id: &lt;pims-facility-code&gt;; active; <span title="Codes: {urn:ietf:rfc:3986 prov}">prov</span>, <span title="Codes: {https://github.com/ihe/ITI.mCSD Facility}">Facility</span></a></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "example-pims-patient" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-bw-patient.html">Botswana Patient</a></p></div><p><b>identifier</b>: MR: urn:uuid:&lt;Pims-specific Patient ID&gt;, id: &lt;OmangNumber&gt; (OFFICIAL)</p><p><b>name</b>: Test PimsPatient (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1988-03-02</p><p><b>managingOrganization</b>: <a href="Organization-example-facility-order-creator.html">Organization/example-facility-order-creator</a></p></div>
   </text>
   <identifier>
     <type>

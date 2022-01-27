@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: &lt;ID_NO&gt; (OFFICIAL)</p><p><b>name</b>: &lt;SURNME&gt; &lt;FIRST_NME&gt; (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 2000-01-01</p><p><b>deceased</b>: 2010-01-01</p><p><b>address</b>: &lt;DISTRICT_CDE&gt; </p><p><b>maritalStatus</b>: <span title=\"Codes: \">M</span></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"example-omang-patient\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-omang-patient.html\">Omang System Patient</a></p></div><p><b>identifier</b>: id: &lt;ID_NO&gt; (OFFICIAL)</p><p><b>name</b>: &lt;SURNME&gt; &lt;FIRST_NME&gt; (OFFICIAL)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 2000-01-01</p><p><b>deceased</b>: 2010-01-01</p><p><b>address</b>: &lt;DISTRICT_CDE&gt; </p><p><b>maritalStatus</b>: M <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#M)</span></p></div>"
   },
   "identifier": [
     {
