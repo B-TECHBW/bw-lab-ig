@@ -64,8 +64,7 @@ Usage: #definition
 * differential.element[=].path = "EmrLisDataDictionary.Patient.Active"
 * differential.element[=].short = "Patient Active Flag"
 * differential.element[=].definition = "Flag for distinguishing between active and not active Patients"
-* differential.element[=].type.code = #CodeableConcept
-// * differential.element[=].binding.valueSet = TODO
+* differential.element[=].type.code = #text
 * differential.element[=].binding.strength = #extensible
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
@@ -78,8 +77,7 @@ Usage: #definition
 * differential.element[=].path = "EmrLisDataDictionary.Patient.MaritalStatus"
 * differential.element[=].short = "Marital Status"
 * differential.element[=].definition = "Marital Status"
-* differential.element[=].type.code = #CodeableConcept
-// * differential.element[=].binding.valueSet = TODO
+* differential.element[=].type.code = #string
 * differential.element[=].binding.strength = #extensible
 * differential.element[=].min = 0
 * differential.element[=].max = "*"
@@ -116,8 +114,7 @@ Usage: #definition
 * differential.element[=].path = "EmrLisDataDictionary.Patient.birthDateType"
 * differential.element[=].short = "Birth Date Type"
 * differential.element[=].definition = "Type of Birth Date"
-* differential.element[=].type.code = #CodeableConcept
-// * differential.element[=].binding.valueSet = TODO
+* differential.element[=].type.code = #string
 * differential.element[=].binding.strength = #extensible
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
@@ -154,8 +151,7 @@ Usage: #definition
 * differential.element[=].path = "EmrLisDataDictionary.Patient.GenderID"
 * differential.element[=].short = "Gender"
 * differential.element[=].definition = "Gender"
-* differential.element[=].type.code = #CodeableConcept
-// * differential.element[=].binding.valueSet = TODO
+* differential.element[=].type.code = #string
 * differential.element[=].binding.strength = #extensible
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
@@ -487,17 +483,17 @@ Usage: #definition
  Lab Test Type
 */
 
-// * differential.element[+].id = "EmrLisDataDictionary.LabTest"
-// * differential.element[=].path = "EmrLisDataDictionary.LabTest"
-// * differential.element[=].short = "Lab Test"
-// * differential.element[=].definition = "Reference to Lab Test"
-// * differential.element[=].type.code = #Reference
-// * differential.element[=].min = 1
-// * differential.element[=].max = "*"
-// * differential.element[=].mapping[+].identity = "PIMS"
-// * differential.element[=].mapping[=].map = "Laboratory.tblLabOrderProfile.LabTestID"
-// * differential.element[=].mapping[+].identity = "FHIR-R4"
-// * differential.element[=].mapping[=].map = "ServiceRequest.code"
+* differential.element[+].id = "EmrLisDataDictionary.LabTest"
+* differential.element[=].path = "EmrLisDataDictionary.LabTest"
+* differential.element[=].short = "Lab Test"
+* differential.element[=].definition = "Reference to Lab Test"
+* differential.element[=].type.code = #Reference
+* differential.element[=].min = 1
+* differential.element[=].max = "*"
+* differential.element[=].mapping[+].identity = "PIMS"
+* differential.element[=].mapping[=].map = "Laboratory.tblLabOrderProfile.LabTestID"
+* differential.element[=].mapping[+].identity = "FHIR-R4"
+* differential.element[=].mapping[=].map = "ServiceRequest.code"
 
 * differential.element[+].id = "EmrLisDataDictionary.Result"
 * differential.element[=].path = "EmrLisDataDictionary.Result"

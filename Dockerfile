@@ -1,27 +1,12 @@
-FROM jekyll/jekyll:latest
+FROM hl7fhir/ig-publisher-base:latest
 
-RUN npm install -g fsh-sushi
-
-WORKDIR /ig
-
-RUN  apk update \
-  && apk upgrade \
-  && apk add ca-certificates \
-  && update-ca-certificates \
-  && apk add --update coreutils && rm -rf /var/cache/apk/*   \ 
-  && apk add --update openjdk11 tzdata curl unzip bash \
-  && apk add --no-cache nss \
-  && rm -rf /var/cache/apk/*
-
-ADD ./_updatePublisher.sh ./_updatePublisher.sh
-ADD ./_genonce.sh ./_genonce.sh
 ADD ./fsh.ini ./fsh.ini
 ADD ./ig.ini ./ig.ini
 ADD ./sushi-config.yml ./sushi-config.yml
 ADD ./input ./input
 
-VOLUME [ "/ig/output" ]
+RUN /home/publisher/bin/ig-publisher-scripts/_updatePublisher.sh -y
 
-RUN /ig/_updatePublisher.sh -y
+VOLUME [ "/home/publisher/ig/input" ]
 
-ENTRYPOINT [ "/ig/_genonce.sh" ]
+ENTRYPOINT [ "/home/publisher/bin/ig-publisher-scripts/_genonce.sh" ]
