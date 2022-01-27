@@ -2,14 +2,14 @@ version: '3.9'
 
 services:
   ig:
-    image: btech-bw/bw-lab-ig:latest
-    build:
-      context: ./
-      dockerfile: Dockerfile
+    image: test-image:latest
     container_name: ig
     volumes:
-    - ./input:/home/publisher/ig/input
-    - ./output:/home/publisher/ig/output
+    - ./input:/ig/input 
+    - ./output:/ig/output
+    # entrypoint: bash
+    # tty: true
+    # stdin_open: true
     
 
 

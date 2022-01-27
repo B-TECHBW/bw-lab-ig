@@ -65,7 +65,6 @@ Usage: #definition
 * differential.element[=].short = "Patient Active Flag"
 * differential.element[=].definition = "Flag for distinguishing between active and not active Patients"
 * differential.element[=].type.code = #text
-* differential.element[=].binding.strength = #extensible
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "PIMS"
@@ -78,7 +77,6 @@ Usage: #definition
 * differential.element[=].short = "Marital Status"
 * differential.element[=].definition = "Marital Status"
 * differential.element[=].type.code = #string
-* differential.element[=].binding.strength = #extensible
 * differential.element[=].min = 0
 * differential.element[=].max = "*"
 * differential.element[=].mapping[+].identity = "PIMS"
@@ -115,7 +113,6 @@ Usage: #definition
 * differential.element[=].short = "Birth Date Type"
 * differential.element[=].definition = "Type of Birth Date"
 * differential.element[=].type.code = #string
-* differential.element[=].binding.strength = #extensible
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "PIMS"
@@ -152,7 +149,6 @@ Usage: #definition
 * differential.element[=].short = "Gender"
 * differential.element[=].definition = "Gender"
 * differential.element[=].type.code = #string
-* differential.element[=].binding.strength = #extensible
 * differential.element[=].min = 0
 * differential.element[=].max = "1"
 * differential.element[=].mapping[+].identity = "PIMS"
