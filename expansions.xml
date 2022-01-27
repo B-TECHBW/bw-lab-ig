@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="2b65226a-8744-4771-9428-6a70adc665f5"/>
+  <id value="1961f987-2279-4cb0-8a12-80acfd03b7f1"/>
   <meta>
-    <lastUpdated value="2022-01-27T21:13:11.422+00:00"/>
+    <lastUpdated value="2022-01-27T21:19:29.006+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -131,7 +131,7 @@
         <name value="BwPimsLabClassVS"/>
         <title value="Status Values for PIMS Lab Orders"/>
         <status value="active"/>
-        <date value="2022-01-27T21:13:11+00:00"/>
+        <date value="2022-01-27T21:19:29+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -157,8 +157,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:30faa231-0698-494f-8310-ac98fb813b96"/>
-          <timestamp value="2022-01-27T21:13:49+00:00"/>
+          <identifier value="urn:uuid:a64ec9d6-b27f-4ad4-853e-c0497dad3d02"/>
+          <timestamp value="2022-01-27T21:19:58+00:00"/>
           <total value="11"/>
           <parameter>
             <name value="excludeNested"/>
@@ -296,7 +296,7 @@
         <name value="BwLabDiagnosticReportStatusVS"/>
         <title value="Botswana Diagnostic Report Status Flag"/>
         <status value="active"/>
-        <date value="2022-01-27T21:13:11+00:00"/>
+        <date value="2022-01-27T21:19:29+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -323,8 +323,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e95b31e0-e038-494d-ab00-b18eca8f1831"/>
-          <timestamp value="2022-01-27T21:13:51+00:00"/>
+          <identifier value="urn:uuid:5610834f-7015-4200-9938-9881f4ce77db"/>
+          <timestamp value="2022-01-27T21:20:01+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -608,7 +608,7 @@
         <name value="BwPimsLabTestVS"/>
         <title value="PIMS Lab Test Codes"/>
         <status value="active"/>
-        <date value="2022-01-27T21:13:11+00:00"/>
+        <date value="2022-01-27T21:19:29+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -635,8 +635,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:48c033c9-7da6-4288-9074-663fdfc3a99d"/>
-          <timestamp value="2022-01-27T21:14:04+00:00"/>
+          <identifier value="urn:uuid:e2e135b1-2850-4536-9dad-706826ddabee"/>
+          <timestamp value="2022-01-27T21:20:11+00:00"/>
           <total value="26"/>
           <parameter>
             <name value="excludeNested"/>
@@ -5280,7 +5280,7 @@
         <name value="BwMflFacilityCodeVS"/>
         <title value="MFL Facility Code Valueset"/>
         <status value="active"/>
-        <date value="2022-01-27T21:13:11+00:00"/>
+        <date value="2022-01-27T21:19:29+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -5307,8 +5307,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6ef3610b-ebf6-4899-bcc5-df32854ded0a"/>
-          <timestamp value="2022-01-27T21:14:04+00:00"/>
+          <identifier value="urn:uuid:784c68b1-0656-4a9e-b37b-ee6ff452ec45"/>
+          <timestamp value="2022-01-27T21:20:11+00:00"/>
           <total value="638"/>
           <parameter>
             <name value="excludeNested"/>
@@ -15544,7 +15544,7 @@
         <name value="BwLabOrderCodeVS"/>
         <title value="Botswana Lab Order Code"/>
         <status value="active"/>
-        <date value="2022-01-27T21:13:11+00:00"/>
+        <date value="2022-01-27T21:19:29+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -15574,8 +15574,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-toocostly">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:adedd925-04eb-4797-8c53-d888bfb5b3fe"/>
-          <timestamp value="2022-01-27T21:14:07+00:00"/>
+          <identifier value="urn:uuid:33becbe6-2ca3-4cfe-9d99-c1817b3b8f66"/>
+          <timestamp value="2022-01-27T21:20:14+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -26794,7 +26794,7 @@
         <name value="BwIpmsFacilityCodeVS"/>
         <title value="IPMS Facility Code Valueset"/>
         <status value="active"/>
-        <date value="2022-01-27T21:13:11+00:00"/>
+        <date value="2022-01-27T21:19:29+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -26821,8 +26821,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:63baecff-6c54-498c-8832-22e713f3f880"/>
-          <timestamp value="2022-01-27T21:14:07+00:00"/>
+          <identifier value="urn:uuid:0bcdf54e-734f-498d-8f41-e43e5a19c3aa"/>
+          <timestamp value="2022-01-27T21:20:14+00:00"/>
           <total value="881"/>
           <parameter>
             <name value="excludeNested"/>
@@ -31318,7 +31318,7 @@
         <name value="BwPimsLabOrderStatusVS"/>
         <title value="Status Values for PIMS Lab Orders"/>
         <status value="active"/>
-        <date value="2022-01-27T21:13:11+00:00"/>
+        <date value="2022-01-27T21:19:29+00:00"/>
         <publisher value="B-TECHBW"/>
         <contact>
           <name value="B-TECHBW"/>
@@ -31344,8 +31344,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fc6f8b5b-949b-4f32-893a-0bee76c4835f"/>
-          <timestamp value="2022-01-27T21:14:09+00:00"/>
+          <identifier value="urn:uuid:de6b92ba-b9b1-481a-bc6e-43696de4b39c"/>
+          <timestamp value="2022-01-27T21:20:16+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
