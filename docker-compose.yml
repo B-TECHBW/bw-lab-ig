@@ -2,14 +2,11 @@ version: '3.9'
 
 services:
   ig:
-    image: test-image:latest
+    image: ghcr.io/b-techbw/bw-lab-ig:latest
     container_name: ig
     volumes:
     - ./input:/ig/input 
     - ./output:/ig/output
-    # entrypoint: bash
-    # tty: true
-    # stdin_open: true
     
 
 
