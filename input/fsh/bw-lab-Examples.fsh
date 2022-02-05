@@ -44,7 +44,8 @@ InstanceOf: BwPatient
 Usage: #example 
 Description: "Example International Botswana Patient"
 Title:   "BW Patient"
-* name.text = "Bw TestPatient"
+* name.family = "Patient"
+* name.given[+] = "BwTest"
 * gender = #female
 * birthDate = "1988-03-02"
 * identifier.value = "urn:uuid:<Pims-specific Patient ID>"
@@ -167,7 +168,8 @@ InstanceOf: BwPractitioner
 Usage: #example
 Description: "Example PIMS Practitioner"
 Title: "BW PIMS Practitioner"
-* name[+].text = "BW PimsProvider"
+* name.family = "Provider"
+* name.given[+] = "PIMS"
 * identifier[+].value = "RequesterID"
 * identifier[=].system = "http://<pims-instance-specific-url>/ext/practitioner/identifier"   
 
